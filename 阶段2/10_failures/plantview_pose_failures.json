@@ -1,0 +1,98 @@
+{
+  "description": "plant_view 3/6 序列 VGGT 位姿失效记录(深度/点云正常,相机位姿坍缩)",
+  "failures": [
+    {
+      "sequence_id": "plantview__langdon_4__12-03-24",
+      "S": 320,
+      "relative_rotation_error_deg": {
+        "median": 90.404,
+        "mean": 91.187,
+        "p90": 162.364,
+        "max": 180.0,
+        "note": "相机间相对朝向误差,消除全局世界系/相机系模糊性,反映模型真实位姿精度"
+      },
+      "center_error_aligned": {
+        "median": 0.84245,
+        "p90": 1.10276,
+        "max": 1.34709,
+        "relative_to_spread": 0.9061
+      },
+      "trajectory_direction": {
+        "mean_cosine": 0.5347,
+        "median_cosine": 0.6039,
+        "n_pairs": 319
+      },
+      "sanity_flatness": 0.5759487350861457,
+      "depth_valid": 1.0,
+      "diagnosis": {
+        "depth": "正常(valid=1.0, 深度范围合理)",
+        "pointcloud": "正常(无平面坍缩)",
+        "pose": "相机中心坍缩成团(min pair dist ~0.002-0.003),与参考环形轨迹完全不符",
+        "subset_test": "12-03-24 前64帧 rel_rot median 13.96°, traj cos -0.311(负); 前128帧 36.02°/-0.196 —— 非长序列注意力稀释,为该场景(弱纹理密集分蘖期小麦)下 VGGT 真实位姿失效",
+        "axis_permutation_test": "6 种 90° 轴置换均无法恢复(残差 117-178°),排除坐标系约定错位"
+      }
+    },
+    {
+      "sequence_id": "plantview__langdon_4__15-04-24",
+      "S": 318,
+      "relative_rotation_error_deg": {
+        "median": 90.854,
+        "mean": 91.446,
+        "p90": 162.315,
+        "max": 180.0,
+        "note": "相机间相对朝向误差,消除全局世界系/相机系模糊性,反映模型真实位姿精度"
+      },
+      "center_error_aligned": {
+        "median": 0.92589,
+        "p90": 1.19962,
+        "max": 1.37644,
+        "relative_to_spread": 0.9544
+      },
+      "trajectory_direction": {
+        "mean_cosine": 0.4392,
+        "median_cosine": 0.5324,
+        "n_pairs": 317
+      },
+      "sanity_flatness": 0.6673850630796043,
+      "depth_valid": 1.0,
+      "diagnosis": {
+        "depth": "正常(valid=1.0, 深度范围合理)",
+        "pointcloud": "正常(无平面坍缩)",
+        "pose": "相机中心坍缩成团(min pair dist ~0.002-0.003),与参考环形轨迹完全不符",
+        "subset_test": "12-03-24 前64帧 rel_rot median 13.96°, traj cos -0.311(负); 前128帧 36.02°/-0.196 —— 非长序列注意力稀释,为该场景(弱纹理密集分蘖期小麦)下 VGGT 真实位姿失效",
+        "axis_permutation_test": "6 种 90° 轴置换均无法恢复(残差 117-178°),排除坐标系约定错位"
+      }
+    },
+    {
+      "sequence_id": "plantview__langdon_4__19-03-24",
+      "S": 320,
+      "relative_rotation_error_deg": {
+        "median": 90.611,
+        "mean": 91.246,
+        "p90": 162.134,
+        "max": 180.0,
+        "note": "相机间相对朝向误差,消除全局世界系/相机系模糊性,反映模型真实位姿精度"
+      },
+      "center_error_aligned": {
+        "median": 0.84511,
+        "p90": 1.16777,
+        "max": 1.43045,
+        "relative_to_spread": 0.8706
+      },
+      "trajectory_direction": {
+        "mean_cosine": 0.511,
+        "median_cosine": 0.5907,
+        "n_pairs": 319
+      },
+      "sanity_flatness": 0.6282812513412217,
+      "depth_valid": 1.0,
+      "diagnosis": {
+        "depth": "正常(valid=1.0, 深度范围合理)",
+        "pointcloud": "正常(无平面坍缩)",
+        "pose": "相机中心坍缩成团(min pair dist ~0.002-0.003),与参考环形轨迹完全不符",
+        "subset_test": "12-03-24 前64帧 rel_rot median 13.96°, traj cos -0.311(负); 前128帧 36.02°/-0.196 —— 非长序列注意力稀释,为该场景(弱纹理密集分蘖期小麦)下 VGGT 真实位姿失效",
+        "axis_permutation_test": "6 种 90° 轴置换均无法恢复(残差 117-178°),排除坐标系约定错位"
+      }
+    }
+  ]
+}

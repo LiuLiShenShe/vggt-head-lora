@@ -1,0 +1,99 @@
+{
+  "description": "输入图像顺序反序后 VGGT 位姿一致性抽查(还原索引后与原序比较)",
+  "global_rotation_alignment": "Kabsch on c2w rotation matrices",
+  "center_alignment": "Umeyama-Horn Sim(3) on camera centers",
+  "results": [
+    {
+      "sequence_id": "wheat3dgs__plot_463",
+      "S": 36,
+      "forward_seconds": 3.45,
+      "rotation_error_deg": {
+        "median": 0.481,
+        "p90": 1.367,
+        "max": 1.862
+      },
+      "center_error_aligned": {
+        "median": 0.0,
+        "p90": 0.0,
+        "max": 0.0,
+        "scale_ref": 0.1268
+      },
+      "per_camera_rotation_deg": [
+        1.406,
+        0.563,
+        0.815,
+        1.061,
+        0.0,
+        0.0,
+        0.628,
+        0.713,
+        0.0,
+        0.0,
+        0.333,
+        0.184,
+        1.589,
+        1.862,
+        1.277,
+        0.0,
+        0.448,
+        0.658,
+        0.0,
+        0.8,
+        0.0,
+        0.513,
+        0.0,
+        0.0,
+        1.818,
+        1.328,
+        0.55,
+        0.543,
+        0.844,
+        0.905,
+        0.0,
+        0.239,
+        0.0,
+        0.404,
+        0.0,
+        0.008
+      ]
+    },
+    {
+      "sequence_id": "mustc__plot198__230613__ugv__pos00",
+      "S": 20,
+      "forward_seconds": 1.36,
+      "rotation_error_deg": {
+        "median": 0.0,
+        "p90": 3.214,
+        "max": 5.397
+      },
+      "center_error_aligned": {
+        "median": 0.0,
+        "p90": 0.0,
+        "max": 0.0,
+        "scale_ref": 0.6587
+      },
+      "per_camera_rotation_deg": [
+        2.034,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        5.397,
+        0.0,
+        0.0,
+        0.0,
+        1.621,
+        1.642,
+        4.294,
+        3.062,
+        0.0,
+        2.368,
+        3.094,
+        0.0,
+        0.0
+      ]
+    }
+  ]
+}

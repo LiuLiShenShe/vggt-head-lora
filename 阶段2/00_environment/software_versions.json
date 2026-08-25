@@ -1,0 +1,46 @@
+{
+  "_description": "Phase 2.0 environment freeze. Generated 2026-08-25.",
+  "envs": {
+    "vggt_lora": {
+      "conda_path": "/home/test/miniconda3/envs/vggt_lora",
+      "python": "3.10.20",
+      "pytorch": "2.3.1+cu121",
+      "cuda_runtime": "12.1",
+      "torchvision": "0.18.1+cu121",
+      "numpy": "1.26.1",
+      "key_deps": ["einops 0.8.2", "huggingface_hub 1.28.0", "safetensors 0.8.0"]
+    },
+    "da3": {
+      "conda_path": "/home/test/miniconda3/envs/da3",
+      "python": "3.10.20",
+      "pytorch": "2.3.1+cu121",
+      "cuda_runtime": "12.1",
+      "open3d": "0.19.0",
+      "opencv": "4.11.0",
+      "xformers": "0.0.27",
+      "note": "gsplat NOT installed; only affects 3DGS rendering export, not depth/pose inference"
+    },
+    "unidepth": {
+      "conda_path": "/home/test/miniconda3/envs/unidepth",
+      "python": "3.11.15",
+      "pytorch": "2.5.1+cu121",
+      "cuda_runtime": "12.1",
+      "xformers": "0.0.29.post1",
+      "timm": "1.0.28"
+    },
+    "env_geometry_eval": {
+      "status": "TODO (phase 08)",
+      "planned": "python 3.10+, open3d, numpy, scipy for ICP/F-score evaluation"
+    }
+  },
+  "git_commits": {
+    "vggt": "a288dd0f14786c93483e45524328726ab7b1b4ce",
+    "da3": "3d835ec1a5802d64a8b8b15f817a1ab54809bfe4",
+    "unidepth": "cc938d920e5defa388f400a753a1614ca98733cb"
+  },
+  "repo_paths": {
+    "vggt": "/fj/VGGT+head+lora实验/vggt",
+    "da3": "/fj/VGGT+head+lora实验/Depth-Anything-3",
+    "unidepth": "/fj/VGGT+head+lora实验/UnidepthV2"
+  }
+}

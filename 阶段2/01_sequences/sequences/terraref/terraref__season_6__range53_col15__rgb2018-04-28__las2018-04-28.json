@@ -1,0 +1,140 @@
+{
+  "dataset_id": "terra_ref",
+  "sequence_id": "terraref__season_6__range53_col15__rgb2018-04-28__las2018-04-28",
+  "status": "pending_download",
+  "rgb_paths": [],
+  "camera_ids": [
+    "cam_left",
+    "cam_right"
+  ],
+  "intrinsics_path": null,
+  "extrinsics_path": null,
+  "reference_pointcloud": null,
+  "linear_unit": "meter",
+  "camera_convention": "opencv_w2c",
+  "group_key": "range53_col15",
+  "dataset_root": "/fj/VGGT+head+lora实验/阶段1-数据集/TERRA-REF/sensor_data_catalogs/sensors",
+  "source_files": {
+    "rgb_catalog": "/fj/VGGT+head+lora实验/阶段1-数据集/TERRA-REF/sensor_data_catalogs/sensors/season_6_catalog/rgb_geotiff_plots/file_catalog_season6_season_6_catalog_2018-04-28.json",
+    "laser_catalog": "/fj/VGGT+head+lora实验/阶段1-数据集/TERRA-REF/sensor_data_catalogs/sensors/season_6_catalog/laser3d_las_plots/file_catalog_season6_season_6_catalog_2018-04-28.json"
+  },
+  "extra": {
+    "sort_key": "left then right (stereo pair)",
+    "rgb_date": "2018-04-28",
+    "laser_date": "2018-04-28",
+    "date_window_days": 1,
+    "remote_paths": [
+      {
+        "role": "rgb_left",
+        "path": "season-6/sites/ua-mac/Level_1_Plots/rgb_geotiff/2018-04-28/MAC Field Scanner Season 6 Range 53 Column 15/rgb_geotiff_L1_ua-mac_2018-04-28__15-07-53-385_left.tif",
+        "checksum_md5": "28cb6bd3e58bbd319e137fde5b28e446",
+        "size": 15195472
+      },
+      {
+        "role": "rgb_right",
+        "path": "season-6/sites/ua-mac/Level_1_Plots/rgb_geotiff/2018-04-28/MAC Field Scanner Season 6 Range 53 Column 15/rgb_geotiff_L1_ua-mac_2018-04-28__15-07-50-107_right.tif",
+        "checksum_md5": "9b2ee284f9da0a6043b188d60f917dc9",
+        "size": 12260054
+      },
+      {
+        "role": "rgb_left",
+        "path": "season-6/sites/ua-mac/Level_1_Plots/rgb_geotiff/2018-04-28/MAC Field Scanner Season 6 Range 53 Column 15/rgb_geotiff_L1_ua-mac_2018-04-28__15-07-56-383_left.tif",
+        "checksum_md5": "879394d4f086554e131d2e59966d24c7",
+        "size": 4287231
+      },
+      {
+        "role": "rgb_right",
+        "path": "season-6/sites/ua-mac/Level_1_Plots/rgb_geotiff/2018-04-28/MAC Field Scanner Season 6 Range 53 Column 15/rgb_geotiff_L1_ua-mac_2018-04-28__15-07-56-383_right.tif",
+        "checksum_md5": "3ed707a24ca33d0d321e62b931309a8a",
+        "size": 4200105
+      },
+      {
+        "role": "rgb_right",
+        "path": "season-6/sites/ua-mac/Level_1_Plots/rgb_geotiff/2018-04-28/MAC Field Scanner Season 6 Range 53 Column 15/rgb_geotiff_L1_ua-mac_2018-04-28__15-07-53-385_right.tif",
+        "checksum_md5": "3e80cab7b39f3981390e3817b51a2aa8",
+        "size": 14588225
+      },
+      {
+        "role": "rgb_left",
+        "path": "season-6/sites/ua-mac/Level_1_Plots/rgb_geotiff/2018-04-28/MAC Field Scanner Season 6 Range 53 Column 15/rgb_geotiff_L1_ua-mac_2018-04-28__15-07-54-877_left.tif",
+        "checksum_md5": "8e51d73a02f056be93a6b558198fd1d3",
+        "size": 10083926
+      },
+      {
+        "role": "rgb_right",
+        "path": "season-6/sites/ua-mac/Level_1_Plots/rgb_geotiff/2018-04-28/MAC Field Scanner Season 6 Range 53 Column 15/rgb_geotiff_L1_ua-mac_2018-04-28__15-07-50-197_right.tif",
+        "checksum_md5": "ac635c3bf475e938ab6ae84dc9430a9b",
+        "size": 12242738
+      },
+      {
+        "role": "rgb_right",
+        "path": "season-6/sites/ua-mac/Level_1_Plots/rgb_geotiff/2018-04-28/MAC Field Scanner Season 6 Range 53 Column 15/rgb_geotiff_L1_ua-mac_2018-04-28__15-07-50-392_right.tif",
+        "checksum_md5": "9a06040b887d1ed5fb4da2c7a5a76096",
+        "size": 12261446
+      },
+      {
+        "role": "rgb_right",
+        "path": "season-6/sites/ua-mac/Level_1_Plots/rgb_geotiff/2018-04-28/MAC Field Scanner Season 6 Range 53 Column 15/rgb_geotiff_L1_ua-mac_2018-04-28__15-07-54-877_right.tif",
+        "checksum_md5": "a957af5130f9928766621918047d82f1",
+        "size": 9631333
+      },
+      {
+        "role": "rgb_left",
+        "path": "season-6/sites/ua-mac/Level_1_Plots/rgb_geotiff/2018-04-28/MAC Field Scanner Season 6 Range 53 Column 15/rgb_geotiff_L1_ua-mac_2018-04-28__15-07-50-197_left.tif",
+        "checksum_md5": "ed5c5f3a6d413088bd058a60a59df9c5",
+        "size": 12806920
+      },
+      {
+        "role": "rgb_left",
+        "path": "season-6/sites/ua-mac/Level_1_Plots/rgb_geotiff/2018-04-28/MAC Field Scanner Season 6 Range 53 Column 15/rgb_geotiff_L1_ua-mac_2018-04-28__15-07-50-107_left.tif",
+        "checksum_md5": "bd724b6c46e1c50ad6f2e8d8d58208e9",
+        "size": 12820346
+      },
+      {
+        "role": "rgb_left",
+        "path": "season-6/sites/ua-mac/Level_1_Plots/rgb_geotiff/2018-04-28/MAC Field Scanner Season 6 Range 53 Column 15/rgb_geotiff_L1_ua-mac_2018-04-28__15-07-50-392_left.tif",
+        "checksum_md5": "6e62edd126fa84dbb77f50aad7a6e795",
+        "size": 12821196
+      }
+    ],
+    "laser_remote_paths": [
+      {
+        "path": "season-6/sites/ua-mac/Level_1_Plots/laser3d_las/2018-04-28/MAC Field Scanner Season 6 Range 53 Column 15/scanner3DTop_L1_ua-mac_2018-04-28__22-29-11-952_merged_dtm.json",
+        "checksum_md5": "e1b9e5628071cf4ef31cd98abe7eb066",
+        "size": 676
+      },
+      {
+        "path": "season-6/sites/ua-mac/Level_1_Plots/laser3d_las/2018-04-28/MAC Field Scanner Season 6 Range 53 Column 15/scanner3DTop_L1_ua-mac_2018-04-28__22-25-37-481_merged_dtm.json",
+        "checksum_md5": "9645b933bb5eae170ecfdd9c84799561",
+        "size": 676
+      },
+      {
+        "path": "season-6/sites/ua-mac/Level_1_Plots/laser3d_las/2018-04-28/MAC Field Scanner Season 6 Range 53 Column 15/scanner3DTop_L1_ua-mac_2018-04-28__22-27-24-726_merged_dtm.json",
+        "checksum_md5": "23adac38d4510486e0bb064765dd3fd0",
+        "size": 676
+      },
+      {
+        "path": "season-6/sites/ua-mac/Level_1_Plots/laser3d_las/2018-04-28/MAC Field Scanner Season 6 Range 53 Column 15/scanner3DTop_L1_ua-mac_2018-04-28__22-30-59-731_merged_dtm.json",
+        "checksum_md5": "00b4fa13b866f47c360c95b3d3d80309",
+        "size": 676
+      },
+      {
+        "path": "season-6/sites/ua-mac/Level_1_Plots/laser3d_las/2018-04-28/MAC Field Scanner Season 6 Range 53 Column 15/scanner3DTop_L1_ua-mac_2018-04-28__22-32-47-836_merged_dtm.json",
+        "checksum_md5": "49597ec4eadde3dcb931b7e5e3cad41c",
+        "size": 676
+      },
+      {
+        "path": "season-6/sites/ua-mac/Level_1_Plots/laser3d_las/2018-04-28/MAC Field Scanner Season 6 Range 53 Column 15/scanner3DTop_L1_ua-mac_2018-04-28__22-34-34-854_merged_dtm.json",
+        "checksum_md5": "26163fb22926e46ec4897da57ac9d5f0",
+        "size": 676
+      },
+      {
+        "path": "season-6/sites/ua-mac/Level_1_Plots/laser3d_las/2018-04-28/MAC Field Scanner Season 6 Range 53 Column 15/scanner3DTop_L1_ua-mac_2018-04-28__22-23-50-248_merged_dtm.json",
+        "checksum_md5": "70d404b9cc5aa127c8797e0778943f55",
+        "size": 676
+      }
+    ],
+    "download_via": "Globus (UA-MAC endpoint); paths relative to TERRA-REF Globus root",
+    "n_rgb_candidates": 12
+  }
+}

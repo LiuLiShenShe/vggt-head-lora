@@ -1,0 +1,13 @@
+evidence_id,dataset_id,evidence_type,title,url,accessed_at,claim_supported,verification_status,phase1_snapshot_required,notes
+E001,must_c,official_landing,MUST-C Dataset,https://www.ipb.uni-bonn.de/data/MuST-C/,2026-08-24,包含六种作物和RGB/LiDAR等多传感器且提供5GB单plot样例,VERIFIED,YES,
+E002,must_c,official_license,MUST-C License Section,https://www.ipb.uni-bonn.de/data/MuST-C/,2026-08-24,数据采用CC-BY-4.0,VERIFIED,YES,
+E003,wheat3dgs,official_repository,Wheat3DGS official repository,https://github.com/zdwww/Wheat-3DGS,2026-08-24,提供七个plot的数据入口和images/COLMAP/masks目录说明,VERIFIED,YES,
+E004,wheat3dgs,code_license,Wheat3DGS repository license,https://github.com/zdwww/Wheat-3DGS,2026-08-24,仓库代码声明MIT但不能证明Google Drive数据许可,VERIFIED_LIMITED,YES,必须单独取得数据许可证据
+E005,wheat3dgs,release_status,Wheat3DGS TODO section,https://github.com/zdwww/Wheat-3DGS,2026-08-24,包含laser scans的数据发布仍列为TODO,VERIFIED,YES,
+E006,plant_view_3d,official_dataset,UoN ACID datasets,https://plantimages.nottingham.ac.uk/datasets.html,2026-08-24,报告20株112个plant-date且样例约9.6GB全量约207GB,VERIFIED,YES,
+E007,plant_view_3d,data_repository,GigaDB dataset 102661,https://doi.org/10.5524/102661,2026-08-24,3D Plant View关联数据入口,VERIFIED,YES,
+E008,plant_view_3d,repository_license_policy,GigaDB Terms of Use,https://gigadb.org/term,2026-08-24,GigaScience关联数据默认CC0除非另有说明,VERIFIED_POLICY,YES,阶段1需确认102661没有例外条款
+E009,terra_ref,official_access,TERRA-REF Access Data,https://www.terraref.org/data/access-data.html,2026-08-24,提供传感器数据和plot级表型访问说明,VERIFIED,YES,
+E010,terra_ref,official_license,TERRA-REF Data Use Policy,https://docs.terraref.org/user-manual/data-use-policy,2026-08-24,发布数据采用CC0,VERIFIED,YES,
+E011,terra_ref,data_repository,TERRA-REF Dryad,https://doi.org/10.5061/dryad.4b8gtht99,2026-08-24,Dryad包含metadata sensor catalogs与trait_data且总量约800MB,VERIFIED,YES,
+

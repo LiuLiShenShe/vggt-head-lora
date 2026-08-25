@@ -1,0 +1,95 @@
+project: VGGT-MetricPhen
+phase: 0
+protocol_version: v0.1.0-phase0
+frozen_at: "2026-08-24"
+status: FROZEN_FOR_PHASE1_AUDIT
+owner_approval: PENDING_USER_SIGNOFF
+
+research_scope:
+  primary:
+    - plant_height
+    - canopy_width_row
+    - canopy_width_cross_row
+    - canopy_max_width
+    - canopy_projected_area
+  extension:
+    - visible_functional_leaf_length
+    - visible_functional_leaf_width
+    - leaf_measurability
+  prohibited_claims:
+    - recovery_of_all_occluded_leaves
+    - centimeter_accuracy_without_physical_validation
+    - cross_year_generalization_from_single_year_data
+    - metric_depth_as_ground_truth
+
+model_scope:
+  geometry_backbone: VGGT
+  metric_depth_candidates:
+    primary_candidate: DA3Metric-Large
+    key_comparator: UniDepthV2
+    optional_comparators:
+      - MoGe-2
+      - Metric3Dv2
+      - Depth-Pro
+  scale_module: MSAM
+  phenotype_module: Unified_Phenotyping_Head
+  adaptation: VGGT_last_global_attention_LoRA
+
+public_datasets:
+  - MuST-C
+  - Wheat3DGS
+  - 3D-Plant-View-Synthesis
+  - TERRA-REF
+
+normative_files:
+  - 01_phenotype_protocol.md
+  - 02_identity_leaf_split_protocol.md
+  - 03_directory_and_manifest_spec.md
+  - 04_quality_and_grading.md
+  - config/dataset_registry.yaml
+  - config/controlled_vocabularies.yaml
+  - schemas/sample_manifest.schema.json
+  - schemas/leaf_measurement.schema.json
+  - templates/dataset_admission_audit.csv
+  - templates/source_evidence.csv
+  - templates/dataset_file_audit_template.csv
+  - templates/sample_manifest_template.csv
+  - templates/leaf_measurement_template.csv
+  - templates/phase0_freeze_checklist.csv
+
+change_control:
+  definitions_locked: true
+  identity_rules_locked: true
+  split_rules_locked: true
+  license_gate_locked: true
+  allowed_without_version_bump:
+    - fill_empty_audit_fields
+    - add_checksums
+    - add_downloaded_file_counts
+    - correct_nonsemantic_typography
+  requires_minor_version_bump:
+    - add_optional_metadata_field
+    - add_public_dataset
+    - add_quality_code
+  requires_major_version_bump:
+    - change_phenotype_definition
+    - change_split_unit
+    - change_leaf_identity_semantics
+    - allow_test_time_trait_based_scale_fitting
+
+phase_gates:
+  phase1_dataset_audit:
+    requires:
+      - phase0_freeze_checklist_signed
+      - official_download_url_recorded
+      - official_license_evidence_recorded
+  phase2_geometry_smoke_test:
+    requires:
+      - at_least_three_datasets_file_audit_pass
+      - rgb_camera_mapping_pass_for_each_used_sequence
+      - units_and_coordinate_system_recorded
+  phase3_scale_pilot:
+    requires:
+      - camera_intrinsic_protocol_pass
+      - physical_scale_ground_truth_protocol_pass
+      - no_test_scale_leakage_protocol_pass

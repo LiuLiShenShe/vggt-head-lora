@@ -1,0 +1,12 @@
+{
+  "_input_images": [
+    "no_overlap_1.png",
+    "no_overlap_2.jpg",
+    "no_overlap_3.jpg"
+  ],
+  "unidepth_v2": {
+    "max_abs_diff_depth": 0.0,
+    "deterministic": true,
+    "precision_mode": "fp32"
+  }
+}

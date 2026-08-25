@@ -1,0 +1,25 @@
+# ===== 大体积数据与结果（远超 GitHub 限制，本地保留）=====
+阶段1-数据集/
+
+# 阶段2 的大体积数值输出
+阶段2/**/*.npy
+阶段2/**/*.ply
+阶段2/**/*.las
+阶段2/**/*.zip
+
+# 嵌套仓库的 git 元数据已备份至 /tmp/nested_git_backup
+**/.gitignore.bak
+
+# ===== 通用忽略 =====
+__pycache__/
+**/__pycache__/
+*.py[cod]
+*.so
+.venv/
+venv/
+.ipynb_checkpoints/
+.hydra/
+output/
+ckpt/
+*.log
+.DS_Store

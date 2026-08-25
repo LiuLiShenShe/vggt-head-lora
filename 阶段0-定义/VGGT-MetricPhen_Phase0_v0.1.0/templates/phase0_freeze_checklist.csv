@@ -1,0 +1,17 @@
+check_id,category,requirement,status,evidence_file,owner_signoff,notes
+P0-01,phenotype,株高端点定义已冻结,COMPLETE,01_phenotype_protocol.md,PENDING,
+P0-02,phenotype,双向冠幅与冠层面积定义已冻结,COMPLETE,01_phenotype_protocol.md,PENDING,
+P0-03,phenotype,叶长叶宽与可测性定义已冻结,COMPLETE,01_phenotype_protocol.md,PENDING,
+P0-04,coordinate,地面重力与行向坐标系已冻结,COMPLETE,01_phenotype_protocol.md,PENDING,
+P0-05,identity,plant-date与sequence身份规则已冻结,COMPLETE,02_identity_leaf_split_protocol.md,PENDING,
+P0-06,identity,leaf_uid与leaf_obs_id规则已冻结,COMPLETE,02_identity_leaf_split_protocol.md,PENDING,
+P0-07,split,plot/plant分组和防泄漏规则已冻结,COMPLETE,02_identity_leaf_split_protocol.md,PENDING,
+P0-08,data,目录与manifest字段已冻结,COMPLETE,03_directory_and_manifest_spec.md,PENDING,
+P0-09,quality,L1-L5和QA-QR规范已冻结,COMPLETE,04_quality_and_grading.md,PENDING,
+P0-10,license,MuST-C许可准入已核验,COMPLETE,templates/dataset_admission_audit.csv,PENDING,CC-BY-4.0
+P0-11,license,Wheat3DGS设为有条件准入,COMPLETE,templates/dataset_admission_audit.csv,PENDING,数据独立许可未固定
+P0-12,license,3D Plant View许可准入已核验,COMPLETE,templates/dataset_admission_audit.csv,PENDING,依据GigaDB CC0政策且阶段1保存条目快照
+P0-13,license,TERRA-REF许可准入已核验,COMPLETE,templates/dataset_admission_audit.csv,PENDING,CC0
+P0-14,scope,公开数据仅承担已批准角色,COMPLETE,config/dataset_registry.yaml,PENDING,
+P0-15,gate,项目负责人确认本版本作为阶段1唯一入口,PENDING,00_FREEZE_MANIFEST.yaml,PENDING,需要用户签署
+

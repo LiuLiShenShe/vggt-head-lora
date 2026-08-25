@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://vggt-metricphen.local/schemas/leaf_measurement.schema.json",
+  "title": "VGGT-MetricPhen leaf observation",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "leaf_obs_id",
+    "leaf_uid",
+    "plant_id",
+    "plant_date_id",
+    "leaf_match_status",
+    "visibility_ratio",
+    "measurable",
+    "label_source"
+  ],
+  "properties": {
+    "leaf_obs_id": {"type": "string", "minLength": 1},
+    "leaf_uid": {"type": "string", "minLength": 1},
+    "plant_id": {"type": "string", "minLength": 1},
+    "plant_date_id": {"type": "string", "minLength": 1},
+    "leaf_rank": {"type": ["integer", "null"], "minimum": 1},
+    "leaf_age_class": {"type": ["string", "null"]},
+    "leaf_match_status": {"enum": ["confirmed", "provisional", "uncertain", "not_applicable"]},
+    "visibility_ratio": {"type": "number", "minimum": 0, "maximum": 1},
+    "base_visible": {"type": "boolean"},
+    "tip_visible": {"type": "boolean"},
+    "centerline_coverage": {"type": ["number", "null"], "minimum": 0, "maximum": 1},
+    "measurable": {"type": "boolean"},
+    "leaf_length_cm": {"type": ["number", "null"], "minimum": 0},
+    "leaf_width_cm": {"type": ["number", "null"], "minimum": 0},
+    "leaf_width_position_ratio": {"type": ["number", "null"], "minimum": 0, "maximum": 1},
+    "measurement_state": {"enum": ["natural", "manually_straightened", "detached", "unknown"]},
+    "occlusion": {"type": ["string", "null"]},
+    "curling": {"type": ["string", "null"]},
+    "damage": {"type": ["string", "null"]},
+    "repeat_id": {"type": ["string", "null"]},
+    "observer_id": {"type": ["string", "null"]},
+    "instrument": {"type": ["string", "null"]},
+    "label_source": {"enum": ["manual_single", "manual_repeated", "tls_lidar", "scanner_derived", "pointcloud_derived", "image_derived", "model_pseudo_label", "unavailable"]},
+    "uncertainty_cm": {"type": ["number", "null"], "minimum": 0},
+    "evidence_paths": {"type": "array", "items": {"type": "string"}},
+    "notes": {"type": ["string", "null"]}
+  },
+  "allOf": [
+    {
+      "if": {"properties": {"measurable": {"const": true}}, "required": ["measurable"]},
+      "then": {
+        "required": ["leaf_length_cm", "leaf_width_cm", "base_visible", "tip_visible", "measurement_state"],
+        "properties": {
+          "leaf_length_cm": {"type": "number", "exclusiveMinimum": 0},
+          "leaf_width_cm": {"type": "number", "exclusiveMinimum": 0}
+        }
+      }
+    }
+  ]
+}

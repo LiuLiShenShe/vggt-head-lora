@@ -1,0 +1,158 @@
+{
+  "model_name": "facebook/VGGT-1B",
+  "checkpoint_version": {
+    "repo_id": "facebook/VGGT-1B",
+    "sha256": "f164acf60724910d8fe1578bb499d800850c7bb0948db7555c413f9fbe60467e"
+  },
+  "input_image_sha256": [
+    "6424b8c92d22c054feaba9b4e6e26dadcfb2e68e3fee47f3b6d5fb1fbd9c5b2f",
+    "70f0c2dd269f213ea9332c43119c26a3d8e563e2dba5d6d44e08ea0719730934",
+    "9e0ba299d473315d7b6ed6fbed475f11b1a2796b647dc0f6edde2ad07b963b0e",
+    "383686260832aa7a916af10da727225091c391ee817710d5d65b75e95a305849",
+    "aa063dc2ac79fb7d474931ed8673ac958e8306783dccb201de80ce827b557622",
+    "d598c2915a54237a0ed2495cc5371a3be7e428b19bcd5a1ec1efb2b6aaff883b",
+    "00adc4bca94057010a42b483afc69c0a0a2a6c8cda928192ca7e6088c1fae8eb",
+    "c2f350fc229b890e551922cc596e81e82b8861f24f462b96fd7e4905b40c5caa",
+    "762833a1931b38e52fa3527ec91fe94c9bf1889c21a6c18ce1ed262b406adb29",
+    "2c5927faac52d357cfd3fb2d27206758e6413d3ca28e6d7d939590fd718730a8",
+    "36dd21cdcf0f9d3555bd67253ba3210951b8198a3249707db906191264a8bdbc",
+    "c78a9a956714f8072d123f3cf164acb45e6ba499beb3a73dfe067f9a54a4e3ee",
+    "bff1579f08564f3e28e7cbe8b49ce615c1543673bd51a8a321c55d741b9eec83",
+    "6765dd2d8c053a9c451a4e98031c1f4cdf53ad752e6b81252fd4f2ad72a39764",
+    "b064706832549df7dbfab0c4f6994cd1a0dca7881eaa9b4f6ad7c961dade158c",
+    "8ab932699d097bd30037f2c995477a2cbd28a82e69ae39cdb83536ec246d9148",
+    "0d200617b13965755140d85186bc9c6be088bb8d1594bd3a607f79b94ceec029",
+    "3c055cabbb7ac455a59c94276dc92b2f7b2ccbd492026d3866be879fd81b6750",
+    "116782e56a7ea8ccc1355ef5241443cc00c5124ae29a5cec457cfbc40a341cd5",
+    "29626588ca52df650eaf3b0b95495725168cbe50d61eefc6a7b9e03d25ab9ec9"
+  ],
+  "image_order": [
+    "nikon_0.jpeg",
+    "nikon_1.jpeg",
+    "nikon_2.jpeg",
+    "nikon_3.jpeg",
+    "nikon_4.jpeg",
+    "nikon_5.jpeg",
+    "nikon_6.jpeg",
+    "nikon_7.jpeg",
+    "nikon_8.jpeg",
+    "nikon_9.jpeg",
+    "nikon_10.jpeg",
+    "nikon_11.jpeg",
+    "nikon_12.jpeg",
+    "nikon_13.jpeg",
+    "nikon_14.jpeg",
+    "nikon_15.jpeg",
+    "nikon_16.jpeg",
+    "nikon_17.jpeg",
+    "nikon_18.jpeg",
+    "nikon_19.jpeg"
+  ],
+  "resize_crop_params": "load_and_preprocess_images(mode='crop'), target 518x350",
+  "intrinsics_transform": "pose_encoding_to_extri_intri; cx,cy=W/2,H/2; fov→fx,fy",
+  "precision_mode": "torch.bfloat16 autocast (official demo mode)",
+  "code_commit_hash": "a288dd0f14786c93483e45524328726ab7b1b4ce",
+  "extra": {
+    "S": 20
+  },
+  "sequence_id": "mustc__plot198__230613__ugv__pos00",
+  "dataset_id": "mustc",
+  "output_shapes": {
+    "pose_enc": [
+      20,
+      9
+    ],
+    "extrinsic_w2c": [
+      20,
+      3,
+      4
+    ],
+    "intrinsic": [
+      20,
+      3,
+      3
+    ],
+    "depth": [
+      20,
+      350,
+      518
+    ],
+    "point_map_unprojected": [
+      20,
+      350,
+      518,
+      3
+    ]
+  },
+  "forward_seconds": 1.86,
+  "peak_gpu_mem_gb": 5.78,
+  "tokens_saved": true,
+  "interface_verified": true,
+  "sanity": {
+    "depth_valid_positive_ratio": 1.0,
+    "nan_inf_counts": {
+      "depth": 0,
+      "depth_conf": 0,
+      "points_direct": 0,
+      "points_unprojected": 0
+    },
+    "focal_positive_ratio": 1.0,
+    "camera_center_min_pairwise_dist": 0.07366553694009781,
+    "camera_collapse": false,
+    "pointcloud_flatness_eigratio": 0.2067224761789675,
+    "pointcloud_flattened": false,
+    "token_nan_inf_count": 0
+  },
+  "primary_pointmap_candidate": "point_map_unprojected (per official recommendation)",
+  "pose_eval": {
+    "sim3_scale": 3.262636,
+    "ref_center_spread": 1.7509,
+    "center_error_aligned": {
+      "median": 0.11009,
+      "p90": 0.19976,
+      "max": 0.26708,
+      "relative_to_spread": 0.0629
+    },
+    "rotation_error_deg": {
+      "median": 98.719,
+      "mean": 84.653,
+      "p90": 133.274,
+      "max": 137.442
+    },
+    "relative_rotation_error_deg": {
+      "median": 2.778,
+      "mean": 2.592,
+      "p90": 4.683,
+      "max": 6.337,
+      "note": "相机间相对朝向误差,消除全局世界系/相机系模糊性,反映模型真实位姿精度"
+    },
+    "global_alignment_rotation_deg": 161.599,
+    "trajectory_direction": {
+      "mean_cosine": 0.997,
+      "median_cosine": 0.9978,
+      "n_pairs": 19
+    },
+    "per_camera_rotation_deg": [
+      0.37,
+      5.965,
+      137.442,
+      133.125,
+      134.614,
+      72.582,
+      37.229,
+      36.356,
+      132.299,
+      126.811,
+      126.583,
+      64.441,
+      122.497,
+      124.677,
+      4.384,
+      122.434,
+      131.048,
+      41.289,
+      75.003,
+      63.915
+    ]
+  }
+}

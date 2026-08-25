@@ -1,0 +1,2 @@
+leaf_obs_id,leaf_uid,plant_id,plant_date_id,leaf_rank,leaf_age_class,leaf_match_status,visibility_ratio,base_visible,tip_visible,centerline_coverage,measurable,leaf_length_cm,leaf_width_cm,leaf_width_position_ratio,measurement_state,occlusion,curling,damage,repeat_id,observer_id,instrument,label_source,uncertainty_cm,evidence_paths_json,notes
+

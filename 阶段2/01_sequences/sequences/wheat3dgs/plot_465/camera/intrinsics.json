@@ -1,0 +1,10 @@
+{
+  "model": "PINHOLE",
+  "width": 4095,
+  "height": 2998,
+  "fl_x": 10106.234940085491,
+  "fl_y": 10106.234940085491,
+  "cx": 2027.0,
+  "cy": 1524.0,
+  "source": "sparse/0/cameras.txt"
+}

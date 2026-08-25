@@ -1,0 +1,25 @@
+{
+  "_description": "GPU environment freeze. Generated 2026-08-25 via nvidia-smi.",
+  "gpus": [
+    {
+      "index": 0,
+      "name": "NVIDIA RTX A6000",
+      "uuid": "GPU-db3ec610-630b-fa4f-66f2-b69f269ca856",
+      "memory_total_mib": 49140,
+      "compute_capability": "8.6",
+      "notes": "shared GPU - ~15.5GB already in use by other processes at freeze time; use CUDA_VISIBLE_DEVICES=1 for exclusive runs if needed"
+    },
+    {
+      "index": 1,
+      "name": "NVIDIA RTX A6000",
+      "uuid": "GPU-6836f890-98b2-5891-07ef-675c25199c65",
+      "memory_total_mib": 49140,
+      "compute_capability": "8.6"
+    }
+  ],
+  "gpu_count": 2,
+  "driver_version": "590.48.01",
+  "cuda_driver_version": "13.1",
+  "nvcc_toolkit": "cuda_12.6",
+  "bf16_supported": true
+}

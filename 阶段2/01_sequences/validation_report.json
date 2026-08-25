@@ -1,0 +1,166 @@
+{
+  "sequences": {
+    "mustc/plot198__230613__ugv__pos00.json": {
+      "ok": true,
+      "errors": [],
+      "sequence_id": "mustc__plot198__230613__ugv__pos00",
+      "status": "ready",
+      "n_views": 20
+    },
+    "mustc/plot198__230613__ugv__pos01.json": {
+      "ok": true,
+      "errors": [],
+      "sequence_id": "mustc__plot198__230613__ugv__pos01",
+      "status": "ready",
+      "n_views": 20
+    },
+    "mustc/plot198__230613__ugv__pos02.json": {
+      "ok": true,
+      "errors": [],
+      "sequence_id": "mustc__plot198__230613__ugv__pos02",
+      "status": "ready",
+      "n_views": 20
+    },
+    "mustc/plot198__230613__ugv__pos03.json": {
+      "ok": true,
+      "errors": [],
+      "sequence_id": "mustc__plot198__230613__ugv__pos03",
+      "status": "ready",
+      "n_views": 20
+    },
+    "plant_view/langdon_4__05-03-24.json": {
+      "ok": true,
+      "errors": [],
+      "sequence_id": "plantview__langdon_4__05-03-24",
+      "status": "ready",
+      "n_views": 320
+    },
+    "plant_view/langdon_4__12-03-24.json": {
+      "ok": true,
+      "errors": [],
+      "sequence_id": "plantview__langdon_4__12-03-24",
+      "status": "ready",
+      "n_views": 320
+    },
+    "plant_view/langdon_4__13-02-24.json": {
+      "ok": true,
+      "errors": [],
+      "sequence_id": "plantview__langdon_4__13-02-24",
+      "status": "ready",
+      "n_views": 340
+    },
+    "plant_view/langdon_4__15-04-24.json": {
+      "ok": true,
+      "errors": [],
+      "sequence_id": "plantview__langdon_4__15-04-24",
+      "status": "ready",
+      "n_views": 318
+    },
+    "plant_view/langdon_4__19-03-24.json": {
+      "ok": true,
+      "errors": [],
+      "sequence_id": "plantview__langdon_4__19-03-24",
+      "status": "ready",
+      "n_views": 320
+    },
+    "plant_view/langdon_4__20-02-24.json": {
+      "ok": true,
+      "errors": [],
+      "sequence_id": "plantview__langdon_4__20-02-24",
+      "status": "ready",
+      "n_views": 338
+    },
+    "terraref/terraref__season_6__range51_col13__rgb2018-04-28__las2018-04-28.json": {
+      "ok": true,
+      "errors": [],
+      "sequence_id": "terraref__season_6__range51_col13__rgb2018-04-28__las2018-04-28",
+      "status": "pending_download",
+      "n_views": 0
+    },
+    "terraref/terraref__season_6__range52_col2__rgb2018-04-28__las2018-04-28.json": {
+      "ok": true,
+      "errors": [],
+      "sequence_id": "terraref__season_6__range52_col2__rgb2018-04-28__las2018-04-28",
+      "status": "pending_download",
+      "n_views": 0
+    },
+    "terraref/terraref__season_6__range53_col15__rgb2018-04-28__las2018-04-28.json": {
+      "ok": true,
+      "errors": [],
+      "sequence_id": "terraref__season_6__range53_col15__rgb2018-04-28__las2018-04-28",
+      "status": "pending_download",
+      "n_views": 0
+    },
+    "wheat3dgs/plot_461.json": {
+      "ok": true,
+      "errors": [],
+      "sequence_id": "wheat3dgs__plot_461",
+      "status": "ready",
+      "n_views": 36
+    },
+    "wheat3dgs/plot_462.json": {
+      "ok": true,
+      "errors": [],
+      "sequence_id": "wheat3dgs__plot_462",
+      "status": "ready",
+      "n_views": 36
+    },
+    "wheat3dgs/plot_463.json": {
+      "ok": true,
+      "errors": [],
+      "sequence_id": "wheat3dgs__plot_463",
+      "status": "ready",
+      "n_views": 36
+    },
+    "wheat3dgs/plot_464.json": {
+      "ok": true,
+      "errors": [],
+      "sequence_id": "wheat3dgs__plot_464",
+      "status": "ready",
+      "n_views": 36
+    },
+    "wheat3dgs/plot_465.json": {
+      "ok": true,
+      "errors": [],
+      "sequence_id": "wheat3dgs__plot_465",
+      "status": "ready",
+      "n_views": 36
+    },
+    "wheat3dgs/plot_466.json": {
+      "ok": true,
+      "errors": [],
+      "sequence_id": "wheat3dgs__plot_466",
+      "status": "ready",
+      "n_views": 36
+    },
+    "wheat3dgs/plot_467.json": {
+      "ok": true,
+      "errors": [],
+      "sequence_id": "wheat3dgs__plot_467",
+      "status": "ready",
+      "n_views": 36
+    }
+  },
+  "summary": {
+    "total": 20,
+    "passed": 20,
+    "by_dataset": {
+      "mustc": {
+        "total": 4,
+        "passed": 4
+      },
+      "plant_view": {
+        "total": 6,
+        "passed": 6
+      },
+      "terraref": {
+        "total": 3,
+        "passed": 3
+      },
+      "wheat3dgs": {
+        "total": 7,
+        "passed": 7
+      }
+    }
+  }
+}

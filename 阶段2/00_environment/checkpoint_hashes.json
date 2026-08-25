@@ -1,0 +1,27 @@
+{
+  "_description": "SHA256 of resolved blob files in the local HF cache. Generated 2026-08-25.",
+  "vggt": {
+    "repo_id": "facebook/VGGT-1B",
+    "checkpoint_name": "model.safetensors",
+    "size_bytes": 5026367224,
+    "sha256": "f164acf60724910d8fe1578bb499d800850c7bb0948db7555c413f9fbe60467e",
+    "precision_mode_used_in_smoke": "bfloat16 autocast (Ampere CC 8.6)"
+  },
+  "da3metric": {
+    "repo_id": "depth-anything/DA3METRIC-LARGE",
+    "checkpoint_name": "model.safetensors",
+    "size_bytes": 1336734448,
+    "sha256": "bbea5b0b3ee389849cffa7ddae89de064a90abd2b055fc5aa99aac68db324776",
+    "variant": "DA3METRIC-LARGE (0.35B, monocular metric depth)",
+    "metric_conversion": "metric_depth = focal * net_output / 300.0",
+    "precision_mode_used_in_smoke": "fp32 inference() default"
+  },
+  "unidepth_v2": {
+    "repo_id": "lpiccinelli/unidepth-v2-vitl14",
+    "checkpoint_name": "model.safetensors",
+    "size_bytes": 1415383604,
+    "sha256": "ba73d3de735302ccc64a50f1e557122050c4b1893e6060b28dba05d6af3e67c6",
+    "variant": "ViT-L (alternatives: vits14 / vitb14)",
+    "precision_mode_used_in_smoke": "fp32"
+  }
+}

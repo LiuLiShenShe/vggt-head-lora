@@ -1,0 +1,142 @@
+registry_version: v0.1.0-phase0
+last_verified: "2026-08-24"
+
+datasets:
+  must_c:
+    official_name: Multi-Sensor and Multi-Temporal Dataset of Multiple Crops
+    short_name: MuST-C
+    official_url: https://www.ipb.uni-bonn.de/data/MuST-C/
+    code_url: https://github.com/PRBonn/MuST-C
+    paper_doi: 10.1038/s41597-025-06462-y
+    sample_size: 5_GB
+    data_license: CC-BY-4.0
+    license_status: VERIFIED
+    license_evidence_url: https://www.ipb.uni-bonn.de/data/MuST-C/
+    phase0_admission: PASS
+    expected_max_level: L3
+    identity_mapping:
+      site_id: MUSTC_CKA
+      group_key: [site_id, plot_id]
+      plant_identity_available: false
+    approved_roles:
+      - field_geometry_validation
+      - cross_platform_validation
+      - plot_level_canopy_analysis
+      - rgb_lidar_alignment_audit
+    forbidden_roles:
+      - unified_four_trait_supervision
+      - leaf_id_ground_truth
+    phase1_minimum_download:
+      - official_5GB_sample
+    phase1_checks:
+      - rgb_camera_correspondence
+      - scaled_extrinsics_and_coordinate_units
+      - plot_extraction_mapping
+      - lidar_rgb_temporal_alignment
+      - sample_license_snapshot
+
+  wheat3dgs:
+    official_name: Wheat3DGS In-field 3D Reconstruction Instance Segmentation and Phenotyping of Wheat Heads
+    short_name: Wheat3DGS
+    official_url: https://github.com/zdwww/Wheat-3DGS
+    data_url: https://drive.google.com/drive/folders/1DJPs_E8-93dCysYkQ0-uxHrAcZGTZiVh
+    paper_doi: 10.48550/arXiv.2504.06978
+    code_license: MIT
+    data_license: UNVERIFIED
+    license_status: REQUIRES_FILE_LEVEL_EVIDENCE
+    license_evidence_url: null
+    phase0_admission: CONDITIONAL
+    expected_max_level: L3
+    identity_mapping:
+      site_id: W3DGS_ETH
+      group_key: [plot_id]
+      official_plots: [plot_461, plot_462, plot_463, plot_464, plot_465, plot_466, plot_467]
+      plant_identity_available: false
+    approved_roles_after_license_verification:
+      - dense_wheat_plot_geometry
+      - posed_multiview_rgb
+      - wheat_head_instance_baseline
+      - colmap_camera_validation
+    forbidden_roles:
+      - whole_plant_four_trait_supervision
+      - leaf_length_width_ground_truth
+      - tls_upper_bound_until_released_and_audited
+    phase1_minimum_download:
+      - one_plot_archive
+    phase1_checks:
+      - independent_data_license_document
+      - images_36_expected
+      - colmap_sparse_mapping
+      - transforms_json_consistency
+      - masks_and_manual_label_mapping
+      - tls_release_status
+
+  plant_view_3d:
+    official_name: High-fidelity wheat plant reconstruction using 3D Gaussian Splatting and Neural Radiance Fields
+    short_name: 3D-Plant-View-Synthesis
+    official_url: https://plantimages.nottingham.ac.uk/datasets.html
+    data_doi: 10.5524/102661
+    code_url: https://github.com/Lewis-Stuart-11/3D-Plant-View-Synthesis
+    code_license: Apache-2.0
+    data_license: CC0
+    license_status: VERIFIED_VIA_GIGADB_POLICY_UNLESS_ITEM_STATES_OTHERWISE
+    license_evidence_url: https://gigadb.org/term
+    phase0_admission: PASS
+    expected_max_level: L3
+    reported_size:
+      sample: 9.6_GB
+      full: 207_GB
+    identity_mapping:
+      site_id: 3DPVS_UON
+      group_key: [plant_id]
+      reported_physical_plants: 20
+      reported_plant_date_instances: 112
+    approved_roles:
+      - controlled_geometry_validation
+      - camera_transform_validation
+      - view_count_ablation
+      - scan_alignment_validation
+    forbidden_roles:
+      - field_generalization_claim
+      - unified_four_trait_supervision
+    phase1_minimum_download:
+      - official_sample_or_one_plant_date
+    phase1_checks:
+      - per_item_license_snapshot
+      - original_robot_transform_mapping
+      - colmap_transform_mapping
+      - groundtruth_scan_date_coverage
+      - depth_and_mask_provenance
+
+  terra_ref:
+    official_name: TERRA-REF An Open Reference Data Set from High Resolution Genomics Phenomics and Imaging Sensors
+    short_name: TERRA-REF
+    official_url: https://www.terraref.org/data/access-data.html
+    data_doi: 10.5061/dryad.4b8gtht99
+    data_license: CC0
+    license_status: VERIFIED
+    license_evidence_url: https://docs.terraref.org/user-manual/data-use-policy
+    phase0_admission: PASS
+    expected_max_level: L3
+    identity_mapping:
+      site_id: TERRA_MARICOPA
+      group_key: [season, plot_id]
+      plant_identity_available: generally_false
+    approved_roles:
+      - external_field_validation
+      - plot_level_rgb_scanner_alignment
+      - high_throughput_data_engineering
+      - plot_phenotype_comparison
+    forbidden_roles:
+      - unified_per_plant_four_trait_supervision
+      - leaf_id_ground_truth
+    phase1_minimum_download:
+      - dryad_metadata_and_trait_data
+      - one_small_plot_sensor_subset_if_available
+    phase1_checks:
+      - rgb_stereo_plot_clip_mapping
+      - scanner_pointcloud_plot_mapping
+      - timestamp_alignment
+      - season_and_plot_identity
+      - trait_definition_mapping
+      - globus_or_public_endpoint_access

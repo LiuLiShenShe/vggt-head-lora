@@ -1,0 +1,103 @@
+version: v0.1.0-phase0
+
+label_source:
+  - manual_single
+  - manual_repeated
+  - tls_lidar
+  - scanner_derived
+  - pointcloud_derived
+  - image_derived
+  - model_pseudo_label
+  - unavailable
+
+scale_source:
+  - metric_depth_da3
+  - metric_depth_unidepth_v2
+  - metric_depth_moge2
+  - charuco
+  - known_length
+  - calibrated_baseline
+  - rtk_gcp
+  - lidar_tls_alignment
+  - global_train_scale
+  - unavailable
+
+ground_source:
+  - visible_ground_ransac
+  - imu
+  - plot_edge
+  - empty_ground_reference
+  - known_camera_height
+  - manual_control_points
+  - robot_world_frame
+  - unavailable
+
+height_endpoint_policy:
+  - highest_vegetative_point
+  - highest_reproductive_point_excluding_awn
+  - highest_reproductive_point_including_awn
+  - highest_living_point
+
+leaf_match_status:
+  - confirmed
+  - provisional
+  - uncertain
+  - not_applicable
+
+measurement_state:
+  - natural
+  - manually_straightened
+  - detached
+  - unknown
+
+quality_grade:
+  - QA
+  - QB
+  - QC
+  - QR
+
+data_level:
+  - L1
+  - L2
+  - L3
+  - L4
+  - L5
+
+split:
+  - train
+  - validation
+  - test
+  - calibration
+  - external_test
+  - unassigned
+
+admission_status:
+  - PASS
+  - CONDITIONAL
+  - FAIL
+  - PENDING
+
+license_status:
+  - VERIFIED
+  - VERIFIED_VIA_REPOSITORY_POLICY
+  - REQUIRES_FILE_LEVEL_EVIDENCE
+  - UNVERIFIED
+
+defect_codes:
+  - Q01_BLUR
+  - Q02_OVEREXPOSURE
+  - Q03_UNDEREXPOSURE
+  - Q04_WIND_MOTION
+  - Q05_INSUFFICIENT_VIEWS
+  - Q06_LOW_OVERLAP
+  - Q07_CAMERA_MISMATCH
+  - Q08_SCALE_UNSTABLE
+  - Q09_GROUND_UNOBSERVED
+  - Q10_INSTANCE_MERGE
+  - Q11_LEAF_ID_UNCERTAIN
+  - Q12_LABEL_DEFINITION_UNKNOWN
+  - Q13_LICENSE_UNVERIFIED
+  - Q14_COORDINATE_UNKNOWN
+  - Q15_DUPLICATE_LEAKAGE_RISK
+  - Q16_CORRUPT_FILE
+
