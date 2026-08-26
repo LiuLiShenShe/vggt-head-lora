@@ -54,11 +54,24 @@ def sanity_checks(depth, depth_conf, pts_direct, pts_unproj,
     else:
         cam_min_dist, collapse_cam = None, False
 
-    # 点云平面度:协方差最小特征值 / 最大特征值
+    # 点云平面度:协方差最小特征值 / 最大特征值。
+    # 注意:仅排除"单一数学平面"坍缩;多个错误朝向的深度面叠加也可得高比值,
+    # 不能证明结构正确(结构正确性由 checks_v2 对齐图 + 四路判别实验判断)。
     sub = pts_unproj[::max(1, len(pts_unproj) // 8)].reshape(-1, 3)[::37]
     cov = np.cov(sub.T)
     ev = np.linalg.eigvalsh(cov)
     flatness = float(ev[0] / (ev[-1] + 1e-12))
+
+    # 相机分布尺度归一化指标(VGGT 世界系尺度任意,固定绝对阈值不可比):
+    # 中心协方差特征值占比 + 轨迹总长/平均径向跨度;坍缩判据改为尺度相对:
+    # 中心平均径向跨度 < 1% 场景深度跨度 → 视为相机坍缩。
+    cam_span = float(np.linalg.norm(centers - centers.mean(0), axis=1).mean()) if len(centers) > 1 else None
+    traj_len = float(np.linalg.norm(np.diff(centers, axis=0), axis=1).sum()) if len(centers) > 2 else None
+    cov_c = np.cov(centers.T) if len(centers) >= 3 else None
+    ev_c = np.linalg.eigvalsh(cov_c) if cov_c is not None else None
+    pos_d = d[d > 0]
+    depth_span = float(np.percentile(pos_d, 99) - np.percentile(pos_d, 1)) if len(pos_d) else None
+    collapse_scale_rel = bool(cam_span is not None and depth_span and cam_span < 0.01 * depth_span)
 
     return {
         "depth_valid_positive_ratio": valid_ratio,
@@ -66,8 +79,18 @@ def sanity_checks(depth, depth_conf, pts_direct, pts_unproj,
         "focal_positive_ratio": focal_pos_ratio,
         "camera_center_min_pairwise_dist": cam_min_dist,
         "camera_collapse": collapse_cam,
+        "camera_shape_scale_normalized": {
+            "center_radial_span": cam_span,
+            "cov_eigen_min_max_ratio": float(ev_c[0] / (ev_c[-1] + 1e-12)) if ev_c is not None else None,
+            "trajectory_length": traj_len,
+            "traj_over_span": round(traj_len / cam_span, 3) if traj_len and cam_span else None,
+            "depth_span": depth_span,
+            "camera_collapse_scale_relative": collapse_scale_rel,
+            "note": "尺度归一化相机分布指标;坍缩判定以此为准(绝对 1e-3 阈值仅作极端兜底)",
+        },
         "pointcloud_flatness_eigratio": flatness,
         "pointcloud_flattened": bool(flatness < 1e-4),
+        "flatness_note": "仅排除单一平面坍缩,不证明结构正确",
     }
 
 

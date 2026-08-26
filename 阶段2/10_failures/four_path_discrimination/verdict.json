@@ -1,0 +1,126 @@
+{
+  "success_05-03-24": {
+    "8": {
+      "n_frames": 8,
+      "A_vggt_cam": {
+        "nn_med": 0.03788,
+        "nn_p90": 0.05862
+      },
+      "B_ref_cam": {
+        "nn_med": 0.03147,
+        "nn_p90": 0.05691
+      },
+      "C_point_head": {
+        "nn_med": 0.03669,
+        "nn_p90": 0.05821
+      }
+    },
+    "16": {
+      "n_frames": 16,
+      "A_vggt_cam": {
+        "nn_med": 0.02901,
+        "nn_p90": 0.05549
+      },
+      "B_ref_cam": {
+        "nn_med": 0.03361,
+        "nn_p90": 0.05771
+      },
+      "C_point_head": {
+        "nn_med": 0.02084,
+        "nn_p90": 0.05032
+      }
+    },
+    "24": {
+      "n_frames": 24,
+      "A_vggt_cam": {
+        "nn_med": 0.0315,
+        "nn_p90": 0.05703
+      },
+      "B_ref_cam": {
+        "nn_med": 0.03515,
+        "nn_p90": 0.05727
+      },
+      "C_point_head": {
+        "nn_med": 0.02099,
+        "nn_p90": 0.05041
+      }
+    },
+    "36": {
+      "n_frames": 36,
+      "A_vggt_cam": {
+        "nn_med": 0.03044,
+        "nn_p90": 0.05583
+      },
+      "B_ref_cam": {
+        "nn_med": 0.03481,
+        "nn_p90": 0.05797
+      },
+      "C_point_head": {
+        "nn_med": 0.01975,
+        "nn_p90": 0.04956
+      }
+    }
+  },
+  "fail_12-03-24": {
+    "8": {
+      "n_frames": 8,
+      "A_vggt_cam": {
+        "nn_med": null,
+        "nn_p90": null
+      },
+      "B_ref_cam": {
+        "nn_med": 0.03275,
+        "nn_p90": 0.06307
+      },
+      "C_point_head": {
+        "nn_med": null,
+        "nn_p90": null
+      }
+    },
+    "16": {
+      "n_frames": 16,
+      "A_vggt_cam": {
+        "nn_med": null,
+        "nn_p90": null
+      },
+      "B_ref_cam": {
+        "nn_med": 0.03895,
+        "nn_p90": 0.06367
+      },
+      "C_point_head": {
+        "nn_med": null,
+        "nn_p90": null
+      }
+    },
+    "24": {
+      "n_frames": 24,
+      "A_vggt_cam": {
+        "nn_med": null,
+        "nn_p90": null
+      },
+      "B_ref_cam": {
+        "nn_med": 0.04002,
+        "nn_p90": 0.06372
+      },
+      "C_point_head": {
+        "nn_med": null,
+        "nn_p90": null
+      }
+    },
+    "36": {
+      "n_frames": 36,
+      "A_vggt_cam": {
+        "nn_med": null,
+        "nn_p90": null
+      },
+      "B_ref_cam": {
+        "nn_med": 0.03603,
+        "nn_p90": 0.06308
+      },
+      "C_point_head": {
+        "nn_med": null,
+        "nn_p90": null
+      }
+    }
+  }
+}

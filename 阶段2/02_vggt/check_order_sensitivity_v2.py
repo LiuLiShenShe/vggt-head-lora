@@ -1,14 +1,11 @@
-"""阶段2.2:输入顺序敏感性抽查(vggt_lora 环境,GPU)。
+"""阶段2.2:输入顺序敏感性检查 v2(vggt_lora 环境,GPU)——审计修正版。
 
-把 wheat3dgs plot_463 与 mustc pos00 的输入图像顺序反序后重新推理,
-将反序结果按索引还原(反序输出的第 j 帧 = 原序第 S-1-j 帧),
-与已保存的原序 extrinsic_w2c.npy 比较:
-  - 旋转误差:VGGT 每次推理世界系任意,先用 Kabsch 估计全局旋转 R_g
-    (最小化 sum ||R_g @ R_rev - R_orig||),再算逐相机角度差(度);
-  - 平移误差:相机中心做 Sim(3)(Umeyama-Horn)对齐后统计欧氏距离。
-结果写 10_failures/order_sensitivity.json(禁止覆盖,已存在则报错)。
+v1 问题(审计确认):R_o/R_r 均来自反序推理数组(自比),orig 加载后未使用,
+结论无效。v2:R_o/C_o 用已保存的原序 extrinsic_w2c.npy,R_r/C_r 用反序推理
+结果按索引还原,再做全局旋转 Procrustes + 中心 Sim3 对齐后比较。
+结果写 10_failures/order_sensitivity_v2.json(旧文件保留)。
 
-用法: python check_order_sensitivity.py
+用法: python check_order_sensitivity_v2.py
 """
 import json
 import os
@@ -28,7 +25,7 @@ from vggt.utils.pose_enc import pose_encoding_to_extri_intri
 
 OUT_BASE = "/fj/VGGT+head+lora实验/阶段2/02_vggt"
 SEQ_BASE = "/fj/VGGT+head+lora实验/阶段2/01_sequences/sequences"
-RESULT = "/fj/VGGT+head+lora实验/阶段2/10_failures/order_sensitivity.json"
+RESULT = "/fj/VGGT+head+lora实验/阶段2/10_failures/order_sensitivity_v2.json"
 
 TARGETS = [
     os.path.join(SEQ_BASE, "wheat3dgs", "plot_463.json"),
@@ -36,17 +33,7 @@ TARGETS = [
 ]
 
 
-def kabsch_rotation(A, B):
-    """求 R 使 B ≈ R @ A(列向量约定:R @ a ≈ b)。A,B:(N,3)。"""
-    H = (B - B.mean(0)).T @ (A - A.mean(0))
-    U, _, Vt = np.linalg.svd(H)
-    d = np.sign(np.linalg.det(Vt.T @ U.T))
-    D = np.diag([1.0, 1.0, d])
-    return Vt.T @ D @ U.T
-
-
-def horn_sim3(src, dst):
-    """dst ≈ s R src + t,返回对齐后的 src。"""
+def horn_sim3_params(src, dst):
     mu_s, mu_d = src.mean(0), dst.mean(0)
     sc, dc = src - mu_s, dst - mu_d
     cov = dc.T @ sc / len(src)
@@ -57,7 +44,18 @@ def horn_sim3(src, dst):
     R = U @ S @ Vt
     s = np.trace(np.diag(D) @ S) / ((sc ** 2).sum() / len(src))
     t = mu_d - s * R @ mu_s
-    return (s * (R @ src.T).T + t)
+    return s, R, t
+
+
+def global_rotation_procrustes(R_a, R_b):
+    """Rg: Rg @ Ra_i ≈ Rb_i。H = Σ Ra_i Rb_iᵀ = UΣVᵀ → Rg = V Uᵀ。"""
+    H = np.einsum("sij,skj->ik", R_a, R_b)
+    U, _, Vt = np.linalg.svd(H)
+    Rg = Vt.T @ U.T
+    if np.linalg.det(Rg) < 0:
+        U[:, -1] *= -1
+        Rg = Vt.T @ U.T
+    return Rg
 
 
 def rot_angle_deg(R):
@@ -65,10 +63,14 @@ def rot_angle_deg(R):
     return float(np.degrees(np.arccos(cos)))
 
 
+def centers(e):
+    return np.einsum("sij,sj->si", e[:, :3, :3].transpose(0, 2, 1), -e[:, :3, 3])
+
+
 def run_reversed(seq_path, model, device, dtype):
     seq = json.load(open(seq_path))
     sid = seq["sequence_id"]
-    orig = np.load(os.path.join(OUT_BASE, seq["dataset_id"], sid, "extrinsic_w2c.npy"))
+    orig = np.load(os.path.join(OUT_BASE, seq["dataset_id"], sid, "extrinsic_w2c.npy")).astype(np.float64)
     S = len(seq["rgb_paths"])
     assert orig.shape[0] == S
 
@@ -81,28 +83,26 @@ def run_reversed(seq_path, model, device, dtype):
         with torch.cuda.amp.autocast(dtype=dtype):
             pose_enc = model.camera_head(model.aggregator(images.unsqueeze(0))[0])[-1]
             ext_w2c_rev, _ = pose_encoding_to_extri_intri(pose_enc, (H, W))
-    ext_rev = ext_w2c_rev.squeeze(0).float().cpu().numpy()   # (S,3,4) 反序
+    ext_rev = ext_w2c_rev.squeeze(0).float().cpu().numpy().astype(np.float64)
     dt = time.time() - t0
 
-    # 还原到原序:orig_idx = S-1-rev_idx
+    # 还原到原序索引:反序输出的第 j 帧 = 原序第 S-1-j 帧
     perm = np.arange(S)[::-1]
     ext_restored = ext_rev[perm]
 
-    # 全局旋转对齐(Kabsch on rotation matrices)
-    R_o = ext_restored[:, :3, :3].transpose(0, 2, 1)   # c2w 旋转(行向量约定存 w2c)
-    R_r = ext_rev[perm][:, :3, :3].transpose(0, 2, 1)
-    Rg = kabsch_rotation(R_r.reshape(-1, 3), R_o.reshape(-1, 3))
-    rot_err = np.array([rot_angle_deg(Rg @ Rr.T @ Ro) for Rr, Ro in zip(R_r, R_o)])
+    # 旋转:orig vs 反序还原,全局 Procrustes 对齐后逐相机角度差
+    R_o = orig[:, :3, :3].transpose(0, 2, 1)
+    R_r = ext_restored[:, :3, :3].transpose(0, 2, 1)
+    Rg = global_rotation_procrustes(R_r, R_o)
+    rot_err = np.array([rot_angle_deg((Rg @ Rr_i).T @ Ro_i) for Rr_i, Ro_i in zip(R_r, R_o)])
 
-    # 相机中心 Sim(3) 对齐后比较
-    def centers(e):
-        R = e[:, :3, :3]
-        t = e[:, :3, 3]
-        return np.einsum("sij,sj->si", R.transpose(0, 2, 1), -t)
-    C_o = centers(ext_restored)
-    C_r = centers(ext_rev[perm])
-    C_al = horn_sim3(C_r, C_o)
+    # 相机中心 Sim3 对齐后比较
+    C_o = centers(orig)
+    C_r = centers(ext_restored)
+    s, R, t = horn_sim3_params(C_r, C_o)
+    C_al = s * (R @ C_r.T).T + t
     tr_err = np.linalg.norm(C_al - C_o, axis=1)
+    span = float(np.linalg.norm(C_o - C_o.mean(0), axis=1).mean())
 
     return {
         "sequence_id": sid,
@@ -117,9 +117,9 @@ def run_reversed(seq_path, model, device, dtype):
             "median": round(float(np.median(tr_err)), 5),
             "p90": round(float(np.percentile(tr_err, 90)), 5),
             "max": round(float(tr_err.max()), 5),
-            "scale_ref": round(float(np.linalg.norm(C_o - C_o.mean(0), axis=1).mean()), 4),
+            "relative_to_spread": round(float(np.median(tr_err)) / max(span, 1e-9), 4),
         },
-        "per_camera_rotation_deg": [round(float(x), 3) for x in rot_err],
+        "global_alignment_rotation_deg": round(float(rot_angle_deg(Rg)), 3),
     }
 
 
@@ -130,9 +130,10 @@ def main():
     model = VGGT.from_pretrained("facebook/VGGT-1B").to(device).eval()
     results = [run_reversed(p, model, device, dtype) for p in TARGETS]
     out = {
-        "description": "输入图像顺序反序后 VGGT 位姿一致性抽查(还原索引后与原序比较)",
-        "global_rotation_alignment": "Kabsch on c2w rotation matrices",
-        "center_alignment": "Umeyama-Horn Sim(3) on camera centers",
+        "description": "输入图像顺序反序后 VGGT 位姿一致性(v2 修正:v1 存在自比 bug,原序与反序均来自同一数组)",
+        "original_source": "已保存的 extrinsic_w2c.npy(原序推理)",
+        "reversed_source": "反序输入重新前向,按索引还原",
+        "alignment": "旋转:全局 Procrustes 左乘对齐;中心:Umeyama-Horn Sim3",
         "results": results,
     }
     os.makedirs(os.path.dirname(RESULT), exist_ok=True)
@@ -140,8 +141,8 @@ def main():
         json.dump(out, f, indent=2, ensure_ascii=False)
     for r in results:
         print(f"{r['sequence_id']}: rot median {r['rotation_error_deg']['median']}° "
-              f"p90 {r['rotation_error_deg']['p90']}° | center median "
-              f"{r['center_error_aligned']['median']}", flush=True)
+              f"p90 {r['rotation_error_deg']['p90']}° | center rel "
+              f"{r['center_error_aligned']['relative_to_spread']}", flush=True)
     print(f"-> {RESULT}")
 
 

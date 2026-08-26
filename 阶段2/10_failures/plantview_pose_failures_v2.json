@@ -1,0 +1,42 @@
+{
+  "description": "plant_view 3/6 序列疑似 VGGT 位姿失败记录 v2(v1 中 subset_test 文案误复制到全部 3 个序列,仅 12-03-24 实际做过;v1 点云塌陷结论系评价脚本假象,已撤回)",
+  "supersedes": "plantview_pose_failures.json(v1,保留作审计痕迹)",
+  "failures": [
+    {
+      "sequence_id": "plantview__langdon_4__12-03-24",
+      "pose_eval_v2": "见各序列 prediction_meta.json 的 pose_eval_v2 字段(rot median 78.9–89.8°, center rel 0.87–0.95, traj cos 0.44–0.53)",
+      "subset_test": "前64帧 rel_rot median 13.96°, traj cos -0.311; 前128帧 36.02°/-0.196。注意:取的是连续前缀帧而非均匀采样,仅测过本序列,不能完全排除长序列效应",
+      "diagnosis": {
+        "depth": "深度输出正常(valid=1.0, 范围合理)",
+        "pointcloud": "v2 修正对齐后点云非塌陷(v1 塌陷图为评价脚本假象),但结构弥散、无清晰植株形态",
+        "pose": "相机中心坍缩成团,与参考环形轨迹完全不符 —— 疑似真实位姿失败",
+        "axis_permutation_test": "6 种 90° 轴置换均无法恢复(残差 117-178°),排除坐标系约定错位",
+        "attribution": "原因未定性:待四路判别实验(深度/相机解耦 + 视角数消融)。暂定假设为高密度重复细叶场景的多视角可观测性失败,不归因于笼统'农业域不匹配'"
+      }
+    },
+    {
+      "sequence_id": "plantview__langdon_4__15-04-24",
+      "pose_eval_v2": "见各序列 prediction_meta.json 的 pose_eval_v2 字段(rot median 78.9–89.8°, center rel 0.87–0.95, traj cos 0.44–0.53)",
+      "subset_test": "未做子集测试",
+      "diagnosis": {
+        "depth": "深度输出正常(valid=1.0, 范围合理)",
+        "pointcloud": "v2 修正对齐后点云非塌陷(v1 塌陷图为评价脚本假象),但结构弥散、无清晰植株形态",
+        "pose": "相机中心坍缩成团,与参考环形轨迹完全不符 —— 疑似真实位姿失败",
+        "axis_permutation_test": "6 种 90° 轴置换均无法恢复(残差 117-178°),排除坐标系约定错位",
+        "attribution": "原因未定性:待四路判别实验(深度/相机解耦 + 视角数消融)。暂定假设为高密度重复细叶场景的多视角可观测性失败,不归因于笼统'农业域不匹配'"
+      }
+    },
+    {
+      "sequence_id": "plantview__langdon_4__19-03-24",
+      "pose_eval_v2": "见各序列 prediction_meta.json 的 pose_eval_v2 字段(rot median 78.9–89.8°, center rel 0.87–0.95, traj cos 0.44–0.53)",
+      "subset_test": "未做子集测试",
+      "diagnosis": {
+        "depth": "深度输出正常(valid=1.0, 范围合理)",
+        "pointcloud": "v2 修正对齐后点云非塌陷(v1 塌陷图为评价脚本假象),但结构弥散、无清晰植株形态",
+        "pose": "相机中心坍缩成团,与参考环形轨迹完全不符 —— 疑似真实位姿失败",
+        "axis_permutation_test": "6 种 90° 轴置换均无法恢复(残差 117-178°),排除坐标系约定错位",
+        "attribution": "原因未定性:待四路判别实验(深度/相机解耦 + 视角数消融)。暂定假设为高密度重复细叶场景的多视角可观测性失败,不归因于笼统'农业域不匹配'"
+      }
+    }
+  ]
+}

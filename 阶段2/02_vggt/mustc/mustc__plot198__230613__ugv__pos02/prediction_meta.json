@@ -154,5 +154,47 @@
       74.023,
       63.135
     ]
+  },
+  "pose_eval_v2": {
+    "sim3_scale": 3.235063,
+    "ref_center_spread": 1.7509,
+    "center_error_aligned": {
+      "median": 0.08583,
+      "p90": 0.17041,
+      "max": 0.26174,
+      "relative_to_spread": 0.049
+    },
+    "rotation_error_deg": {
+      "median": 1.896,
+      "mean": 2.129,
+      "p90": 4.619,
+      "max": 5.127,
+      "note": "全局 Procrustes 左乘对齐后逐相机角度差(v2 修正公式)"
+    },
+    "relative_rotation_error_deg": {
+      "median": 3.277,
+      "mean": 3.071,
+      "p90": 5.63,
+      "max": 7.435,
+      "note": "相机间相对朝向误差,消除左乘全局世界系旋转;右乘相机系差异不在其消除范围"
+    },
+    "global_alignment_rotation_deg": 161.732,
+    "camera_shape_vggt": {
+      "center_radial_span": 0.5375966752832099,
+      "cov_eigen_min_max_ratio": 0.34907,
+      "trajectory_length": 9.1241,
+      "traj_over_span": 16.972
+    },
+    "camera_shape_ref": {
+      "center_radial_span": 1.7509299683074588,
+      "cov_eigen_min_max_ratio": 0.42667,
+      "trajectory_length": 29.3903,
+      "traj_over_span": 16.786
+    },
+    "trajectory_direction": {
+      "mean_cosine": 0.9962,
+      "median_cosine": 0.9975,
+      "n_pairs": 19
+    }
   }
 }

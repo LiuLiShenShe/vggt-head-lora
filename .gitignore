@@ -23,3 +23,7 @@ output/
 ckpt/
 *.log
 .DS_Store
+
+# 数值数组与构建产物
+**/*.npz
+**/*.egg-info/
