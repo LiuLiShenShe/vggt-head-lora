@@ -5,6 +5,7 @@
 
 对每个 ready 序列保存规范要求的全部输出(禁止覆盖)。
 """
+import argparse
 import json
 import os
 import sys
@@ -26,6 +27,7 @@ from provenance import make_provenance
 OUT_BASE = "/fj/VGGT+head+lora实验/阶段2/02_vggt"
 TOKEN_LAYERS = (4, 11, 17, 23)
 SAVE_TOKEN_MAX_S = 200   # 超过此长度不落盘 tokens(meta 记录)
+RUN_ID = os.environ.get("VGGT_RUN_ID", "")   # clean rerun 时由外部 manifest 注入
 
 
 def sanity_checks(depth, depth_conf, pts_direct, pts_unproj,
@@ -94,12 +96,12 @@ def sanity_checks(depth, depth_conf, pts_direct, pts_unproj,
     }
 
 
-def run_sequence(seq_path: str, model, device, dtype):
+def run_sequence(seq_path: str, out_base: str, model, device, dtype):
     seq = json.load(open(seq_path))
     assert seq["status"] == "ready", f"skip non-ready: {seq['sequence_id']}"
     sid = seq["sequence_id"]
     dataset_id = seq["dataset_id"]
-    out_dir = os.path.join(OUT_BASE, dataset_id, sid)
+    out_dir = os.path.join(out_base, dataset_id, sid)
 
     if os.path.exists(out_dir):
         raise FileExistsError(f"{out_dir} 已存在,禁止覆盖。如需重跑请先删除。")
@@ -175,6 +177,7 @@ def run_sequence(seq_path: str, model, device, dtype):
     )
     meta = {
         **prov,
+        "run_id": RUN_ID or None,
         "sequence_id": sid,
         "dataset_id": dataset_id,
         "output_shapes": {"pose_enc": list(pose_enc_np.shape),
@@ -197,15 +200,18 @@ def run_sequence(seq_path: str, model, device, dtype):
 
 
 def main():
-    seq_paths = sys.argv[1:]
-    assert seq_paths, "usage: run_vggt_inference.py <seq.json> ..."
+    ap = argparse.ArgumentParser(description="阶段2.2 VGGT 几何推理(禁止覆盖)")
+    ap.add_argument("seq_jsons", nargs="+", help="sequence JSON 路径(仅跑 status=ready)")
+    ap.add_argument("--out-base", default=OUT_BASE,
+                    help="输出根目录(默认 %(default)s;clean rerun 指向 v2_clean_rerun)")
+    args = ap.parse_args()
     device = "cuda"
     dtype = torch.bfloat16
     print("loading VGGT-1B ...", flush=True)
     model = VGGT.from_pretrained("facebook/VGGT-1B").to(device).eval()
-    for sp in seq_paths:
+    for sp in args.seq_jsons:
         try:
-            run_sequence(sp, model, device, dtype)
+            run_sequence(sp, args.out_base, model, device, dtype)
         except FileExistsError as e:
             print(f"SKIP: {e}")
     print("\nALL DONE")

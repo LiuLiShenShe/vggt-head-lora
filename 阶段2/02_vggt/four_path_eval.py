@@ -10,6 +10,7 @@
 
 用法: python four_path_eval.py
 """
+import argparse
 import glob
 import json
 import os
@@ -20,8 +21,8 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 BASE = "/fj/VGGT+head+lora实验/阶段2"
-DATA_DIR = os.path.join(BASE, "10_failures", "four_path_data")
-OUT_DIR = os.path.join(BASE, "10_failures", "four_path_discrimination")
+DEFAULT_DATA_DIR = os.path.join(BASE, "10_failures", "four_path_data")
+DEFAULT_OUT_DIR = os.path.join(BASE, "10_failures", "four_path_discrimination")
 SEQS = {
     "success_05-03-24": "plantview__langdon_4__05-03-24",
     "fail_12-03-24": "plantview__langdon_4__12-03-24",
@@ -68,15 +69,20 @@ def ref_intrinsics_crop(seq):
 
 def truncated_nn(P_src, tree, trunc):
     d, _ = tree.query(P_src, k=1, distance_upper_bound=trunc)
+    n_trunc = int((~np.isfinite(d)).sum())
     d = d[np.isfinite(d)]
     if len(d) < 100:
-        return None, None
-    return float(np.median(d)), float(np.percentile(d, 90))
+        return None, None, len(P_src), n_trunc
+    return float(np.median(d)), float(np.percentile(d, 90)), len(P_src), n_trunc
 
 
 def main():
-    assert not os.path.exists(OUT_DIR), f"{OUT_DIR} 已存在"
-    os.makedirs(OUT_DIR)
+    ap = argparse.ArgumentParser(description="四路判别 · 步骤2 组装+定量+出图(da3)")
+    ap.add_argument("--data-dir", default=DEFAULT_DATA_DIR)
+    ap.add_argument("--out-dir", default=DEFAULT_OUT_DIR)
+    args = ap.parse_args()
+    assert not os.path.exists(args.out_dir), f"{args.out_dir} 已存在"
+    os.makedirs(args.out_dir)
     import open3d as o3d
     from scipy.spatial import cKDTree
 
@@ -105,7 +111,7 @@ def main():
 
         rows = {}
         for n in N_FRAMES:
-            z = np.load(os.path.join(DATA_DIR, f"{key}_n{n}.npz"))
+            z = np.load(os.path.join(args.data_dir, f"{key}_n{n}.npz"))
             dep, ext, intr, pmap = z["depth"], z["ext_w2c_vggt"], z["intr_vggt"], z["point_map_head"]
             idx = z["frame_idx"]
             C_ref = centers(ref_w2c_all[idx])
@@ -123,9 +129,13 @@ def main():
             out = {"n_frames": int(n)}
             for name, P in (("A_vggt_cam", A_al), ("B_ref_cam", B_al), ("C_point_head", C_al)):
                 P_s = P[::max(1, len(P) // 80000)]
-                m, p90 = truncated_nn(P_s, tree, trunc)
+                m, p90, n_pts, n_tr = truncated_nn(P_s, tree, trunc)
                 out[name] = {"nn_med": None if m is None else round(m, 5),
-                             "nn_p90": None if p90 is None else round(p90, 5)}
+                             "nn_p90": None if p90 is None else round(p90, 5),
+                             "n_points_sampled": n_pts,
+                             "n_beyond_trunc": n_tr}
+            out["trunc"] = round(trunc, 5)
+            out["ref_diag"] = round(diag, 4)
             rows[n] = (A_al, B_al, C_al, out)
 
         fig = plt.figure(figsize=(16, 16))
@@ -141,7 +151,7 @@ def main():
                     s2 = P[::max(1, len(P) // 60000)]
                     ax.scatter(s2[:, 0], s2[:, 1], s2[:, 2], s=0.2, c=s2[:, 2], cmap="viridis")
                 ax.set_title(ttl, fontsize=7)
-        fig.savefig(os.path.join(OUT_DIR, f"{key}_grid.png"), dpi=110)
+        fig.savefig(os.path.join(args.out_dir, f"{key}_grid.png"), dpi=110)
         plt.close(fig)
 
         verdict[key] = {str(n): rows[n][3] for n in N_FRAMES}
@@ -152,9 +162,41 @@ def main():
             print(f"  n={n}: A {fmt(o['A_vggt_cam']['nn_med'])} | "
                   f"B {fmt(o['B_ref_cam']['nn_med'])} | C {fmt(o['C_point_head']['nn_med'])}")
 
-    with open(os.path.join(OUT_DIR, "verdict.json"), "w") as f:
+    with open(os.path.join(args.out_dir, "verdict.json"), "w") as f:
         json.dump(verdict, f, indent=2, ensure_ascii=False)
-    print(f"-> {OUT_DIR}")
+    # 指标定义(与 verdict 分开,便于独立复核每个指标的含义/归一化/阈值)
+    defs = {
+        "nn_med": {
+            "name": "truncated nearest-neighbor distance (median)",
+            "formula": "median( min_i ||p - q_i|| ), 仅保留 ||p-q|| <= trunc 的最近邻;截断后有效点 <100 则为 null",
+            "unit": "reference-frame length unit (plant_view: transforms.json 系,米)",
+            "normalization": f"trunc = 0.05 * 参考云包围盒对角线 diag(逐序列打印)",
+            "threshold": "null (即几乎全部点超出 trunc) 视为该路径失败;无通过阈值,只作定性比较",
+            "uses_reference_geometry": True,
+            "evaluation_only": True,
+        },
+        "nn_p90": {
+            "name": "truncated NN distance (P90)",
+            "formula": "percentile_90 of the same truncated distances",
+            "unit": "同 nn_med",
+            "normalization": "同 nn_med",
+            "threshold": "无",
+            "uses_reference_geometry": True,
+            "evaluation_only": True,
+        },
+        "n_beyond_trunc": {
+            "name": "points beyond truncation",
+            "formula": "count(d_nn > trunc) / count(sampled)",
+            "unit": "count",
+            "normalization": "采样上限 80000 点(均匀步长下采样)",
+            "threshold": "无(辅助解释 null)",
+            "uses_reference_geometry": True,
+            "evaluation_only": True,
+        },
+    }
+    with open(os.path.join(args.out_dir, "metric_definitions.json"), "w") as f:
+        json.dump(defs, f, indent=2, ensure_ascii=False)
+    print(f"-> {args.out_dir}")
 
 
 def unproject_np(depth, extrinsic, intrinsic):

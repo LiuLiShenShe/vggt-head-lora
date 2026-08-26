@@ -8,6 +8,7 @@
 
 用法: python four_path_infer.py
 """
+import argparse
 import glob
 import json
 import os
@@ -26,7 +27,7 @@ from vggt.utils.pose_enc import pose_encoding_to_extri_intri
 from vggt.utils.geometry import unproject_depth_map_to_point_map
 
 BASE = "/fj/VGGT+head+lora实验/阶段2"
-OUT_DIR = os.path.join(BASE, "10_failures", "four_path_data")
+DEFAULT_DATA_DIR = os.path.join(BASE, "10_failures", "four_path_data")
 SEQS = {
     "success_05-03-24": "plantview__langdon_4__05-03-24",
     "fail_12-03-24": "plantview__langdon_4__12-03-24",
@@ -35,8 +36,12 @@ N_FRAMES = [8, 16, 24, 36]
 
 
 def main():
-    assert not os.path.exists(OUT_DIR), f"{OUT_DIR} 已存在"
-    os.makedirs(OUT_DIR)
+    ap = argparse.ArgumentParser(description="四路判别 · 步骤1 GPU 推理(禁止覆盖)")
+    ap.add_argument("--data-dir", default=DEFAULT_DATA_DIR,
+                    help="npz 输出目录(默认 %(default)s;clean rerun 指向 v2_clean_rerun_eval)")
+    args = ap.parse_args()
+    assert not os.path.exists(args.data_dir), f"{args.data_dir} 已存在"
+    os.makedirs(args.data_dir)
     device, dtype = "cuda", torch.bfloat16
     model = VGGT.from_pretrained("facebook/VGGT-1B").to(device).eval()
 
@@ -57,7 +62,7 @@ def main():
                 depth, dconf = model.depth_head(tokens, images.unsqueeze(0), ps_idx)
                 pts3d, _ = model.point_head(tokens, images.unsqueeze(0), ps_idx)
             dt = time.time() - t0
-            out = os.path.join(OUT_DIR, f"{key}_n{n}.npz")
+            out = os.path.join(args.data_dir, f"{key}_n{n}.npz")
             np.savez_compressed(
                 out,
                 depth=depth.squeeze(0).squeeze(-1).float().cpu().numpy(),

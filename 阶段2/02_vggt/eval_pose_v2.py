@@ -13,6 +13,7 @@ v2 修正:
 
 用法: python eval_pose_v2.py <seq_dir> [<seq_dir2> ...]
 """
+import argparse
 import glob
 import json
 import os
@@ -22,7 +23,7 @@ import numpy as np
 
 SEQ_BASE = "/fj/VGGT+head+lora实验/阶段2/01_sequences/sequences"
 OUT_BASE = "/fj/VGGT+head+lora实验/阶段2/02_vggt"
-SUMMARY = os.path.join(OUT_BASE, "pose_eval_summary_v2.json")
+DEFAULT_SUMMARY = os.path.join(OUT_BASE, "pose_eval_summary_v2.json")
 
 
 def horn_sim3(src, dst):
@@ -196,21 +197,25 @@ def eval_sequence(seq_dir):
 
 
 def main():
+    ap = argparse.ArgumentParser(description="位姿评估 v2(禁止覆盖已有 pose_eval_v2)")
+    ap.add_argument("seq_dirs", nargs="+", help="序列输出目录(含 prediction_meta.json)")
+    ap.add_argument("--summary", default=DEFAULT_SUMMARY, help="汇总输出路径(默认 %(default)s)")
+    args = ap.parse_args()
     results = []
-    for sd in sys.argv[1:]:
+    for sd in args.seq_dirs:
         print(f"== eval {sd}")
         r = eval_sequence(sd)
         if r:
             results.append(r)
-    assert not os.path.exists(SUMMARY), f"{SUMMARY} 已存在,禁止覆盖"
-    with open(SUMMARY, "w") as f:
+    assert not os.path.exists(args.summary), f"{args.summary} 已存在,禁止覆盖"
+    with open(args.summary, "w") as f:
         json.dump({"sequences": results}, f, indent=2, ensure_ascii=False)
     if results:
         med = [r["rotation_error_deg"]["median"] for r in results]
         p90 = [r["rotation_error_deg"]["p90"] for r in results]
         print(f"\n汇总 {len(results)} 序列(修正后绝对旋转误差): median 范围 "
               f"{min(med):.2f}–{max(med):.2f}°, p90 范围 {min(p90):.2f}–{max(p90):.2f}°")
-    print(f"-> {SUMMARY}")
+    print(f"-> {args.summary}")
 
 
 if __name__ == "__main__":
