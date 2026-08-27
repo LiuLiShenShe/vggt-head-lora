@@ -1,0 +1,46 @@
+{
+  "run_id": "clean_rerun_20260826T065510Z",
+  "run_type": "clean_reproducibility_rerun",
+  "started_utc": "2026-08-26T06:55:10.558039+00:00",
+  "project_git_commit": "208c2b194a5fddd9c9ff880f6b56c419fbc0671b",
+  "vggt_code": {
+    "path": "/fj/VGGT+head+lora实验/vggt",
+    "note": "与主仓库同一 git 仓库的子目录(无独立 .git/commit),版本由 project_git_commit 锁定"
+  },
+  "checkpoint": {
+    "repo_id": "facebook/VGGT-1B",
+    "hf_snapshot": "860abec7937da0a4c03c41d3c269c366e82abdf9",
+    "weights_file": "model.safetensors",
+    "checkpoint_sha256": "f164acf60724910d8fe1578bb499d800850c7bb0948db7555c413f9fbe60467e",
+    "sha256_note": "HF blob 文件名即内容 sha256(Hub 惯例),未重算大文件",
+    "bytes": 5026367224
+  },
+  "environment": {
+    "conda_env": "vggt_lora",
+    "python": "3.10.20",
+    "torch": "2.3.1+cu121",
+    "torchvision": "0.18.1+cu121",
+    "cuda_version_torch": "12.1",
+    "cudnn_version": 8902,
+    "gpu_driver": "590.48.01",
+    "gpu_name": "NVIDIA RTX A6000"
+  },
+  "inference_config": {
+    "device": "cuda (CUDA_VISIBLE_DEVICES 由启动命令决定)",
+    "dtype": "bfloat16 autocast(torch.cuda.amp.autocast); tokens 落盘 fp16",
+    "seed_per_sequence": 42,
+    "preprocessing": "load_and_preprocess_images(mode='crop'), 官方默认 518 宽居中裁剪",
+    "token_layers": [
+      4,
+      11,
+      17,
+      23
+    ],
+    "save_token_max_S": 200,
+    "determinism_flags": "未显式设置 cudnn.deterministic/benchmark/use_deterministic_algorithms(保持与原运行一致;BF16+CUDA 非确定性 → 不要求逐 bit 一致)"
+  },
+  "sequences_source": "阶段2/01_sequences/sequences/{wheat3dgs,mustc,plant_view}/*.json (status=ready 共 17 个)",
+  "output_root": "/fj/VGGT+head+lora实验/阶段2/02_vggt/v2_clean_rerun",
+  "no_reuse_of_previous_npys": true,
+  "overwrite_policy": "FileExistsError 保护;旧目录(v2 主结果/checks_v2/four_path*)一律不动"
+}

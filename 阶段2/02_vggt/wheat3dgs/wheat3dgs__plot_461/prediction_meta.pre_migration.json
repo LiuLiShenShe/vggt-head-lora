@@ -136,50 +136,7 @@
     "token_nan_inf_count": 0
   },
   "primary_pointmap_candidate": "point_map_unprojected (per official recommendation)",
-  "pose_eval_v2": {
-    "sim3_scale": 3.839258,
-    "ref_center_spread": 0.5691,
-    "center_error_aligned": {
-      "median": 0.08628,
-      "p90": 0.14495,
-      "max": 0.24664,
-      "relative_to_spread": 0.1516
-    },
-    "rotation_error_deg": {
-      "median": 3.597,
-      "mean": 3.204,
-      "p90": 5.43,
-      "max": 6.661,
-      "note": "全局 Procrustes 左乘对齐后逐相机角度差(v2 修正公式)"
-    },
-    "relative_rotation_error_deg": {
-      "median": 3.917,
-      "mean": 4.466,
-      "p90": 8.646,
-      "max": 12.508,
-      "note": "相机间相对朝向误差,消除左乘全局世界系旋转;右乘相机系差异不在其消除范围"
-    },
-    "global_alignment_rotation_deg": 176.985,
-    "camera_shape_vggt": {
-      "center_radial_span": 0.14495124515629254,
-      "cov_eigen_min_max_ratio": 0.01936,
-      "trajectory_length": 6.8945,
-      "traj_over_span": 47.564
-    },
-    "camera_shape_ref": {
-      "center_radial_span": 0.5691237585168096,
-      "cov_eigen_min_max_ratio": 0.04568,
-      "trajectory_length": 26.4499,
-      "traj_over_span": 46.475
-    },
-    "trajectory_direction": {
-      "mean_cosine": 0.9923,
-      "median_cosine": 0.9965,
-      "n_pairs": 35
-    }
-  },
-  "active_evaluation_version": "v2",
-  "pose_eval_v1": {
+  "pose_eval": {
     "sim3_scale": 3.839258,
     "ref_center_spread": 0.5691,
     "center_error_aligned": {
@@ -246,8 +203,46 @@
       16.84
     ]
   },
-  "gate_source": "pose_eval_v2",
-  "deprecated_fields": [
-    "pose_eval_v1"
-  ]
+  "pose_eval_v2": {
+    "sim3_scale": 3.839258,
+    "ref_center_spread": 0.5691,
+    "center_error_aligned": {
+      "median": 0.08628,
+      "p90": 0.14495,
+      "max": 0.24664,
+      "relative_to_spread": 0.1516
+    },
+    "rotation_error_deg": {
+      "median": 3.597,
+      "mean": 3.204,
+      "p90": 5.43,
+      "max": 6.661,
+      "note": "全局 Procrustes 左乘对齐后逐相机角度差(v2 修正公式)"
+    },
+    "relative_rotation_error_deg": {
+      "median": 3.917,
+      "mean": 4.466,
+      "p90": 8.646,
+      "max": 12.508,
+      "note": "相机间相对朝向误差,消除左乘全局世界系旋转;右乘相机系差异不在其消除范围"
+    },
+    "global_alignment_rotation_deg": 176.985,
+    "camera_shape_vggt": {
+      "center_radial_span": 0.14495124515629254,
+      "cov_eigen_min_max_ratio": 0.01936,
+      "trajectory_length": 6.8945,
+      "traj_over_span": 47.564
+    },
+    "camera_shape_ref": {
+      "center_radial_span": 0.5691237585168096,
+      "cov_eigen_min_max_ratio": 0.04568,
+      "trajectory_length": 26.4499,
+      "traj_over_span": 46.475
+    },
+    "trajectory_direction": {
+      "mean_cosine": 0.9923,
+      "median_cosine": 0.9965,
+      "n_pairs": 35
+    }
+  }
 }

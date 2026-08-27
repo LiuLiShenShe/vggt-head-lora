@@ -1,0 +1,178 @@
+{
+  "n_sequences": 17,
+  "n_gate_pass": 14,
+  "gate_rate": 0.8235,
+  "criteria": "rot median<=10deg AND P90<=20deg; 坍缩/NaN 单列",
+  "sequences": [
+    {
+      "sequence_id": "mustc__plot198__230613__ugv__pos00",
+      "seq_dir": "v2_clean_rerun/mustc/mustc__plot198__230613__ugv__pos00/",
+      "rot_median_deg": 1.844,
+      "rot_p90_deg": 3.387,
+      "center_rel": 0.0629,
+      "camera_collapse_scale_relative": false,
+      "nan_inf_total": 0,
+      "gate_pass": true
+    },
+    {
+      "sequence_id": "mustc__plot198__230613__ugv__pos01",
+      "seq_dir": "v2_clean_rerun/mustc/mustc__plot198__230613__ugv__pos01/",
+      "rot_median_deg": 1.383,
+      "rot_p90_deg": 3.902,
+      "center_rel": 0.0549,
+      "camera_collapse_scale_relative": false,
+      "nan_inf_total": 0,
+      "gate_pass": true
+    },
+    {
+      "sequence_id": "mustc__plot198__230613__ugv__pos02",
+      "seq_dir": "v2_clean_rerun/mustc/mustc__plot198__230613__ugv__pos02/",
+      "rot_median_deg": 1.896,
+      "rot_p90_deg": 4.619,
+      "center_rel": 0.049,
+      "camera_collapse_scale_relative": false,
+      "nan_inf_total": 0,
+      "gate_pass": true
+    },
+    {
+      "sequence_id": "mustc__plot198__230613__ugv__pos03",
+      "seq_dir": "v2_clean_rerun/mustc/mustc__plot198__230613__ugv__pos03/",
+      "rot_median_deg": 1.414,
+      "rot_p90_deg": 1.874,
+      "center_rel": 0.0405,
+      "camera_collapse_scale_relative": false,
+      "nan_inf_total": 0,
+      "gate_pass": true
+    },
+    {
+      "sequence_id": "plantview__langdon_4__05-03-24",
+      "seq_dir": "v2_clean_rerun/plant_view_3d/plantview__langdon_4__05-03-24/",
+      "rot_median_deg": 1.712,
+      "rot_p90_deg": 4.101,
+      "center_rel": 0.0309,
+      "camera_collapse_scale_relative": false,
+      "nan_inf_total": 0,
+      "gate_pass": true
+    },
+    {
+      "sequence_id": "plantview__langdon_4__12-03-24",
+      "seq_dir": "v2_clean_rerun/plant_view_3d/plantview__langdon_4__12-03-24/",
+      "rot_median_deg": 84.193,
+      "rot_p90_deg": 158.481,
+      "center_rel": 0.9061,
+      "camera_collapse_scale_relative": false,
+      "nan_inf_total": 0,
+      "gate_pass": false
+    },
+    {
+      "sequence_id": "plantview__langdon_4__13-02-24",
+      "seq_dir": "v2_clean_rerun/plant_view_3d/plantview__langdon_4__13-02-24/",
+      "rot_median_deg": 2.222,
+      "rot_p90_deg": 4.686,
+      "center_rel": 0.0386,
+      "camera_collapse_scale_relative": false,
+      "nan_inf_total": 0,
+      "gate_pass": true
+    },
+    {
+      "sequence_id": "plantview__langdon_4__15-04-24",
+      "seq_dir": "v2_clean_rerun/plant_view_3d/plantview__langdon_4__15-04-24/",
+      "rot_median_deg": 89.822,
+      "rot_p90_deg": 163.306,
+      "center_rel": 0.9544,
+      "camera_collapse_scale_relative": false,
+      "nan_inf_total": 0,
+      "gate_pass": false
+    },
+    {
+      "sequence_id": "plantview__langdon_4__19-03-24",
+      "seq_dir": "v2_clean_rerun/plant_view_3d/plantview__langdon_4__19-03-24/",
+      "rot_median_deg": 78.947,
+      "rot_p90_deg": 159.531,
+      "center_rel": 0.8706,
+      "camera_collapse_scale_relative": false,
+      "nan_inf_total": 0,
+      "gate_pass": false
+    },
+    {
+      "sequence_id": "plantview__langdon_4__20-02-24",
+      "seq_dir": "v2_clean_rerun/plant_view_3d/plantview__langdon_4__20-02-24/",
+      "rot_median_deg": 3.592,
+      "rot_p90_deg": 7.51,
+      "center_rel": 0.0593,
+      "camera_collapse_scale_relative": false,
+      "nan_inf_total": 0,
+      "gate_pass": true
+    },
+    {
+      "sequence_id": "wheat3dgs__plot_461",
+      "seq_dir": "v2_clean_rerun/wheat3dgs/wheat3dgs__plot_461/",
+      "rot_median_deg": 3.597,
+      "rot_p90_deg": 5.43,
+      "center_rel": 0.1516,
+      "camera_collapse_scale_relative": false,
+      "nan_inf_total": 0,
+      "gate_pass": true
+    },
+    {
+      "sequence_id": "wheat3dgs__plot_462",
+      "seq_dir": "v2_clean_rerun/wheat3dgs/wheat3dgs__plot_462/",
+      "rot_median_deg": 3.659,
+      "rot_p90_deg": 5.657,
+      "center_rel": 0.1115,
+      "camera_collapse_scale_relative": false,
+      "nan_inf_total": 0,
+      "gate_pass": true
+    },
+    {
+      "sequence_id": "wheat3dgs__plot_463",
+      "seq_dir": "v2_clean_rerun/wheat3dgs/wheat3dgs__plot_463/",
+      "rot_median_deg": 3.452,
+      "rot_p90_deg": 5.639,
+      "center_rel": 0.1167,
+      "camera_collapse_scale_relative": false,
+      "nan_inf_total": 0,
+      "gate_pass": true
+    },
+    {
+      "sequence_id": "wheat3dgs__plot_464",
+      "seq_dir": "v2_clean_rerun/wheat3dgs/wheat3dgs__plot_464/",
+      "rot_median_deg": 3.215,
+      "rot_p90_deg": 5.034,
+      "center_rel": 0.147,
+      "camera_collapse_scale_relative": false,
+      "nan_inf_total": 0,
+      "gate_pass": true
+    },
+    {
+      "sequence_id": "wheat3dgs__plot_465",
+      "seq_dir": "v2_clean_rerun/wheat3dgs/wheat3dgs__plot_465/",
+      "rot_median_deg": 2.95,
+      "rot_p90_deg": 4.582,
+      "center_rel": 0.1299,
+      "camera_collapse_scale_relative": false,
+      "nan_inf_total": 0,
+      "gate_pass": true
+    },
+    {
+      "sequence_id": "wheat3dgs__plot_466",
+      "seq_dir": "v2_clean_rerun/wheat3dgs/wheat3dgs__plot_466/",
+      "rot_median_deg": 3.232,
+      "rot_p90_deg": 4.83,
+      "center_rel": 0.1195,
+      "camera_collapse_scale_relative": false,
+      "nan_inf_total": 0,
+      "gate_pass": true
+    },
+    {
+      "sequence_id": "wheat3dgs__plot_467",
+      "seq_dir": "v2_clean_rerun/wheat3dgs/wheat3dgs__plot_467/",
+      "rot_median_deg": 3.333,
+      "rot_p90_deg": 4.621,
+      "center_rel": 0.1027,
+      "camera_collapse_scale_relative": false,
+      "nan_inf_total": 0,
+      "gate_pass": true
+    }
+  ]
+}

@@ -1,0 +1,1218 @@
+{
+  "mustc__plot198__230613__ugv__pos00": {
+    "depth_conf_vggt.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "depth_vggt.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "extrinsic_c2w.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "extrinsic_w2c.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "intrinsic_vggt.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "point_conf_direct.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "point_map_direct.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "point_map_unprojected.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "pose_enc.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "tokens_layer_04.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "tokens_layer_11.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "tokens_layer_17.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "tokens_layer_23.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    }
+  },
+  "mustc__plot198__230613__ugv__pos01": {
+    "depth_conf_vggt.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "depth_vggt.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "extrinsic_c2w.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "extrinsic_w2c.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "intrinsic_vggt.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "point_conf_direct.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "point_map_direct.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "point_map_unprojected.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "pose_enc.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "tokens_layer_04.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "tokens_layer_11.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "tokens_layer_17.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "tokens_layer_23.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    }
+  },
+  "mustc__plot198__230613__ugv__pos02": {
+    "depth_conf_vggt.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "depth_vggt.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "extrinsic_c2w.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "extrinsic_w2c.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "intrinsic_vggt.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "point_conf_direct.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "point_map_direct.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "point_map_unprojected.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "pose_enc.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "tokens_layer_04.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "tokens_layer_11.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "tokens_layer_17.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "tokens_layer_23.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    }
+  },
+  "mustc__plot198__230613__ugv__pos03": {
+    "depth_conf_vggt.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "depth_vggt.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "extrinsic_c2w.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "extrinsic_w2c.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "intrinsic_vggt.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "point_conf_direct.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "point_map_direct.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "point_map_unprojected.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "pose_enc.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "tokens_layer_04.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "tokens_layer_11.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "tokens_layer_17.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "tokens_layer_23.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    }
+  },
+  "plantview__langdon_4__05-03-24": {
+    "depth_conf_vggt.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "depth_vggt.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "extrinsic_c2w.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "extrinsic_w2c.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "intrinsic_vggt.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "point_conf_direct.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "point_map_direct.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "point_map_unprojected.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "pose_enc.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    }
+  },
+  "plantview__langdon_4__12-03-24": {
+    "depth_conf_vggt.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "depth_vggt.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "extrinsic_c2w.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "extrinsic_w2c.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "intrinsic_vggt.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "point_conf_direct.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "point_map_direct.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "point_map_unprojected.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "pose_enc.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    }
+  },
+  "plantview__langdon_4__13-02-24": {
+    "depth_conf_vggt.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "depth_vggt.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "extrinsic_c2w.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "extrinsic_w2c.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "intrinsic_vggt.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "point_conf_direct.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "point_map_direct.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "point_map_unprojected.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "pose_enc.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    }
+  },
+  "plantview__langdon_4__15-04-24": {
+    "depth_conf_vggt.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "depth_vggt.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "extrinsic_c2w.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "extrinsic_w2c.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "intrinsic_vggt.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "point_conf_direct.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "point_map_direct.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "point_map_unprojected.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "pose_enc.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    }
+  },
+  "plantview__langdon_4__19-03-24": {
+    "depth_conf_vggt.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "depth_vggt.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "extrinsic_c2w.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "extrinsic_w2c.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "intrinsic_vggt.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "point_conf_direct.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "point_map_direct.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "point_map_unprojected.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "pose_enc.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    }
+  },
+  "plantview__langdon_4__20-02-24": {
+    "depth_conf_vggt.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "depth_vggt.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "extrinsic_c2w.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "extrinsic_w2c.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "intrinsic_vggt.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "point_conf_direct.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "point_map_direct.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "point_map_unprojected.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "pose_enc.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    }
+  },
+  "wheat3dgs__plot_461": {
+    "depth_conf_vggt.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "depth_vggt.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "extrinsic_c2w.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "extrinsic_w2c.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "intrinsic_vggt.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "point_conf_direct.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "point_map_direct.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "point_map_unprojected.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "pose_enc.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "tokens_layer_04.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "tokens_layer_11.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "tokens_layer_17.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "tokens_layer_23.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    }
+  },
+  "wheat3dgs__plot_462": {
+    "depth_conf_vggt.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "depth_vggt.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "extrinsic_c2w.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "extrinsic_w2c.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "intrinsic_vggt.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "point_conf_direct.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "point_map_direct.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "point_map_unprojected.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "pose_enc.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "tokens_layer_04.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "tokens_layer_11.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "tokens_layer_17.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "tokens_layer_23.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    }
+  },
+  "wheat3dgs__plot_463": {
+    "depth_conf_vggt.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "depth_vggt.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "extrinsic_c2w.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "extrinsic_w2c.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "intrinsic_vggt.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "point_conf_direct.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "point_map_direct.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "point_map_unprojected.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "pose_enc.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "tokens_layer_04.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "tokens_layer_11.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "tokens_layer_17.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "tokens_layer_23.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    }
+  },
+  "wheat3dgs__plot_464": {
+    "depth_conf_vggt.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "depth_vggt.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "extrinsic_c2w.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "extrinsic_w2c.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "intrinsic_vggt.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "point_conf_direct.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "point_map_direct.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "point_map_unprojected.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "pose_enc.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "tokens_layer_04.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "tokens_layer_11.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "tokens_layer_17.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "tokens_layer_23.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    }
+  },
+  "wheat3dgs__plot_465": {
+    "depth_conf_vggt.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "depth_vggt.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "extrinsic_c2w.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "extrinsic_w2c.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "intrinsic_vggt.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "point_conf_direct.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "point_map_direct.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "point_map_unprojected.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "pose_enc.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "tokens_layer_04.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "tokens_layer_11.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "tokens_layer_17.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "tokens_layer_23.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    }
+  },
+  "wheat3dgs__plot_466": {
+    "depth_conf_vggt.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "depth_vggt.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "extrinsic_c2w.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "extrinsic_w2c.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "intrinsic_vggt.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "point_conf_direct.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "point_map_direct.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "point_map_unprojected.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "pose_enc.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "tokens_layer_04.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "tokens_layer_11.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "tokens_layer_17.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "tokens_layer_23.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    }
+  },
+  "wheat3dgs__plot_467": {
+    "depth_conf_vggt.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "depth_vggt.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "extrinsic_c2w.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "extrinsic_w2c.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "intrinsic_vggt.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "point_conf_direct.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "point_map_direct.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "point_map_unprojected.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "pose_enc.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "tokens_layer_04.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "tokens_layer_11.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "tokens_layer_17.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    },
+    "tokens_layer_23.npy": {
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "relative_diff": 0.0,
+      "allclose(atol=1e-3,rtol=1e-2)": true
+    }
+  }
+}

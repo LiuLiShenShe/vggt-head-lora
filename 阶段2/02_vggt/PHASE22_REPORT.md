@@ -68,3 +68,55 @@
 | 旋转误差 | median≤10°, P90≤20° | 14/17 满足;3 序列 79–90° | ⚠️ 14/17=82.4% |
 
 **结论:推理工程通过;几何质量 14/17 通过、3 个 plant_view 序列相机估计失败(已定性为相机头问题,深度无损)。** 对 LoRA 阶段的含义:这 3 个序列是天然的"相机头困难样本",可作为微调效果的验证集;其深度监督信号仍然有效。评价管线 v2 已修复审计发现的全部实现错误,后续阶段以 v2 指标为准。
+
+---
+
+# 阶段2.2 Clean Reproducibility Rerun 复现闭环 (2026-08-27)
+
+## 目的
+在不复用任何旧 NPY 的前提下,从原始 RGB 重跑全部 17 序列的 VGGT 推理与 v2 评价,验证现有结论可复现,建立完整 provenance,并完成评价版本字段清理。
+
+## 冻结版本 (RUN_MANIFEST.json)
+- **run_id**: `clean_rerun_20260826T065510Z`
+- **project_git_commit**: `208c2b194a5fddd9c9ff880f6b56c419fbc0671b`(脚本参数化 commit 后冻结)
+- **checkpoint**: `facebook/VGGT-1B`, blob sha256 `f164acf60724910d8fe1578bb499d800850c7bb0948db7555c413f9fbe60467e`, 5.03 GiB
+- **环境**: `vggt_lora` Python 3.10.20 / torch 2.3.1+cu121 / CUDA 12.1 / cuDNN 8.9.2 / RTX A6000
+- **推理配置**: mode="crop" 518、bfloat16 autocast、每序列 seed=42、TOKEN_LAYERS=(4,11,17,23)、`cudnn.benchmark=False`(默认)
+- 所有旧结果目录(v2 主结果 / checks_v2 / four_path*) 一律未改动。
+
+## 交付物
+1. `v2_clean_rerun/RUN_MANIFEST.json` — 版本冻结
+2. `v2_clean_rerun/<ds>/<sid>/` — 17 序列全新推理输出(9+4 npy + meta + run_provenance.json + checks_v2/)
+3. `v2_clean_rerun_eval/pose_eval_summary_v2.json` — 17 序列 pose_eval_v2
+4. `v2_clean_rerun/<ds>/<sid>/checks_v2/` — 17×8 检查图
+5. `v2_clean_rerun_eval/gate_stats_clean_rerun.json` — Gate 14/17
+6. `v2_clean_rerun_eval/four_path_data/` + `four_path_discrimination/` — 四路判别(8 npz + grid + verdict + metric_definitions)
+7. `v2_clean_rerun_eval/CLEAN_RERUN_COMPARISON.md` + `npy_diff_stats.json` — 对账
+8. `00_environment/eval_version.py` — 版本字段强制读取器(读取 v1 必报错)
+9. 全部 34 个 meta(17 旧 + 17 新)迁移到 `active_evaluation_version="v2"` 字段格式(旧 `pose_eval` 重命名为 `pose_eval_v1`),备份存 `prediction_meta.pre_migration.json`
+
+## 复现结果
+| 指标 | 旧 v2 | clean rerun | 一致? |
+|---|---|---|---|
+| 前向成功率 | 17/17 | 17/17 | ✅ |
+| gate 通过 | 14/17 | 14/17 | ✅ |
+| 失败序列 | 12/15/19-03-24 | 12/15/19-03-24 | ✅ |
+| 成功序列 rot median | 1.7–3.7° | 1.7–3.7° | ✅ |
+| 失败序列 rot median | 78.9–89.8° | 78.9–89.8° | ✅ |
+| 四路定性 | 相机头失败/深度正确 | 相机头失败/深度正确 | ✅ |
+| NPY 数值差异 | — | max_abs_diff = 0.0 (全部) | ✅ 逐位一致 |
+
+## 四个核心问题
+1. **是否完全没有复用旧 VGGT NPY?** 是。两次运行 mtime 相隔 24h、run_id 不同、无旧目录读取,且旧 meta 无 run_id 字段可佐证。
+2. **clean rerun 是否仍为 14/17 Gate 通过?** 是,14/17,失败者与旧 v2 完全相同。
+3. **原先 3 个 Plant View 失败序列是否仍然失败?** 是(12-03-24 / 15-04-24 / 19-03-24,rot median 84.2° / 89.8° / 78.9°)。
+4. **基于 clean rerun,阶段2.2 是否已具备冻结并进入下一阶段的条件?** 是。
+
+## 复现结论
+```
+reproducibility_closure = PASS
+```
+冻结阶段2.2 v2 → 多植株 pose validation → Metric Depth → MSAM → Frozen VGGT + Head baseline → 正式 LoRA。
+
+## 附注:确定性复现
+本环境(同 GPU 型号 A6000、同 CUDA 12.1、同 `vggt_lora` 环境、`cudnn.benchmark=False`)下 BF16 前向具确定性,两次运行逐位一致(max_abs_diff=0)。若后续换 GPU 型号或 CUDA 版本,预期出现 BF16 级漂移;对账脚本已按 atol=1e-3/rtol=1e-2 预留容差,届时只需确认 Gate 不翻转即可。

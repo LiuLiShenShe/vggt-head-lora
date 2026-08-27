@@ -1,0 +1,29 @@
+{
+  "nn_med": {
+    "name": "truncated nearest-neighbor distance (median)",
+    "formula": "median( min_i ||p - q_i|| ), 仅保留 ||p-q|| <= trunc 的最近邻;截断后有效点 <100 则为 null",
+    "unit": "reference-frame length unit (plant_view: transforms.json 系,米)",
+    "normalization": "trunc = 0.05 * 参考云包围盒对角线 diag(逐序列打印)",
+    "threshold": "null (即几乎全部点超出 trunc) 视为该路径失败;无通过阈值,只作定性比较",
+    "uses_reference_geometry": true,
+    "evaluation_only": true
+  },
+  "nn_p90": {
+    "name": "truncated NN distance (P90)",
+    "formula": "percentile_90 of the same truncated distances",
+    "unit": "同 nn_med",
+    "normalization": "同 nn_med",
+    "threshold": "无",
+    "uses_reference_geometry": true,
+    "evaluation_only": true
+  },
+  "n_beyond_trunc": {
+    "name": "points beyond truncation",
+    "formula": "count(d_nn > trunc) / count(sampled)",
+    "unit": "count",
+    "normalization": "采样上限 80000 点(均匀步长下采样)",
+    "threshold": "无(辅助解释 null)",
+    "uses_reference_geometry": true,
+    "evaluation_only": true
+  }
+}

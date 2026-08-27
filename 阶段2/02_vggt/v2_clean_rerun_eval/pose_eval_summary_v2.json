@@ -1,0 +1,752 @@
+{
+  "sequences": [
+    {
+      "sequence_id": "mustc__plot198__230613__ugv__pos00",
+      "dataset_id": "mustc",
+      "sim3_scale": 3.262636,
+      "ref_center_spread": 1.7509,
+      "center_error_aligned": {
+        "median": 0.11009,
+        "p90": 0.19976,
+        "max": 0.26708,
+        "relative_to_spread": 0.0629
+      },
+      "rotation_error_deg": {
+        "median": 1.844,
+        "mean": 1.892,
+        "p90": 3.387,
+        "max": 4.432,
+        "note": "全局 Procrustes 左乘对齐后逐相机角度差(v2 修正公式)"
+      },
+      "relative_rotation_error_deg": {
+        "median": 2.778,
+        "mean": 2.592,
+        "p90": 4.683,
+        "max": 6.337,
+        "note": "相机间相对朝向误差,消除左乘全局世界系旋转;右乘相机系差异不在其消除范围"
+      },
+      "global_alignment_rotation_deg": 161.599,
+      "camera_shape_vggt": {
+        "center_radial_span": 0.5325214292234117,
+        "cov_eigen_min_max_ratio": 0.34198,
+        "trajectory_length": 9.109,
+        "traj_over_span": 17.105
+      },
+      "camera_shape_ref": {
+        "center_radial_span": 1.7509299683074588,
+        "cov_eigen_min_max_ratio": 0.42667,
+        "trajectory_length": 29.3903,
+        "traj_over_span": 16.786
+      },
+      "trajectory_direction": {
+        "mean_cosine": 0.997,
+        "median_cosine": 0.9978,
+        "n_pairs": 19
+      }
+    },
+    {
+      "sequence_id": "mustc__plot198__230613__ugv__pos01",
+      "dataset_id": "mustc",
+      "sim3_scale": 3.204603,
+      "ref_center_spread": 1.7509,
+      "center_error_aligned": {
+        "median": 0.09605,
+        "p90": 0.1463,
+        "max": 0.24359,
+        "relative_to_spread": 0.0549
+      },
+      "rotation_error_deg": {
+        "median": 1.383,
+        "mean": 1.77,
+        "p90": 3.902,
+        "max": 4.968,
+        "note": "全局 Procrustes 左乘对齐后逐相机角度差(v2 修正公式)"
+      },
+      "relative_rotation_error_deg": {
+        "median": 2.692,
+        "mean": 2.432,
+        "p90": 5.136,
+        "max": 7.191,
+        "note": "相机间相对朝向误差,消除左乘全局世界系旋转;右乘相机系差异不在其消除范围"
+      },
+      "global_alignment_rotation_deg": 161.859,
+      "camera_shape_vggt": {
+        "center_radial_span": 0.5434149002682398,
+        "cov_eigen_min_max_ratio": 0.34529,
+        "trajectory_length": 9.2805,
+        "traj_over_span": 17.078
+      },
+      "camera_shape_ref": {
+        "center_radial_span": 1.7509299683074588,
+        "cov_eigen_min_max_ratio": 0.42667,
+        "trajectory_length": 29.3903,
+        "traj_over_span": 16.786
+      },
+      "trajectory_direction": {
+        "mean_cosine": 0.9952,
+        "median_cosine": 0.9983,
+        "n_pairs": 19
+      }
+    },
+    {
+      "sequence_id": "mustc__plot198__230613__ugv__pos02",
+      "dataset_id": "mustc",
+      "sim3_scale": 3.235063,
+      "ref_center_spread": 1.7509,
+      "center_error_aligned": {
+        "median": 0.08583,
+        "p90": 0.17041,
+        "max": 0.26174,
+        "relative_to_spread": 0.049
+      },
+      "rotation_error_deg": {
+        "median": 1.896,
+        "mean": 2.129,
+        "p90": 4.619,
+        "max": 5.127,
+        "note": "全局 Procrustes 左乘对齐后逐相机角度差(v2 修正公式)"
+      },
+      "relative_rotation_error_deg": {
+        "median": 3.277,
+        "mean": 3.071,
+        "p90": 5.63,
+        "max": 7.435,
+        "note": "相机间相对朝向误差,消除左乘全局世界系旋转;右乘相机系差异不在其消除范围"
+      },
+      "global_alignment_rotation_deg": 161.732,
+      "camera_shape_vggt": {
+        "center_radial_span": 0.5375966752832099,
+        "cov_eigen_min_max_ratio": 0.34907,
+        "trajectory_length": 9.1241,
+        "traj_over_span": 16.972
+      },
+      "camera_shape_ref": {
+        "center_radial_span": 1.7509299683074588,
+        "cov_eigen_min_max_ratio": 0.42667,
+        "trajectory_length": 29.3903,
+        "traj_over_span": 16.786
+      },
+      "trajectory_direction": {
+        "mean_cosine": 0.9962,
+        "median_cosine": 0.9975,
+        "n_pairs": 19
+      }
+    },
+    {
+      "sequence_id": "mustc__plot198__230613__ugv__pos03",
+      "dataset_id": "mustc",
+      "sim3_scale": 3.281287,
+      "ref_center_spread": 1.7509,
+      "center_error_aligned": {
+        "median": 0.071,
+        "p90": 0.16596,
+        "max": 0.25526,
+        "relative_to_spread": 0.0405
+      },
+      "rotation_error_deg": {
+        "median": 1.414,
+        "mean": 1.034,
+        "p90": 1.874,
+        "max": 2.477,
+        "note": "全局 Procrustes 左乘对齐后逐相机角度差(v2 修正公式)"
+      },
+      "relative_rotation_error_deg": {
+        "median": 0.0,
+        "mean": 1.036,
+        "p90": 2.73,
+        "max": 5.292,
+        "note": "相机间相对朝向误差,消除左乘全局世界系旋转;右乘相机系差异不在其消除范围"
+      },
+      "global_alignment_rotation_deg": 162.159,
+      "camera_shape_vggt": {
+        "center_radial_span": 0.5305565919781435,
+        "cov_eigen_min_max_ratio": 0.3586,
+        "trajectory_length": 8.9298,
+        "traj_over_span": 16.831
+      },
+      "camera_shape_ref": {
+        "center_radial_span": 1.7509299683074588,
+        "cov_eigen_min_max_ratio": 0.42667,
+        "trajectory_length": 29.3903,
+        "traj_over_span": 16.786
+      },
+      "trajectory_direction": {
+        "mean_cosine": 0.9949,
+        "median_cosine": 0.998,
+        "n_pairs": 19
+      }
+    },
+    {
+      "sequence_id": "plantview__langdon_4__05-03-24",
+      "dataset_id": "plant_view_3d",
+      "sim3_scale": 1.090493,
+      "ref_center_spread": 0.8491,
+      "center_error_aligned": {
+        "median": 0.02626,
+        "p90": 0.04787,
+        "max": 0.18545,
+        "relative_to_spread": 0.0309
+      },
+      "rotation_error_deg": {
+        "median": 1.712,
+        "mean": 1.837,
+        "p90": 4.101,
+        "max": 11.014,
+        "note": "全局 Procrustes 左乘对齐后逐相机角度差(v2 修正公式)"
+      },
+      "relative_rotation_error_deg": {
+        "median": 2.672,
+        "mean": 2.527,
+        "p90": 5.282,
+        "max": 13.572,
+        "note": "相机间相对朝向误差,消除左乘全局世界系旋转;右乘相机系差异不在其消除范围"
+      },
+      "global_alignment_rotation_deg": 175.327,
+      "camera_shape_vggt": {
+        "center_radial_span": 0.7756606343616028,
+        "cov_eigen_min_max_ratio": 0.48821,
+        "trajectory_length": 35.2828,
+        "traj_over_span": 45.487
+      },
+      "camera_shape_ref": {
+        "center_radial_span": 0.8490987841946058,
+        "cov_eigen_min_max_ratio": 0.54476,
+        "trajectory_length": 38.8601,
+        "traj_over_span": 45.766
+      },
+      "trajectory_direction": {
+        "mean_cosine": 0.9898,
+        "median_cosine": 0.9955,
+        "n_pairs": 319
+      }
+    },
+    {
+      "sequence_id": "plantview__langdon_4__12-03-24",
+      "dataset_id": "plant_view_3d",
+      "sim3_scale": 1.306921,
+      "ref_center_spread": 0.9297,
+      "center_error_aligned": {
+        "median": 0.84245,
+        "p90": 1.10276,
+        "max": 1.34709,
+        "relative_to_spread": 0.9061
+      },
+      "rotation_error_deg": {
+        "median": 84.193,
+        "mean": 86.616,
+        "p90": 158.481,
+        "max": 180.0,
+        "note": "全局 Procrustes 左乘对齐后逐相机角度差(v2 修正公式)"
+      },
+      "relative_rotation_error_deg": {
+        "median": 90.404,
+        "mean": 91.187,
+        "p90": 162.364,
+        "max": 180.0,
+        "note": "相机间相对朝向误差,消除左乘全局世界系旋转;右乘相机系差异不在其消除范围"
+      },
+      "global_alignment_rotation_deg": 163.492,
+      "camera_shape_vggt": {
+        "center_radial_span": 0.3573227900888939,
+        "cov_eigen_min_max_ratio": 0.03608,
+        "trajectory_length": 31.7721,
+        "traj_over_span": 88.917
+      },
+      "camera_shape_ref": {
+        "center_radial_span": 0.929702085161096,
+        "cov_eigen_min_max_ratio": 0.54,
+        "trajectory_length": 42.128,
+        "traj_over_span": 45.313
+      },
+      "trajectory_direction": {
+        "mean_cosine": 0.5347,
+        "median_cosine": 0.6039,
+        "n_pairs": 319
+      }
+    },
+    {
+      "sequence_id": "plantview__langdon_4__13-02-24",
+      "dataset_id": "plant_view_3d",
+      "sim3_scale": 1.032491,
+      "ref_center_spread": 0.7744,
+      "center_error_aligned": {
+        "median": 0.02991,
+        "p90": 0.05774,
+        "max": 0.09853,
+        "relative_to_spread": 0.0386
+      },
+      "rotation_error_deg": {
+        "median": 2.222,
+        "mean": 2.134,
+        "p90": 4.686,
+        "max": 6.418,
+        "note": "全局 Procrustes 左乘对齐后逐相机角度差(v2 修正公式)"
+      },
+      "relative_rotation_error_deg": {
+        "median": 3.199,
+        "mean": 2.98,
+        "p90": 5.991,
+        "max": 10.812,
+        "note": "相机间相对朝向误差,消除左乘全局世界系旋转;右乘相机系差异不在其消除范围"
+      },
+      "global_alignment_rotation_deg": 175.205,
+      "camera_shape_vggt": {
+        "center_radial_span": 0.7475926330352808,
+        "cov_eigen_min_max_ratio": 0.54502,
+        "trajectory_length": 33.8875,
+        "traj_over_span": 45.329
+      },
+      "camera_shape_ref": {
+        "center_radial_span": 0.7744087850453706,
+        "cov_eigen_min_max_ratio": 0.62086,
+        "trajectory_length": 35.6408,
+        "traj_over_span": 46.023
+      },
+      "trajectory_direction": {
+        "mean_cosine": 0.9842,
+        "median_cosine": 0.9927,
+        "n_pairs": 339
+      }
+    },
+    {
+      "sequence_id": "plantview__langdon_4__15-04-24",
+      "dataset_id": "plant_view_3d",
+      "sim3_scale": 1.175027,
+      "ref_center_spread": 0.9701,
+      "center_error_aligned": {
+        "median": 0.92589,
+        "p90": 1.19962,
+        "max": 1.37644,
+        "relative_to_spread": 0.9544
+      },
+      "rotation_error_deg": {
+        "median": 89.822,
+        "mean": 89.249,
+        "p90": 163.306,
+        "max": 179.182,
+        "note": "全局 Procrustes 左乘对齐后逐相机角度差(v2 修正公式)"
+      },
+      "relative_rotation_error_deg": {
+        "median": 90.854,
+        "mean": 91.446,
+        "p90": 162.315,
+        "max": 180.0,
+        "note": "相机间相对朝向误差,消除左乘全局世界系旋转;右乘相机系差异不在其消除范围"
+      },
+      "global_alignment_rotation_deg": 169.091,
+      "camera_shape_vggt": {
+        "center_radial_span": 0.3496262722383706,
+        "cov_eigen_min_max_ratio": 0.0485,
+        "trajectory_length": 36.4589,
+        "traj_over_span": 104.28
+      },
+      "camera_shape_ref": {
+        "center_radial_span": 0.9701147507135913,
+        "cov_eigen_min_max_ratio": 0.54048,
+        "trajectory_length": 44.0202,
+        "traj_over_span": 45.376
+      },
+      "trajectory_direction": {
+        "mean_cosine": 0.4392,
+        "median_cosine": 0.5324,
+        "n_pairs": 317
+      }
+    },
+    {
+      "sequence_id": "plantview__langdon_4__19-03-24",
+      "dataset_id": "plant_view_3d",
+      "sim3_scale": 1.471929,
+      "ref_center_spread": 0.9707,
+      "center_error_aligned": {
+        "median": 0.84511,
+        "p90": 1.16777,
+        "max": 1.43045,
+        "relative_to_spread": 0.8706
+      },
+      "rotation_error_deg": {
+        "median": 78.947,
+        "mean": 86.875,
+        "p90": 159.531,
+        "max": 180.0,
+        "note": "全局 Procrustes 左乘对齐后逐相机角度差(v2 修正公式)"
+      },
+      "relative_rotation_error_deg": {
+        "median": 90.611,
+        "mean": 91.246,
+        "p90": 162.134,
+        "max": 180.0,
+        "note": "相机间相对朝向误差,消除左乘全局世界系旋转;右乘相机系差异不在其消除范围"
+      },
+      "global_alignment_rotation_deg": 179.895,
+      "camera_shape_vggt": {
+        "center_radial_span": 0.3419445085392436,
+        "cov_eigen_min_max_ratio": 0.03378,
+        "trajectory_length": 32.3929,
+        "traj_over_span": 94.731
+      },
+      "camera_shape_ref": {
+        "center_radial_span": 0.9707119388424863,
+        "cov_eigen_min_max_ratio": 0.54142,
+        "trajectory_length": 44.0301,
+        "traj_over_span": 45.359
+      },
+      "trajectory_direction": {
+        "mean_cosine": 0.511,
+        "median_cosine": 0.5907,
+        "n_pairs": 319
+      }
+    },
+    {
+      "sequence_id": "plantview__langdon_4__20-02-24",
+      "dataset_id": "plant_view_3d",
+      "sim3_scale": 0.963828,
+      "ref_center_spread": 0.7729,
+      "center_error_aligned": {
+        "median": 0.0458,
+        "p90": 0.08641,
+        "max": 0.1537,
+        "relative_to_spread": 0.0593
+      },
+      "rotation_error_deg": {
+        "median": 3.592,
+        "mean": 4.073,
+        "p90": 7.51,
+        "max": 39.274,
+        "note": "全局 Procrustes 左乘对齐后逐相机角度差(v2 修正公式)"
+      },
+      "relative_rotation_error_deg": {
+        "median": 5.255,
+        "mean": 6.019,
+        "p90": 10.769,
+        "max": 75.439,
+        "note": "相机间相对朝向误差,消除左乘全局世界系旋转;右乘相机系差异不在其消除范围"
+      },
+      "global_alignment_rotation_deg": 174.375,
+      "camera_shape_vggt": {
+        "center_radial_span": 0.8001396208831487,
+        "cov_eigen_min_max_ratio": 0.55017,
+        "trajectory_length": 38.0501,
+        "traj_over_span": 47.554
+      },
+      "camera_shape_ref": {
+        "center_radial_span": 0.7729084336721211,
+        "cov_eigen_min_max_ratio": 0.62144,
+        "trajectory_length": 35.7224,
+        "traj_over_span": 46.218
+      },
+      "trajectory_direction": {
+        "mean_cosine": 0.9433,
+        "median_cosine": 0.9829,
+        "n_pairs": 337
+      }
+    },
+    {
+      "sequence_id": "wheat3dgs__plot_461",
+      "dataset_id": "wheat3dgs",
+      "sim3_scale": 3.839258,
+      "ref_center_spread": 0.5691,
+      "center_error_aligned": {
+        "median": 0.08628,
+        "p90": 0.14495,
+        "max": 0.24664,
+        "relative_to_spread": 0.1516
+      },
+      "rotation_error_deg": {
+        "median": 3.597,
+        "mean": 3.204,
+        "p90": 5.43,
+        "max": 6.661,
+        "note": "全局 Procrustes 左乘对齐后逐相机角度差(v2 修正公式)"
+      },
+      "relative_rotation_error_deg": {
+        "median": 3.917,
+        "mean": 4.466,
+        "p90": 8.646,
+        "max": 12.508,
+        "note": "相机间相对朝向误差,消除左乘全局世界系旋转;右乘相机系差异不在其消除范围"
+      },
+      "global_alignment_rotation_deg": 176.985,
+      "camera_shape_vggt": {
+        "center_radial_span": 0.14495124515629254,
+        "cov_eigen_min_max_ratio": 0.01936,
+        "trajectory_length": 6.8945,
+        "traj_over_span": 47.564
+      },
+      "camera_shape_ref": {
+        "center_radial_span": 0.5691237585168096,
+        "cov_eigen_min_max_ratio": 0.04568,
+        "trajectory_length": 26.4499,
+        "traj_over_span": 46.475
+      },
+      "trajectory_direction": {
+        "mean_cosine": 0.9923,
+        "median_cosine": 0.9965,
+        "n_pairs": 35
+      }
+    },
+    {
+      "sequence_id": "wheat3dgs__plot_462",
+      "dataset_id": "wheat3dgs",
+      "sim3_scale": 4.434413,
+      "ref_center_spread": 0.5681,
+      "center_error_aligned": {
+        "median": 0.06332,
+        "p90": 0.10888,
+        "max": 0.2035,
+        "relative_to_spread": 0.1115
+      },
+      "rotation_error_deg": {
+        "median": 3.659,
+        "mean": 3.373,
+        "p90": 5.657,
+        "max": 6.837,
+        "note": "全局 Procrustes 左乘对齐后逐相机角度差(v2 修正公式)"
+      },
+      "relative_rotation_error_deg": {
+        "median": 4.103,
+        "mean": 4.701,
+        "p90": 8.962,
+        "max": 12.991,
+        "note": "相机间相对朝向误差,消除左乘全局世界系旋转;右乘相机系差异不在其消除范围"
+      },
+      "global_alignment_rotation_deg": 173.141,
+      "camera_shape_vggt": {
+        "center_radial_span": 0.12628009130166346,
+        "cov_eigen_min_max_ratio": 0.01799,
+        "trajectory_length": 6.0784,
+        "traj_over_span": 48.134
+      },
+      "camera_shape_ref": {
+        "center_radial_span": 0.56808248957998,
+        "cov_eigen_min_max_ratio": 0.0455,
+        "trajectory_length": 26.3683,
+        "traj_over_span": 46.416
+      },
+      "trajectory_direction": {
+        "mean_cosine": 0.9944,
+        "median_cosine": 0.9971,
+        "n_pairs": 35
+      }
+    },
+    {
+      "sequence_id": "wheat3dgs__plot_463",
+      "dataset_id": "wheat3dgs",
+      "sim3_scale": 4.419514,
+      "ref_center_spread": 0.5764,
+      "center_error_aligned": {
+        "median": 0.06727,
+        "p90": 0.12826,
+        "max": 0.26751,
+        "relative_to_spread": 0.1167
+      },
+      "rotation_error_deg": {
+        "median": 3.452,
+        "mean": 3.252,
+        "p90": 5.639,
+        "max": 6.903,
+        "note": "全局 Procrustes 左乘对齐后逐相机角度差(v2 修正公式)"
+      },
+      "relative_rotation_error_deg": {
+        "median": 4.022,
+        "mean": 4.57,
+        "p90": 8.62,
+        "max": 12.882,
+        "note": "相机间相对朝向误差,消除左乘全局世界系旋转;右乘相机系差异不在其消除范围"
+      },
+      "global_alignment_rotation_deg": 172.944,
+      "camera_shape_vggt": {
+        "center_radial_span": 0.127752453941846,
+        "cov_eigen_min_max_ratio": 0.02622,
+        "trajectory_length": 6.0612,
+        "traj_over_span": 47.445
+      },
+      "camera_shape_ref": {
+        "center_radial_span": 0.5764016238356672,
+        "cov_eigen_min_max_ratio": 0.04549,
+        "trajectory_length": 26.8253,
+        "traj_over_span": 46.539
+      },
+      "trajectory_direction": {
+        "mean_cosine": 0.9928,
+        "median_cosine": 0.9964,
+        "n_pairs": 35
+      }
+    },
+    {
+      "sequence_id": "wheat3dgs__plot_464",
+      "dataset_id": "wheat3dgs",
+      "sim3_scale": 4.299657,
+      "ref_center_spread": 0.5704,
+      "center_error_aligned": {
+        "median": 0.08384,
+        "p90": 0.12945,
+        "max": 0.16425,
+        "relative_to_spread": 0.147
+      },
+      "rotation_error_deg": {
+        "median": 3.215,
+        "mean": 3.015,
+        "p90": 5.034,
+        "max": 6.359,
+        "note": "全局 Procrustes 左乘对齐后逐相机角度差(v2 修正公式)"
+      },
+      "relative_rotation_error_deg": {
+        "median": 3.738,
+        "mean": 4.217,
+        "p90": 8.329,
+        "max": 11.837,
+        "note": "相机间相对朝向误差,消除左乘全局世界系旋转;右乘相机系差异不在其消除范围"
+      },
+      "global_alignment_rotation_deg": 174.018,
+      "camera_shape_vggt": {
+        "center_radial_span": 0.13036824987721302,
+        "cov_eigen_min_max_ratio": 0.02814,
+        "trajectory_length": 6.2569,
+        "traj_over_span": 47.994
+      },
+      "camera_shape_ref": {
+        "center_radial_span": 0.5704473993327907,
+        "cov_eigen_min_max_ratio": 0.04539,
+        "trajectory_length": 26.4938,
+        "traj_over_span": 46.444
+      },
+      "trajectory_direction": {
+        "mean_cosine": 0.9951,
+        "median_cosine": 0.9975,
+        "n_pairs": 35
+      }
+    },
+    {
+      "sequence_id": "wheat3dgs__plot_465",
+      "dataset_id": "wheat3dgs",
+      "sim3_scale": 4.191885,
+      "ref_center_spread": 0.5619,
+      "center_error_aligned": {
+        "median": 0.07298,
+        "p90": 0.12846,
+        "max": 0.17765,
+        "relative_to_spread": 0.1299
+      },
+      "rotation_error_deg": {
+        "median": 2.95,
+        "mean": 2.612,
+        "p90": 4.582,
+        "max": 5.383,
+        "note": "全局 Procrustes 左乘对齐后逐相机角度差(v2 修正公式)"
+      },
+      "relative_rotation_error_deg": {
+        "median": 3.333,
+        "mean": 3.669,
+        "p90": 7.337,
+        "max": 10.457,
+        "note": "相机间相对朝向误差,消除左乘全局世界系旋转;右乘相机系差异不在其消除范围"
+      },
+      "global_alignment_rotation_deg": 170.715,
+      "camera_shape_vggt": {
+        "center_radial_span": 0.13162403619024496,
+        "cov_eigen_min_max_ratio": 0.02811,
+        "trajectory_length": 6.3485,
+        "traj_over_span": 48.232
+      },
+      "camera_shape_ref": {
+        "center_radial_span": 0.5618826598443579,
+        "cov_eigen_min_max_ratio": 0.04616,
+        "trajectory_length": 26.1389,
+        "traj_over_span": 46.52
+      },
+      "trajectory_direction": {
+        "mean_cosine": 0.9945,
+        "median_cosine": 0.997,
+        "n_pairs": 35
+      }
+    },
+    {
+      "sequence_id": "wheat3dgs__plot_466",
+      "dataset_id": "wheat3dgs",
+      "sim3_scale": 4.728746,
+      "ref_center_spread": 0.5954,
+      "center_error_aligned": {
+        "median": 0.07113,
+        "p90": 0.15122,
+        "max": 0.2286,
+        "relative_to_spread": 0.1195
+      },
+      "rotation_error_deg": {
+        "median": 3.232,
+        "mean": 2.88,
+        "p90": 4.83,
+        "max": 5.815,
+        "note": "全局 Procrustes 左乘对齐后逐相机角度差(v2 修正公式)"
+      },
+      "relative_rotation_error_deg": {
+        "median": 3.605,
+        "mean": 4.008,
+        "p90": 7.819,
+        "max": 11.056,
+        "note": "相机间相对朝向误差,消除左乘全局世界系旋转;右乘相机系差异不在其消除范围"
+      },
+      "global_alignment_rotation_deg": 171.841,
+      "camera_shape_vggt": {
+        "center_radial_span": 0.12223644295820908,
+        "cov_eigen_min_max_ratio": 0.01345,
+        "trajectory_length": 5.8036,
+        "traj_over_span": 47.479
+      },
+      "camera_shape_ref": {
+        "center_radial_span": 0.5953678745825902,
+        "cov_eigen_min_max_ratio": 0.0453,
+        "trajectory_length": 27.6371,
+        "traj_over_span": 46.42
+      },
+      "trajectory_direction": {
+        "mean_cosine": 0.9905,
+        "median_cosine": 0.9928,
+        "n_pairs": 35
+      }
+    },
+    {
+      "sequence_id": "wheat3dgs__plot_467",
+      "dataset_id": "wheat3dgs",
+      "sim3_scale": 3.889386,
+      "ref_center_spread": 0.5594,
+      "center_error_aligned": {
+        "median": 0.05746,
+        "p90": 0.12748,
+        "max": 0.15664,
+        "relative_to_spread": 0.1027
+      },
+      "rotation_error_deg": {
+        "median": 3.333,
+        "mean": 2.793,
+        "p90": 4.621,
+        "max": 5.123,
+        "note": "全局 Procrustes 左乘对齐后逐相机角度差(v2 修正公式)"
+      },
+      "relative_rotation_error_deg": {
+        "median": 3.544,
+        "mean": 3.896,
+        "p90": 7.473,
+        "max": 10.122,
+        "note": "相机间相对朝向误差,消除左乘全局世界系旋转;右乘相机系差异不在其消除范围"
+      },
+      "global_alignment_rotation_deg": 172.207,
+      "camera_shape_vggt": {
+        "center_radial_span": 0.1424528771420586,
+        "cov_eigen_min_max_ratio": 0.02879,
+        "trajectory_length": 6.873,
+        "traj_over_span": 48.248
+      },
+      "camera_shape_ref": {
+        "center_radial_span": 0.5593981650081792,
+        "cov_eigen_min_max_ratio": 0.04566,
+        "trajectory_length": 26.0459,
+        "traj_over_span": 46.561
+      },
+      "trajectory_direction": {
+        "mean_cosine": 0.9933,
+        "median_cosine": 0.9949,
+        "n_pairs": 35
+      }
+    }
+  ]
+}

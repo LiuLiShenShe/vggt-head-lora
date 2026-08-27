@@ -1,0 +1,495 @@
+[
+  {
+    "sequence_id": "mustc__plot198__230613__ugv__pos00",
+    "rot_median": [
+      1.844,
+      1.844
+    ],
+    "rot_p90": [
+      3.387,
+      3.387
+    ],
+    "center_rel": [
+      0.0629,
+      0.0629
+    ],
+    "rel_rot_median": [
+      2.778,
+      2.778
+    ],
+    "traj_cos": [
+      0.997,
+      0.997
+    ],
+    "gate": [
+      "PASS",
+      "PASS"
+    ],
+    "status": "一致",
+    "npy_not_allclose": []
+  },
+  {
+    "sequence_id": "mustc__plot198__230613__ugv__pos01",
+    "rot_median": [
+      1.383,
+      1.383
+    ],
+    "rot_p90": [
+      3.902,
+      3.902
+    ],
+    "center_rel": [
+      0.0549,
+      0.0549
+    ],
+    "rel_rot_median": [
+      2.692,
+      2.692
+    ],
+    "traj_cos": [
+      0.9952,
+      0.9952
+    ],
+    "gate": [
+      "PASS",
+      "PASS"
+    ],
+    "status": "一致",
+    "npy_not_allclose": []
+  },
+  {
+    "sequence_id": "mustc__plot198__230613__ugv__pos02",
+    "rot_median": [
+      1.896,
+      1.896
+    ],
+    "rot_p90": [
+      4.619,
+      4.619
+    ],
+    "center_rel": [
+      0.049,
+      0.049
+    ],
+    "rel_rot_median": [
+      3.277,
+      3.277
+    ],
+    "traj_cos": [
+      0.9962,
+      0.9962
+    ],
+    "gate": [
+      "PASS",
+      "PASS"
+    ],
+    "status": "一致",
+    "npy_not_allclose": []
+  },
+  {
+    "sequence_id": "mustc__plot198__230613__ugv__pos03",
+    "rot_median": [
+      1.414,
+      1.414
+    ],
+    "rot_p90": [
+      1.874,
+      1.874
+    ],
+    "center_rel": [
+      0.0405,
+      0.0405
+    ],
+    "rel_rot_median": [
+      0.0,
+      0.0
+    ],
+    "traj_cos": [
+      0.9949,
+      0.9949
+    ],
+    "gate": [
+      "PASS",
+      "PASS"
+    ],
+    "status": "一致",
+    "npy_not_allclose": []
+  },
+  {
+    "sequence_id": "plantview__langdon_4__05-03-24",
+    "rot_median": [
+      1.712,
+      1.712
+    ],
+    "rot_p90": [
+      4.101,
+      4.101
+    ],
+    "center_rel": [
+      0.0309,
+      0.0309
+    ],
+    "rel_rot_median": [
+      2.672,
+      2.672
+    ],
+    "traj_cos": [
+      0.9898,
+      0.9898
+    ],
+    "gate": [
+      "PASS",
+      "PASS"
+    ],
+    "status": "一致",
+    "npy_not_allclose": []
+  },
+  {
+    "sequence_id": "plantview__langdon_4__12-03-24",
+    "rot_median": [
+      84.193,
+      84.193
+    ],
+    "rot_p90": [
+      158.481,
+      158.481
+    ],
+    "center_rel": [
+      0.9061,
+      0.9061
+    ],
+    "rel_rot_median": [
+      90.404,
+      90.404
+    ],
+    "traj_cos": [
+      0.5347,
+      0.5347
+    ],
+    "gate": [
+      "FAIL",
+      "FAIL"
+    ],
+    "status": "一致",
+    "npy_not_allclose": []
+  },
+  {
+    "sequence_id": "plantview__langdon_4__13-02-24",
+    "rot_median": [
+      2.222,
+      2.222
+    ],
+    "rot_p90": [
+      4.686,
+      4.686
+    ],
+    "center_rel": [
+      0.0386,
+      0.0386
+    ],
+    "rel_rot_median": [
+      3.199,
+      3.199
+    ],
+    "traj_cos": [
+      0.9842,
+      0.9842
+    ],
+    "gate": [
+      "PASS",
+      "PASS"
+    ],
+    "status": "一致",
+    "npy_not_allclose": []
+  },
+  {
+    "sequence_id": "plantview__langdon_4__15-04-24",
+    "rot_median": [
+      89.822,
+      89.822
+    ],
+    "rot_p90": [
+      163.306,
+      163.306
+    ],
+    "center_rel": [
+      0.9544,
+      0.9544
+    ],
+    "rel_rot_median": [
+      90.854,
+      90.854
+    ],
+    "traj_cos": [
+      0.4392,
+      0.4392
+    ],
+    "gate": [
+      "FAIL",
+      "FAIL"
+    ],
+    "status": "一致",
+    "npy_not_allclose": []
+  },
+  {
+    "sequence_id": "plantview__langdon_4__19-03-24",
+    "rot_median": [
+      78.947,
+      78.947
+    ],
+    "rot_p90": [
+      159.531,
+      159.531
+    ],
+    "center_rel": [
+      0.8706,
+      0.8706
+    ],
+    "rel_rot_median": [
+      90.611,
+      90.611
+    ],
+    "traj_cos": [
+      0.511,
+      0.511
+    ],
+    "gate": [
+      "FAIL",
+      "FAIL"
+    ],
+    "status": "一致",
+    "npy_not_allclose": []
+  },
+  {
+    "sequence_id": "plantview__langdon_4__20-02-24",
+    "rot_median": [
+      3.592,
+      3.592
+    ],
+    "rot_p90": [
+      7.51,
+      7.51
+    ],
+    "center_rel": [
+      0.0593,
+      0.0593
+    ],
+    "rel_rot_median": [
+      5.255,
+      5.255
+    ],
+    "traj_cos": [
+      0.9433,
+      0.9433
+    ],
+    "gate": [
+      "PASS",
+      "PASS"
+    ],
+    "status": "一致",
+    "npy_not_allclose": []
+  },
+  {
+    "sequence_id": "wheat3dgs__plot_461",
+    "rot_median": [
+      3.597,
+      3.597
+    ],
+    "rot_p90": [
+      5.43,
+      5.43
+    ],
+    "center_rel": [
+      0.1516,
+      0.1516
+    ],
+    "rel_rot_median": [
+      3.917,
+      3.917
+    ],
+    "traj_cos": [
+      0.9923,
+      0.9923
+    ],
+    "gate": [
+      "PASS",
+      "PASS"
+    ],
+    "status": "一致",
+    "npy_not_allclose": []
+  },
+  {
+    "sequence_id": "wheat3dgs__plot_462",
+    "rot_median": [
+      3.659,
+      3.659
+    ],
+    "rot_p90": [
+      5.657,
+      5.657
+    ],
+    "center_rel": [
+      0.1115,
+      0.1115
+    ],
+    "rel_rot_median": [
+      4.103,
+      4.103
+    ],
+    "traj_cos": [
+      0.9944,
+      0.9944
+    ],
+    "gate": [
+      "PASS",
+      "PASS"
+    ],
+    "status": "一致",
+    "npy_not_allclose": []
+  },
+  {
+    "sequence_id": "wheat3dgs__plot_463",
+    "rot_median": [
+      3.452,
+      3.452
+    ],
+    "rot_p90": [
+      5.639,
+      5.639
+    ],
+    "center_rel": [
+      0.1167,
+      0.1167
+    ],
+    "rel_rot_median": [
+      4.022,
+      4.022
+    ],
+    "traj_cos": [
+      0.9928,
+      0.9928
+    ],
+    "gate": [
+      "PASS",
+      "PASS"
+    ],
+    "status": "一致",
+    "npy_not_allclose": []
+  },
+  {
+    "sequence_id": "wheat3dgs__plot_464",
+    "rot_median": [
+      3.215,
+      3.215
+    ],
+    "rot_p90": [
+      5.034,
+      5.034
+    ],
+    "center_rel": [
+      0.147,
+      0.147
+    ],
+    "rel_rot_median": [
+      3.738,
+      3.738
+    ],
+    "traj_cos": [
+      0.9951,
+      0.9951
+    ],
+    "gate": [
+      "PASS",
+      "PASS"
+    ],
+    "status": "一致",
+    "npy_not_allclose": []
+  },
+  {
+    "sequence_id": "wheat3dgs__plot_465",
+    "rot_median": [
+      2.95,
+      2.95
+    ],
+    "rot_p90": [
+      4.582,
+      4.582
+    ],
+    "center_rel": [
+      0.1299,
+      0.1299
+    ],
+    "rel_rot_median": [
+      3.333,
+      3.333
+    ],
+    "traj_cos": [
+      0.9945,
+      0.9945
+    ],
+    "gate": [
+      "PASS",
+      "PASS"
+    ],
+    "status": "一致",
+    "npy_not_allclose": []
+  },
+  {
+    "sequence_id": "wheat3dgs__plot_466",
+    "rot_median": [
+      3.232,
+      3.232
+    ],
+    "rot_p90": [
+      4.83,
+      4.83
+    ],
+    "center_rel": [
+      0.1195,
+      0.1195
+    ],
+    "rel_rot_median": [
+      3.605,
+      3.605
+    ],
+    "traj_cos": [
+      0.9905,
+      0.9905
+    ],
+    "gate": [
+      "PASS",
+      "PASS"
+    ],
+    "status": "一致",
+    "npy_not_allclose": []
+  },
+  {
+    "sequence_id": "wheat3dgs__plot_467",
+    "rot_median": [
+      3.333,
+      3.333
+    ],
+    "rot_p90": [
+      4.621,
+      4.621
+    ],
+    "center_rel": [
+      0.1027,
+      0.1027
+    ],
+    "rel_rot_median": [
+      3.544,
+      3.544
+    ],
+    "traj_cos": [
+      0.9933,
+      0.9933
+    ],
+    "gate": [
+      "PASS",
+      "PASS"
+    ],
+    "status": "一致",
+    "npy_not_allclose": []
+  }
+]

@@ -1,0 +1,190 @@
+{
+  "success_05-03-24": {
+    "8": {
+      "n_frames": 8,
+      "A_vggt_cam": {
+        "nn_med": 0.03788,
+        "nn_p90": 0.05862,
+        "n_points_sampled": 82562,
+        "n_beyond_trunc": 77865
+      },
+      "B_ref_cam": {
+        "nn_med": 0.03147,
+        "nn_p90": 0.05691,
+        "n_points_sampled": 82562,
+        "n_beyond_trunc": 77727
+      },
+      "C_point_head": {
+        "nn_med": 0.03669,
+        "nn_p90": 0.05821,
+        "n_points_sampled": 82562,
+        "n_beyond_trunc": 64820
+      },
+      "trunc": 0.06372,
+      "ref_diag": 1.2744
+    },
+    "16": {
+      "n_frames": 16,
+      "A_vggt_cam": {
+        "nn_med": 0.02901,
+        "nn_p90": 0.05549,
+        "n_points_sampled": 81004,
+        "n_beyond_trunc": 73402
+      },
+      "B_ref_cam": {
+        "nn_med": 0.03361,
+        "nn_p90": 0.05771,
+        "n_points_sampled": 81004,
+        "n_beyond_trunc": 75891
+      },
+      "C_point_head": {
+        "nn_med": 0.02084,
+        "nn_p90": 0.05032,
+        "n_points_sampled": 81004,
+        "n_beyond_trunc": 51241
+      },
+      "trunc": 0.06372,
+      "ref_diag": 1.2744
+    },
+    "24": {
+      "n_frames": 24,
+      "A_vggt_cam": {
+        "nn_med": 0.0315,
+        "nn_p90": 0.05703,
+        "n_points_sampled": 80498,
+        "n_beyond_trunc": 75331
+      },
+      "B_ref_cam": {
+        "nn_med": 0.03515,
+        "nn_p90": 0.05727,
+        "n_points_sampled": 80498,
+        "n_beyond_trunc": 77944
+      },
+      "C_point_head": {
+        "nn_med": 0.02099,
+        "nn_p90": 0.05041,
+        "n_points_sampled": 80498,
+        "n_beyond_trunc": 49537
+      },
+      "trunc": 0.06372,
+      "ref_diag": 1.2744
+    },
+    "36": {
+      "n_frames": 36,
+      "A_vggt_cam": {
+        "nn_med": 0.03044,
+        "nn_p90": 0.05583,
+        "n_points_sampled": 80498,
+        "n_beyond_trunc": 74650
+      },
+      "B_ref_cam": {
+        "nn_med": 0.03481,
+        "nn_p90": 0.05797,
+        "n_points_sampled": 80498,
+        "n_beyond_trunc": 77626
+      },
+      "C_point_head": {
+        "nn_med": 0.01975,
+        "nn_p90": 0.04956,
+        "n_points_sampled": 80498,
+        "n_beyond_trunc": 49356
+      },
+      "trunc": 0.06372,
+      "ref_diag": 1.2744
+    }
+  },
+  "fail_12-03-24": {
+    "8": {
+      "n_frames": 8,
+      "A_vggt_cam": {
+        "nn_med": null,
+        "nn_p90": null,
+        "n_points_sampled": 82562,
+        "n_beyond_trunc": 82562
+      },
+      "B_ref_cam": {
+        "nn_med": 0.03275,
+        "nn_p90": 0.06307,
+        "n_points_sampled": 82562,
+        "n_beyond_trunc": 78936
+      },
+      "C_point_head": {
+        "nn_med": null,
+        "nn_p90": null,
+        "n_points_sampled": 82562,
+        "n_beyond_trunc": 82562
+      },
+      "trunc": 0.07009,
+      "ref_diag": 1.4018
+    },
+    "16": {
+      "n_frames": 16,
+      "A_vggt_cam": {
+        "nn_med": null,
+        "nn_p90": null,
+        "n_points_sampled": 81004,
+        "n_beyond_trunc": 81004
+      },
+      "B_ref_cam": {
+        "nn_med": 0.03895,
+        "nn_p90": 0.06367,
+        "n_points_sampled": 81004,
+        "n_beyond_trunc": 75837
+      },
+      "C_point_head": {
+        "nn_med": null,
+        "nn_p90": null,
+        "n_points_sampled": 81004,
+        "n_beyond_trunc": 81004
+      },
+      "trunc": 0.07009,
+      "ref_diag": 1.4018
+    },
+    "24": {
+      "n_frames": 24,
+      "A_vggt_cam": {
+        "nn_med": null,
+        "nn_p90": null,
+        "n_points_sampled": 80498,
+        "n_beyond_trunc": 80498
+      },
+      "B_ref_cam": {
+        "nn_med": 0.04002,
+        "nn_p90": 0.06372,
+        "n_points_sampled": 80498,
+        "n_beyond_trunc": 78009
+      },
+      "C_point_head": {
+        "nn_med": null,
+        "nn_p90": null,
+        "n_points_sampled": 80498,
+        "n_beyond_trunc": 80498
+      },
+      "trunc": 0.07009,
+      "ref_diag": 1.4018
+    },
+    "36": {
+      "n_frames": 36,
+      "A_vggt_cam": {
+        "nn_med": null,
+        "nn_p90": null,
+        "n_points_sampled": 80498,
+        "n_beyond_trunc": 80498
+      },
+      "B_ref_cam": {
+        "nn_med": 0.03603,
+        "nn_p90": 0.06308,
+        "n_points_sampled": 80498,
+        "n_beyond_trunc": 77763
+      },
+      "C_point_head": {
+        "nn_med": null,
+        "nn_p90": null,
+        "n_points_sampled": 80498,
+        "n_beyond_trunc": 80498
+      },
+      "trunc": 0.07009,
+      "ref_diag": 1.4018
+    }
+  }
+}
