@@ -1,0 +1,14 @@
+{
+  "nn_med": {
+    "name": "truncated NN median",
+    "diagnostic_only": true
+  },
+  "nn_p90": {
+    "name": "truncated NN P90",
+    "diagnostic_only": true
+  },
+  "n_beyond_trunc": {
+    "name": "points beyond truncation"
+  },
+  "_note": "Corrected unprojection (v3): world = R_w2c.T @ cam - R_w2c.T @ t_w2c; replaces buggy v2 (+t_w2c)"
+}

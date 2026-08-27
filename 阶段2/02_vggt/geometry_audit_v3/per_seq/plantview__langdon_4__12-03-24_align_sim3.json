@@ -1,0 +1,9 @@
+{
+  "scale_s": 1.30692050789837,
+  "residual_rmse_centers": 0.7679928561240013,
+  "n_centers": 320,
+  "method": "umeyama_sim3_on_camera_centers",
+  "reference_frame_comparable": true,
+  "ref_center_spread_m": 1.402,
+  "note": ""
+}

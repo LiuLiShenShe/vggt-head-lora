@@ -1,0 +1,43 @@
+{
+  "sequence_id": "wheat3dgs__plot_463",
+  "dataset_id": "wheat3dgs",
+  "pose_gate": true,
+  "reference_comparable": false,
+  "alignment": {
+    "scale_s": 4.419513852899871,
+    "residual_rmse_centers": 0.08242262842944958,
+    "n_centers": 36,
+    "method": "umeyama_sim3_on_camera_centers",
+    "reference_frame_comparable": false,
+    "ref_center_spread_m": 41021.0,
+    "note": "plant_view: metric-compare OK; wheat/mustc: reference not in VGGT metric frame -> scale-normalized only"
+  },
+  "metrics_full_scene": {
+    "chamfer_symmetric_m": null,
+    "chamfer_pred2gt_m": null,
+    "chamfer_gt2pred_m": null,
+    "median_nn_pred2gt": null,
+    "p90_nn_pred2gt": null,
+    "p95_nn_pred2gt": null,
+    "median_nn_gt2pred": null,
+    "p90_nn_gt2pred": null,
+    "p95_nn_gt2pred": null,
+    "truncated_inlier_diagnostic_only": true,
+    "result_set": "full_scene"
+  },
+  "metrics_plant_foreground": {
+    "chamfer_symmetric_m": null,
+    "chamfer_pred2gt_m": null,
+    "chamfer_gt2pred_m": null,
+    "median_nn_pred2gt": null,
+    "p90_nn_pred2gt": null,
+    "p95_nn_pred2gt": null,
+    "median_nn_gt2pred": null,
+    "p90_nn_gt2pred": null,
+    "p95_nn_gt2pred": null,
+    "truncated_inlier_diagnostic_only": true,
+    "result_set": "plant_foreground_only_pred"
+  },
+  "phenotype": null,
+  "depth_audit": null
+}

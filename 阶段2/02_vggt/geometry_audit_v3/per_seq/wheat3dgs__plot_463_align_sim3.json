@@ -1,0 +1,9 @@
+{
+  "scale_s": 4.419513852899871,
+  "residual_rmse_centers": 0.08242262842944958,
+  "n_centers": 36,
+  "method": "umeyama_sim3_on_camera_centers",
+  "reference_frame_comparable": false,
+  "ref_center_spread_m": 41021.0,
+  "note": "plant_view: metric-compare OK; wheat/mustc: reference not in VGGT metric frame -> scale-normalized only"
+}

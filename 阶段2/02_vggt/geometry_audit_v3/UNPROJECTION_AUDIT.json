@@ -1,0 +1,39 @@
+{
+  "deprecated_four_path_v2": true,
+  "deprecated_reason": "incorrect_w2c_to_c2w_unprojection: legacy unproject_np used 'world = R.T @ cam + t_w2c' instead of 'R.T @ cam - R_w2c.T @ t_w2c'",
+  "correct_formula": "world = R_w2c.T @ cam - R_w2c.T @ t_w2c   (R=R_w2c, t=t_w2c, OpenCV w2c convention)",
+  "official_reference": "vggt.utils.geometry.unproject_depth_map_to_point_map (closed_form_inverse_se3 -> t_c2w=-R.T@t)",
+  "dtype_match": true,
+  "primary_pointmap_candidate_saved_correct": true,
+  "tests": {
+    "identity_camera": {
+      "max_abs_diff": 0.0,
+      "passed": true
+    },
+    "random_se3": {
+      "max_abs_diff_v3_vs_official": 1.2545743066638693e-07,
+      "max_abs_diff_legacy_vs_correct": 1.5175920203328133,
+      "passed": true,
+      "legacy_known_bug": true
+    },
+    "pv_05_03_24": {
+      "max_abs_diff_v3_vs_official": 6.281363251758876e-08,
+      "mean_abs_diff_v3_vs_official": 1.3585251780887939e-08,
+      "max_abs_diff_saved_pm_vs_official": 5.9604525315393175e-08,
+      "passed": true
+    },
+    "pv_12_03_24": {
+      "max_abs_diff_v3_vs_official": 6.071889102621242e-08,
+      "mean_abs_diff_v3_vs_official": 1.360379283712645e-08,
+      "max_abs_diff_saved_pm_vs_official": 5.96044904543902e-08,
+      "passed": true
+    }
+  },
+  "four_path_v3_dir": "/fj/VGGT+head+lora实验/阶段2/02_vggt/geometry_audit_v3/four_path_v3",
+  "conclusion": {
+    "Q1_unproject_np_wrong": true,
+    "vggt_main_inference_unprojection_correct": true,
+    "four_path_v2_verdict_unreliable": true,
+    "action": "mark four_path_v2 DEPRECATED; recompute with unproject_v3 -> four_path_v3"
+  }
+}
