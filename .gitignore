@@ -6,3 +6,29 @@
 # v2_clean_rerun_eval 也排除大 npz/png,保留 json/md
 阶段2/02_vggt/v2_clean_rerun_eval/**/*.npz
 阶段2/02_vggt/v2_clean_rerun_eval/**/*.png
+
+# ===== 全局通用忽略 =====
+__pycache__/
+**/__pycache__/
+*.py[cod]
+*.so
+.venv/
+venv/
+.ipynb_checkpoints/
+.hydra/
+output/
+ckpt/
+*.log
+.DS_Store
+.vscode/
+*.egg-info/
+
+# 数值数组与大型二进制输出
+*.npy
+*.ply
+*.npz
+*.las
+
+# 大数据集（超 GitHub 限制）
+阶段1-数据集/
+阶段2/**/*.zip

@@ -1,0 +1,166 @@
+{
+  "model_name": "facebook/VGGT-1B",
+  "checkpoint_version": {
+    "repo_id": "facebook/VGGT-1B",
+    "sha256": "f164acf60724910d8fe1578bb499d800850c7bb0948db7555c413f9fbe60467e"
+  },
+  "input_image_sha256": [
+    "e554757f294f2caa291e9a190bda69581f36f6a9c704888d61cf29877686f08b",
+    "94d392f3bb4bf410ca6d755c2c29d7216ab7d0d4a0cde357ca39052c518f4586",
+    "0cab601326baef4f5a0a4118676260224ccd8f0a09c436061e9b3b5a2e44be39",
+    "12b6135aa85cd88e26eab177cf4faa8109eed6c56d6044e45e882a2ce51f648a",
+    "f7c2f62ef39d3dedd347dbbedf5a0b8631b4f085fd56fb3b0a1f81f94b66f6d5",
+    "3228bc51c48fa9db242d869c8697e7294e29726836128b3e1293b4805c3e4b53",
+    "addb73e28f06a8e3d98540c91080a06d1b30db69690e1a2b9102d5855d5c389e",
+    "bd079f9cf11df141da1fc8f40acdaf6f9cd37070d3aa5293e0d272fe72ea2f54",
+    "80bca7a18a36eda5cc81f2e072ecbbf61abc7c2fefe35cb41ddfd4a6d05dd248",
+    "d94a21a6cc34cf47bfb2a1f0c1a5ee7e9baf5234af649ac039d0371905b6e011",
+    "8457c12e0031b4bd666f9af0e1ad438a1c4e68b140a0eaf144d7adf33c3c2f1a",
+    "1784c1860fe4c0dfcf06f75ca223caf02ca477d102c181314dae0db41f830433",
+    "84a0d005155e03da3c77fc0e7c51530cd793c423c4ecb59bc3ad5a7a863a3d80",
+    "6288112fc2e61eb212672b39246c93ef1c211701dcc42531e514ce43b2e305fe",
+    "c31bcf7511c6f4dd84aaf726807d97ae64fb4fd5fbda4a5fbfbd430446fbad60",
+    "d5821348f7441591d397862fc0190b39c5e48f4ce9fa854040bcbe86645148da",
+    "264846f31ed3b9b2cd8dddb4e9d518b1c7cb4983714b6a3a32d312b955fb0d2c",
+    "51589f998dcaefe5b7e6bea043bafba2839145789085aaddba143fde674c9c5c",
+    "95f874706b15768f207f84774dd51af0c9f4afab54a892ee6b508b95fd585e55",
+    "ba6c65aa4af996ef39ef85e80e35385ba7a08ac6c3a0556914ce94cede9fcaf1"
+  ],
+  "image_order": [
+    "nikon_0.jpeg",
+    "nikon_1.jpeg",
+    "nikon_2.jpeg",
+    "nikon_3.jpeg",
+    "nikon_4.jpeg",
+    "nikon_5.jpeg",
+    "nikon_6.jpeg",
+    "nikon_7.jpeg",
+    "nikon_8.jpeg",
+    "nikon_9.jpeg",
+    "nikon_10.jpeg",
+    "nikon_11.jpeg",
+    "nikon_12.jpeg",
+    "nikon_13.jpeg",
+    "nikon_14.jpeg",
+    "nikon_15.jpeg",
+    "nikon_16.jpeg",
+    "nikon_17.jpeg",
+    "nikon_18.jpeg",
+    "nikon_19.jpeg"
+  ],
+  "resize_crop_params": "load_and_preprocess_images(mode='crop'), target 518x350",
+  "intrinsics_transform": "pose_encoding_to_extri_intri; cx,cy=W/2,H/2; fov→fx,fy",
+  "precision_mode": "torch.bfloat16 autocast (official demo mode)",
+  "code_commit_hash": "a288dd0f14786c93483e45524328726ab7b1b4ce",
+  "extra": {
+    "S": 20
+  },
+  "run_id": "clean_rerun_20260826T065510Z",
+  "sequence_id": "mustc__plot198__230613__ugv__pos01",
+  "dataset_id": "mustc",
+  "output_shapes": {
+    "pose_enc": [
+      20,
+      9
+    ],
+    "extrinsic_w2c": [
+      20,
+      3,
+      4
+    ],
+    "intrinsic": [
+      20,
+      3,
+      3
+    ],
+    "depth": [
+      20,
+      350,
+      518
+    ],
+    "point_map_unprojected": [
+      20,
+      350,
+      518,
+      3
+    ]
+  },
+  "forward_seconds": 1.4,
+  "peak_gpu_mem_gb": 5.78,
+  "tokens_saved": true,
+  "interface_verified": true,
+  "sanity": {
+    "depth_valid_positive_ratio": 1.0,
+    "nan_inf_counts": {
+      "depth": 0,
+      "depth_conf": 0,
+      "points_direct": 0,
+      "points_unprojected": 0
+    },
+    "focal_positive_ratio": 1.0,
+    "camera_center_min_pairwise_dist": 0.07180309295654297,
+    "camera_collapse": false,
+    "camera_shape_scale_normalized": {
+      "center_radial_span": 0.5434148907661438,
+      "cov_eigen_min_max_ratio": 0.3452859544195137,
+      "trajectory_length": 9.28054428100586,
+      "traj_over_span": 17.078,
+      "depth_span": 1.5858345478773117,
+      "camera_collapse_scale_relative": false,
+      "note": "尺度归一化相机分布指标;坍缩判定以此为准(绝对 1e-3 阈值仅作极端兜底)"
+    },
+    "pointcloud_flatness_eigratio": 0.20569089073701963,
+    "pointcloud_flattened": false,
+    "flatness_note": "仅排除单一平面坍缩,不证明结构正确",
+    "token_nan_inf_count": 0
+  },
+  "primary_pointmap_candidate": "point_map_unprojected (per official recommendation)",
+  "pose_eval_v2": {
+    "sim3_scale": 3.204603,
+    "ref_center_spread": 1.7509,
+    "center_error_aligned": {
+      "median": 0.09605,
+      "p90": 0.1463,
+      "max": 0.24359,
+      "relative_to_spread": 0.0549
+    },
+    "rotation_error_deg": {
+      "median": 1.383,
+      "mean": 1.77,
+      "p90": 3.902,
+      "max": 4.968,
+      "note": "全局 Procrustes 左乘对齐后逐相机角度差(v2 修正公式)"
+    },
+    "relative_rotation_error_deg": {
+      "median": 2.692,
+      "mean": 2.432,
+      "p90": 5.136,
+      "max": 7.191,
+      "note": "相机间相对朝向误差,消除左乘全局世界系旋转;右乘相机系差异不在其消除范围"
+    },
+    "global_alignment_rotation_deg": 161.859,
+    "camera_shape_vggt": {
+      "center_radial_span": 0.5434149002682398,
+      "cov_eigen_min_max_ratio": 0.34529,
+      "trajectory_length": 9.2805,
+      "traj_over_span": 17.078
+    },
+    "camera_shape_ref": {
+      "center_radial_span": 1.7509299683074588,
+      "cov_eigen_min_max_ratio": 0.42667,
+      "trajectory_length": 29.3903,
+      "traj_over_span": 16.786
+    },
+    "trajectory_direction": {
+      "mean_cosine": 0.9952,
+      "median_cosine": 0.9983,
+      "n_pairs": 19
+    }
+  },
+  "active_evaluation_version": "v2",
+  "pose_eval_v1": null,
+  "gate_source": "pose_eval_v2",
+  "deprecated_fields": [
+    "pose_eval_v1"
+  ]
+}

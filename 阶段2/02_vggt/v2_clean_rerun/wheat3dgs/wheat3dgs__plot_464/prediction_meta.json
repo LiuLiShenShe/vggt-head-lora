@@ -1,0 +1,198 @@
+{
+  "model_name": "facebook/VGGT-1B",
+  "checkpoint_version": {
+    "repo_id": "facebook/VGGT-1B",
+    "sha256": "f164acf60724910d8fe1578bb499d800850c7bb0948db7555c413f9fbe60467e"
+  },
+  "input_image_sha256": [
+    "d608d6bb3aa62492d3d4b4f154484cdcac998f27d87a72c87e0cac30770113e5",
+    "269bdbb65fd3896299bed7037ac1a8a3ebbb7622ae97733516d1ea540d321523",
+    "ffe8875584496cd09d93d3c59d9e6190439ad2d82669f52be58e9ba3c10425db",
+    "7a002e6afa641998080353c32342e94f92dea08a5ce1c4a45b7f02a4fea7408b",
+    "0e3b6fb8e048218ad31ca4248f623f4229dc3da2f24baa4ebf4998575ab5f911",
+    "8b420aff7c7bea74a1aa43fbe2f9de9b7c7d3b5957efcc447bf44f98ab7d7110",
+    "ee72e6e683c16cd51b7b9211c67e2c867bb40d97241b9cba9681cdf4b0e6f95a",
+    "e0f860a7f985127149a27daa11952f4fc38f462a755893fbcf0121a04851a384",
+    "def4ff4346102bf733d937ced2bd33b82c08a9c05fc3b7a9fad6ebdde2aef8a3",
+    "c6a66d01b818a8b26deab3719737a34a88426c80d81ad25855840ec7f2a31c32",
+    "9dd7aa79ad5c2056574d871b735fa93b5502de484ac6c9c45f8c5aafd0d8baae",
+    "275a6e99d745599ca48ba61870c084c040406c303893cbb568be4f1e4d4493c0",
+    "cd4006613eef60a0ade66edf9742b474d34c3b53f685eecebb0f375eb5e1ba5d",
+    "23cdd802993d87cb2034ea8835062890ceab185584d24ac73e50a7fe807826d8",
+    "bb7bf85ca16376dd3b4cc4d4f8d039c7ee6512210014b65a70ffb1ef66039545",
+    "069764e2af7444bcb9efbd82d170b5b7ae340346194aa027128dd59b2ac804ce",
+    "a10e1284df09a186872501bb884c37b453936b4c62dfacf31a80b7a93ffbae46",
+    "94109e886a2b83dd58ce66bd6593c3a9ecc94ebc2b4d843ea59261ab93a8e69a",
+    "8d6d895e4f9a3ba338b8091b67e6e67a0ba66b06b8d23b950ec11b9cdb2263f0",
+    "f8b7693b083b7db9d880b1008dc1abc8aa416224033d3f2ce9cb31520edc6acc",
+    "d946ceac7d0e45e09ef295467dbd039e5a47263ae0fc603ca4ea5a4b30a1f327",
+    "9c34b26d644b14d7f26305ab5af6bf61042a40df35f9187d596935c57b78d9db",
+    "a451d88c95c1ec27a9f40dd4011a96bc38072cb6b1f08c0f9eac22232e51e201",
+    "3b81f22a89539c2568fc5b0139195f1ca90b2c0c2ce2d1c5d581987b30badf30",
+    "c9c9c3e2d8777e324b9b9a8e169e1e24556068d44e56c46644ea82c25c0d0f29",
+    "6b4b49677df849eee573f8643d56e24b4db331f5eaf926b33fab85161bfcd84e",
+    "c1f424272575e4645a3f88f43f6700b8c44c959e8739b030f1a3a98f120dd548",
+    "addbd385e0a45a6d531f647d834f4033ec876270ab4542c2b1937d831ef19644",
+    "cb7edc24d0e6451c4e8c03b339134160934fd5ed5eb4a5fe458a637bff515c2e",
+    "708ad40c4ce475a80176472cdbc6c88d7e00330b090b4f59709b6f1a9bd7c72f",
+    "f92bf11e02d10f81a72e4c61bdcadfae4f8ddf65176c5e910d65167ecacf3944",
+    "5462b6ef8f8e507c7ed63498690232a35284fc530cc59338960698a20ab2a219",
+    "7d9609b60ac3a5c2127c2b4a151ffc1ad1fa9fb2ef4ad2979a948531530f0bc5",
+    "be8fcff2185a9184563222353cdf7cfb20fb8e51b8995927250ac901346dd796",
+    "476a1e0f77efd2c321bf587ee6df1a22dabada54f7711c5e3feea6be16fc4338",
+    "7ae37fcd2f275af427d6c0b3d35845690509fc71f7a0a00aa09d1091c2fb0cda"
+  ],
+  "image_order": [
+    "FPWW036_SR0464_1_FIP2_cam_01.png",
+    "FPWW036_SR0464_1_FIP2_cam_02.png",
+    "FPWW036_SR0464_1_FIP2_cam_03.png",
+    "FPWW036_SR0464_1_FIP2_cam_04.png",
+    "FPWW036_SR0464_1_FIP2_cam_05.png",
+    "FPWW036_SR0464_1_FIP2_cam_06.png",
+    "FPWW036_SR0464_1_FIP2_cam_07.png",
+    "FPWW036_SR0464_1_FIP2_cam_08.png",
+    "FPWW036_SR0464_1_FIP2_cam_09.png",
+    "FPWW036_SR0464_1_FIP2_cam_10.png",
+    "FPWW036_SR0464_1_FIP2_cam_11.png",
+    "FPWW036_SR0464_1_FIP2_cam_12.png",
+    "FPWW036_SR0464_6_FIP2_cam_01.png",
+    "FPWW036_SR0464_6_FIP2_cam_02.png",
+    "FPWW036_SR0464_6_FIP2_cam_03.png",
+    "FPWW036_SR0464_6_FIP2_cam_04.png",
+    "FPWW036_SR0464_6_FIP2_cam_05.png",
+    "FPWW036_SR0464_6_FIP2_cam_06.png",
+    "FPWW036_SR0464_6_FIP2_cam_07.png",
+    "FPWW036_SR0464_6_FIP2_cam_08.png",
+    "FPWW036_SR0464_6_FIP2_cam_09.png",
+    "FPWW036_SR0464_6_FIP2_cam_10.png",
+    "FPWW036_SR0464_6_FIP2_cam_11.png",
+    "FPWW036_SR0464_6_FIP2_cam_12.png",
+    "FPWW036_SR0464_FIP2_cam_01.png",
+    "FPWW036_SR0464_FIP2_cam_02.png",
+    "FPWW036_SR0464_FIP2_cam_03.png",
+    "FPWW036_SR0464_FIP2_cam_04.png",
+    "FPWW036_SR0464_FIP2_cam_05.png",
+    "FPWW036_SR0464_FIP2_cam_06.png",
+    "FPWW036_SR0464_FIP2_cam_07.png",
+    "FPWW036_SR0464_FIP2_cam_08.png",
+    "FPWW036_SR0464_FIP2_cam_09.png",
+    "FPWW036_SR0464_FIP2_cam_10.png",
+    "FPWW036_SR0464_FIP2_cam_11.png",
+    "FPWW036_SR0464_FIP2_cam_12.png"
+  ],
+  "resize_crop_params": "load_and_preprocess_images(mode='crop'), target 518x378",
+  "intrinsics_transform": "pose_encoding_to_extri_intri; cx,cy=W/2,H/2; fov→fx,fy",
+  "precision_mode": "torch.bfloat16 autocast (official demo mode)",
+  "code_commit_hash": "a288dd0f14786c93483e45524328726ab7b1b4ce",
+  "extra": {
+    "S": 36
+  },
+  "run_id": "clean_rerun_20260826T065510Z",
+  "sequence_id": "wheat3dgs__plot_464",
+  "dataset_id": "wheat3dgs",
+  "output_shapes": {
+    "pose_enc": [
+      36,
+      9
+    ],
+    "extrinsic_w2c": [
+      36,
+      3,
+      4
+    ],
+    "intrinsic": [
+      36,
+      3,
+      3
+    ],
+    "depth": [
+      36,
+      378,
+      518
+    ],
+    "point_map_unprojected": [
+      36,
+      378,
+      518,
+      3
+    ]
+  },
+  "forward_seconds": 3.39,
+  "peak_gpu_mem_gb": 6.48,
+  "tokens_saved": true,
+  "interface_verified": true,
+  "sanity": {
+    "depth_valid_positive_ratio": 1.0,
+    "nan_inf_counts": {
+      "depth": 0,
+      "depth_conf": 0,
+      "points_direct": 0,
+      "points_unprojected": 0
+    },
+    "focal_positive_ratio": 1.0,
+    "camera_center_min_pairwise_dist": 0.024396874010562897,
+    "camera_collapse": false,
+    "camera_shape_scale_normalized": {
+      "center_radial_span": 0.13036824762821198,
+      "cov_eigen_min_max_ratio": 0.02813540263657408,
+      "trajectory_length": 6.256899356842041,
+      "traj_over_span": 47.994,
+      "depth_span": 0.6670888066291809,
+      "camera_collapse_scale_relative": false,
+      "note": "尺度归一化相机分布指标;坍缩判定以此为准(绝对 1e-3 阈值仅作极端兜底)"
+    },
+    "pointcloud_flatness_eigratio": 0.17187703783282346,
+    "pointcloud_flattened": false,
+    "flatness_note": "仅排除单一平面坍缩,不证明结构正确",
+    "token_nan_inf_count": 0
+  },
+  "primary_pointmap_candidate": "point_map_unprojected (per official recommendation)",
+  "pose_eval_v2": {
+    "sim3_scale": 4.299657,
+    "ref_center_spread": 0.5704,
+    "center_error_aligned": {
+      "median": 0.08384,
+      "p90": 0.12945,
+      "max": 0.16425,
+      "relative_to_spread": 0.147
+    },
+    "rotation_error_deg": {
+      "median": 3.215,
+      "mean": 3.015,
+      "p90": 5.034,
+      "max": 6.359,
+      "note": "全局 Procrustes 左乘对齐后逐相机角度差(v2 修正公式)"
+    },
+    "relative_rotation_error_deg": {
+      "median": 3.738,
+      "mean": 4.217,
+      "p90": 8.329,
+      "max": 11.837,
+      "note": "相机间相对朝向误差,消除左乘全局世界系旋转;右乘相机系差异不在其消除范围"
+    },
+    "global_alignment_rotation_deg": 174.018,
+    "camera_shape_vggt": {
+      "center_radial_span": 0.13036824987721302,
+      "cov_eigen_min_max_ratio": 0.02814,
+      "trajectory_length": 6.2569,
+      "traj_over_span": 47.994
+    },
+    "camera_shape_ref": {
+      "center_radial_span": 0.5704473993327907,
+      "cov_eigen_min_max_ratio": 0.04539,
+      "trajectory_length": 26.4938,
+      "traj_over_span": 46.444
+    },
+    "trajectory_direction": {
+      "mean_cosine": 0.9951,
+      "median_cosine": 0.9975,
+      "n_pairs": 35
+    }
+  },
+  "active_evaluation_version": "v2",
+  "pose_eval_v1": null,
+  "gate_source": "pose_eval_v2",
+  "deprecated_fields": [
+    "pose_eval_v1"
+  ]
+}
