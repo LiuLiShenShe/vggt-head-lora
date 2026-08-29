@@ -10,5 +10,12 @@
   "truncated_nn": "removed from verdict; diagnostic appendix only",
   "depth_scale_policy": "camera-center Sim3 per route; no per-route GT scale fitting",
   "main_judgment": "foreground-only (dataset plant mask applied to depth-generated points)",
-  "note": "v4 supersedes v3; v3 verdict NOT SUFFICIENT FOR GEOMETRY VERDICT (used truncated nn_med)"
+  "note": "v4 supersedes v3; v3 verdict NOT SUFFICIENT FOR GEOMETRY VERDICT (used truncated nn_med)",
+  "provenance_v32": {
+    "uses_test_reference_pose": true,
+    "uses_test_reference_point_geometry": false,
+    "reference_pose_source": "camera/extrinsics.json (or transforms/adjusted/transforms.json w2c)",
+    "evaluation_only": true,
+    "k_e_factorization": "B-K and B-E are distinct and isolated (verified via test_four_path_K_E_factorization)"
+  }
 }

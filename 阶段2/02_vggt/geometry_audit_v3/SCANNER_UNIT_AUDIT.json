@@ -1,0 +1,50 @@
+{
+  "scanner_storage_unit": "millimeter",
+  "scale_to_meter": 0.001,
+  "evidence": [
+    "PLY bbox max dimension = 1014.4; scan_metrics max = 1.0004 m",
+    "Ratio PLY/scan_metrics = 1013.9 >> 10 => PLY is in millimetres",
+    "PLY bbox in metres (after /1000): (1.0144, 0.4511, 0.4708)",
+    "scan_metrics in metres: (1.0004, 0.40355, 0.47081)",
+    "PLY bbox dims (metres): [1.0144, 0.4511, 0.4708]",
+    "scan_metrics (metres):  [1.0004, 0.4036, 0.4708]",
+    "Mean axis ratio (PLY_m / scan_metrics) = 1.0439",
+    "Camera transforms source: /fj/VGGT+head+lora实验/阶段1-数据集/3D Plant View/langdon_4/19-03-24/transforms/original/transforms.json",
+    "  Frame 0: w2c translation z = 1.8428",
+    "  Frame 1: w2c translation z = 1.8211",
+    "  Frame 2: w2c translation z = 1.7853",
+    "  Frame 3: w2c translation z = 1.7358",
+    "  Frame 4: w2c translation z = 1.6732",
+    "Median camera_tz from first 5 frames: 1.7853 m",
+    "Camera z (1.7853 m => 1785.3 mm) vs PLY z [236.4, 707.2] => NOTE: outside range (cameras may be outside scan bounds)",
+    "NeRFStudio config.yml found: /fj/VGGT+head+lora实验/阶段1-数据集/3D Plant View/langdon_4/19-03-24/gaussian-splatting/undistorted/splatfacto/1/config.yml"
+  ],
+  "n_points": 5745011,
+  "ply_bbox": {
+    "x": [
+      -544.280029296875,
+      470.0740051269531
+    ],
+    "y": [
+      -379.9389953613281,
+      71.17369842529297
+    ],
+    "z": [
+      236.42999267578125,
+      707.2369995117188
+    ]
+  },
+  "ply_bbox_dimensions_m": [
+    1.0143540344238282,
+    0.4511126937866211,
+    0.4708070068359375
+  ],
+  "scan_metrics_m": [
+    1.0004,
+    0.40355,
+    0.47081
+  ],
+  "bbox_vs_scan_metrics_ratio": 1.0439342727118737,
+  "camera_tz_m": 1.78530243059305,
+  "status": "VERIFIED"
+}

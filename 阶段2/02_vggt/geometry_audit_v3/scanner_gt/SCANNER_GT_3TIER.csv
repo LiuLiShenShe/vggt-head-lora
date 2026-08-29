@@ -1,0 +1,5 @@
+plant_id,date,pose_gate,tier,foreground_only,diagnostic_only,scale_ratio,F_5mm,F_10mm,F_20mm,F_50mm,chamfer_sym_m,height_error_m,width_diag_error_m,n_points_pred,n_points_gt,uses_test_reference_pose,uses_test_reference_geometry,evaluation_only,upper_bound
+langdon_4,19-03-24,False,raw,True,True,,1.0,1.0,1.0,1.0,0.0,0.0,0.0,5745011,5745011,False,False,True,False
+langdon_4,19-03-24,False,raw,False,True,,1.0,1.0,1.0,1.0,0.0,0.0,0.0,5745011,5745011,False,False,True,False
+langdon_4,19-03-24,False,oracle_geometry,True,True,1.0000000000420892,1.0,1.0,1.0,1.0,0.0,0.0,0.0,5745011,5745011,,True,True,True
+langdon_4,19-03-24,False,oracle_geometry,False,True,1.0000000000420892,1.0,1.0,1.0,1.0,0.0,0.0,0.0,5745011,5745011,,True,True,True

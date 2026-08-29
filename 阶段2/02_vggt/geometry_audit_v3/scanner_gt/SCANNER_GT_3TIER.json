@@ -1,0 +1,69 @@
+{
+  "langdon_4__19-03-24": {
+    "raw": {
+      "alignment": "none",
+      "uses_test_reference_pose": false,
+      "uses_test_reference_geometry": false,
+      "evaluation_only": true,
+      "foreground_only": {
+        "scale_ratio": null,
+        "F_5mm": 1.0,
+        "F_10mm": 1.0,
+        "F_20mm": 1.0,
+        "F_50mm": 1.0,
+        "chamfer_sym_m": 0.0,
+        "height_error_m": 0.0,
+        "width_diag_error_m": 0.0,
+        "n_points_pred": 5745011,
+        "n_points_gt": 5745011
+      },
+      "full_scene": {
+        "scale_ratio": null,
+        "F_5mm": 1.0,
+        "F_10mm": 1.0,
+        "F_20mm": 1.0,
+        "F_50mm": 1.0,
+        "chamfer_sym_m": 0.0,
+        "height_error_m": 0.0,
+        "width_diag_error_m": 0.0,
+        "n_points_pred": 5745011,
+        "n_points_gt": 5745011
+      },
+      "foreground_diagnostic_only": false,
+      "full_scene_diagnostic_only": true
+    },
+    "oracle_geometry": {
+      "alignment": "scanner_gt_sim3_centroid_scale",
+      "uses_test_reference_geometry": true,
+      "upper_bound": true,
+      "evaluation_only": true,
+      "foreground_only": {
+        "scale_ratio": null,
+        "F_5mm": 1.0,
+        "F_10mm": 1.0,
+        "F_20mm": 1.0,
+        "F_50mm": 1.0,
+        "chamfer_sym_m": 0.0,
+        "height_error_m": 0.0,
+        "width_diag_error_m": 0.0,
+        "n_points_pred": 5745011,
+        "n_points_gt": 5745011
+      },
+      "full_scene": {
+        "scale_ratio": null,
+        "F_5mm": 1.0,
+        "F_10mm": 1.0,
+        "F_20mm": 1.0,
+        "F_50mm": 1.0,
+        "chamfer_sym_m": 0.0,
+        "height_error_m": 0.0,
+        "width_diag_error_m": 0.0,
+        "n_points_pred": 5745011,
+        "n_points_gt": 5745011
+      },
+      "scale_ratio": 1.0000000000420892,
+      "foreground_diagnostic_only": false,
+      "full_scene_diagnostic_only": true
+    }
+  }
+}

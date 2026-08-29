@@ -1,0 +1,7 @@
+plant_id,date,rgb_available,camera_available,mask_available,depth_available,scanner_available,scan_metrics_available,n_rgb_frames,n_mask_frames,n_depth_frames,local_status
+langdon_4,05-03-24,True,False,False,True,False,False,320,0,320,incomplete
+langdon_4,12-03-24,True,False,False,True,False,False,320,0,320,incomplete
+langdon_4,13-02-24,True,False,False,True,False,False,340,0,340,incomplete
+langdon_4,15-04-24,True,False,False,True,False,False,318,0,318,incomplete
+langdon_4,19-03-24,True,False,False,True,True,False,320,0,320,scanner_gt_present
+langdon_4,20-02-24,True,False,False,True,False,False,338,0,338,incomplete

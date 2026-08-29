@@ -1,0 +1,6 @@
+sequence_id,date,depth_dir_exists,n_depth_files,n_rgb_frames_in_json,mapping_status,sample_filenames
+langdon_4__05-03-24,05-03-24,True,320,320,full_match,0000_eval.png;0001_train.png;0002_train.png;0003_train.png;0004_train.png
+langdon_4__12-03-24,12-03-24,True,320,320,full_match,0000_eval.png;0001_train.png;0002_train.png;0003_train.png;0004_train.png
+langdon_4__13-02-24,13-02-24,True,340,340,full_match,0000_eval.png;0001_train.png;0002_train.png;0003_train.png;0004_train.png
+langdon_4__20-02-24,20-02-24,True,338,338,full_match,0000_eval.png;0001_train.png;0002_train.png;0003_train.png;0004_train.png
+langdon_4__19-03-24,19-03-24,True,320,320,full_match,0000_eval.png;0001_train.png;0002_train.png;0003_train.png;0004_train.png
