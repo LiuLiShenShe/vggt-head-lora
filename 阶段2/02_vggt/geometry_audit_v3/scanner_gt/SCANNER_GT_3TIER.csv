@@ -1,5 +1,7 @@
-plant_id,date,pose_gate,tier,foreground_only,diagnostic_only,scale_ratio,F_5mm,F_10mm,F_20mm,F_50mm,chamfer_sym_m,height_error_m,width_diag_error_m,n_points_pred,n_points_gt,uses_test_reference_pose,uses_test_reference_geometry,evaluation_only,upper_bound
-langdon_4,19-03-24,False,raw,True,True,,1.0,1.0,1.0,1.0,0.0,0.0,0.0,5745011,5745011,False,False,True,False
-langdon_4,19-03-24,False,raw,False,True,,1.0,1.0,1.0,1.0,0.0,0.0,0.0,5745011,5745011,False,False,True,False
-langdon_4,19-03-24,False,oracle_geometry,True,True,1.0000000000420892,1.0,1.0,1.0,1.0,0.0,0.0,0.0,5745011,5745011,,True,True,True
-langdon_4,19-03-24,False,oracle_geometry,False,True,1.0000000000420892,1.0,1.0,1.0,1.0,0.0,0.0,0.0,5745011,5745011,,True,True,True
+plant_id,date,pose_gate,tier,foreground_only,scale_ratio,F_5mm,F_10mm,F_20mm,F_50mm,chamfer_sym_m,height_error_m,width_diag_error_m,n_points_pred,n_points_gt,uses_test_reference_pose,uses_test_reference_geometry,evaluation_only,upper_bound
+langdon_4,19-03-24,False,A_raw,False,1.622477,0.003762,0.010221,0.029208,0.109782,0.208352,0.21034385097026842,1.1304076447460853,300000,300000,False,False,False,False
+langdon_4,19-03-24,False,A_raw,True,0.856821,0.001145,0.003683,0.0115,0.053538,0.23959,0.4148172663450241,0.3608793767232398,300000,300000,False,False,False,False
+langdon_4,19-03-24,False,B_refcam,False,1.000347,0.04366,0.112107,0.263673,0.584058,0.051513,0.21363018385224786,0.5682405657700973,300000,300000,True,False,True,False
+langdon_4,19-03-24,False,B_refcam,True,,,,,,,,,0,300000,True,False,True,False
+langdon_4,19-03-24,False,C_oracle,False,1.002246,0.048337,0.123626,0.285164,0.60958,0.048533,0.20901150139205082,0.49284150726094555,300000,300000,False,True,True,True
+langdon_4,19-03-24,False,C_oracle,True,,,,,,,,,0,300000,False,True,True,True

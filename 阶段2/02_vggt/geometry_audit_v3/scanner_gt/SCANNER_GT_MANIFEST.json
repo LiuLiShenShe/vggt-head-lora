@@ -14,5 +14,7 @@
     "length": 1.0004,
     "width": 0.40355,
     "height": 0.47081
-  }
+  },
+  "alignment_scale": 0.4196,
+  "alignment_method": "camera-sim3(centroid+scale)"
 }
