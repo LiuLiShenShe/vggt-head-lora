@@ -3,7 +3,7 @@
   "authoritative_csv": "scanner_gt/SCANNER_GT_3TIER_V321.csv",
   "authoritative_json": "scanner_gt/SCANNER_GT_3TIER_V321.json",
   "generator_script": "scanner_gt_3tier_eval_v321.py",
-  "generator_git_commit": "PENDING_COMMIT_v3.2.1",
+  "generator_git_commit": "1439466",
   "csv_sha256": "73a801f46f68c43fcb466c65244b916415f49396444d503bde7f3998db6e47a3",
   "json_sha256": "82e1724985e173e0a989def55ee7b301c4f4356c762efff9e02216167d7cac65",
   "expected_tiers": [
