@@ -1,0 +1,14 @@
+{
+  "routes": {
+    "A_vggt_cam": "VGGT depth + VGGT K + VGGT E",
+    "B_K_intr_only": "VGGT depth + REF K + VGGT E (isolate intrinsics)",
+    "B_E_extr_only": "VGGT depth + VGGT K + REF E (isolate extrinsics)",
+    "B_KE_both": "VGGT depth + REF K + REF E",
+    "C_point_head": "VGGT point_head output"
+  },
+  "metric": "full bidirectional (Chamfer, median/P90/P95, P/R/F @ 5/10/20/50mm); no truncation",
+  "truncated_nn": "removed from verdict; diagnostic appendix only",
+  "depth_scale_policy": "camera-center Sim3 per route; no per-route GT scale fitting",
+  "main_judgment": "foreground-only (dataset plant mask applied to depth-generated points)",
+  "note": "v4 supersedes v3; v3 verdict NOT SUFFICIENT FOR GEOMETRY VERDICT (used truncated nn_med)"
+}

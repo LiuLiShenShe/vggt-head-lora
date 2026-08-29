@@ -1,0 +1,19 @@
+{
+  "reference_depth_storage": "uint16_png",
+  "documented_unit": "millimeter",
+  "depth_scale_to_meter": 0.001,
+  "evidence": [
+    "config.yml: /fj/VGGT+head+lora实验/阶段1-数据集/3D Plant View/langdon_4/05-03-24/nerf/adjusted/nerfacto/1/config.yml declares depth_unit_scale_factor=0.001",
+    "all 7 config.yml under sequence declare depth_unit_scale_factor=0.001"
+  ],
+  "sample_raw_median": 1515.0,
+  "sample_metric_median_m": 1.515,
+  "camera_distance_sanity_check": {
+    "extr_tz_median_m": 1.363,
+    "ref_metric_median_m": 1.515,
+    "match": true
+  },
+  "intrinsics_open_model": "OPENCV",
+  "note": "v3 wrongly used uint16 raw value as meters, producing raw AbsRel~1.0 artifact. Correct: ref_m = raw_png * depth_scale_to_meter. VGGT depth is metric (meters).",
+  "status": "VERIFIED"
+}

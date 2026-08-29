@@ -1,0 +1,5 @@
+sequence_id,dataset_id,result_set,chamfer_symmetric_m,fscore_5mm,fscore_10mm,fscore_20mm,fscore_50mm,precision_10mm,recall_10mm,precision_20mm,recall_20mm,fscore_1pctD,fscore_2pctD,fscore_5pctD,cov50mm_within_ratio_pred,cov50mm_within_ratio_gt
+plantview__langdon_4__05-03-24,plant_view_3d,plant_foreground_only_pred,0.010844,0.324627,0.614067,0.86395,0.983636,0.443853,0.99604,0.761297,0.998602,,,,0.967833,0.999964
+plantview__langdon_4__12-03-24,plant_view_3d,plant_foreground_only_pred,0.985881,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,0.0,0.0
+plantview__langdon_4__13-02-24,plant_view_3d,plant_foreground_only_pred,0.01317,0.263251,0.530592,0.829144,0.986179,0.366683,0.959486,0.715677,0.985371,,,,0.973047,0.999671
+plantview__langdon_4__20-02-24,plant_view_3d,plant_foreground_only_pred,0.011519,0.299799,0.570389,0.82632,0.983718,0.40442,0.967398,0.709487,0.989217,,,,0.968047,0.999906

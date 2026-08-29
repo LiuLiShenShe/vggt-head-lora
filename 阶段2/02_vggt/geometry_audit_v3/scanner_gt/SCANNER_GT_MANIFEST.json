@@ -1,0 +1,18 @@
+{
+  "plant_id": "langdon_4",
+  "date": "19-03-24",
+  "scanner": "Einstar",
+  "scanner_ply": "/fj/VGGT+head+lora实验/阶段1-数据集/3D Plant View/langdon_4/19-03-24/ground_truth/scans/GTScanPC.ply",
+  "unit": "millimeter_as_png_divided_by_1000",
+  "coordinate_frame": "adjusted (NeRF/transforms)",
+  "rgb_sequence": "/fj/VGGT+head+lora实验/阶段2/01_sequences/sequences/plant_view/langdon_4__19-03-24.json",
+  "reference_camera": "/fj/VGGT+head+lora实验/阶段2/01_sequences/sequences/plant_view/langdon_4__19-03-24/camera/extrinsics.json",
+  "pose_gate": false,
+  "is_physical_ground_truth": true,
+  "note": "single-plant scanner GT; multi-plant scanner GT NOT available (20/21-03-24 dirs missing)",
+  "scan_metrics": {
+    "length": 1.0004,
+    "width": 0.40355,
+    "height": 0.47081
+  }
+}

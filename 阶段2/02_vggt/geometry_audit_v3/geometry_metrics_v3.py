@@ -155,3 +155,39 @@ def full_metric_block(P, Q, D, abs_taus=(0.01, 0.02, 0.05)):
 def _tree(P):
     from scipy.spatial import cKDTree
     return cKDTree(np.asarray(P, dtype=np.float64))
+
+
+# P0-7: 严格物理尺度阈值 (毫米级表型). 这些与 D 无关, 任何可比序列都报.
+MM_TAUS = (0.005, 0.010, 0.020, 0.050)  # 5 / 10 / 20 / 50 mm
+MM_TAU_NAMES = {0.005: "5mm", 0.010: "10mm", 0.020: "20mm", 0.050: "50mm"}
+
+
+def full_metric_block_mm(P, Q):
+    """仅用物理尺度阈值 (5/10/20/50mm) 的完整指标块. 与 D 无关.
+
+    植物叶片级表型下 5%D≈45-50mm 过宽松, 不能作为 headline; 必须用 mm 级 F-score.
+    """
+    P = np.asarray(P, dtype=np.float64)
+    Q = np.asarray(Q, dtype=np.float64)
+    block = {}
+    cd_p2g, cd_g2p, cd_sym = chamfer(P, Q)
+    block["chamfer_symmetric_m"] = cd_sym
+    block["chamfer_pred2gt_m"] = cd_p2g
+    block["chamfer_gt2pred_m"] = cd_g2p
+    block.update(nn_distributions(P, Q))
+    for tau in MM_TAUS:
+        p, r, f = precision_recall_fscore(P, Q, tau)
+        nm = MM_TAU_NAMES[tau]
+        block[f"precision_{nm}"] = p
+        block[f"recall_{nm}"] = r
+        block[f"fscore_{nm}"] = f
+    # 覆盖/离群 @ 50mm
+    cov = coverage_outlier(P, Q, 0.050)
+    block.update({f"cov50mm_{k}": v for k, v in cov.items() if k.startswith(("N_", "within_ratio", "outside_ratio"))})
+    return block
+
+
+def metric_block_report_order():
+    """P0-7 固定报告顺序: F@5mm -> F@50mm -> F@1%D -> F@5%D."""
+    return ["fscore_5mm", "fscore_10mm", "fscore_20mm", "fscore_50mm",
+            "fscore_1pctD", "fscore_2pctD", "fscore_5pctD"]
