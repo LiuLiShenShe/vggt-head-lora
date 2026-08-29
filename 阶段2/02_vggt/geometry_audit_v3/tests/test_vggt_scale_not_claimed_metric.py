@@ -15,7 +15,14 @@ FORBIDDEN = [
 
 def _is_real_claim(line):
     neg_markers = ["禁止", "❌", "forbidden", "not claimed", "错误", "不得", "不能"]
-    return not any(m in line for m in neg_markers)
+    # Lines quoting the old error to explain the fix (historical citation, not a claim)
+    # e.g. 称 "VGGT depth is metric"  or  Q3 | VGGT raw depth 能否称 guaranteed metric depth？
+    quote_hints = ["称 ", "referred to", "formerly", "was"]
+    if any(m in line for m in neg_markers):
+        return False
+    if any(h in line for h in quote_hints):
+        return False
+    return True
 
 
 def test_vggt_not_claimed_metric():

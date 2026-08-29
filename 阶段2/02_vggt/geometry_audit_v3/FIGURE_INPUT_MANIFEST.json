@@ -1,0 +1,57 @@
+{
+  "figure_inputs": [
+    {
+      "sequence_id": "plantview__langdon_4__05-03-24",
+      "pose_fail": false,
+      "pred_foreground_npy": "per_seq/plantview__langdon_4__05-03-24_pred_foreground_aligned.npy",
+      "reference_foreground_npy": "per_seq/plantview__langdon_4__05-03-24_reference_foreground.npy",
+      "pred_sha256": "2db553180a043de3edafbb33897978395f448e1eb5077a537caee3323697289c",
+      "ref_sha256": "582a210c5411f51476af9b8882d02027684f4eef9a88712d25856949ca22c679",
+      "precision_10mm": 0.4439,
+      "recall_10mm": 0.996,
+      "fscore_10mm": 0.6141,
+      "precision_20mm": 0.7613,
+      "recall_20mm": 0.9986
+    },
+    {
+      "sequence_id": "plantview__langdon_4__12-03-24",
+      "pose_fail": true,
+      "pred_foreground_npy": "per_seq/plantview__langdon_4__12-03-24_pred_foreground_aligned.npy",
+      "reference_foreground_npy": "per_seq/plantview__langdon_4__12-03-24_reference_foreground.npy",
+      "pred_sha256": "5f360e7359244136b3e26624a944629cb82e7c9258b077244e92a364683d145a",
+      "ref_sha256": "85c445af633473396979b09e4bb4273e135996d5d66af6ed161b94aa5744fbd5",
+      "precision_10mm": 0.0,
+      "recall_10mm": 0.0,
+      "fscore_10mm": 0.0,
+      "precision_20mm": 0.0,
+      "recall_20mm": 0.0
+    },
+    {
+      "sequence_id": "plantview__langdon_4__13-02-24",
+      "pose_fail": false,
+      "pred_foreground_npy": "per_seq/plantview__langdon_4__13-02-24_pred_foreground_aligned.npy",
+      "reference_foreground_npy": "per_seq/plantview__langdon_4__13-02-24_reference_foreground.npy",
+      "pred_sha256": "b88c7dd0535f6dc34ee63c5ebf1728143fc1405ab61d768eba186fa2275a7f9c",
+      "ref_sha256": "b06eb81f7dc9b4c3d0da782bb7d84438cc245b6ba0b0f24df1869567a733d212",
+      "precision_10mm": 0.3667,
+      "recall_10mm": 0.9595,
+      "fscore_10mm": 0.5306,
+      "precision_20mm": 0.7157,
+      "recall_20mm": 0.9854
+    },
+    {
+      "sequence_id": "plantview__langdon_4__20-02-24",
+      "pose_fail": false,
+      "pred_foreground_npy": "per_seq/plantview__langdon_4__20-02-24_pred_foreground_aligned.npy",
+      "reference_foreground_npy": "per_seq/plantview__langdon_4__20-02-24_reference_foreground.npy",
+      "pred_sha256": "f9d5b86d9311d971f904e5d8d7b211baf2a6ac176f6f6b7e48dd69478730a96f",
+      "ref_sha256": "f3517cc8057b82d8402c5edfcbe965f37a5c5365174370d0933a4f38ae5824e9",
+      "precision_10mm": 0.4044,
+      "recall_10mm": 0.9674,
+      "fscore_10mm": 0.5704,
+      "precision_20mm": 0.7095,
+      "recall_20mm": 0.9892
+    }
+  ],
+  "note": "all points are PLANT-FOREGROUND-ONLY (not full-scene)"
+}

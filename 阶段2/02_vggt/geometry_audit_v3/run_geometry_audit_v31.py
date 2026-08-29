@@ -133,6 +133,13 @@ def main():
                     fg_pred_aligned = fg_pred_aligned - fg_pred_aligned.mean(0)
                 P_fore = subsample(fg_pred_aligned, SUBSAMPLE)
                 Q_fore = subsample(ref, SUBSAMPLE)
+                # P1-1 (v3.2.1): 持久化真实前景点集 (raw/aligned/reference) 供 PR 图与测试使用
+                np.save(os.path.join(ROOT, "per_seq", f"{sid}_pred_foreground_raw.npy"),
+                        subsample(fg_pts_world, SUBSAMPLE).astype(np.float32))
+                np.save(os.path.join(ROOT, "per_seq", f"{sid}_pred_foreground_aligned.npy"),
+                        P_fore.astype(np.float32))
+                np.save(os.path.join(ROOT, "per_seq", f"{sid}_reference_foreground.npy"),
+                        Q_fore.astype(np.float32))
                 block_fore = gm.full_metric_block(P_fore, Q_fore, D)
                 if not comparable:
                     for k in list(block_fore.keys()):

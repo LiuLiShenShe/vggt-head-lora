@@ -6,14 +6,17 @@ if ROOT not in sys.path: sys.path.insert(0, ROOT)
 
 
 def test_plant_foreground_depth_metrics_exist():
-    """FOREGROUND_METRICS_V31.csv must exist with depth-aware results."""
-    p = os.path.join(ROOT, "FOREGROUND_METRICS_V31.csv")
-    assert os.path.exists(p)
+    """DEPTH_FOREGROUND_METRICS.csv (real foreground-depth evaluator, P2) must exist with depth columns.
+
+    NOTE: FOREGROUND_METRICS_V31.csv is GEOMETRY (Chamfer/F@mm), NOT depth — it must not be used as
+    depth proof. The real depth evidence is DEPTH_FOREGROUND_METRICS.csv.
+    """
+    p = os.path.join(ROOT, "DEPTH_FOREGROUND_METRICS.csv")
+    assert os.path.exists(p), "先运行 depth_foreground_eval_v321.py (real depth evaluator)"
     with open(p) as f:
-        reader = csv.DictReader(f)
-        rows = list(reader)
-    fg_rows = [r for r in rows if r.get("result_set", "").startswith("plant_foreground")]
-    assert len(fg_rows) >= 1, "no foreground depth rows"
+        rows = list(csv.DictReader(f))
+    assert len(rows) > 0, "DEPTH_FOREGROUND_METRICS.csv empty"
+    assert "raw_absrel" in rows[0] and "aligned_absrel" in rows[0], "missing depth columns"
 
 
 def test_depth_validity_audit_exists():

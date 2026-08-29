@@ -1,0 +1,21 @@
+{
+  "evaluation_version": "v3.2.1",
+  "authoritative_csv": "scanner_gt/SCANNER_GT_3TIER_V321.csv",
+  "authoritative_json": "scanner_gt/SCANNER_GT_3TIER_V321.json",
+  "generator_script": "scanner_gt_3tier_eval_v321.py",
+  "generator_git_commit": "PENDING_COMMIT_v3.2.1",
+  "csv_sha256": "73a801f46f68c43fcb466c65244b916415f49396444d503bde7f3998db6e47a3",
+  "json_sha256": "82e1724985e173e0a989def55ee7b301c4f4356c762efff9e02216167d7cac65",
+  "expected_tiers": [
+    "A_raw",
+    "B_refcam",
+    "C_oracle"
+  ],
+  "all_tiers_have_foreground_rows": true,
+  "identity_leak_guard": "passed",
+  "deprecated_artifacts": [
+    "scanner_gt/SCANNER_GT_3TIER_INVALID_v32.json",
+    "scanner_gt/SCANNER_GT_3TIER_INVALID_v32.csv"
+  ],
+  "deprecated_reason": "v3.2 json: identity leak F=1.0/Chamfer=0; v3.2 csv: empty B/C fg rows + GT-scale leak in B"
+}
