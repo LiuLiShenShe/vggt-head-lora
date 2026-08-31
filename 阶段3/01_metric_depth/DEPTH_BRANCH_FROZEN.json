@@ -1,0 +1,16 @@
+{
+  "phase": "3A.2.1",
+  "status": "FROZEN",
+  "frozen_date": "2026-08-31",
+  "primary_depth": "VGGT",
+  "DA3Metric_role": "external baseline / hard-case diagnostic",
+  "UniDepth_role": "external monocular baseline",
+  "MSAM": "NOT_PRIORITIZED",
+  "depth_branch_frozen_by": "Phase 3B.1",
+  "reopen_condition": "only if a later experiment identifies a concrete depth blocker",
+  "frozen_files": [
+    "阶段3/01_metric_depth/PHASE3A2_FINAL_CLOSURE.md",
+    "阶段3/01_metric_depth/phase3a2_closure/CORRECTED_COMPARISON_V321.csv",
+    "阶段3/01_metric_depth/phase3a2_closure/DA3_METRIC_ANCHOR_COMPARISON.csv"
+  ]
+}

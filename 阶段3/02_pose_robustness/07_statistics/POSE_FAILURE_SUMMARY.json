@@ -1,0 +1,72 @@
+{
+  "n_sequences": 13,
+  "n_unique_plants": 8,
+  "pose_gate_pass_rate": 0.7692,
+  "n_plants_with_failure": 1,
+  "failure_by_plant": {
+    "wheat_461": {
+      "pass": 1,
+      "fail": 0,
+      "n_dates": 1
+    },
+    "wheat_462": {
+      "pass": 1,
+      "fail": 0,
+      "n_dates": 1
+    },
+    "wheat_463": {
+      "pass": 1,
+      "fail": 0,
+      "n_dates": 1
+    },
+    "wheat_464": {
+      "pass": 1,
+      "fail": 0,
+      "n_dates": 1
+    },
+    "wheat_465": {
+      "pass": 1,
+      "fail": 0,
+      "n_dates": 1
+    },
+    "wheat_466": {
+      "pass": 1,
+      "fail": 0,
+      "n_dates": 1
+    },
+    "wheat_467": {
+      "pass": 1,
+      "fail": 0,
+      "n_dates": 1
+    },
+    "langdon_4": {
+      "pass": 3,
+      "fail": 3,
+      "n_dates": 6
+    }
+  },
+  "failure_by_density": {
+    "LOW": {
+      "pass": 5,
+      "fail": 0
+    },
+    "MEDIUM": {
+      "pass": 3,
+      "fail": 1
+    },
+    "HIGH": {
+      "pass": 2,
+      "fail": 2
+    }
+  },
+  "correlations": {
+    "rot_vs_canopy_spearman_rho": 0.2143,
+    "rot_vs_canopy_p_value": 0.482054,
+    "fail_vs_canopy_spearman_rho": 0.6343,
+    "fail_vs_canopy_p_value": 0.019879
+  },
+  "failure_types": {
+    "PASS": 10,
+    "ROTATION_AND_TRANSLATION": 3
+  }
+}

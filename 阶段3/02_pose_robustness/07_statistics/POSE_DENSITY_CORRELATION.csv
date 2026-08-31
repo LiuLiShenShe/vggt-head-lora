@@ -1,0 +1,3 @@
+metric,rho,p_value,n
+rot_median_vs_canopy,0.2143,0.482054,13
+pose_fail_vs_canopy,0.6343,0.019879,13
