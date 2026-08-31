@@ -1,0 +1,57 @@
+{
+  "vggt": {
+    "status": "PASS",
+    "model": "vggt",
+    "path": "/fj/VGGT+head+lora\u5b9e\u9a8c/\u9636\u6bb52/02_vggt/v2_clean_rerun/plant_view_3d/plantview__langdon_4__05-03-24/depth_vggt.npy",
+    "shape": [
+      320,
+      518,
+      518
+    ],
+    "dtype": "float32",
+    "min": 0.2932990491390228,
+    "max": 1.9732609987258911,
+    "mean": 0.9825479388237,
+    "note": "already computed, no inference"
+  },
+  "da3": {
+    "status": "PASS",
+    "model": "da3",
+    "repo": "depth-anything/DA3METRIC-LARGE",
+    "shape": [
+      504,
+      504
+    ],
+    "dtype": "float32",
+    "min": 0.3015,
+    "max": 0.7434,
+    "mean": 0.5191,
+    "load_time_s": 28.01,
+    "infer_time_s": 1.1,
+    "rgb_path": "/fj/VGGT+head+lora\u5b9e\u9a8c/\u9636\u6bb51-\u6570\u636e\u96c6/3D Plant View/langdon_4/05-03-24/images/rgb/0000_eval.png"
+  },
+  "unidepth": {
+    "status": "PASS",
+    "model": "unidepth",
+    "repo": "lpiccinelli/unidepth-v2-vitl14",
+    "shape": [
+      1080,
+      1080
+    ],
+    "dtype": "float32",
+    "min": 1.2517,
+    "max": 1.4719,
+    "mean": 1.4003,
+    "intrinsics_shape": [
+      3,
+      3
+    ],
+    "confidence_shape": [
+      1080,
+      1080
+    ],
+    "load_time_s": 29.93,
+    "infer_time_s": 1.12,
+    "rgb_path": "/fj/VGGT+head+lora\u5b9e\u9a8c/\u9636\u6bb51-\u6570\u636e\u96c6/3D Plant View/langdon_4/05-03-24/images/rgb/0000_eval.png"
+  }
+}

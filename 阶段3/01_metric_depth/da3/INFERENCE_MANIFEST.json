@@ -1,0 +1,38 @@
+{
+  "plantview__langdon_4__05-03-24": {
+    "shape": [
+      320,
+      504,
+      504
+    ],
+    "n_failed": 0,
+    "time_s": 38.9
+  },
+  "plantview__langdon_4__12-03-24": {
+    "shape": [
+      320,
+      504,
+      504
+    ],
+    "n_failed": 0,
+    "time_s": 37.5
+  },
+  "plantview__langdon_4__13-02-24": {
+    "shape": [
+      340,
+      504,
+      504
+    ],
+    "n_failed": 0,
+    "time_s": 39.9
+  },
+  "plantview__langdon_4__20-02-24": {
+    "shape": [
+      338,
+      504,
+      504
+    ],
+    "n_failed": 0,
+    "time_s": 39.6
+  }
+}

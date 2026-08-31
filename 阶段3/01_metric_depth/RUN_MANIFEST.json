@@ -1,0 +1,75 @@
+{
+  "phase": "3A",
+  "description": "Metric Depth Benchmark + Scale Anchor Pilot",
+  "evaluation_version": "3A.0",
+  "date": "2026-08-31",
+  "v321_baseline_commit": "1439466",
+  "models": {
+    "vggt": {
+      "source": "existing depth_vggt.npy from v2_clean_rerun",
+      "repo": "facebook/VGGT-1B",
+      "output_resolution": [518, 518],
+      "no_inference": true
+    },
+    "da3": {
+      "repo": "depth-anything/DA3METRIC-LARGE",
+      "conda_env": "/home/test/miniconda3/envs/da3/",
+      "script": "run_da3_inference.py",
+      "output_resolution": [504, 504],
+      "total_frames": 1318,
+      "failures": 0,
+      "inference_time_s": 156
+    },
+    "unidepth": {
+      "repo": "lpiccinelli/unidepth-v2-vitl14",
+      "conda_env": "/home/test/miniconda3/envs/unidepth/",
+      "script": "run_unidepth_inference.py",
+      "output_resolution": [1080, 1080],
+      "total_frames": 1318,
+      "failures": 0,
+      "inference_time_s": 182
+    }
+  },
+  "evaluation": {
+    "evaluator": "unified_depth_evaluator.py",
+    "frame_csv": "evaluation/DEPTH_MODEL_COMPARISON_FRAME.csv",
+    "n_frame_rows": 3954,
+    "seq_csv": "evaluation/DEPTH_MODEL_COMPARISON_SEQ.csv",
+    "n_seq_rows": 12,
+    "summary_json": "evaluation/DEPTH_MODEL_COMPARISON_SUMMARY.json"
+  },
+  "scale_anchor": {
+    "pilot": "scale_anchor_pilot.py",
+    "proxy_models": ["da3", "unidepth"],
+    "no_ground_truth": true,
+    "anchor_csv": "anchor/SCALE_ANCHOR_VALUES.csv",
+    "comparison_csv": "anchor/ANCHORED_VGGT_METRICS.csv",
+    "conclusion": "Route 3 (no benefit from anchoring)"
+  },
+  "figures": [
+    "figures/model_comparison_bar.png",
+    "figures/scale_ratio_distribution.png",
+    "figures/depth_gallery_05-03-24.png",
+    "figures/depth_gallery_12-03-24.png",
+    "figures/depth_gallery_13-02-24.png",
+    "figures/depth_gallery_20-02-24.png",
+    "figures/anchor_comparison.png"
+  ],
+  "tests": {
+    "test_file": "tests/test_phase3a_all.py",
+    "n_tests": 9,
+    "n_passed": 9,
+    "n_failed": 0
+  },
+  "report": "PHASE3A_METRIC_DEPTH_BENCHMARK.md",
+  "key_findings": {
+    "best_raw_absrel": "vggt (0.1896 on pose-PASS)",
+    "best_aligned_absrel": "unidepth (0.1567 on pose-PASS)",
+    "best_scale_stability": "vggt (CV=0.1816)",
+    "scale_closest_to_1": "unidepth (1.0177)",
+    "da3_scale_problem": "2.35x overestimate, raw AbsRel dominated by scale error",
+    "anchoring_helps": false,
+    "route_recommendation": "Route 3 (keep VGGT as-is)",
+    "msam_status": "HOLD"
+  }
+}
