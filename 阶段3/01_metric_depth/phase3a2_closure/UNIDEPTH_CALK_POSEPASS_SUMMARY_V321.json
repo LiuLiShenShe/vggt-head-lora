@@ -1,0 +1,14 @@
+{
+  "model": "unidepth_calK",
+  "evaluation_scope": "pilot_60_posepass",
+  "n_sequences": 3,
+  "n_frames": 60,
+  "abs_rel_mean": 0.46556723104121067,
+  "abs_rel_median": 0.45512618268759725,
+  "rmse_mean": 0.546755689002333,
+  "rmse_median": 0.49037117338879316,
+  "delta1_mean": 0.093179825340797,
+  "scale_mean": 0.93604380677605,
+  "scale_median": 0.7218873268592475,
+  "scale_cv": 0.4328276638502843
+}

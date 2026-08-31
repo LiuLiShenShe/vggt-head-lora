@@ -1,0 +1,12 @@
+{
+  "expected_total": 80,
+  "prediction_total": 80,
+  "evaluated_total": 80,
+  "per_sequence": {
+    "05-03-24": 20,
+    "12-03-24": 20,
+    "13-02-24": 20,
+    "20-02-24": 20
+  },
+  "status": "PASS"
+}

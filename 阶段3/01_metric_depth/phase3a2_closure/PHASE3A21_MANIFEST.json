@@ -1,0 +1,27 @@
+{
+  "inference_rerun": false,
+  "prediction_total": 80,
+  "evaluated_total": 80,
+  "calK_verdict": "WORSE",
+  "matched_comparison": {
+    "n_frames": 80,
+    "auto_mean_absrel": 0.4418368508847433,
+    "calK_mean_absrel": 0.481640350653678,
+    "mean_delta_absrel": 0.03980349976893462,
+    "mean_delta_rmse": 0.03412166461219742,
+    "calK_wins_absrel": 16,
+    "calK_wins_rmse": 18
+  },
+  "completeness": {
+    "expected_total": 80,
+    "prediction_total": 80,
+    "evaluated_total": 80,
+    "per_sequence": {
+      "05-03-24": 20,
+      "12-03-24": 20,
+      "13-02-24": 20,
+      "20-02-24": 20
+    },
+    "status": "PASS"
+  }
+}

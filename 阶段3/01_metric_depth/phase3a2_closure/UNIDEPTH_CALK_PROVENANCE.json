@@ -1,0 +1,14 @@
+{
+  "calibrated_K_source": "Plant View calibration (fx=1371.82, fy=1370.79, cx=cy=540.0)",
+  "fx": 1371.82,
+  "fy": 1370.79,
+  "cx": 540.0,
+  "cy": 540.0,
+  "original_resolution": [
+    1080,
+    1080
+  ],
+  "model_input_resolution": "handled internally by UniDepthV2 infer()",
+  "pinhole_api": "from unidepth.utils.camera import Pinhole; Pinhole(K=K_tensor)",
+  "note": "CameraHead still predicts intrinsics independently; calibrated K only conditions rays via decoder.py:400"
+}
