@@ -61,6 +61,32 @@
     "n_passed": 9,
     "n_failed": 0
   },
+  "phase3a1": {
+    "audit_dir": "phase3a1_audit",
+    "test_file": "tests/test_phase3a1_all.py",
+    "n_tests": 11,
+    "n_passed": 11,
+    "n_failed": 0,
+    "key_findings": {
+      "da3_model_type": "DepthAnything3Net (single branch, cam_dec=None)",
+      "da3_is_metric": 0,
+      "da3_intrinsics_predicted": false,
+      "da3_focal_300_applied": false,
+      "da3_2.35x_source": "native relative depth scale (~0.43× of metric ref)",
+      "da3_focal_correction_improves": true,
+      "da3_calibrated_absrel": 0.2117,
+      "unidepth_k_correction_improves": true,
+      "unidepth_k_corrected_absrel": 0.3232,
+      "vggt_still_best_raw": true,
+      "vggt_absrel": 0.1896,
+      "phase3a_scaling_integrity": "PASS",
+      "final_route": "Route 3 (keep VGGT)",
+      "msam": "HOLD",
+      "lora": "HOLD"
+    },
+    "report": "PHASE3A1_METRIC_SCALING_SANITY.md",
+    "csv": "phase3a1_audit/CORRECTED_MODEL_COMPARISON.csv"
+  },
   "report": "PHASE3A_METRIC_DEPTH_BENCHMARK.md",
   "key_findings": {
     "best_raw_absrel": "vggt (0.1896 on pose-PASS)",

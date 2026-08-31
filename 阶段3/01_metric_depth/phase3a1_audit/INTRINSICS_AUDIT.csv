@@ -1,0 +1,7 @@
+audit_item,value,finding
+DA3 model type,DepthAnything3Net (single branch),"NO intrinsics prediction, NO focal/300 scaling"
+cam_dec,None,Model has no camera decoder
+is_metric,0 (False),Model declares NOT metric
+pred.intrinsics,None,No intrinsics in Prediction object
+focal/300 (calibrated),2.1331,NOT applied (no intrinsics available)
+2.35× scale source,Model native scale mismatch,NOT focal/300 — DA3 outputs relative depth ~0.4× of metric ref

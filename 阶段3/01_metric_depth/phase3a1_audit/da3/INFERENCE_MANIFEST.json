@@ -1,0 +1,16 @@
+{
+  "plantview__langdon_4__05-03-24": {
+    "depth_shape": [
+      320,
+      504,
+      504
+    ],
+    "intrinsics_shape": [
+      320,
+      3,
+      3
+    ],
+    "n_failed": 320,
+    "time_s": 38.5
+  }
+}

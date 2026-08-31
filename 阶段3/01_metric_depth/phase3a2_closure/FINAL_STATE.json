@@ -1,0 +1,23 @@
+{
+  "phase3a_scaling_integrity": "PASS",
+  "da3_metric_conversion": "APPLIED",
+  "da3_conversion_factor": 2.1331,
+  "da3_official_absrel": 0.2117,
+  "da3_official_rmse": 0.3785,
+  "da3_official_scale": 1.0994,
+  "unidepth_autonomous_absrel": 0.3855,
+  "unidepth_calK_pilot_absrel": 0.6401,
+  "unidepth_calK_pilot_scale": 0.7318,
+  "unidepth_calK_verdict": "WORSE",
+  "vggt_absrel": 0.1896,
+  "vggt_rmse": 0.3813,
+  "vggt_scale": 1.1716,
+  "anchor_da3_official": {
+    "frame_anchor_delta_pct": -2.6,
+    "seq_anchor_delta_pct": -2.6,
+    "improves": true
+  },
+  "msam": "HOLD",
+  "lora": "HOLD",
+  "final_route": "Route 3 (keep VGGT as-is)"
+}

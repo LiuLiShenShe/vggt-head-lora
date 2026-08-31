@@ -1,0 +1,30 @@
+{
+  "plantview__langdon_4__05-03-24": {
+    "n_frames": 20,
+    "n_failed": 0,
+    "auto_depth_median": 1.7985060214996338,
+    "calK_depth_median": 1.880817174911499,
+    "ratio": 1.0457663536071777
+  },
+  "plantview__langdon_4__12-03-24": {
+    "n_frames": 20,
+    "n_failed": 0,
+    "auto_depth_median": 1.4734082221984863,
+    "calK_depth_median": 1.5340564250946045,
+    "ratio": 1.0411618947982788
+  },
+  "plantview__langdon_4__13-02-24": {
+    "n_frames": 20,
+    "n_failed": 0,
+    "auto_depth_median": 1.256414771080017,
+    "calK_depth_median": 1.3020269870758057,
+    "ratio": 1.0363035202026367
+  },
+  "plantview__langdon_4__20-02-24": {
+    "n_frames": 20,
+    "n_failed": 0,
+    "auto_depth_median": 1.5363059043884277,
+    "calK_depth_median": 1.601358413696289,
+    "ratio": 1.0423434972763062
+  }
+}

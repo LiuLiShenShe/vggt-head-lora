@@ -1,0 +1,42 @@
+{
+  "phase": "3A.1",
+  "da3_model_type": "DepthAnything3Net (single branch)",
+  "da3_cam_dec": null,
+  "da3_is_metric": 0,
+  "da3_intrinsics_predicted": false,
+  "da3_focal_300_applied": false,
+  "da3_scale_source": "model native scale mismatch (NOT focal/300)",
+  "unidepth_used_calibrated_k": false,
+  "unidepth_calibration_result": {
+    "predicted_k_absrel": 0.3654628614950456,
+    "predicted_k_scale": 0.9140295988588913,
+    "calibrated_k_absrel": 0.28580717861744326,
+    "calibrated_k_scale": 1.0406117434063191,
+    "scale_correction": 0.8783579468727112
+  },
+  "da3_variant_comparison": [
+    {
+      "variant": "da3_raw",
+      "absrel": 0.5858838407918564,
+      "scale": 2.436964375618786,
+      "n_frames": 20
+    },
+    {
+      "variant": "da3_focal_corrected",
+      "absrel": 0.22212824257363556,
+      "scale": 1.1424300299036256,
+      "n_frames": 20
+    },
+    {
+      "variant": "da3_focal_inverse",
+      "absrel": 0.8058413934525802,
+      "scale": 5.198388997472292,
+      "n_frames": 20
+    }
+  ],
+  "conclusions": {
+    "da3_2.35x_explanation": "DA3METRIC-LARGE outputs relative depth ~0.4× of metric ref. No focal/300 scaling applied.",
+    "implementation_error": "NO — the 2.35× is expected for a relative-depth model compared against metric reference",
+    "recommended_action": "Use DA3 scale-aligned metrics for fair comparison. VGGT remains best raw depth."
+  }
+}
