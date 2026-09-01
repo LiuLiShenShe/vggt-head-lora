@@ -1,0 +1,16 @@
+{
+  "sequence_id": "plantview__langdon_4__12-03-24",
+  "method": "gauge_aware_orientation_center",
+  "n_windows": 39,
+  "n_unique_frames": 320,
+  "coverage_ratio": 1.0,
+  "scale_stats": {
+    "mean": 1.0063745039006702,
+    "std": 0.0594547681650644,
+    "cv": 0.059078174113731945
+  },
+  "mean_Q_dispersion": 0.647086714397317,
+  "max_Q_dispersion": 2.1787839674255234,
+  "overlap_orientation_consistency": "HIGH",
+  "n_pairwise_alignments": 38
+}

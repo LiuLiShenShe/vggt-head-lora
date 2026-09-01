@@ -1,0 +1,2 @@
+sequence,window_a,window_b,n_overlap,n_inliers,Q_dispersion_median,Q_dispersion_p90,Q_dispersion_max,scale,translation_norm,center_rmse_after,orientation_residual_median,orientation_residual_p90,status
+mustc__plot198__230613__ugv__pos00,0,1,8,8,2.8501062861274207,5.3057122355862525,6.6428939361751045,1.247597804593692,0.8121824081404446,0.053903496907648424,2.8501062861274207,5.3057122355862525,OK

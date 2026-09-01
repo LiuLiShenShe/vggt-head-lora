@@ -1,0 +1,16 @@
+{
+  "sequence_id": "wheat3dgs__plot_461",
+  "method": "gauge_aware_orientation_center",
+  "n_windows": 4,
+  "n_unique_frames": 36,
+  "coverage_ratio": 1.0,
+  "scale_stats": {
+    "mean": 1.1014570757099797,
+    "std": 0.11599742706725784,
+    "cv": 0.1053127077080947
+  },
+  "mean_Q_dispersion": 0.8188682624465947,
+  "max_Q_dispersion": 0.9510326061523762,
+  "overlap_orientation_consistency": "HIGH",
+  "n_pairwise_alignments": 3
+}
