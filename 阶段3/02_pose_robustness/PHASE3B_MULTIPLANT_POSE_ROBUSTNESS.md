@@ -1,9 +1,18 @@
 # Phase 3B: Multi-Plant Pose Robustness Benchmark — Final Report
 
 **Date**: 2026-08-31  
-**Status**: COMPLETE  
+**Status**: COMPLETE (erratum issued 2026-09-01 — see below)  
 **Branch**: POSE_ROBUSTNESS  
 **Depth branch**: FROZEN (Phase 3A.2.1)
+
+---
+
+> **⚠️ ERRATUM (2026-09-01):** The 8/16/24 view-count experiment in this report was invalid.
+> Phase 3B subsampled predicted cameras from full-view inference output rather than running
+> independent VGGT forward passes. The conclusion "view-count rescue = ALWAYS_FAIL" is
+> unsupported. See `PHASE3B1_ROOT_CAUSE_AUDIT.md` for corrected results with independent
+> inference. Key correction: consecutive-frame 16-view windows rescue ALL failures (269/269 PASS).
+> The failure was caused by uniform subsampling from a long trajectory, not by image content.
 
 ---
 

@@ -1,0 +1,59 @@
+{
+  "sequence_id": "mustc__plot198__230613__ugv__pos00",
+  "total_frames": 20,
+  "window_size": 16,
+  "overlap": 8,
+  "n_windows": 2,
+  "windows": [
+    {
+      "window_id": 0,
+      "original_frame_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "n_frames": 16,
+      "overlap_with_previous": 2,
+      "runtime_s": 1.998370885848999,
+      "peak_vram_gb": 9.264385536,
+      "output_hash": "5770d0a91c89"
+    },
+    {
+      "window_id": 1,
+      "original_frame_indices": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "n_frames": 12,
+      "overlap_with_previous": 0,
+      "runtime_s": 1.5852429866790771,
+      "peak_vram_gb": 9.108430336,
+      "output_hash": "7f7f3a41ed5c"
+    }
+  ],
+  "total_runtime_s": 3.583613872528076,
+  "peak_vram_gb": 9.264385536
+}

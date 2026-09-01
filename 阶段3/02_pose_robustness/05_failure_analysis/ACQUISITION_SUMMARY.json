@@ -1,0 +1,44 @@
+{
+  "brightness_mean": {
+    "pass_mean": 126.43154932657878,
+    "pass_std": 2.2869313047903232,
+    "fail_mean": 123.483349609375,
+    "fail_std": 1.6150704851528919,
+    "diff": -2.948199717203778
+  },
+  "saturation_mean": {
+    "pass_mean": 0.024865803339829046,
+    "pass_std": 0.0009209929304444591,
+    "fail_mean": 0.024674587106953066,
+    "fail_std": 0.0005473519520173127,
+    "diff": -0.0001912162328759799
+  },
+  "blur_laplacian_var_mean": {
+    "pass_mean": 64.23962014516195,
+    "pass_std": 10.503664218489165,
+    "fail_mean": 84.704469871521,
+    "fail_std": 9.09439568692772,
+    "diff": 20.46484972635905
+  },
+  "trajectory_path_length": {
+    "pass_mean": 36.74110196998187,
+    "pass_std": 1.4987151728871868,
+    "fail_mean": 43.39272757739362,
+    "fail_std": 0.8943356946318226,
+    "diff": 6.651625607411752
+  },
+  "adj_baseline_mean_deg": {
+    "pass_mean": 7.710017479877678,
+    "pass_std": 0.1754616025448849,
+    "fail_mean": 7.858306426027546,
+    "fail_std": 0.029802748492020328,
+    "diff": 0.14828894614986865
+  },
+  "transforms_n_intrinsic_clusters": {
+    "pass_mean": 2.0,
+    "pass_std": 0.0,
+    "fail_mean": 2.0,
+    "fail_std": 0.0,
+    "diff": 0.0
+  }
+}

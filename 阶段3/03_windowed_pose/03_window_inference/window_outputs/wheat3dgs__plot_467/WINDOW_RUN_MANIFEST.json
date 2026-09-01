@@ -1,0 +1,111 @@
+{
+  "sequence_id": "wheat3dgs__plot_467",
+  "total_frames": 36,
+  "window_size": 16,
+  "overlap": 8,
+  "n_windows": 4,
+  "windows": [
+    {
+      "window_id": 0,
+      "original_frame_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "n_frames": 16,
+      "overlap_with_previous": 2,
+      "runtime_s": 2.1736035346984863,
+      "peak_vram_gb": 9.401590784,
+      "output_hash": "b1450a39f2ba"
+    },
+    {
+      "window_id": 1,
+      "original_frame_indices": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "n_frames": 16,
+      "overlap_with_previous": 0,
+      "runtime_s": 2.1809487342834473,
+      "peak_vram_gb": 9.416242688,
+      "output_hash": "5ad2f2fc899f"
+    },
+    {
+      "window_id": 2,
+      "original_frame_indices": [
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31
+      ],
+      "n_frames": 16,
+      "overlap_with_previous": 0,
+      "runtime_s": 2.265378952026367,
+      "peak_vram_gb": 9.415708672,
+      "output_hash": "b605b86eb46c"
+    },
+    {
+      "window_id": 3,
+      "original_frame_indices": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35
+      ],
+      "n_frames": 12,
+      "overlap_with_previous": 0,
+      "runtime_s": 1.6317214965820312,
+      "peak_vram_gb": 9.243630592,
+      "output_hash": "4bc3c5188ddc"
+    }
+  ],
+  "total_runtime_s": 8.251652717590332,
+  "peak_vram_gb": 9.416242688
+}

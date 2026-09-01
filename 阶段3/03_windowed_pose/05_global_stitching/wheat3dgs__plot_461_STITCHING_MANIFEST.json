@@ -1,0 +1,15 @@
+{
+  "sequence_id": "wheat3dgs__plot_461",
+  "n_windows": 4,
+  "n_unique_frames": 36,
+  "coverage_ratio": 1.0,
+  "scale_stats": {
+    "mean": 1.1267784275986334,
+    "std": 0.11647847431958652,
+    "cv": 0.10337300703193529,
+    "max_jump": 0.23182813797339175
+  },
+  "fusion_count_mean": 1.6666666666666667,
+  "fusion_count_max": 2,
+  "alignment_method": "umeyama_sim3_center"
+}

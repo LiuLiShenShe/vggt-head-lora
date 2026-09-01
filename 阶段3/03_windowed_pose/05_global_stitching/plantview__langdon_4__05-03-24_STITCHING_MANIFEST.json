@@ -1,0 +1,15 @@
+{
+  "sequence_id": "plantview__langdon_4__05-03-24",
+  "n_windows": 39,
+  "n_unique_frames": 320,
+  "coverage_ratio": 1.0,
+  "scale_stats": {
+    "mean": 0.9994168325231694,
+    "std": 0.08449181195019756,
+    "cv": 0.08454111357809134,
+    "max_jump": 0.42911191007918537
+  },
+  "fusion_count_mean": 1.95,
+  "fusion_count_max": 2,
+  "alignment_method": "umeyama_sim3_center"
+}

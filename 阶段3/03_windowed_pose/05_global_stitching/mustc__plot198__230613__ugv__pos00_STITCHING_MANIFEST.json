@@ -1,0 +1,15 @@
+{
+  "sequence_id": "mustc__plot198__230613__ugv__pos00",
+  "n_windows": 2,
+  "n_unique_frames": 20,
+  "coverage_ratio": 1.0,
+  "scale_stats": {
+    "mean": 1.262366548092701,
+    "std": 0.0,
+    "cv": 0.0,
+    "max_jump": 0
+  },
+  "fusion_count_mean": 1.4,
+  "fusion_count_max": 2,
+  "alignment_method": "umeyama_sim3_center"
+}
