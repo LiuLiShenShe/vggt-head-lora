@@ -1,0 +1,8 @@
+sequence_id,stride,n_windows,n_edges,cycle_rank,is_chain,mean_degree,first_last_overlap,n_skip_edges
+mustc__plot198__230613__ugv__pos00,8,2,1,0,True,1.0,8,0
+plantview__langdon_4__05-03-24,8,39,38,0,True,1.9487179487179487,0,0
+plantview__langdon_4__12-03-24,8,39,38,0,True,1.9487179487179487,0,0
+plantview__langdon_4__15-04-24,8,39,38,0,True,1.9487179487179487,0,0
+plantview__langdon_4__19-03-24,8,39,38,0,True,1.9487179487179487,0,0
+wheat3dgs__plot_461,8,4,3,0,True,1.5,0,0
+wheat3dgs__plot_467,8,4,3,0,True,1.5,0,0
