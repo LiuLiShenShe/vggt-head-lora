@@ -1,5 +1,23 @@
 # Phase 3C.1: Gauge-Aware Orientation Stitching — Final Report
 
+> # ⚠️ ERRATUM — DEPRECATED / INVALIDATED
+>
+> **The long-sequence PASS claims in this report (langdon_4: 2.0/2.6/9.1/1.9°) are DEPRECATED and INVALIDATED.**
+>
+> - This report was written at **12:01** and **predates** the current stitching code
+>   (`run_gauge_stitching.py`, rewritten **13:12**) and the authoritative evaluation CSV
+>   (`GAUGE_AWARE_GLOBAL_RESULTS.csv`, **13:13**).
+> - Authoritative values: langdon_4 gauge-aware rot_median = **44.05 / 48.75 / 53.10 / 44.29° — all FAIL**.
+> - The old "PASS" numbers match the CSV's `consecutive_local` rows (a 16-frame **local**
+>   evaluation, not global chain stitching) — the report conflated local accuracy with global chain accuracy.
+> - ✅ Still valid: rotation convention (12/12 tests), overlap Q-dispersion HIGH, short sequences
+>   (mustc 2.65°, wheat 3.28°/3.37°) genuinely PASS.
+>
+> **Authoritative source = `06_pose_evaluation_v31/GAUGE_AWARE_GLOBAL_RESULTS.csv`.**
+> Full details: [PHASE3C1_EVIDENCE_ERRATUM.md](PHASE3C1_EVIDENCE_ERRATUM.md).
+>
+> Everything below this banner that claims langdon_4 PASS or "4/4 rescued" is **not evidence**.
+
 ## Motivation
 
 Phase 3C center-only Umeyama stitching failed on langdon_4 (28-60 deg rot_median).

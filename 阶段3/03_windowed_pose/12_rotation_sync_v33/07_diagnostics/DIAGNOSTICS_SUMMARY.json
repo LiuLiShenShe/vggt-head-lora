@@ -1,0 +1,44 @@
+{
+  "plantview__langdon_4__05-03-24": {
+    "cycle_err_median_deg": 0.37295065087344936,
+    "cycle_err_p90_deg": 1.1108899621026436,
+    "postfit_median_deg": 0.18396618189693104,
+    "n_triangles": 75
+  },
+  "plantview__langdon_4__12-03-24": {
+    "cycle_err_median_deg": 0.42939730212524846,
+    "cycle_err_p90_deg": 0.8570754095642121,
+    "postfit_median_deg": 0.2198961215422746,
+    "n_triangles": 75
+  },
+  "plantview__langdon_4__15-04-24": {
+    "cycle_err_median_deg": 0.4397667420149574,
+    "cycle_err_p90_deg": 1.17178326103843,
+    "postfit_median_deg": 0.23173757438030587,
+    "n_triangles": 75
+  },
+  "plantview__langdon_4__19-03-24": {
+    "cycle_err_median_deg": 0.5049123828187918,
+    "cycle_err_p90_deg": 1.0657832161255816,
+    "postfit_median_deg": 0.24820033393984656,
+    "n_triangles": 75
+  },
+  "wheat3dgs__plot_461": {
+    "cycle_err_median_deg": 0.2778564683687069,
+    "cycle_err_p90_deg": 0.4602430052532833,
+    "postfit_median_deg": 0.1355438824085827,
+    "n_triangles": 4
+  },
+  "wheat3dgs__plot_467": {
+    "cycle_err_median_deg": 0.1540563438720273,
+    "cycle_err_p90_deg": 0.3392870047897001,
+    "postfit_median_deg": 0.04559716717493331,
+    "n_triangles": 4
+  },
+  "mustc__plot198__230613__ugv__pos00": {
+    "cycle_err_median_deg": -1,
+    "cycle_err_p90_deg": -1,
+    "postfit_median_deg": 0.03987700358986415,
+    "n_triangles": 0
+  }
+}

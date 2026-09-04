@@ -29,7 +29,6 @@ from vggt.utils.geometry import unproject_depth_map_to_point_map
 PHASE3C = os.path.join(ROOT, "阶段3", "03_windowed_pose")
 SEQ_BASE = os.path.join(ROOT, "阶段2", "01_sequences", "sequences")
 OUT_BASE = os.path.join(PHASE3C, "03_window_inference", "window_outputs")
-
 # Sequences
 FAIL_DATES = ["12-03-24", "15-04-24", "19-03-24"]
 PASS_DATES = ["05-03-24"]
@@ -71,10 +70,16 @@ def main():
     ap.add_argument("--force", action="store_true")
     ap.add_argument("--window-size", type=int, default=16)
     ap.add_argument("--overlap", type=int, default=8)
+    ap.add_argument("--out-base", type=str, default=None,
+                    help="Output dir name under 03_window_inference/ (default: window_outputs). "
+                         "Use e.g. window_outputs_stride4 for overlap!=8 so existing outputs are not overwritten.")
     ap.add_argument("--seq", nargs="*", help="Specific sequences only")
     args = ap.parse_args()
 
-    os.makedirs(OUT_BASE, exist_ok=True)
+    # Resolve output base: allow separate dir per parameterization (never overwrite stride-8 outputs)
+    out_base = (OUT_BASE if args.out_base is None
+                else os.path.join(PHASE3C, "03_window_inference", args.out_base))
+    os.makedirs(out_base, exist_ok=True)
     device, dtype = "cuda", torch.bfloat16
 
     print("Loading VGGT model...")
@@ -101,7 +106,7 @@ def main():
         print(f"  Total frames: {S}, windows: {len(windows)} "
               f"(size={args.window_size}, overlap={args.overlap})")
 
-        seq_dir = os.path.join(OUT_BASE, seq_id)
+        seq_dir = os.path.join(out_base, seq_id)
         os.makedirs(seq_dir, exist_ok=True)
 
         window_manifest = {
@@ -189,7 +194,7 @@ def main():
         print(f"  Total: {total_time:.1f}s, peak VRAM: {peak_vram:.1f}GB")
 
     # Save global manifest
-    global_manifest_path = os.path.join(OUT_BASE, "ALL_WINDOW_MANIFESTS.json")
+    global_manifest_path = os.path.join(out_base, "ALL_WINDOW_MANIFESTS.json")
     with open(global_manifest_path, "w") as f:
         json.dump(manifest_all, f, indent=2, default=str)
     print(f"\nSaved global manifest: {global_manifest_path}")

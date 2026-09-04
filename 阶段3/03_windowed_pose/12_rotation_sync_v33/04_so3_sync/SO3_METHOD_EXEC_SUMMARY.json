@@ -1,0 +1,10 @@
+{
+  "huber_f_scale_rad": 0.05,
+  "loss": "huber",
+  "anchor_window": 0,
+  "max_nfev": 500,
+  "method": "scipy.optimize.least_squares trf",
+  "residual": "Rotation.as_rotvec (exact Log map)",
+  "init": "max-confidence spanning tree then refine all edges",
+  "gt_used_in_solver": false
+}

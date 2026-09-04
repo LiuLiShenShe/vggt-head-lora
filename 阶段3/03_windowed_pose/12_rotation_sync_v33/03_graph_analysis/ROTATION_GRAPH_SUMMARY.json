@@ -1,0 +1,360 @@
+[
+  {
+    "sequence_id": "plantview__langdon_4__05-03-24",
+    "label": "STRIDE4",
+    "min_overlap": 8,
+    "n_windows": 77,
+    "n_edges": 151,
+    "n_components": 1,
+    "cycle_rank": 75,
+    "mean_degree": 3.9221,
+    "max_degree": 4,
+    "is_connected": true,
+    "is_tree": false,
+    "acceptance_gate": true,
+    "hop_distribution": {
+      "hop_1": 76,
+      "hop_2": 75
+    }
+  },
+  {
+    "sequence_id": "plantview__langdon_4__05-03-24",
+    "label": "STRIDE4_DIAG",
+    "min_overlap": 4,
+    "n_windows": 77,
+    "n_edges": 225,
+    "n_components": 1,
+    "cycle_rank": 149,
+    "mean_degree": 5.8442,
+    "max_degree": 6,
+    "is_connected": true,
+    "is_tree": false,
+    "acceptance_gate": true,
+    "hop_distribution": {
+      "hop_1": 76,
+      "hop_2": 75,
+      "hop_3": 74
+    }
+  },
+  {
+    "sequence_id": "plantview__langdon_4__12-03-24",
+    "label": "STRIDE4",
+    "min_overlap": 8,
+    "n_windows": 77,
+    "n_edges": 151,
+    "n_components": 1,
+    "cycle_rank": 75,
+    "mean_degree": 3.9221,
+    "max_degree": 4,
+    "is_connected": true,
+    "is_tree": false,
+    "acceptance_gate": true,
+    "hop_distribution": {
+      "hop_1": 76,
+      "hop_2": 75
+    }
+  },
+  {
+    "sequence_id": "plantview__langdon_4__12-03-24",
+    "label": "STRIDE4_DIAG",
+    "min_overlap": 4,
+    "n_windows": 77,
+    "n_edges": 225,
+    "n_components": 1,
+    "cycle_rank": 149,
+    "mean_degree": 5.8442,
+    "max_degree": 6,
+    "is_connected": true,
+    "is_tree": false,
+    "acceptance_gate": true,
+    "hop_distribution": {
+      "hop_1": 76,
+      "hop_2": 75,
+      "hop_3": 74
+    }
+  },
+  {
+    "sequence_id": "plantview__langdon_4__15-04-24",
+    "label": "STRIDE4",
+    "min_overlap": 8,
+    "n_windows": 77,
+    "n_edges": 151,
+    "n_components": 1,
+    "cycle_rank": 75,
+    "mean_degree": 3.9221,
+    "max_degree": 4,
+    "is_connected": true,
+    "is_tree": false,
+    "acceptance_gate": true,
+    "hop_distribution": {
+      "hop_1": 76,
+      "hop_2": 75
+    }
+  },
+  {
+    "sequence_id": "plantview__langdon_4__15-04-24",
+    "label": "STRIDE4_DIAG",
+    "min_overlap": 4,
+    "n_windows": 77,
+    "n_edges": 225,
+    "n_components": 1,
+    "cycle_rank": 149,
+    "mean_degree": 5.8442,
+    "max_degree": 6,
+    "is_connected": true,
+    "is_tree": false,
+    "acceptance_gate": true,
+    "hop_distribution": {
+      "hop_1": 76,
+      "hop_2": 75,
+      "hop_3": 74
+    }
+  },
+  {
+    "sequence_id": "plantview__langdon_4__19-03-24",
+    "label": "STRIDE4",
+    "min_overlap": 8,
+    "n_windows": 77,
+    "n_edges": 151,
+    "n_components": 1,
+    "cycle_rank": 75,
+    "mean_degree": 3.9221,
+    "max_degree": 4,
+    "is_connected": true,
+    "is_tree": false,
+    "acceptance_gate": true,
+    "hop_distribution": {
+      "hop_1": 76,
+      "hop_2": 75
+    }
+  },
+  {
+    "sequence_id": "plantview__langdon_4__19-03-24",
+    "label": "STRIDE4_DIAG",
+    "min_overlap": 4,
+    "n_windows": 77,
+    "n_edges": 225,
+    "n_components": 1,
+    "cycle_rank": 149,
+    "mean_degree": 5.8442,
+    "max_degree": 6,
+    "is_connected": true,
+    "is_tree": false,
+    "acceptance_gate": true,
+    "hop_distribution": {
+      "hop_1": 76,
+      "hop_2": 75,
+      "hop_3": 74
+    }
+  },
+  {
+    "sequence_id": "wheat3dgs__plot_461",
+    "label": "STRIDE4",
+    "min_overlap": 8,
+    "n_windows": 6,
+    "n_edges": 9,
+    "n_components": 1,
+    "cycle_rank": 4,
+    "mean_degree": 3.0,
+    "max_degree": 4,
+    "is_connected": true,
+    "is_tree": false,
+    "acceptance_gate": true,
+    "hop_distribution": {
+      "hop_1": 5,
+      "hop_2": 4
+    }
+  },
+  {
+    "sequence_id": "wheat3dgs__plot_461",
+    "label": "STRIDE4_DIAG",
+    "min_overlap": 4,
+    "n_windows": 6,
+    "n_edges": 12,
+    "n_components": 1,
+    "cycle_rank": 7,
+    "mean_degree": 4.0,
+    "max_degree": 5,
+    "is_connected": true,
+    "is_tree": false,
+    "acceptance_gate": true,
+    "hop_distribution": {
+      "hop_1": 5,
+      "hop_2": 4,
+      "hop_3": 3
+    }
+  },
+  {
+    "sequence_id": "wheat3dgs__plot_467",
+    "label": "STRIDE4",
+    "min_overlap": 8,
+    "n_windows": 6,
+    "n_edges": 9,
+    "n_components": 1,
+    "cycle_rank": 4,
+    "mean_degree": 3.0,
+    "max_degree": 4,
+    "is_connected": true,
+    "is_tree": false,
+    "acceptance_gate": true,
+    "hop_distribution": {
+      "hop_1": 5,
+      "hop_2": 4
+    }
+  },
+  {
+    "sequence_id": "wheat3dgs__plot_467",
+    "label": "STRIDE4_DIAG",
+    "min_overlap": 4,
+    "n_windows": 6,
+    "n_edges": 12,
+    "n_components": 1,
+    "cycle_rank": 7,
+    "mean_degree": 4.0,
+    "max_degree": 5,
+    "is_connected": true,
+    "is_tree": false,
+    "acceptance_gate": true,
+    "hop_distribution": {
+      "hop_1": 5,
+      "hop_2": 4,
+      "hop_3": 3
+    }
+  },
+  {
+    "sequence_id": "mustc__plot198__230613__ugv__pos00",
+    "label": "STRIDE4",
+    "min_overlap": 8,
+    "n_windows": 2,
+    "n_edges": 1,
+    "n_components": 1,
+    "cycle_rank": 0,
+    "mean_degree": 1.0,
+    "max_degree": 1,
+    "is_connected": true,
+    "is_tree": true,
+    "acceptance_gate": false,
+    "hop_distribution": {
+      "hop_1": 1
+    }
+  },
+  {
+    "sequence_id": "plantview__langdon_4__05-03-24",
+    "label": "STRIDE8",
+    "min_overlap": 8,
+    "n_windows": 39,
+    "n_edges": 38,
+    "n_components": 1,
+    "cycle_rank": 0,
+    "mean_degree": 1.9487,
+    "max_degree": 2,
+    "is_connected": true,
+    "is_tree": true,
+    "acceptance_gate": false,
+    "hop_distribution": {
+      "hop_1": 38
+    }
+  },
+  {
+    "sequence_id": "plantview__langdon_4__12-03-24",
+    "label": "STRIDE8",
+    "min_overlap": 8,
+    "n_windows": 39,
+    "n_edges": 38,
+    "n_components": 1,
+    "cycle_rank": 0,
+    "mean_degree": 1.9487,
+    "max_degree": 2,
+    "is_connected": true,
+    "is_tree": true,
+    "acceptance_gate": false,
+    "hop_distribution": {
+      "hop_1": 38
+    }
+  },
+  {
+    "sequence_id": "plantview__langdon_4__15-04-24",
+    "label": "STRIDE8",
+    "min_overlap": 8,
+    "n_windows": 39,
+    "n_edges": 38,
+    "n_components": 1,
+    "cycle_rank": 0,
+    "mean_degree": 1.9487,
+    "max_degree": 2,
+    "is_connected": true,
+    "is_tree": true,
+    "acceptance_gate": false,
+    "hop_distribution": {
+      "hop_1": 38
+    }
+  },
+  {
+    "sequence_id": "plantview__langdon_4__19-03-24",
+    "label": "STRIDE8",
+    "min_overlap": 8,
+    "n_windows": 39,
+    "n_edges": 38,
+    "n_components": 1,
+    "cycle_rank": 0,
+    "mean_degree": 1.9487,
+    "max_degree": 2,
+    "is_connected": true,
+    "is_tree": true,
+    "acceptance_gate": false,
+    "hop_distribution": {
+      "hop_1": 38
+    }
+  },
+  {
+    "sequence_id": "wheat3dgs__plot_461",
+    "label": "STRIDE8",
+    "min_overlap": 8,
+    "n_windows": 4,
+    "n_edges": 3,
+    "n_components": 1,
+    "cycle_rank": 0,
+    "mean_degree": 1.5,
+    "max_degree": 2,
+    "is_connected": true,
+    "is_tree": true,
+    "acceptance_gate": false,
+    "hop_distribution": {
+      "hop_1": 3
+    }
+  },
+  {
+    "sequence_id": "wheat3dgs__plot_467",
+    "label": "STRIDE8",
+    "min_overlap": 8,
+    "n_windows": 4,
+    "n_edges": 3,
+    "n_components": 1,
+    "cycle_rank": 0,
+    "mean_degree": 1.5,
+    "max_degree": 2,
+    "is_connected": true,
+    "is_tree": true,
+    "acceptance_gate": false,
+    "hop_distribution": {
+      "hop_1": 3
+    }
+  },
+  {
+    "sequence_id": "mustc__plot198__230613__ugv__pos00",
+    "label": "STRIDE8",
+    "min_overlap": 8,
+    "n_windows": 2,
+    "n_edges": 1,
+    "n_components": 1,
+    "cycle_rank": 0,
+    "mean_degree": 1.0,
+    "max_degree": 1,
+    "is_connected": true,
+    "is_tree": true,
+    "acceptance_gate": false,
+    "hop_distribution": {
+      "hop_1": 1
+    }
+  }
+]
