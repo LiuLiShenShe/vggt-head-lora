@@ -275,6 +275,35 @@ def main():
             "n_triangles": n_cycle,
         }
 
+        # ---- §46: Q_chain_err split ----
+        # GT_FREE_EDGE_CHAIN_RESIDUAL: stride8 chain rotation error (chain-only, no GT)
+        G8 = load_G(seq_id, "stride8", th)
+        if G8 is not None:
+            # Chain residual = consecutive gauge composition drift (GT-free metric)
+            chain_drifts = []
+            for k in range(1, len(G8)):
+                chain_drifts.append(rot_angle_deg(G8[0].T @ G8[k]))
+            gt_free_chain = float(np.median(chain_drifts)) if chain_drifts else -1
+        else:
+            gt_free_chain = -1
+        diag_summary[seq_id]["GT_FREE_EDGE_CHAIN_RESIDUAL"] = gt_free_chain
+
+        # GT_FREE_CYCLE_RESIDUAL = existing cycle_err_median_deg (renamed, GT-free)
+        diag_summary[seq_id]["GT_FREE_CYCLE_RESIDUAL"] = cycle_stat["cycle_err_median_deg"]
+
+        # REFERENCE_GLOBAL_ORIENTATION_DRIFT: from COLMAP evaluation (evaluation_only)
+        # Read from method comparison CSV if available
+        comp_path = os.path.join(SYNC_DIR, "06_evaluation", "ROTATION_SYNC_METHOD_COMPARISON.csv")
+        ref_drift = -1
+        if os.path.exists(comp_path):
+            with open(comp_path) as cf:
+                for cr in csv.DictReader(cf):
+                    if cr["sequence"] == seq_id and cr["method_label"] == "A":
+                        ref_drift = float(cr["rot_median"])
+                        break
+        diag_summary[seq_id]["REFERENCE_GLOBAL_ORIENTATION_DRIFT"] = ref_drift
+        diag_summary[seq_id]["REFERENCE_GLOBAL_ORIENTATION_DRIFT_note"] = "evaluation_only=true"
+
     # ---- Save CSVs ----
     if cycle_rows:
         with open(os.path.join(OUT_DIR, "ROTATION_CYCLE_RESIDUALS.csv"), "w", newline="") as f:

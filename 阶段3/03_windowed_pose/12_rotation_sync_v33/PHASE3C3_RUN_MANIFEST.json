@@ -1,0 +1,1366 @@
+{
+  "phase": "3C.3",
+  "description": "Redundant SO(3) Rotation Synchronization — Provenance Manifest",
+  "git_commit": "7e2dd3a56776af73e25eab66b2fac9b270ea5da0",
+  "git_commit_short": "7e2dd3a",
+  "vggt_checkpoint": "model = VGGT.from_pretrained(\"facebook/VGGT-1B\").to(device).eval()",
+  "window_size": 16,
+  "stride": 4,
+  "edge_threshold_min_overlap_frames": 8,
+  "optimizer_settings": {
+    "loss": "huber",
+    "huber_f_scale_rad": 0.05,
+    "anchor_window": 0,
+    "init": "MST",
+    "gt_used_in_solver": false
+  },
+  "random_seed": null,
+  "datetime": "2026-09-07T04:41:36.283621+00:00",
+  "sequences": {
+    "plantview__langdon_4__05-03-24": {
+      "n_windows": 77,
+      "window_size": 16,
+      "stride": 4,
+      "artifact_count": 77,
+      "artifact_hashes": [
+        {
+          "window_file": "window_000.npz",
+          "sha256_prefix": "d2c113f1664e30b9"
+        },
+        {
+          "window_file": "window_001.npz",
+          "sha256_prefix": "301cd2bcda6a93e4"
+        },
+        {
+          "window_file": "window_002.npz",
+          "sha256_prefix": "53f956b87c6c3a5c"
+        },
+        {
+          "window_file": "window_003.npz",
+          "sha256_prefix": "31fb678ef92851df"
+        },
+        {
+          "window_file": "window_004.npz",
+          "sha256_prefix": "28320a6bc8c25e47"
+        },
+        {
+          "window_file": "window_005.npz",
+          "sha256_prefix": "aa657d7ffb3d16c7"
+        },
+        {
+          "window_file": "window_006.npz",
+          "sha256_prefix": "dbbe4c893319afc9"
+        },
+        {
+          "window_file": "window_007.npz",
+          "sha256_prefix": "29b999c804866379"
+        },
+        {
+          "window_file": "window_008.npz",
+          "sha256_prefix": "8ef6b58d3c1bc6f8"
+        },
+        {
+          "window_file": "window_009.npz",
+          "sha256_prefix": "d5d654d25b43a3d9"
+        },
+        {
+          "window_file": "window_010.npz",
+          "sha256_prefix": "947eb335997c7b5e"
+        },
+        {
+          "window_file": "window_011.npz",
+          "sha256_prefix": "8ddb7d06317c37cf"
+        },
+        {
+          "window_file": "window_012.npz",
+          "sha256_prefix": "c708fad8512846d3"
+        },
+        {
+          "window_file": "window_013.npz",
+          "sha256_prefix": "cf62269d8470f061"
+        },
+        {
+          "window_file": "window_014.npz",
+          "sha256_prefix": "4dac9ee53c46a387"
+        },
+        {
+          "window_file": "window_015.npz",
+          "sha256_prefix": "282c4aaf05b65492"
+        },
+        {
+          "window_file": "window_016.npz",
+          "sha256_prefix": "d9e319f89bf21677"
+        },
+        {
+          "window_file": "window_017.npz",
+          "sha256_prefix": "d8d6d05398038935"
+        },
+        {
+          "window_file": "window_018.npz",
+          "sha256_prefix": "8b614d5985c0bc27"
+        },
+        {
+          "window_file": "window_019.npz",
+          "sha256_prefix": "ea39a173876de5ae"
+        },
+        {
+          "window_file": "window_020.npz",
+          "sha256_prefix": "b1aa7c26dfa0f501"
+        },
+        {
+          "window_file": "window_021.npz",
+          "sha256_prefix": "d707944f9f245c7f"
+        },
+        {
+          "window_file": "window_022.npz",
+          "sha256_prefix": "6cf37b5aaf8ad663"
+        },
+        {
+          "window_file": "window_023.npz",
+          "sha256_prefix": "1a8f8ee88030a9f0"
+        },
+        {
+          "window_file": "window_024.npz",
+          "sha256_prefix": "8ea6a4d24263ed41"
+        },
+        {
+          "window_file": "window_025.npz",
+          "sha256_prefix": "6c1204ef5f29b862"
+        },
+        {
+          "window_file": "window_026.npz",
+          "sha256_prefix": "68ec6d97978540b4"
+        },
+        {
+          "window_file": "window_027.npz",
+          "sha256_prefix": "c9f166ff01ca78ba"
+        },
+        {
+          "window_file": "window_028.npz",
+          "sha256_prefix": "7a7cfc7f07bdd8cc"
+        },
+        {
+          "window_file": "window_029.npz",
+          "sha256_prefix": "0d8feea11a5325b6"
+        },
+        {
+          "window_file": "window_030.npz",
+          "sha256_prefix": "98bfde19b790d937"
+        },
+        {
+          "window_file": "window_031.npz",
+          "sha256_prefix": "0e1d07a1448dd84f"
+        },
+        {
+          "window_file": "window_032.npz",
+          "sha256_prefix": "7cb3204a1a4a83b0"
+        },
+        {
+          "window_file": "window_033.npz",
+          "sha256_prefix": "9c52f934f8a488f7"
+        },
+        {
+          "window_file": "window_034.npz",
+          "sha256_prefix": "a3759b1b85ab83bb"
+        },
+        {
+          "window_file": "window_035.npz",
+          "sha256_prefix": "40b18d5afd1f94f3"
+        },
+        {
+          "window_file": "window_036.npz",
+          "sha256_prefix": "5a72cc54549db479"
+        },
+        {
+          "window_file": "window_037.npz",
+          "sha256_prefix": "95c72b7fae9bb3e6"
+        },
+        {
+          "window_file": "window_038.npz",
+          "sha256_prefix": "4ad248b746483a43"
+        },
+        {
+          "window_file": "window_039.npz",
+          "sha256_prefix": "5f89a3b7a4f353ef"
+        },
+        {
+          "window_file": "window_040.npz",
+          "sha256_prefix": "1b342f81c2b07d2f"
+        },
+        {
+          "window_file": "window_041.npz",
+          "sha256_prefix": "28c5ced13b6dfe51"
+        },
+        {
+          "window_file": "window_042.npz",
+          "sha256_prefix": "8553f992bfbd568b"
+        },
+        {
+          "window_file": "window_043.npz",
+          "sha256_prefix": "1319ca4db6108424"
+        },
+        {
+          "window_file": "window_044.npz",
+          "sha256_prefix": "c1d61b5cce3d4735"
+        },
+        {
+          "window_file": "window_045.npz",
+          "sha256_prefix": "4920935fbb3228e9"
+        },
+        {
+          "window_file": "window_046.npz",
+          "sha256_prefix": "5c2fd295dcc1b62b"
+        },
+        {
+          "window_file": "window_047.npz",
+          "sha256_prefix": "b0007efcd8b0a553"
+        },
+        {
+          "window_file": "window_048.npz",
+          "sha256_prefix": "534de8fd20549000"
+        },
+        {
+          "window_file": "window_049.npz",
+          "sha256_prefix": "45af052ed6d021d9"
+        },
+        {
+          "window_file": "window_050.npz",
+          "sha256_prefix": "8f0d4e38ede7cbf0"
+        },
+        {
+          "window_file": "window_051.npz",
+          "sha256_prefix": "6cce439464784dde"
+        },
+        {
+          "window_file": "window_052.npz",
+          "sha256_prefix": "4a1f2b92cd949ff5"
+        },
+        {
+          "window_file": "window_053.npz",
+          "sha256_prefix": "1cf59339679934e3"
+        },
+        {
+          "window_file": "window_054.npz",
+          "sha256_prefix": "58b5a5f139a9b78a"
+        },
+        {
+          "window_file": "window_055.npz",
+          "sha256_prefix": "f9cb9d742aa2458f"
+        },
+        {
+          "window_file": "window_056.npz",
+          "sha256_prefix": "318ff72864145119"
+        },
+        {
+          "window_file": "window_057.npz",
+          "sha256_prefix": "8fb87f66bbfbdbe0"
+        },
+        {
+          "window_file": "window_058.npz",
+          "sha256_prefix": "96f7f75d4344860d"
+        },
+        {
+          "window_file": "window_059.npz",
+          "sha256_prefix": "3fd608734b687de9"
+        },
+        {
+          "window_file": "window_060.npz",
+          "sha256_prefix": "f54e72493775746a"
+        },
+        {
+          "window_file": "window_061.npz",
+          "sha256_prefix": "ec460b268df28b5d"
+        },
+        {
+          "window_file": "window_062.npz",
+          "sha256_prefix": "8db8ac95727aad79"
+        },
+        {
+          "window_file": "window_063.npz",
+          "sha256_prefix": "609156a823a654f3"
+        },
+        {
+          "window_file": "window_064.npz",
+          "sha256_prefix": "d76e404a37455de8"
+        },
+        {
+          "window_file": "window_065.npz",
+          "sha256_prefix": "c8471cbf20a2c853"
+        },
+        {
+          "window_file": "window_066.npz",
+          "sha256_prefix": "364b763226a87803"
+        },
+        {
+          "window_file": "window_067.npz",
+          "sha256_prefix": "f89ee3ea5a5d6bbc"
+        },
+        {
+          "window_file": "window_068.npz",
+          "sha256_prefix": "ceb238812092c5a6"
+        },
+        {
+          "window_file": "window_069.npz",
+          "sha256_prefix": "50aac0da024e0b02"
+        },
+        {
+          "window_file": "window_070.npz",
+          "sha256_prefix": "19b9146bb4c1a6e3"
+        },
+        {
+          "window_file": "window_071.npz",
+          "sha256_prefix": "8ccf40fc572501d4"
+        },
+        {
+          "window_file": "window_072.npz",
+          "sha256_prefix": "ae1f66e254f25870"
+        },
+        {
+          "window_file": "window_073.npz",
+          "sha256_prefix": "1772893349d5d304"
+        },
+        {
+          "window_file": "window_074.npz",
+          "sha256_prefix": "6e0ec6968da517d5"
+        },
+        {
+          "window_file": "window_075.npz",
+          "sha256_prefix": "ed8e73c3aef88dc0"
+        },
+        {
+          "window_file": "window_076.npz",
+          "sha256_prefix": "47d6fd5a967d13d8"
+        }
+      ]
+    },
+    "plantview__langdon_4__12-03-24": {
+      "n_windows": 77,
+      "window_size": 16,
+      "stride": 4,
+      "artifact_count": 77,
+      "artifact_hashes": [
+        {
+          "window_file": "window_000.npz",
+          "sha256_prefix": "439584ef2b18f6eb"
+        },
+        {
+          "window_file": "window_001.npz",
+          "sha256_prefix": "c9ca017f0b31d71e"
+        },
+        {
+          "window_file": "window_002.npz",
+          "sha256_prefix": "cccda5c468961998"
+        },
+        {
+          "window_file": "window_003.npz",
+          "sha256_prefix": "eb9cf56d9918e2c3"
+        },
+        {
+          "window_file": "window_004.npz",
+          "sha256_prefix": "bb471a77d97dfaaa"
+        },
+        {
+          "window_file": "window_005.npz",
+          "sha256_prefix": "ecf4faccb1c75101"
+        },
+        {
+          "window_file": "window_006.npz",
+          "sha256_prefix": "b5b979416da6a1da"
+        },
+        {
+          "window_file": "window_007.npz",
+          "sha256_prefix": "9bdd3a1a9c7851ea"
+        },
+        {
+          "window_file": "window_008.npz",
+          "sha256_prefix": "9f210c8f0ec4e366"
+        },
+        {
+          "window_file": "window_009.npz",
+          "sha256_prefix": "6a03676569d9e635"
+        },
+        {
+          "window_file": "window_010.npz",
+          "sha256_prefix": "61dd13d743d26248"
+        },
+        {
+          "window_file": "window_011.npz",
+          "sha256_prefix": "2f9d439ede480c43"
+        },
+        {
+          "window_file": "window_012.npz",
+          "sha256_prefix": "4e804c5b1e0fb61e"
+        },
+        {
+          "window_file": "window_013.npz",
+          "sha256_prefix": "67b50099581e83ad"
+        },
+        {
+          "window_file": "window_014.npz",
+          "sha256_prefix": "afe65f247b6b80dc"
+        },
+        {
+          "window_file": "window_015.npz",
+          "sha256_prefix": "e3e86d40e86370cd"
+        },
+        {
+          "window_file": "window_016.npz",
+          "sha256_prefix": "dbb0906b8011eb92"
+        },
+        {
+          "window_file": "window_017.npz",
+          "sha256_prefix": "8ba2a28e7e427c4c"
+        },
+        {
+          "window_file": "window_018.npz",
+          "sha256_prefix": "e532568f04cd3117"
+        },
+        {
+          "window_file": "window_019.npz",
+          "sha256_prefix": "83b751e374f8d623"
+        },
+        {
+          "window_file": "window_020.npz",
+          "sha256_prefix": "fd5fd7683a3d5421"
+        },
+        {
+          "window_file": "window_021.npz",
+          "sha256_prefix": "d39f654c61f5b0f5"
+        },
+        {
+          "window_file": "window_022.npz",
+          "sha256_prefix": "35370d2b8d1fb117"
+        },
+        {
+          "window_file": "window_023.npz",
+          "sha256_prefix": "1ad0551e567a7dca"
+        },
+        {
+          "window_file": "window_024.npz",
+          "sha256_prefix": "0a0089cbbcd7fd98"
+        },
+        {
+          "window_file": "window_025.npz",
+          "sha256_prefix": "8dddea37c536cde5"
+        },
+        {
+          "window_file": "window_026.npz",
+          "sha256_prefix": "e5633f43c5a45ad3"
+        },
+        {
+          "window_file": "window_027.npz",
+          "sha256_prefix": "1386ca5948e62f24"
+        },
+        {
+          "window_file": "window_028.npz",
+          "sha256_prefix": "8d878ca55bba268a"
+        },
+        {
+          "window_file": "window_029.npz",
+          "sha256_prefix": "1ea440b9e1bd330a"
+        },
+        {
+          "window_file": "window_030.npz",
+          "sha256_prefix": "83b417b86db04a25"
+        },
+        {
+          "window_file": "window_031.npz",
+          "sha256_prefix": "ae2110982990ccc6"
+        },
+        {
+          "window_file": "window_032.npz",
+          "sha256_prefix": "da571d4328b985a1"
+        },
+        {
+          "window_file": "window_033.npz",
+          "sha256_prefix": "2d25e55390d509f4"
+        },
+        {
+          "window_file": "window_034.npz",
+          "sha256_prefix": "de3b7901308d8afa"
+        },
+        {
+          "window_file": "window_035.npz",
+          "sha256_prefix": "93f9b5285faa9c8e"
+        },
+        {
+          "window_file": "window_036.npz",
+          "sha256_prefix": "d995e1e610c039c7"
+        },
+        {
+          "window_file": "window_037.npz",
+          "sha256_prefix": "30d1410ea99cebed"
+        },
+        {
+          "window_file": "window_038.npz",
+          "sha256_prefix": "72324eb227058933"
+        },
+        {
+          "window_file": "window_039.npz",
+          "sha256_prefix": "f83640ba31167960"
+        },
+        {
+          "window_file": "window_040.npz",
+          "sha256_prefix": "69d3ad28528dedec"
+        },
+        {
+          "window_file": "window_041.npz",
+          "sha256_prefix": "9c4e1c61a37be784"
+        },
+        {
+          "window_file": "window_042.npz",
+          "sha256_prefix": "1da88d98beca3399"
+        },
+        {
+          "window_file": "window_043.npz",
+          "sha256_prefix": "8e7b1cc79d999e39"
+        },
+        {
+          "window_file": "window_044.npz",
+          "sha256_prefix": "0eae0d360c9d5b96"
+        },
+        {
+          "window_file": "window_045.npz",
+          "sha256_prefix": "df25c97b2ffdde9f"
+        },
+        {
+          "window_file": "window_046.npz",
+          "sha256_prefix": "8eadefb7d47284bd"
+        },
+        {
+          "window_file": "window_047.npz",
+          "sha256_prefix": "1736274865eb3ad4"
+        },
+        {
+          "window_file": "window_048.npz",
+          "sha256_prefix": "be5888ab7ae4ecef"
+        },
+        {
+          "window_file": "window_049.npz",
+          "sha256_prefix": "357fb9288eb07ca9"
+        },
+        {
+          "window_file": "window_050.npz",
+          "sha256_prefix": "c53496ec8811bb1a"
+        },
+        {
+          "window_file": "window_051.npz",
+          "sha256_prefix": "7c7a8683e67f6376"
+        },
+        {
+          "window_file": "window_052.npz",
+          "sha256_prefix": "8230ff4488eddfd3"
+        },
+        {
+          "window_file": "window_053.npz",
+          "sha256_prefix": "7dcfed0a333cc25e"
+        },
+        {
+          "window_file": "window_054.npz",
+          "sha256_prefix": "f98562fe41ff22d0"
+        },
+        {
+          "window_file": "window_055.npz",
+          "sha256_prefix": "ed8b5a6842b50fe8"
+        },
+        {
+          "window_file": "window_056.npz",
+          "sha256_prefix": "5e0fcff82a6ad1bb"
+        },
+        {
+          "window_file": "window_057.npz",
+          "sha256_prefix": "67b93a662487fa8e"
+        },
+        {
+          "window_file": "window_058.npz",
+          "sha256_prefix": "15dd805dc2fc3316"
+        },
+        {
+          "window_file": "window_059.npz",
+          "sha256_prefix": "a015eea510c403e2"
+        },
+        {
+          "window_file": "window_060.npz",
+          "sha256_prefix": "76e55c7300b3ecbe"
+        },
+        {
+          "window_file": "window_061.npz",
+          "sha256_prefix": "2020af014626c1b1"
+        },
+        {
+          "window_file": "window_062.npz",
+          "sha256_prefix": "1a8e6cf8c8f0979e"
+        },
+        {
+          "window_file": "window_063.npz",
+          "sha256_prefix": "f79c5678c104bab6"
+        },
+        {
+          "window_file": "window_064.npz",
+          "sha256_prefix": "a43cba62f2bbe688"
+        },
+        {
+          "window_file": "window_065.npz",
+          "sha256_prefix": "0c8373c4d605e3c5"
+        },
+        {
+          "window_file": "window_066.npz",
+          "sha256_prefix": "f9834fa493d7dcdc"
+        },
+        {
+          "window_file": "window_067.npz",
+          "sha256_prefix": "89f59d6627543540"
+        },
+        {
+          "window_file": "window_068.npz",
+          "sha256_prefix": "bd3e7005ca27d2d5"
+        },
+        {
+          "window_file": "window_069.npz",
+          "sha256_prefix": "388ce1c358538f59"
+        },
+        {
+          "window_file": "window_070.npz",
+          "sha256_prefix": "8cd9414fb4e8cf73"
+        },
+        {
+          "window_file": "window_071.npz",
+          "sha256_prefix": "466b8636a09f6a40"
+        },
+        {
+          "window_file": "window_072.npz",
+          "sha256_prefix": "044efe9a084e4336"
+        },
+        {
+          "window_file": "window_073.npz",
+          "sha256_prefix": "bee793e57cbb762b"
+        },
+        {
+          "window_file": "window_074.npz",
+          "sha256_prefix": "1bebc4be928348cf"
+        },
+        {
+          "window_file": "window_075.npz",
+          "sha256_prefix": "9acfcb3b238a3249"
+        },
+        {
+          "window_file": "window_076.npz",
+          "sha256_prefix": "e2866a3f6a0f31fc"
+        }
+      ]
+    },
+    "plantview__langdon_4__15-04-24": {
+      "n_windows": 77,
+      "window_size": 16,
+      "stride": 4,
+      "artifact_count": 77,
+      "artifact_hashes": [
+        {
+          "window_file": "window_000.npz",
+          "sha256_prefix": "3c4e3edcbd77e051"
+        },
+        {
+          "window_file": "window_001.npz",
+          "sha256_prefix": "da931959fbb74663"
+        },
+        {
+          "window_file": "window_002.npz",
+          "sha256_prefix": "109c27c8ba29b467"
+        },
+        {
+          "window_file": "window_003.npz",
+          "sha256_prefix": "4dfa27b36b587110"
+        },
+        {
+          "window_file": "window_004.npz",
+          "sha256_prefix": "532e43bf6c5c9105"
+        },
+        {
+          "window_file": "window_005.npz",
+          "sha256_prefix": "df358da939faad60"
+        },
+        {
+          "window_file": "window_006.npz",
+          "sha256_prefix": "98312a1b65fd4f4f"
+        },
+        {
+          "window_file": "window_007.npz",
+          "sha256_prefix": "e6c116ae75b1dcd1"
+        },
+        {
+          "window_file": "window_008.npz",
+          "sha256_prefix": "6bc2d65c73395baf"
+        },
+        {
+          "window_file": "window_009.npz",
+          "sha256_prefix": "ad6c33f029ed6f30"
+        },
+        {
+          "window_file": "window_010.npz",
+          "sha256_prefix": "d053cd7c1d6f29b3"
+        },
+        {
+          "window_file": "window_011.npz",
+          "sha256_prefix": "120b970e859e9f72"
+        },
+        {
+          "window_file": "window_012.npz",
+          "sha256_prefix": "ef7d101ff315a6a8"
+        },
+        {
+          "window_file": "window_013.npz",
+          "sha256_prefix": "380c48ea9ba18153"
+        },
+        {
+          "window_file": "window_014.npz",
+          "sha256_prefix": "c03b70ceef1df188"
+        },
+        {
+          "window_file": "window_015.npz",
+          "sha256_prefix": "9ff97f7b33af33ca"
+        },
+        {
+          "window_file": "window_016.npz",
+          "sha256_prefix": "985fb204291bb58c"
+        },
+        {
+          "window_file": "window_017.npz",
+          "sha256_prefix": "706145257c62fc44"
+        },
+        {
+          "window_file": "window_018.npz",
+          "sha256_prefix": "9edda36fffe79914"
+        },
+        {
+          "window_file": "window_019.npz",
+          "sha256_prefix": "65b1be815e184fb0"
+        },
+        {
+          "window_file": "window_020.npz",
+          "sha256_prefix": "58bbb6198aeafd2e"
+        },
+        {
+          "window_file": "window_021.npz",
+          "sha256_prefix": "3677ba0306e690b2"
+        },
+        {
+          "window_file": "window_022.npz",
+          "sha256_prefix": "cbacf9da29e20ebf"
+        },
+        {
+          "window_file": "window_023.npz",
+          "sha256_prefix": "d16052233c329928"
+        },
+        {
+          "window_file": "window_024.npz",
+          "sha256_prefix": "04fc8c6482066f5b"
+        },
+        {
+          "window_file": "window_025.npz",
+          "sha256_prefix": "5522c26b52bc6a20"
+        },
+        {
+          "window_file": "window_026.npz",
+          "sha256_prefix": "1e8b817390335fc6"
+        },
+        {
+          "window_file": "window_027.npz",
+          "sha256_prefix": "c1fa4a5430319146"
+        },
+        {
+          "window_file": "window_028.npz",
+          "sha256_prefix": "312cc6cd4385eaef"
+        },
+        {
+          "window_file": "window_029.npz",
+          "sha256_prefix": "e17136d49879c4fe"
+        },
+        {
+          "window_file": "window_030.npz",
+          "sha256_prefix": "1ffe79da65f04914"
+        },
+        {
+          "window_file": "window_031.npz",
+          "sha256_prefix": "dbbe98ec65521f20"
+        },
+        {
+          "window_file": "window_032.npz",
+          "sha256_prefix": "1e2783decaafaddc"
+        },
+        {
+          "window_file": "window_033.npz",
+          "sha256_prefix": "f7ffb3e8f88dc59e"
+        },
+        {
+          "window_file": "window_034.npz",
+          "sha256_prefix": "e6000c321405436d"
+        },
+        {
+          "window_file": "window_035.npz",
+          "sha256_prefix": "de909c8c990d0559"
+        },
+        {
+          "window_file": "window_036.npz",
+          "sha256_prefix": "db34768f07f31be5"
+        },
+        {
+          "window_file": "window_037.npz",
+          "sha256_prefix": "3150e3d5f53d7c2a"
+        },
+        {
+          "window_file": "window_038.npz",
+          "sha256_prefix": "0b20d7c2cfa8470e"
+        },
+        {
+          "window_file": "window_039.npz",
+          "sha256_prefix": "f1749e36b2938e6b"
+        },
+        {
+          "window_file": "window_040.npz",
+          "sha256_prefix": "0f5e48eb91e68809"
+        },
+        {
+          "window_file": "window_041.npz",
+          "sha256_prefix": "a09445a8ad8fed2f"
+        },
+        {
+          "window_file": "window_042.npz",
+          "sha256_prefix": "3d6c380637bba998"
+        },
+        {
+          "window_file": "window_043.npz",
+          "sha256_prefix": "4b1bdba8eb6f9e39"
+        },
+        {
+          "window_file": "window_044.npz",
+          "sha256_prefix": "9c1c959c1306de11"
+        },
+        {
+          "window_file": "window_045.npz",
+          "sha256_prefix": "1766c78fd6ac0684"
+        },
+        {
+          "window_file": "window_046.npz",
+          "sha256_prefix": "51d12e19d0271d59"
+        },
+        {
+          "window_file": "window_047.npz",
+          "sha256_prefix": "ceb57dab5339b1a7"
+        },
+        {
+          "window_file": "window_048.npz",
+          "sha256_prefix": "6d4113331cd3f96e"
+        },
+        {
+          "window_file": "window_049.npz",
+          "sha256_prefix": "7996abde6e888885"
+        },
+        {
+          "window_file": "window_050.npz",
+          "sha256_prefix": "c2363527d834acc5"
+        },
+        {
+          "window_file": "window_051.npz",
+          "sha256_prefix": "185770a4fa06c1af"
+        },
+        {
+          "window_file": "window_052.npz",
+          "sha256_prefix": "07f467069faec0c6"
+        },
+        {
+          "window_file": "window_053.npz",
+          "sha256_prefix": "69e778cdc82d4acc"
+        },
+        {
+          "window_file": "window_054.npz",
+          "sha256_prefix": "f5457c0eb65e8064"
+        },
+        {
+          "window_file": "window_055.npz",
+          "sha256_prefix": "9b90207a03e51ff8"
+        },
+        {
+          "window_file": "window_056.npz",
+          "sha256_prefix": "a379d155fff4aed2"
+        },
+        {
+          "window_file": "window_057.npz",
+          "sha256_prefix": "7746c49ce3ccb5bf"
+        },
+        {
+          "window_file": "window_058.npz",
+          "sha256_prefix": "f11a690463007ea2"
+        },
+        {
+          "window_file": "window_059.npz",
+          "sha256_prefix": "5d7959b0f9027056"
+        },
+        {
+          "window_file": "window_060.npz",
+          "sha256_prefix": "2b3234811634ab53"
+        },
+        {
+          "window_file": "window_061.npz",
+          "sha256_prefix": "d23c73c78339c2bf"
+        },
+        {
+          "window_file": "window_062.npz",
+          "sha256_prefix": "55dbd17923cdf93f"
+        },
+        {
+          "window_file": "window_063.npz",
+          "sha256_prefix": "0585bfcdda87bcbd"
+        },
+        {
+          "window_file": "window_064.npz",
+          "sha256_prefix": "1cbdf6890cdad27f"
+        },
+        {
+          "window_file": "window_065.npz",
+          "sha256_prefix": "a509cd48b32affc7"
+        },
+        {
+          "window_file": "window_066.npz",
+          "sha256_prefix": "ddad10c97566c315"
+        },
+        {
+          "window_file": "window_067.npz",
+          "sha256_prefix": "4005317dfa4c5f11"
+        },
+        {
+          "window_file": "window_068.npz",
+          "sha256_prefix": "8375ff1e4040e8ed"
+        },
+        {
+          "window_file": "window_069.npz",
+          "sha256_prefix": "9786f06629235cd2"
+        },
+        {
+          "window_file": "window_070.npz",
+          "sha256_prefix": "7db826122ea3b837"
+        },
+        {
+          "window_file": "window_071.npz",
+          "sha256_prefix": "57de5032420ac0bc"
+        },
+        {
+          "window_file": "window_072.npz",
+          "sha256_prefix": "3d141c2652a11fa9"
+        },
+        {
+          "window_file": "window_073.npz",
+          "sha256_prefix": "33ea7e2b120aba05"
+        },
+        {
+          "window_file": "window_074.npz",
+          "sha256_prefix": "97d745eb4d8f7ee4"
+        },
+        {
+          "window_file": "window_075.npz",
+          "sha256_prefix": "0305656c0dc94451"
+        },
+        {
+          "window_file": "window_076.npz",
+          "sha256_prefix": "720ea9c5d6098364"
+        }
+      ]
+    },
+    "plantview__langdon_4__19-03-24": {
+      "n_windows": 77,
+      "window_size": 16,
+      "stride": 4,
+      "artifact_count": 77,
+      "artifact_hashes": [
+        {
+          "window_file": "window_000.npz",
+          "sha256_prefix": "1bcf6045424aa198"
+        },
+        {
+          "window_file": "window_001.npz",
+          "sha256_prefix": "bf7b1b78ed227729"
+        },
+        {
+          "window_file": "window_002.npz",
+          "sha256_prefix": "08e230bd0680979b"
+        },
+        {
+          "window_file": "window_003.npz",
+          "sha256_prefix": "2d9404dea5f104b7"
+        },
+        {
+          "window_file": "window_004.npz",
+          "sha256_prefix": "c7354d96b93d918c"
+        },
+        {
+          "window_file": "window_005.npz",
+          "sha256_prefix": "88fcbf9efbe54c67"
+        },
+        {
+          "window_file": "window_006.npz",
+          "sha256_prefix": "084bb483a2071275"
+        },
+        {
+          "window_file": "window_007.npz",
+          "sha256_prefix": "6a0576fbd1a1a738"
+        },
+        {
+          "window_file": "window_008.npz",
+          "sha256_prefix": "12acbd624cf2a440"
+        },
+        {
+          "window_file": "window_009.npz",
+          "sha256_prefix": "efde14f981ab9774"
+        },
+        {
+          "window_file": "window_010.npz",
+          "sha256_prefix": "04e4456e3299f31f"
+        },
+        {
+          "window_file": "window_011.npz",
+          "sha256_prefix": "f446090687d24da9"
+        },
+        {
+          "window_file": "window_012.npz",
+          "sha256_prefix": "6d7685c533d225c2"
+        },
+        {
+          "window_file": "window_013.npz",
+          "sha256_prefix": "329d137e0e56bd11"
+        },
+        {
+          "window_file": "window_014.npz",
+          "sha256_prefix": "28073d965e9af9db"
+        },
+        {
+          "window_file": "window_015.npz",
+          "sha256_prefix": "0ca63f455154e746"
+        },
+        {
+          "window_file": "window_016.npz",
+          "sha256_prefix": "f755dad4204ab246"
+        },
+        {
+          "window_file": "window_017.npz",
+          "sha256_prefix": "e800856bd58be11c"
+        },
+        {
+          "window_file": "window_018.npz",
+          "sha256_prefix": "cd24082120c68c6b"
+        },
+        {
+          "window_file": "window_019.npz",
+          "sha256_prefix": "11598d3a529a31ff"
+        },
+        {
+          "window_file": "window_020.npz",
+          "sha256_prefix": "cab76a2893a2e2cd"
+        },
+        {
+          "window_file": "window_021.npz",
+          "sha256_prefix": "2850607079bbeb80"
+        },
+        {
+          "window_file": "window_022.npz",
+          "sha256_prefix": "a11946435de92750"
+        },
+        {
+          "window_file": "window_023.npz",
+          "sha256_prefix": "5e2e183184b507f6"
+        },
+        {
+          "window_file": "window_024.npz",
+          "sha256_prefix": "50f1da26f3faac0e"
+        },
+        {
+          "window_file": "window_025.npz",
+          "sha256_prefix": "917a9dc638fd6206"
+        },
+        {
+          "window_file": "window_026.npz",
+          "sha256_prefix": "f16737b62b4fddd5"
+        },
+        {
+          "window_file": "window_027.npz",
+          "sha256_prefix": "ae5f4c46755d4911"
+        },
+        {
+          "window_file": "window_028.npz",
+          "sha256_prefix": "800fe89698fa61f9"
+        },
+        {
+          "window_file": "window_029.npz",
+          "sha256_prefix": "f7cfac7b372dc49e"
+        },
+        {
+          "window_file": "window_030.npz",
+          "sha256_prefix": "1b3edfcf099873d6"
+        },
+        {
+          "window_file": "window_031.npz",
+          "sha256_prefix": "345a7e73e49a4794"
+        },
+        {
+          "window_file": "window_032.npz",
+          "sha256_prefix": "41436cd431e14316"
+        },
+        {
+          "window_file": "window_033.npz",
+          "sha256_prefix": "9ec05ee1cc3f94d7"
+        },
+        {
+          "window_file": "window_034.npz",
+          "sha256_prefix": "8883a9c445f7af49"
+        },
+        {
+          "window_file": "window_035.npz",
+          "sha256_prefix": "9287220b29a28285"
+        },
+        {
+          "window_file": "window_036.npz",
+          "sha256_prefix": "b69bb3fdd83ba859"
+        },
+        {
+          "window_file": "window_037.npz",
+          "sha256_prefix": "7bbbdad30b2839ad"
+        },
+        {
+          "window_file": "window_038.npz",
+          "sha256_prefix": "b38b75b64a9f118c"
+        },
+        {
+          "window_file": "window_039.npz",
+          "sha256_prefix": "437b5581661027cf"
+        },
+        {
+          "window_file": "window_040.npz",
+          "sha256_prefix": "c6c40530a86580d3"
+        },
+        {
+          "window_file": "window_041.npz",
+          "sha256_prefix": "b2574aca71c9d90f"
+        },
+        {
+          "window_file": "window_042.npz",
+          "sha256_prefix": "15c812ad41a98087"
+        },
+        {
+          "window_file": "window_043.npz",
+          "sha256_prefix": "e1d39ac4a42c8420"
+        },
+        {
+          "window_file": "window_044.npz",
+          "sha256_prefix": "bb99e94817e9e3dd"
+        },
+        {
+          "window_file": "window_045.npz",
+          "sha256_prefix": "f293eeeb46ad7577"
+        },
+        {
+          "window_file": "window_046.npz",
+          "sha256_prefix": "6a19f4321ca7bc83"
+        },
+        {
+          "window_file": "window_047.npz",
+          "sha256_prefix": "58eafe051f8c9940"
+        },
+        {
+          "window_file": "window_048.npz",
+          "sha256_prefix": "754eb9843d0f0280"
+        },
+        {
+          "window_file": "window_049.npz",
+          "sha256_prefix": "5b9b111bc68f29bd"
+        },
+        {
+          "window_file": "window_050.npz",
+          "sha256_prefix": "0c0af1568f082b3b"
+        },
+        {
+          "window_file": "window_051.npz",
+          "sha256_prefix": "93d52368905425f5"
+        },
+        {
+          "window_file": "window_052.npz",
+          "sha256_prefix": "920e6d615acc8d79"
+        },
+        {
+          "window_file": "window_053.npz",
+          "sha256_prefix": "19b6cfa6ad3ba205"
+        },
+        {
+          "window_file": "window_054.npz",
+          "sha256_prefix": "d107f4ec98744fb0"
+        },
+        {
+          "window_file": "window_055.npz",
+          "sha256_prefix": "98a00a536858498d"
+        },
+        {
+          "window_file": "window_056.npz",
+          "sha256_prefix": "f6f936fe38686d5d"
+        },
+        {
+          "window_file": "window_057.npz",
+          "sha256_prefix": "b27bcb43eb9f97ce"
+        },
+        {
+          "window_file": "window_058.npz",
+          "sha256_prefix": "73295108bca5b397"
+        },
+        {
+          "window_file": "window_059.npz",
+          "sha256_prefix": "94e8b2e116fa5362"
+        },
+        {
+          "window_file": "window_060.npz",
+          "sha256_prefix": "e0e8943f77b46ae3"
+        },
+        {
+          "window_file": "window_061.npz",
+          "sha256_prefix": "e585d9a19164be53"
+        },
+        {
+          "window_file": "window_062.npz",
+          "sha256_prefix": "a5bf61aa334cabad"
+        },
+        {
+          "window_file": "window_063.npz",
+          "sha256_prefix": "823077ca5c8ce4ce"
+        },
+        {
+          "window_file": "window_064.npz",
+          "sha256_prefix": "0608f74e721291a4"
+        },
+        {
+          "window_file": "window_065.npz",
+          "sha256_prefix": "34744412ee7d3a46"
+        },
+        {
+          "window_file": "window_066.npz",
+          "sha256_prefix": "fc6a5a5cbbbac597"
+        },
+        {
+          "window_file": "window_067.npz",
+          "sha256_prefix": "5b56e0591bfc0dba"
+        },
+        {
+          "window_file": "window_068.npz",
+          "sha256_prefix": "b94bf807ea3c942c"
+        },
+        {
+          "window_file": "window_069.npz",
+          "sha256_prefix": "9d828b55b3b2586b"
+        },
+        {
+          "window_file": "window_070.npz",
+          "sha256_prefix": "bda9438f081871fa"
+        },
+        {
+          "window_file": "window_071.npz",
+          "sha256_prefix": "531f424a95c3994b"
+        },
+        {
+          "window_file": "window_072.npz",
+          "sha256_prefix": "5529e6870918067d"
+        },
+        {
+          "window_file": "window_073.npz",
+          "sha256_prefix": "e92a59bde468d557"
+        },
+        {
+          "window_file": "window_074.npz",
+          "sha256_prefix": "2990731d95f872e8"
+        },
+        {
+          "window_file": "window_075.npz",
+          "sha256_prefix": "e1be3a9ae886b909"
+        },
+        {
+          "window_file": "window_076.npz",
+          "sha256_prefix": "a8a90a5742d21063"
+        }
+      ]
+    },
+    "wheat3dgs__plot_461": {
+      "n_windows": 6,
+      "window_size": 16,
+      "stride": 4,
+      "artifact_count": 6,
+      "artifact_hashes": [
+        {
+          "window_file": "window_000.npz",
+          "sha256_prefix": "9872a78dfc7064f6"
+        },
+        {
+          "window_file": "window_001.npz",
+          "sha256_prefix": "2a15180ab3a00721"
+        },
+        {
+          "window_file": "window_002.npz",
+          "sha256_prefix": "8f46e473946a51c9"
+        },
+        {
+          "window_file": "window_003.npz",
+          "sha256_prefix": "b734b9bebee67cd0"
+        },
+        {
+          "window_file": "window_004.npz",
+          "sha256_prefix": "23cb715ec011f44a"
+        },
+        {
+          "window_file": "window_005.npz",
+          "sha256_prefix": "88a80b913d6196fe"
+        }
+      ]
+    },
+    "wheat3dgs__plot_467": {
+      "n_windows": 6,
+      "window_size": 16,
+      "stride": 4,
+      "artifact_count": 6,
+      "artifact_hashes": [
+        {
+          "window_file": "window_000.npz",
+          "sha256_prefix": "9150beacf795c201"
+        },
+        {
+          "window_file": "window_001.npz",
+          "sha256_prefix": "74d4561444546ec1"
+        },
+        {
+          "window_file": "window_002.npz",
+          "sha256_prefix": "c99c0dec5790b4b0"
+        },
+        {
+          "window_file": "window_003.npz",
+          "sha256_prefix": "d0cb871b85725bea"
+        },
+        {
+          "window_file": "window_004.npz",
+          "sha256_prefix": "f2853ef875dcad35"
+        },
+        {
+          "window_file": "window_005.npz",
+          "sha256_prefix": "2a4265114a7cc78e"
+        }
+      ]
+    },
+    "mustc__plot198__230613__ugv__pos00": {
+      "n_windows": 2,
+      "window_size": 16,
+      "stride": 4,
+      "artifact_count": 2,
+      "artifact_hashes": [
+        {
+          "window_file": "window_000.npz",
+          "sha256_prefix": "89c0a7f4e2b1c094"
+        },
+        {
+          "window_file": "window_001.npz",
+          "sha256_prefix": "6cced35b3f1a5326"
+        }
+      ]
+    }
+  },
+  "n_total_sequences": 7
+}

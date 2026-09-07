@@ -3,42 +3,70 @@
     "cycle_err_median_deg": 0.37295065087344936,
     "cycle_err_p90_deg": 1.1108899621026436,
     "postfit_median_deg": 0.18396618189693104,
-    "n_triangles": 75
+    "n_triangles": 75,
+    "GT_FREE_EDGE_CHAIN_RESIDUAL": 95.65802070737062,
+    "GT_FREE_CYCLE_RESIDUAL": 0.37295065087344936,
+    "REFERENCE_GLOBAL_ORIENTATION_DRIFT": 44.048295713543354,
+    "REFERENCE_GLOBAL_ORIENTATION_DRIFT_note": "evaluation_only=true"
   },
   "plantview__langdon_4__12-03-24": {
     "cycle_err_median_deg": 0.42939730212524846,
     "cycle_err_p90_deg": 0.8570754095642121,
     "postfit_median_deg": 0.2198961215422746,
-    "n_triangles": 75
+    "n_triangles": 75,
+    "GT_FREE_EDGE_CHAIN_RESIDUAL": 95.52356152663279,
+    "GT_FREE_CYCLE_RESIDUAL": 0.42939730212524846,
+    "REFERENCE_GLOBAL_ORIENTATION_DRIFT": 48.747638378109585,
+    "REFERENCE_GLOBAL_ORIENTATION_DRIFT_note": "evaluation_only=true"
   },
   "plantview__langdon_4__15-04-24": {
     "cycle_err_median_deg": 0.4397667420149574,
     "cycle_err_p90_deg": 1.17178326103843,
     "postfit_median_deg": 0.23173757438030587,
-    "n_triangles": 75
+    "n_triangles": 75,
+    "GT_FREE_EDGE_CHAIN_RESIDUAL": 91.0065962646585,
+    "GT_FREE_CYCLE_RESIDUAL": 0.4397667420149574,
+    "REFERENCE_GLOBAL_ORIENTATION_DRIFT": 53.099207620761334,
+    "REFERENCE_GLOBAL_ORIENTATION_DRIFT_note": "evaluation_only=true"
   },
   "plantview__langdon_4__19-03-24": {
     "cycle_err_median_deg": 0.5049123828187918,
     "cycle_err_p90_deg": 1.0657832161255816,
     "postfit_median_deg": 0.24820033393984656,
-    "n_triangles": 75
+    "n_triangles": 75,
+    "GT_FREE_EDGE_CHAIN_RESIDUAL": 97.58066094594668,
+    "GT_FREE_CYCLE_RESIDUAL": 0.5049123828187918,
+    "REFERENCE_GLOBAL_ORIENTATION_DRIFT": 44.294555416133356,
+    "REFERENCE_GLOBAL_ORIENTATION_DRIFT_note": "evaluation_only=true"
   },
   "wheat3dgs__plot_461": {
     "cycle_err_median_deg": 0.2778564683687069,
     "cycle_err_p90_deg": 0.4602430052532833,
     "postfit_median_deg": 0.1355438824085827,
-    "n_triangles": 4
+    "n_triangles": 4,
+    "GT_FREE_EDGE_CHAIN_RESIDUAL": 4.837849118453091,
+    "GT_FREE_CYCLE_RESIDUAL": 0.2778564683687069,
+    "REFERENCE_GLOBAL_ORIENTATION_DRIFT": 3.2817898373546583,
+    "REFERENCE_GLOBAL_ORIENTATION_DRIFT_note": "evaluation_only=true"
   },
   "wheat3dgs__plot_467": {
     "cycle_err_median_deg": 0.1540563438720273,
     "cycle_err_p90_deg": 0.3392870047897001,
     "postfit_median_deg": 0.04559716717493331,
-    "n_triangles": 4
+    "n_triangles": 4,
+    "GT_FREE_EDGE_CHAIN_RESIDUAL": 4.201433262429275,
+    "GT_FREE_CYCLE_RESIDUAL": 0.1540563438720273,
+    "REFERENCE_GLOBAL_ORIENTATION_DRIFT": 3.3647737248605116,
+    "REFERENCE_GLOBAL_ORIENTATION_DRIFT_note": "evaluation_only=true"
   },
   "mustc__plot198__230613__ugv__pos00": {
     "cycle_err_median_deg": -1,
     "cycle_err_p90_deg": -1,
     "postfit_median_deg": 0.03987700358986415,
-    "n_triangles": 0
+    "n_triangles": 0,
+    "GT_FREE_EDGE_CHAIN_RESIDUAL": 87.6949619437124,
+    "GT_FREE_CYCLE_RESIDUAL": -1,
+    "REFERENCE_GLOBAL_ORIENTATION_DRIFT": 2.618525324183671,
+    "REFERENCE_GLOBAL_ORIENTATION_DRIFT_note": "evaluation_only=true"
   }
 }
