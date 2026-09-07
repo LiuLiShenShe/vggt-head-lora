@@ -1,0 +1,107 @@
+{
+  "plantview__langdon_4__05-03-24": {
+    "local_position": {
+      "boundary_median_deg": 2.8009497248065647,
+      "center_median_deg": 1.8055898867175808
+    },
+    "central_owner": {
+      "n_edges": 151,
+      "n_zero_center_overlap": 0
+    },
+    "cross_window_context": {
+      "n_multi_window_frames": 312,
+      "dispersion_median_deg": 6.1152283406466585,
+      "dispersion_max_deg": 19.71300555716714
+    }
+  },
+  "plantview__langdon_4__12-03-24": {
+    "local_position": {
+      "boundary_median_deg": 3.332381630975579,
+      "center_median_deg": 2.2041486561481807
+    },
+    "central_owner": {
+      "n_edges": 151,
+      "n_zero_center_overlap": 0
+    },
+    "cross_window_context": {
+      "n_multi_window_frames": 312,
+      "dispersion_median_deg": 7.5418399167307015,
+      "dispersion_max_deg": 14.797717532134785
+    }
+  },
+  "plantview__langdon_4__15-04-24": {
+    "local_position": {
+      "boundary_median_deg": 4.025574127093539,
+      "center_median_deg": 2.0590581745643295
+    },
+    "central_owner": {
+      "n_edges": 151,
+      "n_zero_center_overlap": 0
+    },
+    "cross_window_context": {
+      "n_multi_window_frames": 312,
+      "dispersion_median_deg": 7.697252090590045,
+      "dispersion_max_deg": 14.827552186009015
+    }
+  },
+  "plantview__langdon_4__19-03-24": {
+    "local_position": {
+      "boundary_median_deg": 3.080023376338321,
+      "center_median_deg": 2.0075342363280058
+    },
+    "central_owner": {
+      "n_edges": 151,
+      "n_zero_center_overlap": 0
+    },
+    "cross_window_context": {
+      "n_multi_window_frames": 312,
+      "dispersion_median_deg": 6.72299647379784,
+      "dispersion_max_deg": 14.749782127919875
+    }
+  },
+  "wheat3dgs__plot_461": {
+    "local_position": {
+      "boundary_median_deg": 3.9781967229353556,
+      "center_median_deg": 2.242397876054456
+    },
+    "central_owner": {
+      "n_edges": 9,
+      "n_zero_center_overlap": 0
+    },
+    "cross_window_context": {
+      "n_multi_window_frames": 28,
+      "dispersion_median_deg": 3.5398862578012,
+      "dispersion_max_deg": 5.85112409997063
+    }
+  },
+  "wheat3dgs__plot_467": {
+    "local_position": {
+      "boundary_median_deg": 2.966041021775238,
+      "center_median_deg": 1.9837661206092734
+    },
+    "central_owner": {
+      "n_edges": 9,
+      "n_zero_center_overlap": 0
+    },
+    "cross_window_context": {
+      "n_multi_window_frames": 28,
+      "dispersion_median_deg": 2.4437934532511334,
+      "dispersion_max_deg": 6.814658769939832
+    }
+  },
+  "mustc__plot198__230613__ugv__pos00": {
+    "local_position": {
+      "boundary_median_deg": 1.3747513522292394,
+      "center_median_deg": 2.043576591779338
+    },
+    "central_owner": {
+      "n_edges": 1,
+      "n_zero_center_overlap": 0
+    },
+    "cross_window_context": {
+      "n_multi_window_frames": 12,
+      "dispersion_median_deg": 0.0,
+      "dispersion_max_deg": 4.771435285203132
+    }
+  }
+}

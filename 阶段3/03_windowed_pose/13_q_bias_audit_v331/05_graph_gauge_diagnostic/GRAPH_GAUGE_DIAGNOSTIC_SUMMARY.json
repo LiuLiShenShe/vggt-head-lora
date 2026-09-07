@@ -1,0 +1,79 @@
+{
+  "plantview__langdon_4__05-03-24": {
+    "n_windows": 77,
+    "global_alignment_A_median_deg": 43.1524,
+    "global_alignment_A_max_deg": 83.6851,
+    "per_window_gt_vs_graph_median_deg": 42.6535,
+    "per_window_gt_vs_graph_max_deg": 84.211,
+    "sequential_chain_gt_vs_graph_median_deg": 0.2333,
+    "sequential_chain_gt_vs_graph_max_deg": 0.5514,
+    "sequential_chain_gt_vs_ref_median_deg": 77.506,
+    "diagnostic_note": "DIAGNOSTIC_ONLY \u2014 USES_REFERENCE \u2014 NOT_DEPLOYABLE"
+  },
+  "plantview__langdon_4__12-03-24": {
+    "n_windows": 77,
+    "global_alignment_A_median_deg": 48.9395,
+    "global_alignment_A_max_deg": 89.4425,
+    "per_window_gt_vs_graph_median_deg": 49.8338,
+    "per_window_gt_vs_graph_max_deg": 88.3701,
+    "sequential_chain_gt_vs_graph_median_deg": 0.3869,
+    "sequential_chain_gt_vs_graph_max_deg": 0.8875,
+    "sequential_chain_gt_vs_ref_median_deg": 88.6893,
+    "diagnostic_note": "DIAGNOSTIC_ONLY \u2014 USES_REFERENCE \u2014 NOT_DEPLOYABLE"
+  },
+  "plantview__langdon_4__15-04-24": {
+    "n_windows": 77,
+    "global_alignment_A_median_deg": 50.4779,
+    "global_alignment_A_max_deg": 92.1521,
+    "per_window_gt_vs_graph_median_deg": 51.1071,
+    "per_window_gt_vs_graph_max_deg": 91.6631,
+    "sequential_chain_gt_vs_graph_median_deg": 0.5262,
+    "sequential_chain_gt_vs_graph_max_deg": 0.9216,
+    "sequential_chain_gt_vs_ref_median_deg": 94.1093,
+    "diagnostic_note": "DIAGNOSTIC_ONLY \u2014 USES_REFERENCE \u2014 NOT_DEPLOYABLE"
+  },
+  "plantview__langdon_4__19-03-24": {
+    "n_windows": 77,
+    "global_alignment_A_median_deg": 44.7686,
+    "global_alignment_A_max_deg": 82.7652,
+    "per_window_gt_vs_graph_median_deg": 44.2806,
+    "per_window_gt_vs_graph_max_deg": 83.3923,
+    "sequential_chain_gt_vs_graph_median_deg": 0.5093,
+    "sequential_chain_gt_vs_graph_max_deg": 1.3982,
+    "sequential_chain_gt_vs_ref_median_deg": 80.0029,
+    "diagnostic_note": "DIAGNOSTIC_ONLY \u2014 USES_REFERENCE \u2014 NOT_DEPLOYABLE"
+  },
+  "wheat3dgs__plot_461": {
+    "n_windows": 6,
+    "global_alignment_A_median_deg": 1.2273,
+    "global_alignment_A_max_deg": 3.936,
+    "per_window_gt_vs_graph_median_deg": 4.3309,
+    "per_window_gt_vs_graph_max_deg": 6.6209,
+    "sequential_chain_gt_vs_graph_median_deg": 0.0596,
+    "sequential_chain_gt_vs_graph_max_deg": 0.159,
+    "sequential_chain_gt_vs_ref_median_deg": 4.8634,
+    "diagnostic_note": "DIAGNOSTIC_ONLY \u2014 USES_REFERENCE \u2014 NOT_DEPLOYABLE"
+  },
+  "wheat3dgs__plot_467": {
+    "n_windows": 6,
+    "global_alignment_A_median_deg": 1.1199,
+    "global_alignment_A_max_deg": 3.1714,
+    "per_window_gt_vs_graph_median_deg": 15.9319,
+    "per_window_gt_vs_graph_max_deg": 17.1178,
+    "sequential_chain_gt_vs_graph_median_deg": 0.1089,
+    "sequential_chain_gt_vs_graph_max_deg": 0.1598,
+    "sequential_chain_gt_vs_ref_median_deg": 3.6799,
+    "diagnostic_note": "DIAGNOSTIC_ONLY \u2014 USES_REFERENCE \u2014 NOT_DEPLOYABLE"
+  },
+  "mustc__plot198__230613__ugv__pos00": {
+    "n_windows": 2,
+    "global_alignment_A_median_deg": 0.1047,
+    "global_alignment_A_max_deg": 0.1047,
+    "per_window_gt_vs_graph_median_deg": 36.4524,
+    "per_window_gt_vs_graph_max_deg": 36.5344,
+    "sequential_chain_gt_vs_graph_median_deg": 0.0199,
+    "sequential_chain_gt_vs_graph_max_deg": 0.0399,
+    "sequential_chain_gt_vs_ref_median_deg": 0.1066,
+    "diagnostic_note": "DIAGNOSTIC_ONLY \u2014 USES_REFERENCE \u2014 NOT_DEPLOYABLE"
+  }
+}

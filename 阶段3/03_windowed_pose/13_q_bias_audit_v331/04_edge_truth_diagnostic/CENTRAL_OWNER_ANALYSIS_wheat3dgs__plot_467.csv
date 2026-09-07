@@ -1,0 +1,10 @@
+window_i,window_j,hop,n_edge_frames,n_center_frames_a,n_center_frames_b,n_edge_center_overlap_a,n_edge_center_overlap_b
+0,1,1,12,2,2,2,2
+0,2,2,8,2,2,1,1
+1,2,1,12,2,2,2,2
+1,3,2,8,2,2,1,1
+2,3,1,12,2,2,2,2
+2,4,2,8,2,2,1,1
+3,4,1,12,2,2,2,2
+3,5,2,8,2,2,1,1
+4,5,1,12,2,2,2,2
