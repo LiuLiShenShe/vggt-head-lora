@@ -1,0 +1,50 @@
+{
+  "sequence": "plantview__langdon_4__05-03-24",
+  "scenario": "C",
+  "n_windows": 77,
+  "n_steps": 76,
+  "n_edges": 151,
+  "edge_hops": {
+    "1": 76,
+    "2": 75
+  },
+  "threshold": 8,
+  "error_magnitudes_deg": {
+    "median_deg": 1.52851014847544,
+    "mean_deg": 2.5044585822437098
+  },
+  "target_coherence": 0.756,
+  "axis_vary_deg": 2.0,
+  "injected": {
+    "param": {
+      "kappa": 40.0,
+      "realized_coherence": 0.6292,
+      "axis_vary_deg": 2.0
+    },
+    "final_drift_deg": 37.43,
+    "w10_drift_deg": 17.16,
+    "w30_drift_deg": 31.79
+  },
+  "realized": {
+    "coherence": 0.629,
+    "median_mag_deg": 1.529,
+    "mean_mag_deg": 2.394,
+    "over_rotation_prob": 0.934,
+    "final_drift_deg": 114.5
+  },
+  "trajectory": {
+    "a0": [
+      0.314903934444064,
+      -0.9142439954811412,
+      -0.25493808816716207
+    ],
+    "axis_wobble_deg": 2.0,
+    "mag_deg": 24.58,
+    "n_windows": 77
+  },
+  "validation": {
+    "coherence_abs_err": 0.127,
+    "median_mag_abs_err_deg": 0.0,
+    "note": "coherence_abs_err only meaningful for scenarios A/B; scenario C intentionally breaks coherence (rotating bias axis)"
+  }
+}

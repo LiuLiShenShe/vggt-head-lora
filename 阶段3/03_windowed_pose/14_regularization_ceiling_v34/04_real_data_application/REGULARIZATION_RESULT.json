@@ -1,0 +1,1003 @@
+{
+  "config_source": "SYNTHETIC_CEILING_RESULT.json",
+  "transferred_configs": {
+    "gaussian": 2.0,
+    "second_order": 10.0,
+    "gp": 40.0,
+    "gp_trend": 5.0,
+    "multi_hop": 8.0,
+    "edge_temporal": 0.25,
+    "edge_bias": 5.0
+  },
+  "constraints": {
+    "no_vggt_reinference": true,
+    "no_new_long_range_edges": true,
+    "no_imu_gravity_anchor_lora_msam": true,
+    "gt_used_in_solver": false,
+    "gt_used_for_evaluation_only": true,
+    "phase3c3_untouched": true,
+    "one_config_per_method_per_sequence": true
+  },
+  "decision_bands_deg": {
+    "GREEN_lt": 20.0,
+    "YELLOW_lt": 44.0,
+    "RED_ge": 44.0
+  },
+  "baseline_D_langdon_median_deg": 47.18,
+  "best_regularized_langdon": {
+    "method": "edge_temporal",
+    "median_deg": 47.17,
+    "mean_deg": 47.82
+  },
+  "langdon_rot_median_by_method": {
+    "baseline_D": {
+      "median_deg": 47.18,
+      "mean_deg": 47.83
+    },
+    "gaussian": {
+      "median_deg": 59.41,
+      "mean_deg": 59.37
+    },
+    "second_order": {
+      "median_deg": 60.4,
+      "mean_deg": 60.45
+    },
+    "gp": {
+      "median_deg": 65.04,
+      "mean_deg": 64.93
+    },
+    "gp_trend": {
+      "median_deg": 59.07,
+      "mean_deg": 59.1
+    },
+    "multi_hop": {
+      "median_deg": 47.26,
+      "mean_deg": 47.85
+    },
+    "edge_temporal": {
+      "median_deg": 47.17,
+      "mean_deg": 47.82
+    },
+    "edge_bias": {
+      "median_deg": 47.18,
+      "mean_deg": 47.83
+    }
+  },
+  "verdict": "RED",
+  "controls": {
+    "tolerance_deg": 1.0,
+    "per_control": {
+      "wheat3dgs__plot_461": {
+        "baseline_rot_median_deg": 3.2761,
+        "methods": [
+          {
+            "method": "gaussian",
+            "rot_median": 6.082118599114931,
+            "delta_vs_baseline_deg": 2.806,
+            "pose_gate": "PASS"
+          },
+          {
+            "method": "second_order",
+            "rot_median": 3.998570270390199,
+            "delta_vs_baseline_deg": 0.7224,
+            "pose_gate": "PASS"
+          },
+          {
+            "method": "gp",
+            "rot_median": 4.168317361192937,
+            "delta_vs_baseline_deg": 0.8922,
+            "pose_gate": "PASS"
+          },
+          {
+            "method": "gp_trend",
+            "rot_median": 4.4677110380792655,
+            "delta_vs_baseline_deg": 1.1916,
+            "pose_gate": "PASS"
+          },
+          {
+            "method": "multi_hop",
+            "rot_median": 3.2907511731745958,
+            "delta_vs_baseline_deg": 0.0146,
+            "pose_gate": "PASS"
+          },
+          {
+            "method": "edge_temporal",
+            "rot_median": 3.2758341305945518,
+            "delta_vs_baseline_deg": -0.0003,
+            "pose_gate": "PASS"
+          },
+          {
+            "method": "edge_bias",
+            "rot_median": 3.2761449529229703,
+            "delta_vs_baseline_deg": 0.0,
+            "pose_gate": "PASS"
+          }
+        ],
+        "pass": false
+      },
+      "wheat3dgs__plot_467": {
+        "baseline_rot_median_deg": 3.2339,
+        "methods": [
+          {
+            "method": "gaussian",
+            "rot_median": 6.236030823730822,
+            "delta_vs_baseline_deg": 3.0022,
+            "pose_gate": "PASS"
+          },
+          {
+            "method": "second_order",
+            "rot_median": 4.045342399598813,
+            "delta_vs_baseline_deg": 0.8115,
+            "pose_gate": "PASS"
+          },
+          {
+            "method": "gp",
+            "rot_median": 4.432433210860593,
+            "delta_vs_baseline_deg": 1.1986,
+            "pose_gate": "PASS"
+          },
+          {
+            "method": "gp_trend",
+            "rot_median": 4.198114551494362,
+            "delta_vs_baseline_deg": 0.9643,
+            "pose_gate": "PASS"
+          },
+          {
+            "method": "multi_hop",
+            "rot_median": 3.3005605077716735,
+            "delta_vs_baseline_deg": 0.0667,
+            "pose_gate": "PASS"
+          },
+          {
+            "method": "edge_temporal",
+            "rot_median": 3.2290239548601414,
+            "delta_vs_baseline_deg": -0.0048,
+            "pose_gate": "PASS"
+          },
+          {
+            "method": "edge_bias",
+            "rot_median": 3.2338538179493366,
+            "delta_vs_baseline_deg": 0.0,
+            "pose_gate": "PASS"
+          }
+        ],
+        "pass": false
+      },
+      "mustc__plot198__230613__ugv__pos00": {
+        "baseline_rot_median_deg": 0.6027,
+        "methods": [
+          {
+            "method": "gaussian",
+            "rot_median": 0.6027471166069261,
+            "delta_vs_baseline_deg": 0.0,
+            "pose_gate": "PASS"
+          },
+          {
+            "method": "second_order",
+            "rot_median": 0.6027471166069261,
+            "delta_vs_baseline_deg": 0.0,
+            "pose_gate": "PASS"
+          },
+          {
+            "method": "gp",
+            "rot_median": 0.5539841818300035,
+            "delta_vs_baseline_deg": -0.0488,
+            "pose_gate": "PASS"
+          },
+          {
+            "method": "gp_trend",
+            "rot_median": 0.6027471166069261,
+            "delta_vs_baseline_deg": 0.0,
+            "pose_gate": "PASS"
+          },
+          {
+            "method": "multi_hop",
+            "rot_median": 0.6027471166057163,
+            "delta_vs_baseline_deg": 0.0,
+            "pose_gate": "PASS"
+          },
+          {
+            "method": "edge_temporal",
+            "rot_median": 0.6027471166057163,
+            "delta_vs_baseline_deg": 0.0,
+            "pose_gate": "PASS"
+          },
+          {
+            "method": "edge_bias",
+            "rot_median": 0.6027471166057163,
+            "delta_vs_baseline_deg": 0.0,
+            "pose_gate": "PASS"
+          }
+        ],
+        "pass": true
+      }
+    },
+    "pass": false
+  },
+  "rows": [
+    {
+      "sequence": "plantview__langdon_4__05-03-24",
+      "method": "baseline_D",
+      "param": null,
+      "note": "stride4 th8 solver (unmodified)",
+      "is_baseline": true,
+      "rot_median": 44.92431950876518,
+      "rot_p90": 79.54020216901428,
+      "pose_gate": "FAIL",
+      "n_frames": 320,
+      "gt_rot_median": 43.15239127110559,
+      "gt_drift_final": 118.23119871248723,
+      "gt_drift_max": 177.94077444018447
+    },
+    {
+      "sequence": "plantview__langdon_4__05-03-24",
+      "method": "gaussian",
+      "param": 2.0,
+      "note": "increment Gaussian \u03c3=2.0",
+      "is_baseline": false,
+      "rot_median": 58.239659738037275,
+      "rot_p90": 91.24718090443302,
+      "pose_gate": "FAIL",
+      "n_frames": 320,
+      "gt_rot_median": 56.55737016694075,
+      "gt_drift_final": 101.63673282631053,
+      "gt_drift_max": 178.1218714602283
+    },
+    {
+      "sequence": "plantview__langdon_4__05-03-24",
+      "method": "second_order",
+      "param": 10.0,
+      "note": "2nd-order \u03bb=10.0",
+      "is_baseline": false,
+      "rot_median": 58.96730716004748,
+      "rot_p90": 91.40626071214254,
+      "pose_gate": "FAIL",
+      "n_frames": 320,
+      "gt_rot_median": 57.02049496603384,
+      "gt_drift_final": 101.12367114600058,
+      "gt_drift_max": 179.06991042018385
+    },
+    {
+      "sequence": "plantview__langdon_4__05-03-24",
+      "method": "gp",
+      "param": 40.0,
+      "note": "SO(3) GP \u2113=40.0",
+      "is_baseline": false,
+      "rot_median": 64.31517624871907,
+      "rot_p90": 95.3054318845991,
+      "pose_gate": "FAIL",
+      "n_frames": 320,
+      "gt_rot_median": 63.93467753678378,
+      "gt_drift_final": 102.43115388221862,
+      "gt_drift_max": 179.82424323533039
+    },
+    {
+      "sequence": "plantview__langdon_4__05-03-24",
+      "method": "gp_trend",
+      "param": 5.0,
+      "note": "local-trend GP \u2113=5.0",
+      "is_baseline": false,
+      "rot_median": 57.68107848458153,
+      "rot_p90": 90.36675771046231,
+      "pose_gate": "FAIL",
+      "n_frames": 320,
+      "gt_rot_median": 56.7476797322498,
+      "gt_drift_final": 100.89371868362902,
+      "gt_drift_max": 178.8004976903825
+    },
+    {
+      "sequence": "plantview__langdon_4__05-03-24",
+      "method": "multi_hop",
+      "param": 8.0,
+      "note": "th\u22654 re-solve (hop-3 from existing CSV)",
+      "is_baseline": false,
+      "rot_median": 45.17749609842504,
+      "rot_p90": 80.0710402614193,
+      "pose_gate": "FAIL",
+      "n_frames": 320,
+      "gt_rot_median": 43.70315656091129,
+      "gt_drift_final": 118.69971149039267,
+      "gt_drift_max": 177.9934728519814
+    },
+    {
+      "sequence": "plantview__langdon_4__05-03-24",
+      "method": "edge_temporal",
+      "param": 0.25,
+      "note": "temporal attenuation \u03b1=0.25",
+      "is_baseline": false,
+      "rot_median": 44.91328097173766,
+      "rot_p90": 79.5185803947208,
+      "pose_gate": "FAIL",
+      "n_frames": 320,
+      "gt_rot_median": 43.17093106981796,
+      "gt_drift_final": 118.20442574160892,
+      "gt_drift_max": 177.9112806041723
+    },
+    {
+      "sequence": "plantview__langdon_4__05-03-24",
+      "method": "edge_bias",
+      "param": 5.0,
+      "note": "reweighting output missing (\u03b2=5.0)",
+      "is_baseline": false,
+      "rot_median": 44.92431950876518,
+      "rot_p90": 79.54020216901428,
+      "pose_gate": "FAIL",
+      "n_frames": 320,
+      "gt_rot_median": 43.15239127110559,
+      "gt_drift_final": 118.23119871248723,
+      "gt_drift_max": 177.94077444018447
+    },
+    {
+      "sequence": "plantview__langdon_4__12-03-24",
+      "method": "baseline_D",
+      "param": null,
+      "note": "stride4 th8 solver (unmodified)",
+      "is_baseline": true,
+      "rot_median": 49.342215236881046,
+      "rot_p90": 86.8214984525173,
+      "pose_gate": "FAIL",
+      "n_frames": 320,
+      "gt_rot_median": 48.93952009749658,
+      "gt_drift_final": 136.02574819009843,
+      "gt_drift_max": 178.6909292396311
+    },
+    {
+      "sequence": "plantview__langdon_4__12-03-24",
+      "method": "gaussian",
+      "param": 2.0,
+      "note": "increment Gaussian \u03c3=2.0",
+      "is_baseline": false,
+      "rot_median": 61.20877174847043,
+      "rot_p90": 97.34056164653948,
+      "pose_gate": "FAIL",
+      "n_frames": 320,
+      "gt_rot_median": 59.53159620312375,
+      "gt_drift_final": 112.86758474805826,
+      "gt_drift_max": 179.234220593653
+    },
+    {
+      "sequence": "plantview__langdon_4__12-03-24",
+      "method": "second_order",
+      "param": 10.0,
+      "note": "2nd-order \u03bb=10.0",
+      "is_baseline": false,
+      "rot_median": 62.909729509559966,
+      "rot_p90": 97.48115620189486,
+      "pose_gate": "FAIL",
+      "n_frames": 320,
+      "gt_rot_median": 62.057162792223316,
+      "gt_drift_final": 111.61385205353623,
+      "gt_drift_max": 179.71421937416974
+    },
+    {
+      "sequence": "plantview__langdon_4__12-03-24",
+      "method": "gp",
+      "param": 40.0,
+      "note": "SO(3) GP \u2113=40.0",
+      "is_baseline": false,
+      "rot_median": 65.76595543572648,
+      "rot_p90": 99.5303760448558,
+      "pose_gate": "FAIL",
+      "n_frames": 320,
+      "gt_rot_median": 65.86693488772379,
+      "gt_drift_final": 111.89302577686176,
+      "gt_drift_max": 179.74639885313803
+    },
+    {
+      "sequence": "plantview__langdon_4__12-03-24",
+      "method": "gp_trend",
+      "param": 5.0,
+      "note": "local-trend GP \u2113=5.0",
+      "is_baseline": false,
+      "rot_median": 60.45658693996736,
+      "rot_p90": 95.24108752461659,
+      "pose_gate": "FAIL",
+      "n_frames": 320,
+      "gt_rot_median": 59.25076669506812,
+      "gt_drift_final": 111.91864140424798,
+      "gt_drift_max": 179.0014397039231
+    },
+    {
+      "sequence": "plantview__langdon_4__12-03-24",
+      "method": "multi_hop",
+      "param": 8.0,
+      "note": "th\u22654 re-solve (hop-3 from existing CSV)",
+      "is_baseline": false,
+      "rot_median": 49.346340051098295,
+      "rot_p90": 86.53575215785685,
+      "pose_gate": "FAIL",
+      "n_frames": 320,
+      "gt_rot_median": 48.92294483744038,
+      "gt_drift_final": 135.43759707669372,
+      "gt_drift_max": 178.71937725781868
+    },
+    {
+      "sequence": "plantview__langdon_4__12-03-24",
+      "method": "edge_temporal",
+      "param": 0.25,
+      "note": "temporal attenuation \u03b1=0.25",
+      "is_baseline": false,
+      "rot_median": 49.33735838698679,
+      "rot_p90": 86.8149504881309,
+      "pose_gate": "FAIL",
+      "n_frames": 320,
+      "gt_rot_median": 48.93497754969853,
+      "gt_drift_final": 135.99213056135244,
+      "gt_drift_max": 178.72934020647222
+    },
+    {
+      "sequence": "plantview__langdon_4__12-03-24",
+      "method": "edge_bias",
+      "param": 5.0,
+      "note": "reweighting output missing (\u03b2=5.0)",
+      "is_baseline": false,
+      "rot_median": 49.342215236881046,
+      "rot_p90": 86.8214984525173,
+      "pose_gate": "FAIL",
+      "n_frames": 320,
+      "gt_rot_median": 48.93952009749658,
+      "gt_drift_final": 136.02574819009843,
+      "gt_drift_max": 178.6909292396311
+    },
+    {
+      "sequence": "plantview__langdon_4__15-04-24",
+      "method": "baseline_D",
+      "param": null,
+      "note": "stride4 th8 solver (unmodified)",
+      "is_baseline": true,
+      "rot_median": 52.017978609056634,
+      "rot_p90": 87.7954764418338,
+      "pose_gate": "FAIL",
+      "n_frames": 318,
+      "gt_rot_median": 50.47787596903659,
+      "gt_drift_final": 151.1999904534173,
+      "gt_drift_max": 176.09990231846842
+    },
+    {
+      "sequence": "plantview__langdon_4__15-04-24",
+      "method": "gaussian",
+      "param": 2.0,
+      "note": "increment Gaussian \u03c3=2.0",
+      "is_baseline": false,
+      "rot_median": 60.5898023422076,
+      "rot_p90": 101.00542546516047,
+      "pose_gate": "FAIL",
+      "n_frames": 318,
+      "gt_rot_median": 60.81812350853127,
+      "gt_drift_final": 126.37493142851085,
+      "gt_drift_max": 179.54146681812023
+    },
+    {
+      "sequence": "plantview__langdon_4__15-04-24",
+      "method": "second_order",
+      "param": 10.0,
+      "note": "2nd-order \u03bb=10.0",
+      "is_baseline": false,
+      "rot_median": 61.826443523151525,
+      "rot_p90": 98.95912287673436,
+      "pose_gate": "FAIL",
+      "n_frames": 318,
+      "gt_rot_median": 61.11851825163715,
+      "gt_drift_final": 125.76852148169922,
+      "gt_drift_max": 179.71490138962182
+    },
+    {
+      "sequence": "plantview__langdon_4__15-04-24",
+      "method": "gp",
+      "param": 40.0,
+      "note": "SO(3) GP \u2113=40.0",
+      "is_baseline": false,
+      "rot_median": 65.9174222489386,
+      "rot_p90": 101.1549081036949,
+      "pose_gate": "FAIL",
+      "n_frames": 318,
+      "gt_rot_median": 63.23191454707235,
+      "gt_drift_final": 125.95956001763635,
+      "gt_drift_max": 178.10871087759188
+    },
+    {
+      "sequence": "plantview__langdon_4__15-04-24",
+      "method": "gp_trend",
+      "param": 5.0,
+      "note": "local-trend GP \u2113=5.0",
+      "is_baseline": false,
+      "rot_median": 60.73311842466761,
+      "rot_p90": 97.69133485873634,
+      "pose_gate": "FAIL",
+      "n_frames": 318,
+      "gt_rot_median": 60.75735058737983,
+      "gt_drift_final": 126.05569418137428,
+      "gt_drift_max": 179.65695721171508
+    },
+    {
+      "sequence": "plantview__langdon_4__15-04-24",
+      "method": "multi_hop",
+      "param": 8.0,
+      "note": "th\u22654 re-solve (hop-3 from existing CSV)",
+      "is_baseline": false,
+      "rot_median": 52.01222849411363,
+      "rot_p90": 87.63571125333313,
+      "pose_gate": "FAIL",
+      "n_frames": 318,
+      "gt_rot_median": 50.44493629340938,
+      "gt_drift_final": 150.9746755615599,
+      "gt_drift_max": 176.0659940950758
+    },
+    {
+      "sequence": "plantview__langdon_4__15-04-24",
+      "method": "edge_temporal",
+      "param": 0.25,
+      "note": "temporal attenuation \u03b1=0.25",
+      "is_baseline": false,
+      "rot_median": 52.0422800769356,
+      "rot_p90": 87.8186039489332,
+      "pose_gate": "FAIL",
+      "n_frames": 318,
+      "gt_rot_median": 50.531178658678684,
+      "gt_drift_final": 151.23717850714516,
+      "gt_drift_max": 176.08903197097888
+    },
+    {
+      "sequence": "plantview__langdon_4__15-04-24",
+      "method": "edge_bias",
+      "param": 5.0,
+      "note": "reweighting output missing (\u03b2=5.0)",
+      "is_baseline": false,
+      "rot_median": 52.017978609056634,
+      "rot_p90": 87.7954764418338,
+      "pose_gate": "FAIL",
+      "n_frames": 318,
+      "gt_rot_median": 50.47787596903659,
+      "gt_drift_final": 151.1999904534173,
+      "gt_drift_max": 176.09990231846842
+    },
+    {
+      "sequence": "plantview__langdon_4__19-03-24",
+      "method": "baseline_D",
+      "param": null,
+      "note": "stride4 th8 solver (unmodified)",
+      "is_baseline": true,
+      "rot_median": 45.01983646833279,
+      "rot_p90": 81.5483243847115,
+      "pose_gate": "FAIL",
+      "n_frames": 320,
+      "gt_rot_median": 44.76855398985722,
+      "gt_drift_final": 122.82623085585321,
+      "gt_drift_max": 178.31982943916495
+    },
+    {
+      "sequence": "plantview__langdon_4__19-03-24",
+      "method": "gaussian",
+      "param": 2.0,
+      "note": "increment Gaussian \u03c3=2.0",
+      "is_baseline": false,
+      "rot_median": 57.42185656930893,
+      "rot_p90": 93.53256146087847,
+      "pose_gate": "FAIL",
+      "n_frames": 320,
+      "gt_rot_median": 57.62866670424302,
+      "gt_drift_final": 100.98065523882215,
+      "gt_drift_max": 178.8860902313397
+    },
+    {
+      "sequence": "plantview__langdon_4__19-03-24",
+      "method": "second_order",
+      "param": 10.0,
+      "note": "2nd-order \u03bb=10.0",
+      "is_baseline": false,
+      "rot_median": 58.09845574028709,
+      "rot_p90": 93.5521795157152,
+      "pose_gate": "FAIL",
+      "n_frames": 320,
+      "gt_rot_median": 57.98776846964321,
+      "gt_drift_final": 99.58305428978834,
+      "gt_drift_max": 179.92174090971065
+    },
+    {
+      "sequence": "plantview__langdon_4__19-03-24",
+      "method": "gp",
+      "param": 40.0,
+      "note": "SO(3) GP \u2113=40.0",
+      "is_baseline": false,
+      "rot_median": 63.70689995491378,
+      "rot_p90": 98.39296552739282,
+      "pose_gate": "FAIL",
+      "n_frames": 320,
+      "gt_rot_median": 64.25875502416861,
+      "gt_drift_final": 100.28501374048552,
+      "gt_drift_max": 179.59974374233917
+    },
+    {
+      "sequence": "plantview__langdon_4__19-03-24",
+      "method": "gp_trend",
+      "param": 5.0,
+      "note": "local-trend GP \u2113=5.0",
+      "is_baseline": false,
+      "rot_median": 57.543727987102386,
+      "rot_p90": 92.6721417482329,
+      "pose_gate": "FAIL",
+      "n_frames": 320,
+      "gt_rot_median": 58.03658962574117,
+      "gt_drift_final": 99.7293586898155,
+      "gt_drift_max": 179.27499946735216
+    },
+    {
+      "sequence": "plantview__langdon_4__19-03-24",
+      "method": "multi_hop",
+      "param": 8.0,
+      "note": "th\u22654 re-solve (hop-3 from existing CSV)",
+      "is_baseline": false,
+      "rot_median": 44.861804784750944,
+      "rot_p90": 81.34529687211548,
+      "pose_gate": "FAIL",
+      "n_frames": 320,
+      "gt_rot_median": 44.525279370479836,
+      "gt_drift_final": 122.29288394766594,
+      "gt_drift_max": 178.29264304102284
+    },
+    {
+      "sequence": "plantview__langdon_4__19-03-24",
+      "method": "edge_temporal",
+      "param": 0.25,
+      "note": "temporal attenuation \u03b1=0.25",
+      "is_baseline": false,
+      "rot_median": 45.00625655135369,
+      "rot_p90": 81.51688909749518,
+      "pose_gate": "FAIL",
+      "n_frames": 320,
+      "gt_rot_median": 44.747965353396026,
+      "gt_drift_final": 122.74808368307775,
+      "gt_drift_max": 178.34245636280932
+    },
+    {
+      "sequence": "plantview__langdon_4__19-03-24",
+      "method": "edge_bias",
+      "param": 5.0,
+      "note": "reweighting output missing (\u03b2=5.0)",
+      "is_baseline": false,
+      "rot_median": 45.01983646833279,
+      "rot_p90": 81.5483243847115,
+      "pose_gate": "FAIL",
+      "n_frames": 320,
+      "gt_rot_median": 44.76855398985722,
+      "gt_drift_final": 122.82623085585321,
+      "gt_drift_max": 178.31982943916495
+    },
+    {
+      "sequence": "wheat3dgs__plot_461",
+      "method": "baseline_D",
+      "param": null,
+      "note": "stride4 th8 solver (unmodified)",
+      "is_baseline": true,
+      "rot_median": 3.2761449529229703,
+      "rot_p90": 5.766746312245552,
+      "pose_gate": "PASS",
+      "n_frames": 36,
+      "gt_rot_median": 1.2272899056247548,
+      "gt_drift_final": 23.231183479764137,
+      "gt_drift_max": 40.936691124492384
+    },
+    {
+      "sequence": "wheat3dgs__plot_461",
+      "method": "gaussian",
+      "param": 2.0,
+      "note": "increment Gaussian \u03c3=2.0",
+      "is_baseline": false,
+      "rot_median": 6.082118599114931,
+      "rot_p90": 15.284748932765709,
+      "pose_gate": "PASS",
+      "n_frames": 36,
+      "gt_rot_median": 5.458512128498402,
+      "gt_drift_final": 18.306061507461976,
+      "gt_drift_max": 26.333601725810617
+    },
+    {
+      "sequence": "wheat3dgs__plot_461",
+      "method": "second_order",
+      "param": 10.0,
+      "note": "2nd-order \u03bb=10.0",
+      "is_baseline": false,
+      "rot_median": 3.998570270390199,
+      "rot_p90": 15.514158156515432,
+      "pose_gate": "PASS",
+      "n_frames": 36,
+      "gt_rot_median": 5.762468912072436,
+      "gt_drift_final": 23.16800832299551,
+      "gt_drift_max": 28.045535076075915
+    },
+    {
+      "sequence": "wheat3dgs__plot_461",
+      "method": "gp",
+      "param": 40.0,
+      "note": "SO(3) GP \u2113=40.0",
+      "is_baseline": false,
+      "rot_median": 4.168317361192937,
+      "rot_p90": 16.327167812138498,
+      "pose_gate": "PASS",
+      "n_frames": 36,
+      "gt_rot_median": 7.049646922216827,
+      "gt_drift_final": 23.13465679467942,
+      "gt_drift_max": 27.740007979098745
+    },
+    {
+      "sequence": "wheat3dgs__plot_461",
+      "method": "gp_trend",
+      "param": 5.0,
+      "note": "local-trend GP \u2113=5.0",
+      "is_baseline": false,
+      "rot_median": 4.4677110380792655,
+      "rot_p90": 14.478703303651653,
+      "pose_gate": "PASS",
+      "n_frames": 36,
+      "gt_rot_median": 3.9332786909980157,
+      "gt_drift_final": 22.238420707058406,
+      "gt_drift_max": 28.439101845565357
+    },
+    {
+      "sequence": "wheat3dgs__plot_461",
+      "method": "multi_hop",
+      "param": 8.0,
+      "note": "th\u22654 re-solve (hop-3 from existing CSV)",
+      "is_baseline": false,
+      "rot_median": 3.2907511731745958,
+      "rot_p90": 5.705369700977116,
+      "pose_gate": "PASS",
+      "n_frames": 36,
+      "gt_rot_median": 1.2919809128361266,
+      "gt_drift_final": 23.392191063581798,
+      "gt_drift_max": 40.97485893129281
+    },
+    {
+      "sequence": "wheat3dgs__plot_461",
+      "method": "edge_temporal",
+      "param": 0.25,
+      "note": "temporal attenuation \u03b1=0.25",
+      "is_baseline": false,
+      "rot_median": 3.2758341305945518,
+      "rot_p90": 5.770033416939748,
+      "pose_gate": "PASS",
+      "n_frames": 36,
+      "gt_rot_median": 1.2322188371378773,
+      "gt_drift_final": 23.224531786252363,
+      "gt_drift_max": 40.92021521529957
+    },
+    {
+      "sequence": "wheat3dgs__plot_461",
+      "method": "edge_bias",
+      "param": 5.0,
+      "note": "reweighting output missing (\u03b2=5.0)",
+      "is_baseline": false,
+      "rot_median": 3.2761449529229703,
+      "rot_p90": 5.766746312245552,
+      "pose_gate": "PASS",
+      "n_frames": 36,
+      "gt_rot_median": 1.2272899056247548,
+      "gt_drift_final": 23.231183479764137,
+      "gt_drift_max": 40.936691124492384
+    },
+    {
+      "sequence": "wheat3dgs__plot_467",
+      "method": "baseline_D",
+      "param": null,
+      "note": "stride4 th8 solver (unmodified)",
+      "is_baseline": true,
+      "rot_median": 3.2338538179493366,
+      "rot_p90": 4.945985884749171,
+      "pose_gate": "PASS",
+      "n_frames": 36,
+      "gt_rot_median": 1.1199257112572276,
+      "gt_drift_final": 30.058666518892974,
+      "gt_drift_max": 44.770793678147676
+    },
+    {
+      "sequence": "wheat3dgs__plot_467",
+      "method": "gaussian",
+      "param": 2.0,
+      "note": "increment Gaussian \u03c3=2.0",
+      "is_baseline": false,
+      "rot_median": 6.236030823730822,
+      "rot_p90": 14.645587542594637,
+      "pose_gate": "PASS",
+      "n_frames": 36,
+      "gt_rot_median": 5.448534500719143,
+      "gt_drift_final": 24.948518205788368,
+      "gt_drift_max": 29.40275608208638
+    },
+    {
+      "sequence": "wheat3dgs__plot_467",
+      "method": "second_order",
+      "param": 10.0,
+      "note": "2nd-order \u03bb=10.0",
+      "is_baseline": false,
+      "rot_median": 4.045342399598813,
+      "rot_p90": 14.890533910734131,
+      "pose_gate": "PASS",
+      "n_frames": 36,
+      "gt_rot_median": 6.064266165486883,
+      "gt_drift_final": 30.025682758505813,
+      "gt_drift_max": 31.53997907561295
+    },
+    {
+      "sequence": "wheat3dgs__plot_467",
+      "method": "gp",
+      "param": 40.0,
+      "note": "SO(3) GP \u2113=40.0",
+      "is_baseline": false,
+      "rot_median": 4.432433210860593,
+      "rot_p90": 15.703487913738332,
+      "pose_gate": "PASS",
+      "n_frames": 36,
+      "gt_rot_median": 7.370481220730983,
+      "gt_drift_final": 29.9405685058097,
+      "gt_drift_max": 30.72828759912712
+    },
+    {
+      "sequence": "wheat3dgs__plot_467",
+      "method": "gp_trend",
+      "param": 5.0,
+      "note": "local-trend GP \u2113=5.0",
+      "is_baseline": false,
+      "rot_median": 4.198114551494362,
+      "rot_p90": 13.83563427203087,
+      "pose_gate": "PASS",
+      "n_frames": 36,
+      "gt_rot_median": 3.6870045582802584,
+      "gt_drift_final": 29.052703821220746,
+      "gt_drift_max": 31.918490772460846
+    },
+    {
+      "sequence": "wheat3dgs__plot_467",
+      "method": "multi_hop",
+      "param": 8.0,
+      "note": "th\u22654 re-solve (hop-3 from existing CSV)",
+      "is_baseline": false,
+      "rot_median": 3.3005605077716735,
+      "rot_p90": 4.989384338807946,
+      "pose_gate": "PASS",
+      "n_frames": 36,
+      "gt_rot_median": 1.1812186801612672,
+      "gt_drift_final": 29.9585885085212,
+      "gt_drift_max": 44.69640443721467
+    },
+    {
+      "sequence": "wheat3dgs__plot_467",
+      "method": "edge_temporal",
+      "param": 0.25,
+      "note": "temporal attenuation \u03b1=0.25",
+      "is_baseline": false,
+      "rot_median": 3.2290239548601414,
+      "rot_p90": 4.94363686703076,
+      "pose_gate": "PASS",
+      "n_frames": 36,
+      "gt_rot_median": 1.1142509187415373,
+      "gt_drift_final": 30.068924443920107,
+      "gt_drift_max": 44.76983475753888
+    },
+    {
+      "sequence": "wheat3dgs__plot_467",
+      "method": "edge_bias",
+      "param": 5.0,
+      "note": "reweighting output missing (\u03b2=5.0)",
+      "is_baseline": false,
+      "rot_median": 3.2338538179493366,
+      "rot_p90": 4.945985884749171,
+      "pose_gate": "PASS",
+      "n_frames": 36,
+      "gt_rot_median": 1.1199257112572276,
+      "gt_drift_final": 30.058666518892974,
+      "gt_drift_max": 44.770793678147676
+    },
+    {
+      "sequence": "mustc__plot198__230613__ugv__pos00",
+      "method": "baseline_D",
+      "param": null,
+      "note": "stride4 th8 solver (unmodified)",
+      "is_baseline": true,
+      "rot_median": 0.6027471166057163,
+      "rot_p90": 4.48165272373896,
+      "pose_gate": "PASS",
+      "n_frames": 20,
+      "gt_rot_median": 0.10472406710838256,
+      "gt_drift_final": 134.8687798608309,
+      "gt_drift_max": 134.8687798608309
+    },
+    {
+      "sequence": "mustc__plot198__230613__ugv__pos00",
+      "method": "gaussian",
+      "param": 2.0,
+      "note": "increment Gaussian \u03c3=2.0",
+      "is_baseline": false,
+      "rot_median": 0.6027471166069261,
+      "rot_p90": 4.481652723739123,
+      "pose_gate": "PASS",
+      "n_frames": 20,
+      "gt_rot_median": 0.10472406711186279,
+      "gt_drift_final": 134.86877986083095,
+      "gt_drift_max": 134.86877986083095
+    },
+    {
+      "sequence": "mustc__plot198__230613__ugv__pos00",
+      "method": "second_order",
+      "param": 10.0,
+      "note": "2nd-order \u03bb=10.0",
+      "is_baseline": false,
+      "rot_median": 0.6027471166069261,
+      "rot_p90": 4.481652723739123,
+      "pose_gate": "PASS",
+      "n_frames": 20,
+      "gt_rot_median": 0.10472406711186279,
+      "gt_drift_final": 134.86877986083095,
+      "gt_drift_max": 134.86877986083095
+    },
+    {
+      "sequence": "mustc__plot198__230613__ugv__pos00",
+      "method": "gp",
+      "param": 40.0,
+      "note": "SO(3) GP \u2113=40.0",
+      "is_baseline": false,
+      "rot_median": 0.5539841818300035,
+      "rot_p90": 4.489684373271399,
+      "pose_gate": "PASS",
+      "n_frames": 20,
+      "gt_rot_median": 0.09052519211020757,
+      "gt_drift_final": 135.0201250632051,
+      "gt_drift_max": 135.0201250632051
+    },
+    {
+      "sequence": "mustc__plot198__230613__ugv__pos00",
+      "method": "gp_trend",
+      "param": 5.0,
+      "note": "local-trend GP \u2113=5.0",
+      "is_baseline": false,
+      "rot_median": 0.6027471166069261,
+      "rot_p90": 4.481652723739123,
+      "pose_gate": "PASS",
+      "n_frames": 20,
+      "gt_rot_median": 0.10472406711186279,
+      "gt_drift_final": 134.86877986083095,
+      "gt_drift_max": 134.86877986083095
+    },
+    {
+      "sequence": "mustc__plot198__230613__ugv__pos00",
+      "method": "multi_hop",
+      "param": 8.0,
+      "note": "th\u22654 re-solve (hop-3 from existing CSV)",
+      "is_baseline": false,
+      "rot_median": 0.6027471166057163,
+      "rot_p90": 4.48165272373896,
+      "pose_gate": "PASS",
+      "n_frames": 20,
+      "gt_rot_median": 0.10472406710838256,
+      "gt_drift_final": 134.8687798608309,
+      "gt_drift_max": 134.8687798608309
+    },
+    {
+      "sequence": "mustc__plot198__230613__ugv__pos00",
+      "method": "edge_temporal",
+      "param": 0.25,
+      "note": "temporal attenuation \u03b1=0.25",
+      "is_baseline": false,
+      "rot_median": 0.6027471166057163,
+      "rot_p90": 4.48165272373896,
+      "pose_gate": "PASS",
+      "n_frames": 20,
+      "gt_rot_median": 0.10472406710838256,
+      "gt_drift_final": 134.8687798608309,
+      "gt_drift_max": 134.8687798608309
+    },
+    {
+      "sequence": "mustc__plot198__230613__ugv__pos00",
+      "method": "edge_bias",
+      "param": 5.0,
+      "note": "reweighting output missing (\u03b2=5.0)",
+      "is_baseline": false,
+      "rot_median": 0.6027471166057163,
+      "rot_p90": 4.48165272373896,
+      "pose_gate": "PASS",
+      "n_frames": 20,
+      "gt_rot_median": 0.10472406710838256,
+      "gt_drift_final": 134.8687798608309,
+      "gt_drift_max": 134.8687798608309
+    }
+  ]
+}

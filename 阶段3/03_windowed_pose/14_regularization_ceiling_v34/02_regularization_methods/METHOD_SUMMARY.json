@@ -1,0 +1,1226 @@
+{
+  "gaussian_sigmas": [
+    0.5,
+    1,
+    2,
+    3,
+    5,
+    8,
+    12,
+    16
+  ],
+  "second_order_lambdas": [
+    0.1,
+    1,
+    10,
+    100
+  ],
+  "kernel_trunc_sigma": 4,
+  "domain": "increment (rotvec) + exact Exp integration",
+  "gt_used": false,
+  "runs": [
+    {
+      "sequence": "plantview__langdon_4__05-03-24",
+      "method": "gaussian",
+      "sigma": 0.5,
+      "output": "REGULARIZED_GAUGES_plantview__langdon_4__05-03-24_gauss_s0.5.npz"
+    },
+    {
+      "sequence": "plantview__langdon_4__05-03-24",
+      "method": "gaussian",
+      "sigma": 1,
+      "output": "REGULARIZED_GAUGES_plantview__langdon_4__05-03-24_gauss_s1.npz"
+    },
+    {
+      "sequence": "plantview__langdon_4__05-03-24",
+      "method": "gaussian",
+      "sigma": 2,
+      "output": "REGULARIZED_GAUGES_plantview__langdon_4__05-03-24_gauss_s2.npz"
+    },
+    {
+      "sequence": "plantview__langdon_4__05-03-24",
+      "method": "gaussian",
+      "sigma": 3,
+      "output": "REGULARIZED_GAUGES_plantview__langdon_4__05-03-24_gauss_s3.npz"
+    },
+    {
+      "sequence": "plantview__langdon_4__05-03-24",
+      "method": "gaussian",
+      "sigma": 5,
+      "output": "REGULARIZED_GAUGES_plantview__langdon_4__05-03-24_gauss_s5.npz"
+    },
+    {
+      "sequence": "plantview__langdon_4__05-03-24",
+      "method": "gaussian",
+      "sigma": 8,
+      "output": "REGULARIZED_GAUGES_plantview__langdon_4__05-03-24_gauss_s8.npz"
+    },
+    {
+      "sequence": "plantview__langdon_4__05-03-24",
+      "method": "gaussian",
+      "sigma": 12,
+      "output": "REGULARIZED_GAUGES_plantview__langdon_4__05-03-24_gauss_s12.npz"
+    },
+    {
+      "sequence": "plantview__langdon_4__05-03-24",
+      "method": "gaussian",
+      "sigma": 16,
+      "output": "REGULARIZED_GAUGES_plantview__langdon_4__05-03-24_gauss_s16.npz"
+    },
+    {
+      "sequence": "plantview__langdon_4__05-03-24",
+      "method": "second_order",
+      "lambda": 0.1,
+      "output": "REGULARIZED_GAUGES_plantview__langdon_4__05-03-24_2nd_l0.1.npz"
+    },
+    {
+      "sequence": "plantview__langdon_4__05-03-24",
+      "method": "second_order",
+      "lambda": 1,
+      "output": "REGULARIZED_GAUGES_plantview__langdon_4__05-03-24_2nd_l1.npz"
+    },
+    {
+      "sequence": "plantview__langdon_4__05-03-24",
+      "method": "second_order",
+      "lambda": 10,
+      "output": "REGULARIZED_GAUGES_plantview__langdon_4__05-03-24_2nd_l10.npz"
+    },
+    {
+      "sequence": "plantview__langdon_4__05-03-24",
+      "method": "second_order",
+      "lambda": 100,
+      "output": "REGULARIZED_GAUGES_plantview__langdon_4__05-03-24_2nd_l100.npz"
+    },
+    {
+      "sequence": "plantview__langdon_4__12-03-24",
+      "method": "gaussian",
+      "sigma": 0.5,
+      "output": "REGULARIZED_GAUGES_plantview__langdon_4__12-03-24_gauss_s0.5.npz"
+    },
+    {
+      "sequence": "plantview__langdon_4__12-03-24",
+      "method": "gaussian",
+      "sigma": 1,
+      "output": "REGULARIZED_GAUGES_plantview__langdon_4__12-03-24_gauss_s1.npz"
+    },
+    {
+      "sequence": "plantview__langdon_4__12-03-24",
+      "method": "gaussian",
+      "sigma": 2,
+      "output": "REGULARIZED_GAUGES_plantview__langdon_4__12-03-24_gauss_s2.npz"
+    },
+    {
+      "sequence": "plantview__langdon_4__12-03-24",
+      "method": "gaussian",
+      "sigma": 3,
+      "output": "REGULARIZED_GAUGES_plantview__langdon_4__12-03-24_gauss_s3.npz"
+    },
+    {
+      "sequence": "plantview__langdon_4__12-03-24",
+      "method": "gaussian",
+      "sigma": 5,
+      "output": "REGULARIZED_GAUGES_plantview__langdon_4__12-03-24_gauss_s5.npz"
+    },
+    {
+      "sequence": "plantview__langdon_4__12-03-24",
+      "method": "gaussian",
+      "sigma": 8,
+      "output": "REGULARIZED_GAUGES_plantview__langdon_4__12-03-24_gauss_s8.npz"
+    },
+    {
+      "sequence": "plantview__langdon_4__12-03-24",
+      "method": "gaussian",
+      "sigma": 12,
+      "output": "REGULARIZED_GAUGES_plantview__langdon_4__12-03-24_gauss_s12.npz"
+    },
+    {
+      "sequence": "plantview__langdon_4__12-03-24",
+      "method": "gaussian",
+      "sigma": 16,
+      "output": "REGULARIZED_GAUGES_plantview__langdon_4__12-03-24_gauss_s16.npz"
+    },
+    {
+      "sequence": "plantview__langdon_4__12-03-24",
+      "method": "second_order",
+      "lambda": 0.1,
+      "output": "REGULARIZED_GAUGES_plantview__langdon_4__12-03-24_2nd_l0.1.npz"
+    },
+    {
+      "sequence": "plantview__langdon_4__12-03-24",
+      "method": "second_order",
+      "lambda": 1,
+      "output": "REGULARIZED_GAUGES_plantview__langdon_4__12-03-24_2nd_l1.npz"
+    },
+    {
+      "sequence": "plantview__langdon_4__12-03-24",
+      "method": "second_order",
+      "lambda": 10,
+      "output": "REGULARIZED_GAUGES_plantview__langdon_4__12-03-24_2nd_l10.npz"
+    },
+    {
+      "sequence": "plantview__langdon_4__12-03-24",
+      "method": "second_order",
+      "lambda": 100,
+      "output": "REGULARIZED_GAUGES_plantview__langdon_4__12-03-24_2nd_l100.npz"
+    },
+    {
+      "sequence": "plantview__langdon_4__15-04-24",
+      "method": "gaussian",
+      "sigma": 0.5,
+      "output": "REGULARIZED_GAUGES_plantview__langdon_4__15-04-24_gauss_s0.5.npz"
+    },
+    {
+      "sequence": "plantview__langdon_4__15-04-24",
+      "method": "gaussian",
+      "sigma": 1,
+      "output": "REGULARIZED_GAUGES_plantview__langdon_4__15-04-24_gauss_s1.npz"
+    },
+    {
+      "sequence": "plantview__langdon_4__15-04-24",
+      "method": "gaussian",
+      "sigma": 2,
+      "output": "REGULARIZED_GAUGES_plantview__langdon_4__15-04-24_gauss_s2.npz"
+    },
+    {
+      "sequence": "plantview__langdon_4__15-04-24",
+      "method": "gaussian",
+      "sigma": 3,
+      "output": "REGULARIZED_GAUGES_plantview__langdon_4__15-04-24_gauss_s3.npz"
+    },
+    {
+      "sequence": "plantview__langdon_4__15-04-24",
+      "method": "gaussian",
+      "sigma": 5,
+      "output": "REGULARIZED_GAUGES_plantview__langdon_4__15-04-24_gauss_s5.npz"
+    },
+    {
+      "sequence": "plantview__langdon_4__15-04-24",
+      "method": "gaussian",
+      "sigma": 8,
+      "output": "REGULARIZED_GAUGES_plantview__langdon_4__15-04-24_gauss_s8.npz"
+    },
+    {
+      "sequence": "plantview__langdon_4__15-04-24",
+      "method": "gaussian",
+      "sigma": 12,
+      "output": "REGULARIZED_GAUGES_plantview__langdon_4__15-04-24_gauss_s12.npz"
+    },
+    {
+      "sequence": "plantview__langdon_4__15-04-24",
+      "method": "gaussian",
+      "sigma": 16,
+      "output": "REGULARIZED_GAUGES_plantview__langdon_4__15-04-24_gauss_s16.npz"
+    },
+    {
+      "sequence": "plantview__langdon_4__15-04-24",
+      "method": "second_order",
+      "lambda": 0.1,
+      "output": "REGULARIZED_GAUGES_plantview__langdon_4__15-04-24_2nd_l0.1.npz"
+    },
+    {
+      "sequence": "plantview__langdon_4__15-04-24",
+      "method": "second_order",
+      "lambda": 1,
+      "output": "REGULARIZED_GAUGES_plantview__langdon_4__15-04-24_2nd_l1.npz"
+    },
+    {
+      "sequence": "plantview__langdon_4__15-04-24",
+      "method": "second_order",
+      "lambda": 10,
+      "output": "REGULARIZED_GAUGES_plantview__langdon_4__15-04-24_2nd_l10.npz"
+    },
+    {
+      "sequence": "plantview__langdon_4__15-04-24",
+      "method": "second_order",
+      "lambda": 100,
+      "output": "REGULARIZED_GAUGES_plantview__langdon_4__15-04-24_2nd_l100.npz"
+    },
+    {
+      "sequence": "plantview__langdon_4__19-03-24",
+      "method": "gaussian",
+      "sigma": 0.5,
+      "output": "REGULARIZED_GAUGES_plantview__langdon_4__19-03-24_gauss_s0.5.npz"
+    },
+    {
+      "sequence": "plantview__langdon_4__19-03-24",
+      "method": "gaussian",
+      "sigma": 1,
+      "output": "REGULARIZED_GAUGES_plantview__langdon_4__19-03-24_gauss_s1.npz"
+    },
+    {
+      "sequence": "plantview__langdon_4__19-03-24",
+      "method": "gaussian",
+      "sigma": 2,
+      "output": "REGULARIZED_GAUGES_plantview__langdon_4__19-03-24_gauss_s2.npz"
+    },
+    {
+      "sequence": "plantview__langdon_4__19-03-24",
+      "method": "gaussian",
+      "sigma": 3,
+      "output": "REGULARIZED_GAUGES_plantview__langdon_4__19-03-24_gauss_s3.npz"
+    },
+    {
+      "sequence": "plantview__langdon_4__19-03-24",
+      "method": "gaussian",
+      "sigma": 5,
+      "output": "REGULARIZED_GAUGES_plantview__langdon_4__19-03-24_gauss_s5.npz"
+    },
+    {
+      "sequence": "plantview__langdon_4__19-03-24",
+      "method": "gaussian",
+      "sigma": 8,
+      "output": "REGULARIZED_GAUGES_plantview__langdon_4__19-03-24_gauss_s8.npz"
+    },
+    {
+      "sequence": "plantview__langdon_4__19-03-24",
+      "method": "gaussian",
+      "sigma": 12,
+      "output": "REGULARIZED_GAUGES_plantview__langdon_4__19-03-24_gauss_s12.npz"
+    },
+    {
+      "sequence": "plantview__langdon_4__19-03-24",
+      "method": "gaussian",
+      "sigma": 16,
+      "output": "REGULARIZED_GAUGES_plantview__langdon_4__19-03-24_gauss_s16.npz"
+    },
+    {
+      "sequence": "plantview__langdon_4__19-03-24",
+      "method": "second_order",
+      "lambda": 0.1,
+      "output": "REGULARIZED_GAUGES_plantview__langdon_4__19-03-24_2nd_l0.1.npz"
+    },
+    {
+      "sequence": "plantview__langdon_4__19-03-24",
+      "method": "second_order",
+      "lambda": 1,
+      "output": "REGULARIZED_GAUGES_plantview__langdon_4__19-03-24_2nd_l1.npz"
+    },
+    {
+      "sequence": "plantview__langdon_4__19-03-24",
+      "method": "second_order",
+      "lambda": 10,
+      "output": "REGULARIZED_GAUGES_plantview__langdon_4__19-03-24_2nd_l10.npz"
+    },
+    {
+      "sequence": "plantview__langdon_4__19-03-24",
+      "method": "second_order",
+      "lambda": 100,
+      "output": "REGULARIZED_GAUGES_plantview__langdon_4__19-03-24_2nd_l100.npz"
+    },
+    {
+      "sequence": "wheat3dgs__plot_461",
+      "method": "gaussian",
+      "sigma": 0.5,
+      "output": "REGULARIZED_GAUGES_wheat3dgs__plot_461_gauss_s0.5.npz"
+    },
+    {
+      "sequence": "wheat3dgs__plot_461",
+      "method": "gaussian",
+      "sigma": 1,
+      "output": "REGULARIZED_GAUGES_wheat3dgs__plot_461_gauss_s1.npz"
+    },
+    {
+      "sequence": "wheat3dgs__plot_461",
+      "method": "gaussian",
+      "sigma": 2,
+      "output": "REGULARIZED_GAUGES_wheat3dgs__plot_461_gauss_s2.npz"
+    },
+    {
+      "sequence": "wheat3dgs__plot_461",
+      "method": "gaussian",
+      "sigma": 3,
+      "output": "REGULARIZED_GAUGES_wheat3dgs__plot_461_gauss_s3.npz"
+    },
+    {
+      "sequence": "wheat3dgs__plot_461",
+      "method": "gaussian",
+      "sigma": 5,
+      "output": "REGULARIZED_GAUGES_wheat3dgs__plot_461_gauss_s5.npz"
+    },
+    {
+      "sequence": "wheat3dgs__plot_461",
+      "method": "gaussian",
+      "sigma": 8,
+      "output": "REGULARIZED_GAUGES_wheat3dgs__plot_461_gauss_s8.npz"
+    },
+    {
+      "sequence": "wheat3dgs__plot_461",
+      "method": "gaussian",
+      "sigma": 12,
+      "output": "REGULARIZED_GAUGES_wheat3dgs__plot_461_gauss_s12.npz"
+    },
+    {
+      "sequence": "wheat3dgs__plot_461",
+      "method": "gaussian",
+      "sigma": 16,
+      "output": "REGULARIZED_GAUGES_wheat3dgs__plot_461_gauss_s16.npz"
+    },
+    {
+      "sequence": "wheat3dgs__plot_461",
+      "method": "second_order",
+      "lambda": 0.1,
+      "output": "REGULARIZED_GAUGES_wheat3dgs__plot_461_2nd_l0.1.npz"
+    },
+    {
+      "sequence": "wheat3dgs__plot_461",
+      "method": "second_order",
+      "lambda": 1,
+      "output": "REGULARIZED_GAUGES_wheat3dgs__plot_461_2nd_l1.npz"
+    },
+    {
+      "sequence": "wheat3dgs__plot_461",
+      "method": "second_order",
+      "lambda": 10,
+      "output": "REGULARIZED_GAUGES_wheat3dgs__plot_461_2nd_l10.npz"
+    },
+    {
+      "sequence": "wheat3dgs__plot_461",
+      "method": "second_order",
+      "lambda": 100,
+      "output": "REGULARIZED_GAUGES_wheat3dgs__plot_461_2nd_l100.npz"
+    },
+    {
+      "sequence": "wheat3dgs__plot_467",
+      "method": "gaussian",
+      "sigma": 0.5,
+      "output": "REGULARIZED_GAUGES_wheat3dgs__plot_467_gauss_s0.5.npz"
+    },
+    {
+      "sequence": "wheat3dgs__plot_467",
+      "method": "gaussian",
+      "sigma": 1,
+      "output": "REGULARIZED_GAUGES_wheat3dgs__plot_467_gauss_s1.npz"
+    },
+    {
+      "sequence": "wheat3dgs__plot_467",
+      "method": "gaussian",
+      "sigma": 2,
+      "output": "REGULARIZED_GAUGES_wheat3dgs__plot_467_gauss_s2.npz"
+    },
+    {
+      "sequence": "wheat3dgs__plot_467",
+      "method": "gaussian",
+      "sigma": 3,
+      "output": "REGULARIZED_GAUGES_wheat3dgs__plot_467_gauss_s3.npz"
+    },
+    {
+      "sequence": "wheat3dgs__plot_467",
+      "method": "gaussian",
+      "sigma": 5,
+      "output": "REGULARIZED_GAUGES_wheat3dgs__plot_467_gauss_s5.npz"
+    },
+    {
+      "sequence": "wheat3dgs__plot_467",
+      "method": "gaussian",
+      "sigma": 8,
+      "output": "REGULARIZED_GAUGES_wheat3dgs__plot_467_gauss_s8.npz"
+    },
+    {
+      "sequence": "wheat3dgs__plot_467",
+      "method": "gaussian",
+      "sigma": 12,
+      "output": "REGULARIZED_GAUGES_wheat3dgs__plot_467_gauss_s12.npz"
+    },
+    {
+      "sequence": "wheat3dgs__plot_467",
+      "method": "gaussian",
+      "sigma": 16,
+      "output": "REGULARIZED_GAUGES_wheat3dgs__plot_467_gauss_s16.npz"
+    },
+    {
+      "sequence": "wheat3dgs__plot_467",
+      "method": "second_order",
+      "lambda": 0.1,
+      "output": "REGULARIZED_GAUGES_wheat3dgs__plot_467_2nd_l0.1.npz"
+    },
+    {
+      "sequence": "wheat3dgs__plot_467",
+      "method": "second_order",
+      "lambda": 1,
+      "output": "REGULARIZED_GAUGES_wheat3dgs__plot_467_2nd_l1.npz"
+    },
+    {
+      "sequence": "wheat3dgs__plot_467",
+      "method": "second_order",
+      "lambda": 10,
+      "output": "REGULARIZED_GAUGES_wheat3dgs__plot_467_2nd_l10.npz"
+    },
+    {
+      "sequence": "wheat3dgs__plot_467",
+      "method": "second_order",
+      "lambda": 100,
+      "output": "REGULARIZED_GAUGES_wheat3dgs__plot_467_2nd_l100.npz"
+    },
+    {
+      "sequence": "mustc__plot198__230613__ugv__pos00",
+      "method": "gaussian",
+      "sigma": 0.5,
+      "output": "REGULARIZED_GAUGES_mustc__plot198__230613__ugv__pos00_gauss_s0.5.npz"
+    },
+    {
+      "sequence": "mustc__plot198__230613__ugv__pos00",
+      "method": "gaussian",
+      "sigma": 1,
+      "output": "REGULARIZED_GAUGES_mustc__plot198__230613__ugv__pos00_gauss_s1.npz"
+    },
+    {
+      "sequence": "mustc__plot198__230613__ugv__pos00",
+      "method": "gaussian",
+      "sigma": 2,
+      "output": "REGULARIZED_GAUGES_mustc__plot198__230613__ugv__pos00_gauss_s2.npz"
+    },
+    {
+      "sequence": "mustc__plot198__230613__ugv__pos00",
+      "method": "gaussian",
+      "sigma": 3,
+      "output": "REGULARIZED_GAUGES_mustc__plot198__230613__ugv__pos00_gauss_s3.npz"
+    },
+    {
+      "sequence": "mustc__plot198__230613__ugv__pos00",
+      "method": "gaussian",
+      "sigma": 5,
+      "output": "REGULARIZED_GAUGES_mustc__plot198__230613__ugv__pos00_gauss_s5.npz"
+    },
+    {
+      "sequence": "mustc__plot198__230613__ugv__pos00",
+      "method": "gaussian",
+      "sigma": 8,
+      "output": "REGULARIZED_GAUGES_mustc__plot198__230613__ugv__pos00_gauss_s8.npz"
+    },
+    {
+      "sequence": "mustc__plot198__230613__ugv__pos00",
+      "method": "gaussian",
+      "sigma": 12,
+      "output": "REGULARIZED_GAUGES_mustc__plot198__230613__ugv__pos00_gauss_s12.npz"
+    },
+    {
+      "sequence": "mustc__plot198__230613__ugv__pos00",
+      "method": "gaussian",
+      "sigma": 16,
+      "output": "REGULARIZED_GAUGES_mustc__plot198__230613__ugv__pos00_gauss_s16.npz"
+    },
+    {
+      "sequence": "mustc__plot198__230613__ugv__pos00",
+      "method": "second_order",
+      "lambda": 0.1,
+      "output": "REGULARIZED_GAUGES_mustc__plot198__230613__ugv__pos00_2nd_l0.1.npz"
+    },
+    {
+      "sequence": "mustc__plot198__230613__ugv__pos00",
+      "method": "second_order",
+      "lambda": 1,
+      "output": "REGULARIZED_GAUGES_mustc__plot198__230613__ugv__pos00_2nd_l1.npz"
+    },
+    {
+      "sequence": "mustc__plot198__230613__ugv__pos00",
+      "method": "second_order",
+      "lambda": 10,
+      "output": "REGULARIZED_GAUGES_mustc__plot198__230613__ugv__pos00_2nd_l10.npz"
+    },
+    {
+      "sequence": "mustc__plot198__230613__ugv__pos00",
+      "method": "second_order",
+      "lambda": 100,
+      "output": "REGULARIZED_GAUGES_mustc__plot198__230613__ugv__pos00_2nd_l100.npz"
+    }
+  ],
+  "so3_gp": {
+    "length_scales": [
+      2,
+      5,
+      10,
+      20,
+      40
+    ],
+    "kernel": "SE, k(t,t') = \u03c3f\u00b2 exp(\u2212(t\u2212t')\u00b2/2\u2113\u00b2)",
+    "sigma_n_deg": 1.53,
+    "modes": [
+      "increments",
+      "local_trend (trend from first 5 windows)"
+    ],
+    "gt_used": false,
+    "runs": [
+      {
+        "sequence": "plantview__langdon_4__05-03-24",
+        "method": "so3_gp",
+        "mode": "increments",
+        "length_scale": 2,
+        "output": "REGULARIZED_GAUGES_plantview__langdon_4__05-03-24_gp_l2.npz"
+      },
+      {
+        "sequence": "plantview__langdon_4__05-03-24",
+        "method": "so3_gp",
+        "mode": "local_trend",
+        "length_scale": 2,
+        "output": "REGULARIZED_GAUGES_plantview__langdon_4__05-03-24_gptr_t2.npz"
+      },
+      {
+        "sequence": "plantview__langdon_4__05-03-24",
+        "method": "so3_gp",
+        "mode": "increments",
+        "length_scale": 5,
+        "output": "REGULARIZED_GAUGES_plantview__langdon_4__05-03-24_gp_l5.npz"
+      },
+      {
+        "sequence": "plantview__langdon_4__05-03-24",
+        "method": "so3_gp",
+        "mode": "local_trend",
+        "length_scale": 5,
+        "output": "REGULARIZED_GAUGES_plantview__langdon_4__05-03-24_gptr_t5.npz"
+      },
+      {
+        "sequence": "plantview__langdon_4__05-03-24",
+        "method": "so3_gp",
+        "mode": "increments",
+        "length_scale": 10,
+        "output": "REGULARIZED_GAUGES_plantview__langdon_4__05-03-24_gp_l10.npz"
+      },
+      {
+        "sequence": "plantview__langdon_4__05-03-24",
+        "method": "so3_gp",
+        "mode": "local_trend",
+        "length_scale": 10,
+        "output": "REGULARIZED_GAUGES_plantview__langdon_4__05-03-24_gptr_t10.npz"
+      },
+      {
+        "sequence": "plantview__langdon_4__05-03-24",
+        "method": "so3_gp",
+        "mode": "increments",
+        "length_scale": 20,
+        "output": "REGULARIZED_GAUGES_plantview__langdon_4__05-03-24_gp_l20.npz"
+      },
+      {
+        "sequence": "plantview__langdon_4__05-03-24",
+        "method": "so3_gp",
+        "mode": "local_trend",
+        "length_scale": 20,
+        "output": "REGULARIZED_GAUGES_plantview__langdon_4__05-03-24_gptr_t20.npz"
+      },
+      {
+        "sequence": "plantview__langdon_4__05-03-24",
+        "method": "so3_gp",
+        "mode": "increments",
+        "length_scale": 40,
+        "output": "REGULARIZED_GAUGES_plantview__langdon_4__05-03-24_gp_l40.npz"
+      },
+      {
+        "sequence": "plantview__langdon_4__05-03-24",
+        "method": "so3_gp",
+        "mode": "local_trend",
+        "length_scale": 40,
+        "output": "REGULARIZED_GAUGES_plantview__langdon_4__05-03-24_gptr_t40.npz"
+      },
+      {
+        "sequence": "plantview__langdon_4__12-03-24",
+        "method": "so3_gp",
+        "mode": "increments",
+        "length_scale": 2,
+        "output": "REGULARIZED_GAUGES_plantview__langdon_4__12-03-24_gp_l2.npz"
+      },
+      {
+        "sequence": "plantview__langdon_4__12-03-24",
+        "method": "so3_gp",
+        "mode": "local_trend",
+        "length_scale": 2,
+        "output": "REGULARIZED_GAUGES_plantview__langdon_4__12-03-24_gptr_t2.npz"
+      },
+      {
+        "sequence": "plantview__langdon_4__12-03-24",
+        "method": "so3_gp",
+        "mode": "increments",
+        "length_scale": 5,
+        "output": "REGULARIZED_GAUGES_plantview__langdon_4__12-03-24_gp_l5.npz"
+      },
+      {
+        "sequence": "plantview__langdon_4__12-03-24",
+        "method": "so3_gp",
+        "mode": "local_trend",
+        "length_scale": 5,
+        "output": "REGULARIZED_GAUGES_plantview__langdon_4__12-03-24_gptr_t5.npz"
+      },
+      {
+        "sequence": "plantview__langdon_4__12-03-24",
+        "method": "so3_gp",
+        "mode": "increments",
+        "length_scale": 10,
+        "output": "REGULARIZED_GAUGES_plantview__langdon_4__12-03-24_gp_l10.npz"
+      },
+      {
+        "sequence": "plantview__langdon_4__12-03-24",
+        "method": "so3_gp",
+        "mode": "local_trend",
+        "length_scale": 10,
+        "output": "REGULARIZED_GAUGES_plantview__langdon_4__12-03-24_gptr_t10.npz"
+      },
+      {
+        "sequence": "plantview__langdon_4__12-03-24",
+        "method": "so3_gp",
+        "mode": "increments",
+        "length_scale": 20,
+        "output": "REGULARIZED_GAUGES_plantview__langdon_4__12-03-24_gp_l20.npz"
+      },
+      {
+        "sequence": "plantview__langdon_4__12-03-24",
+        "method": "so3_gp",
+        "mode": "local_trend",
+        "length_scale": 20,
+        "output": "REGULARIZED_GAUGES_plantview__langdon_4__12-03-24_gptr_t20.npz"
+      },
+      {
+        "sequence": "plantview__langdon_4__12-03-24",
+        "method": "so3_gp",
+        "mode": "increments",
+        "length_scale": 40,
+        "output": "REGULARIZED_GAUGES_plantview__langdon_4__12-03-24_gp_l40.npz"
+      },
+      {
+        "sequence": "plantview__langdon_4__12-03-24",
+        "method": "so3_gp",
+        "mode": "local_trend",
+        "length_scale": 40,
+        "output": "REGULARIZED_GAUGES_plantview__langdon_4__12-03-24_gptr_t40.npz"
+      },
+      {
+        "sequence": "plantview__langdon_4__15-04-24",
+        "method": "so3_gp",
+        "mode": "increments",
+        "length_scale": 2,
+        "output": "REGULARIZED_GAUGES_plantview__langdon_4__15-04-24_gp_l2.npz"
+      },
+      {
+        "sequence": "plantview__langdon_4__15-04-24",
+        "method": "so3_gp",
+        "mode": "local_trend",
+        "length_scale": 2,
+        "output": "REGULARIZED_GAUGES_plantview__langdon_4__15-04-24_gptr_t2.npz"
+      },
+      {
+        "sequence": "plantview__langdon_4__15-04-24",
+        "method": "so3_gp",
+        "mode": "increments",
+        "length_scale": 5,
+        "output": "REGULARIZED_GAUGES_plantview__langdon_4__15-04-24_gp_l5.npz"
+      },
+      {
+        "sequence": "plantview__langdon_4__15-04-24",
+        "method": "so3_gp",
+        "mode": "local_trend",
+        "length_scale": 5,
+        "output": "REGULARIZED_GAUGES_plantview__langdon_4__15-04-24_gptr_t5.npz"
+      },
+      {
+        "sequence": "plantview__langdon_4__15-04-24",
+        "method": "so3_gp",
+        "mode": "increments",
+        "length_scale": 10,
+        "output": "REGULARIZED_GAUGES_plantview__langdon_4__15-04-24_gp_l10.npz"
+      },
+      {
+        "sequence": "plantview__langdon_4__15-04-24",
+        "method": "so3_gp",
+        "mode": "local_trend",
+        "length_scale": 10,
+        "output": "REGULARIZED_GAUGES_plantview__langdon_4__15-04-24_gptr_t10.npz"
+      },
+      {
+        "sequence": "plantview__langdon_4__15-04-24",
+        "method": "so3_gp",
+        "mode": "increments",
+        "length_scale": 20,
+        "output": "REGULARIZED_GAUGES_plantview__langdon_4__15-04-24_gp_l20.npz"
+      },
+      {
+        "sequence": "plantview__langdon_4__15-04-24",
+        "method": "so3_gp",
+        "mode": "local_trend",
+        "length_scale": 20,
+        "output": "REGULARIZED_GAUGES_plantview__langdon_4__15-04-24_gptr_t20.npz"
+      },
+      {
+        "sequence": "plantview__langdon_4__15-04-24",
+        "method": "so3_gp",
+        "mode": "increments",
+        "length_scale": 40,
+        "output": "REGULARIZED_GAUGES_plantview__langdon_4__15-04-24_gp_l40.npz"
+      },
+      {
+        "sequence": "plantview__langdon_4__15-04-24",
+        "method": "so3_gp",
+        "mode": "local_trend",
+        "length_scale": 40,
+        "output": "REGULARIZED_GAUGES_plantview__langdon_4__15-04-24_gptr_t40.npz"
+      },
+      {
+        "sequence": "plantview__langdon_4__19-03-24",
+        "method": "so3_gp",
+        "mode": "increments",
+        "length_scale": 2,
+        "output": "REGULARIZED_GAUGES_plantview__langdon_4__19-03-24_gp_l2.npz"
+      },
+      {
+        "sequence": "plantview__langdon_4__19-03-24",
+        "method": "so3_gp",
+        "mode": "local_trend",
+        "length_scale": 2,
+        "output": "REGULARIZED_GAUGES_plantview__langdon_4__19-03-24_gptr_t2.npz"
+      },
+      {
+        "sequence": "plantview__langdon_4__19-03-24",
+        "method": "so3_gp",
+        "mode": "increments",
+        "length_scale": 5,
+        "output": "REGULARIZED_GAUGES_plantview__langdon_4__19-03-24_gp_l5.npz"
+      },
+      {
+        "sequence": "plantview__langdon_4__19-03-24",
+        "method": "so3_gp",
+        "mode": "local_trend",
+        "length_scale": 5,
+        "output": "REGULARIZED_GAUGES_plantview__langdon_4__19-03-24_gptr_t5.npz"
+      },
+      {
+        "sequence": "plantview__langdon_4__19-03-24",
+        "method": "so3_gp",
+        "mode": "increments",
+        "length_scale": 10,
+        "output": "REGULARIZED_GAUGES_plantview__langdon_4__19-03-24_gp_l10.npz"
+      },
+      {
+        "sequence": "plantview__langdon_4__19-03-24",
+        "method": "so3_gp",
+        "mode": "local_trend",
+        "length_scale": 10,
+        "output": "REGULARIZED_GAUGES_plantview__langdon_4__19-03-24_gptr_t10.npz"
+      },
+      {
+        "sequence": "plantview__langdon_4__19-03-24",
+        "method": "so3_gp",
+        "mode": "increments",
+        "length_scale": 20,
+        "output": "REGULARIZED_GAUGES_plantview__langdon_4__19-03-24_gp_l20.npz"
+      },
+      {
+        "sequence": "plantview__langdon_4__19-03-24",
+        "method": "so3_gp",
+        "mode": "local_trend",
+        "length_scale": 20,
+        "output": "REGULARIZED_GAUGES_plantview__langdon_4__19-03-24_gptr_t20.npz"
+      },
+      {
+        "sequence": "plantview__langdon_4__19-03-24",
+        "method": "so3_gp",
+        "mode": "increments",
+        "length_scale": 40,
+        "output": "REGULARIZED_GAUGES_plantview__langdon_4__19-03-24_gp_l40.npz"
+      },
+      {
+        "sequence": "plantview__langdon_4__19-03-24",
+        "method": "so3_gp",
+        "mode": "local_trend",
+        "length_scale": 40,
+        "output": "REGULARIZED_GAUGES_plantview__langdon_4__19-03-24_gptr_t40.npz"
+      },
+      {
+        "sequence": "wheat3dgs__plot_461",
+        "method": "so3_gp",
+        "mode": "increments",
+        "length_scale": 2,
+        "output": "REGULARIZED_GAUGES_wheat3dgs__plot_461_gp_l2.npz"
+      },
+      {
+        "sequence": "wheat3dgs__plot_461",
+        "method": "so3_gp",
+        "mode": "local_trend",
+        "length_scale": 2,
+        "output": "REGULARIZED_GAUGES_wheat3dgs__plot_461_gptr_t2.npz"
+      },
+      {
+        "sequence": "wheat3dgs__plot_461",
+        "method": "so3_gp",
+        "mode": "increments",
+        "length_scale": 5,
+        "output": "REGULARIZED_GAUGES_wheat3dgs__plot_461_gp_l5.npz"
+      },
+      {
+        "sequence": "wheat3dgs__plot_461",
+        "method": "so3_gp",
+        "mode": "local_trend",
+        "length_scale": 5,
+        "output": "REGULARIZED_GAUGES_wheat3dgs__plot_461_gptr_t5.npz"
+      },
+      {
+        "sequence": "wheat3dgs__plot_461",
+        "method": "so3_gp",
+        "mode": "increments",
+        "length_scale": 10,
+        "output": "REGULARIZED_GAUGES_wheat3dgs__plot_461_gp_l10.npz"
+      },
+      {
+        "sequence": "wheat3dgs__plot_461",
+        "method": "so3_gp",
+        "mode": "local_trend",
+        "length_scale": 10,
+        "output": "REGULARIZED_GAUGES_wheat3dgs__plot_461_gptr_t10.npz"
+      },
+      {
+        "sequence": "wheat3dgs__plot_461",
+        "method": "so3_gp",
+        "mode": "increments",
+        "length_scale": 20,
+        "output": "REGULARIZED_GAUGES_wheat3dgs__plot_461_gp_l20.npz"
+      },
+      {
+        "sequence": "wheat3dgs__plot_461",
+        "method": "so3_gp",
+        "mode": "local_trend",
+        "length_scale": 20,
+        "output": "REGULARIZED_GAUGES_wheat3dgs__plot_461_gptr_t20.npz"
+      },
+      {
+        "sequence": "wheat3dgs__plot_461",
+        "method": "so3_gp",
+        "mode": "increments",
+        "length_scale": 40,
+        "output": "REGULARIZED_GAUGES_wheat3dgs__plot_461_gp_l40.npz"
+      },
+      {
+        "sequence": "wheat3dgs__plot_461",
+        "method": "so3_gp",
+        "mode": "local_trend",
+        "length_scale": 40,
+        "output": "REGULARIZED_GAUGES_wheat3dgs__plot_461_gptr_t40.npz"
+      },
+      {
+        "sequence": "wheat3dgs__plot_467",
+        "method": "so3_gp",
+        "mode": "increments",
+        "length_scale": 2,
+        "output": "REGULARIZED_GAUGES_wheat3dgs__plot_467_gp_l2.npz"
+      },
+      {
+        "sequence": "wheat3dgs__plot_467",
+        "method": "so3_gp",
+        "mode": "local_trend",
+        "length_scale": 2,
+        "output": "REGULARIZED_GAUGES_wheat3dgs__plot_467_gptr_t2.npz"
+      },
+      {
+        "sequence": "wheat3dgs__plot_467",
+        "method": "so3_gp",
+        "mode": "increments",
+        "length_scale": 5,
+        "output": "REGULARIZED_GAUGES_wheat3dgs__plot_467_gp_l5.npz"
+      },
+      {
+        "sequence": "wheat3dgs__plot_467",
+        "method": "so3_gp",
+        "mode": "local_trend",
+        "length_scale": 5,
+        "output": "REGULARIZED_GAUGES_wheat3dgs__plot_467_gptr_t5.npz"
+      },
+      {
+        "sequence": "wheat3dgs__plot_467",
+        "method": "so3_gp",
+        "mode": "increments",
+        "length_scale": 10,
+        "output": "REGULARIZED_GAUGES_wheat3dgs__plot_467_gp_l10.npz"
+      },
+      {
+        "sequence": "wheat3dgs__plot_467",
+        "method": "so3_gp",
+        "mode": "local_trend",
+        "length_scale": 10,
+        "output": "REGULARIZED_GAUGES_wheat3dgs__plot_467_gptr_t10.npz"
+      },
+      {
+        "sequence": "wheat3dgs__plot_467",
+        "method": "so3_gp",
+        "mode": "increments",
+        "length_scale": 20,
+        "output": "REGULARIZED_GAUGES_wheat3dgs__plot_467_gp_l20.npz"
+      },
+      {
+        "sequence": "wheat3dgs__plot_467",
+        "method": "so3_gp",
+        "mode": "local_trend",
+        "length_scale": 20,
+        "output": "REGULARIZED_GAUGES_wheat3dgs__plot_467_gptr_t20.npz"
+      },
+      {
+        "sequence": "wheat3dgs__plot_467",
+        "method": "so3_gp",
+        "mode": "increments",
+        "length_scale": 40,
+        "output": "REGULARIZED_GAUGES_wheat3dgs__plot_467_gp_l40.npz"
+      },
+      {
+        "sequence": "wheat3dgs__plot_467",
+        "method": "so3_gp",
+        "mode": "local_trend",
+        "length_scale": 40,
+        "output": "REGULARIZED_GAUGES_wheat3dgs__plot_467_gptr_t40.npz"
+      },
+      {
+        "sequence": "mustc__plot198__230613__ugv__pos00",
+        "method": "so3_gp",
+        "mode": "increments",
+        "length_scale": 2,
+        "output": "REGULARIZED_GAUGES_mustc__plot198__230613__ugv__pos00_gp_l2.npz"
+      },
+      {
+        "sequence": "mustc__plot198__230613__ugv__pos00",
+        "method": "so3_gp",
+        "mode": "local_trend",
+        "length_scale": 2,
+        "output": "REGULARIZED_GAUGES_mustc__plot198__230613__ugv__pos00_gptr_t2.npz"
+      },
+      {
+        "sequence": "mustc__plot198__230613__ugv__pos00",
+        "method": "so3_gp",
+        "mode": "increments",
+        "length_scale": 5,
+        "output": "REGULARIZED_GAUGES_mustc__plot198__230613__ugv__pos00_gp_l5.npz"
+      },
+      {
+        "sequence": "mustc__plot198__230613__ugv__pos00",
+        "method": "so3_gp",
+        "mode": "local_trend",
+        "length_scale": 5,
+        "output": "REGULARIZED_GAUGES_mustc__plot198__230613__ugv__pos00_gptr_t5.npz"
+      },
+      {
+        "sequence": "mustc__plot198__230613__ugv__pos00",
+        "method": "so3_gp",
+        "mode": "increments",
+        "length_scale": 10,
+        "output": "REGULARIZED_GAUGES_mustc__plot198__230613__ugv__pos00_gp_l10.npz"
+      },
+      {
+        "sequence": "mustc__plot198__230613__ugv__pos00",
+        "method": "so3_gp",
+        "mode": "local_trend",
+        "length_scale": 10,
+        "output": "REGULARIZED_GAUGES_mustc__plot198__230613__ugv__pos00_gptr_t10.npz"
+      },
+      {
+        "sequence": "mustc__plot198__230613__ugv__pos00",
+        "method": "so3_gp",
+        "mode": "increments",
+        "length_scale": 20,
+        "output": "REGULARIZED_GAUGES_mustc__plot198__230613__ugv__pos00_gp_l20.npz"
+      },
+      {
+        "sequence": "mustc__plot198__230613__ugv__pos00",
+        "method": "so3_gp",
+        "mode": "local_trend",
+        "length_scale": 20,
+        "output": "REGULARIZED_GAUGES_mustc__plot198__230613__ugv__pos00_gptr_t20.npz"
+      },
+      {
+        "sequence": "mustc__plot198__230613__ugv__pos00",
+        "method": "so3_gp",
+        "mode": "increments",
+        "length_scale": 40,
+        "output": "REGULARIZED_GAUGES_mustc__plot198__230613__ugv__pos00_gp_l40.npz"
+      },
+      {
+        "sequence": "mustc__plot198__230613__ugv__pos00",
+        "method": "so3_gp",
+        "mode": "local_trend",
+        "length_scale": 40,
+        "output": "REGULARIZED_GAUGES_mustc__plot198__230613__ugv__pos00_gptr_t40.npz"
+      }
+    ]
+  },
+  "multi_hop": {
+    "gt_used": false,
+    "M1": [
+      {
+        "sequence": "plantview__langdon_4__05-03-24",
+        "th8_edges": 151,
+        "th4_edges": 225,
+        "median_gauge_change_deg": 0.7146877999234864
+      },
+      {
+        "sequence": "plantview__langdon_4__12-03-24",
+        "th8_edges": 151,
+        "th4_edges": 225,
+        "median_gauge_change_deg": 0.332262814158114
+      },
+      {
+        "sequence": "plantview__langdon_4__15-04-24",
+        "th8_edges": 151,
+        "th4_edges": 225,
+        "median_gauge_change_deg": 0.2975176752380171
+      },
+      {
+        "sequence": "plantview__langdon_4__19-03-24",
+        "th8_edges": 151,
+        "th4_edges": 225,
+        "median_gauge_change_deg": 0.7281981217930594
+      },
+      {
+        "sequence": "wheat3dgs__plot_461",
+        "th8_edges": 9,
+        "th4_edges": 12,
+        "median_gauge_change_deg": 0.10660171877006316
+      },
+      {
+        "sequence": "wheat3dgs__plot_467",
+        "th8_edges": 9,
+        "th4_edges": 12,
+        "median_gauge_change_deg": 0.09094804947482821
+      },
+      {
+        "sequence": "mustc__plot198__230613__ugv__pos00",
+        "th8_edges": 1,
+        "th4_edges": 1,
+        "median_gauge_change_deg": 0.0
+      }
+    ],
+    "M2": {
+      "plantview__langdon_4__05-03-24": {
+        "n_triangles": 223,
+        "median_deg": 0.5689,
+        "mean_deg": 0.8963,
+        "p90_deg": 1.5038,
+        "max_deg": 14.0368
+      },
+      "plantview__langdon_4__12-03-24": {
+        "n_triangles": 223,
+        "median_deg": 0.684,
+        "mean_deg": 0.8054,
+        "p90_deg": 1.4223,
+        "max_deg": 2.4351
+      },
+      "plantview__langdon_4__15-04-24": {
+        "n_triangles": 223,
+        "median_deg": 0.6055,
+        "mean_deg": 0.7934,
+        "p90_deg": 1.5344,
+        "max_deg": 3.8221
+      },
+      "plantview__langdon_4__19-03-24": {
+        "n_triangles": 223,
+        "median_deg": 0.8087,
+        "mean_deg": 0.9261,
+        "p90_deg": 1.7388,
+        "max_deg": 3.1967
+      },
+      "wheat3dgs__plot_461": {
+        "n_triangles": 10,
+        "median_deg": 0.5969,
+        "mean_deg": 0.6163,
+        "p90_deg": 1.0544,
+        "max_deg": 1.2934
+      },
+      "wheat3dgs__plot_467": {
+        "n_triangles": 10,
+        "median_deg": 0.2268,
+        "mean_deg": 0.2714,
+        "p90_deg": 0.431,
+        "max_deg": 0.5786
+      }
+    },
+    "M3": [
+      {
+        "sequence": "plantview__langdon_4__05-03-24",
+        "n_extra": 75,
+        "median_gauge_change_deg": 0.2447
+      },
+      {
+        "sequence": "plantview__langdon_4__12-03-24",
+        "n_extra": 75,
+        "median_gauge_change_deg": 0.7227
+      },
+      {
+        "sequence": "plantview__langdon_4__15-04-24",
+        "n_extra": 75,
+        "median_gauge_change_deg": 0.6366
+      },
+      {
+        "sequence": "plantview__langdon_4__19-03-24",
+        "n_extra": 75,
+        "median_gauge_change_deg": 0.7718
+      },
+      {
+        "sequence": "wheat3dgs__plot_461",
+        "n_extra": 4,
+        "median_gauge_change_deg": 0.0935
+      },
+      {
+        "sequence": "wheat3dgs__plot_467",
+        "n_extra": 4,
+        "median_gauge_change_deg": 0.0488
+      },
+      {
+        "sequence": "mustc__plot198__230613__ugv__pos00",
+        "n_extra": 0,
+        "median_gauge_change_deg": 0.0
+      }
+    ]
+  },
+  "edge_reweighting": {
+    "gt_used": false,
+    "runs": [
+      {
+        "sequence": "mustc__plot198__230613__ugv__pos00",
+        "method": "temporal",
+        "alpha": 0.0,
+        "median_gauge_change_deg": 0.0
+      },
+      {
+        "sequence": "mustc__plot198__230613__ugv__pos00",
+        "method": "temporal",
+        "alpha": 0.25,
+        "median_gauge_change_deg": 0.0
+      },
+      {
+        "sequence": "mustc__plot198__230613__ugv__pos00",
+        "method": "temporal",
+        "alpha": 0.5,
+        "median_gauge_change_deg": 0.0
+      },
+      {
+        "sequence": "mustc__plot198__230613__ugv__pos00",
+        "method": "temporal",
+        "alpha": 0.75,
+        "median_gauge_change_deg": 0.0
+      },
+      {
+        "sequence": "mustc__plot198__230613__ugv__pos00",
+        "method": "temporal",
+        "alpha": 1.0,
+        "median_gauge_change_deg": 0.0
+      },
+      {
+        "sequence": "mustc__plot198__230613__ugv__pos00",
+        "method": "bias",
+        "beta": 0.0,
+        "median_gauge_change_deg": 0.0,
+        "residual_gamma": 1.0
+      },
+      {
+        "sequence": "mustc__plot198__230613__ugv__pos00",
+        "method": "bias",
+        "beta": 5,
+        "median_gauge_change_deg": 0.0,
+        "residual_gamma": 1.0
+      },
+      {
+        "sequence": "mustc__plot198__230613__ugv__pos00",
+        "method": "bias",
+        "beta": 20,
+        "median_gauge_change_deg": 0.0,
+        "residual_gamma": 1.0
+      },
+      {
+        "sequence": "mustc__plot198__230613__ugv__pos00",
+        "method": "bias",
+        "beta": 100,
+        "median_gauge_change_deg": 0.0,
+        "residual_gamma": 1.0
+      }
+    ]
+  }
+}

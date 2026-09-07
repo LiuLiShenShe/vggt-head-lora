@@ -32,3 +32,4 @@ ckpt/
 # 大数据集（超 GitHub 限制）
 阶段1-数据集/
 阶段2/**/*.zip
+.pytest_cache/

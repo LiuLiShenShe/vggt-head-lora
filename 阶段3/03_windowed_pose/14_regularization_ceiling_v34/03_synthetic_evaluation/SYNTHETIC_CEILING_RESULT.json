@@ -1,0 +1,409 @@
+{
+  "scenario": "A",
+  "scenario_description": "CASE-C consistent: multi-hop edges match chain (no new info)",
+  "n_scenarios": 10,
+  "seed_base": 0,
+  "seq": "plantview__langdon_4__05-03-24",
+  "coherence_target": 0.756,
+  "baseline_rot_median_deg": 34.65,
+  "best_per_method": {
+    "R_raw_chain": {
+      "method": "R_raw_chain",
+      "param": 0.0,
+      "n_scenarios": 10,
+      "rot_median_median": 34.65,
+      "rot_median_mean": 35.57,
+      "rot_median_best": 25.19,
+      "rot_median_p90": 46.98,
+      "decision": "RED"
+    },
+    "gaussian": {
+      "method": "gaussian",
+      "param": 2.0,
+      "n_scenarios": 10,
+      "rot_median_median": 34.63,
+      "rot_median_mean": 35.69,
+      "rot_median_best": 25.81,
+      "rot_median_p90": 46.02,
+      "decision": "RED"
+    },
+    "second_order": {
+      "method": "second_order",
+      "param": 10.0,
+      "n_scenarios": 10,
+      "rot_median_median": 34.42,
+      "rot_median_mean": 35.64,
+      "rot_median_best": 25.52,
+      "rot_median_p90": 46.08,
+      "decision": "RED"
+    },
+    "gp": {
+      "method": "gp",
+      "param": 40.0,
+      "n_scenarios": 10,
+      "rot_median_median": 34.71,
+      "rot_median_mean": 35.8,
+      "rot_median_best": 27.02,
+      "rot_median_p90": 46.1,
+      "decision": "RED"
+    },
+    "gp_trend": {
+      "method": "gp_trend",
+      "param": 5.0,
+      "n_scenarios": 10,
+      "rot_median_median": 34.34,
+      "rot_median_mean": 35.8,
+      "rot_median_best": 25.48,
+      "rot_median_p90": 46.73,
+      "decision": "RED"
+    },
+    "multi_hop": {
+      "method": "multi_hop",
+      "param": 8.0,
+      "n_scenarios": 3,
+      "rot_median_median": 34.73,
+      "rot_median_mean": 33.9,
+      "rot_median_best": 29.96,
+      "rot_median_p90": 36.54,
+      "decision": "RED"
+    },
+    "edge_temporal": {
+      "method": "edge_temporal",
+      "param": 0.25,
+      "n_scenarios": 3,
+      "rot_median_median": 34.73,
+      "rot_median_mean": 33.9,
+      "rot_median_best": 29.96,
+      "rot_median_p90": 36.54,
+      "decision": "RED"
+    },
+    "edge_bias": {
+      "method": "edge_bias",
+      "param": 5.0,
+      "n_scenarios": 3,
+      "rot_median_median": 34.73,
+      "rot_median_mean": 33.9,
+      "rot_median_best": 29.96,
+      "rot_median_p90": 36.54,
+      "decision": "RED"
+    }
+  },
+  "all_method_params": {
+    "R_raw_chain@0.0": {
+      "method": "R_raw_chain",
+      "param": 0.0,
+      "n_scenarios": 10,
+      "rot_median_median": 34.65,
+      "rot_median_mean": 35.57,
+      "rot_median_best": 25.19,
+      "rot_median_p90": 46.98,
+      "decision": "RED"
+    },
+    "gaussian@0.5": {
+      "method": "gaussian",
+      "param": 0.5,
+      "n_scenarios": 10,
+      "rot_median_median": 34.76,
+      "rot_median_mean": 35.63,
+      "rot_median_best": 25.34,
+      "rot_median_p90": 46.74,
+      "decision": "RED"
+    },
+    "gaussian@1": {
+      "method": "gaussian",
+      "param": 1.0,
+      "n_scenarios": 10,
+      "rot_median_median": 34.7,
+      "rot_median_mean": 35.77,
+      "rot_median_best": 25.52,
+      "rot_median_p90": 46.25,
+      "decision": "RED"
+    },
+    "gaussian@2": {
+      "method": "gaussian",
+      "param": 2.0,
+      "n_scenarios": 10,
+      "rot_median_median": 34.63,
+      "rot_median_mean": 35.69,
+      "rot_median_best": 25.81,
+      "rot_median_p90": 46.02,
+      "decision": "RED"
+    },
+    "gaussian@3": {
+      "method": "gaussian",
+      "param": 3.0,
+      "n_scenarios": 10,
+      "rot_median_median": 35.0,
+      "rot_median_mean": 35.7,
+      "rot_median_best": 26.43,
+      "rot_median_p90": 45.67,
+      "decision": "RED"
+    },
+    "gaussian@5": {
+      "method": "gaussian",
+      "param": 5.0,
+      "n_scenarios": 10,
+      "rot_median_median": 35.77,
+      "rot_median_mean": 36.02,
+      "rot_median_best": 27.11,
+      "rot_median_p90": 45.42,
+      "decision": "RED"
+    },
+    "gaussian@8": {
+      "method": "gaussian",
+      "param": 8.0,
+      "n_scenarios": 10,
+      "rot_median_median": 35.47,
+      "rot_median_mean": 36.32,
+      "rot_median_best": 28.02,
+      "rot_median_p90": 45.51,
+      "decision": "RED"
+    },
+    "gaussian@12": {
+      "method": "gaussian",
+      "param": 12.0,
+      "n_scenarios": 10,
+      "rot_median_median": 35.03,
+      "rot_median_mean": 36.77,
+      "rot_median_best": 27.79,
+      "rot_median_p90": 45.49,
+      "decision": "RED"
+    },
+    "gaussian@16": {
+      "method": "gaussian",
+      "param": 16.0,
+      "n_scenarios": 10,
+      "rot_median_median": 35.0,
+      "rot_median_mean": 37.1,
+      "rot_median_best": 27.85,
+      "rot_median_p90": 45.5,
+      "decision": "RED"
+    },
+    "second_order@0.1": {
+      "method": "second_order",
+      "param": 0.1,
+      "n_scenarios": 10,
+      "rot_median_median": 34.8,
+      "rot_median_mean": 35.68,
+      "rot_median_best": 25.41,
+      "rot_median_p90": 46.76,
+      "decision": "RED"
+    },
+    "second_order@1": {
+      "method": "second_order",
+      "param": 1.0,
+      "n_scenarios": 10,
+      "rot_median_median": 34.75,
+      "rot_median_mean": 35.77,
+      "rot_median_best": 25.36,
+      "rot_median_p90": 46.41,
+      "decision": "RED"
+    },
+    "second_order@10": {
+      "method": "second_order",
+      "param": 10.0,
+      "n_scenarios": 10,
+      "rot_median_median": 34.42,
+      "rot_median_mean": 35.64,
+      "rot_median_best": 25.52,
+      "rot_median_p90": 46.08,
+      "decision": "RED"
+    },
+    "second_order@100": {
+      "method": "second_order",
+      "param": 100.0,
+      "n_scenarios": 10,
+      "rot_median_median": 35.2,
+      "rot_median_mean": 35.75,
+      "rot_median_best": 26.39,
+      "rot_median_p90": 45.58,
+      "decision": "RED"
+    },
+    "gp@2": {
+      "method": "gp",
+      "param": 2.0,
+      "n_scenarios": 10,
+      "rot_median_median": 36.33,
+      "rot_median_mean": 37.28,
+      "rot_median_best": 27.05,
+      "rot_median_p90": 48.2,
+      "decision": "RED"
+    },
+    "gp@5": {
+      "method": "gp",
+      "param": 5.0,
+      "n_scenarios": 10,
+      "rot_median_median": 34.83,
+      "rot_median_mean": 36.34,
+      "rot_median_best": 26.0,
+      "rot_median_p90": 47.29,
+      "decision": "RED"
+    },
+    "gp@10": {
+      "method": "gp",
+      "param": 10.0,
+      "n_scenarios": 10,
+      "rot_median_median": 34.86,
+      "rot_median_mean": 35.77,
+      "rot_median_best": 25.37,
+      "rot_median_p90": 45.97,
+      "decision": "RED"
+    },
+    "gp@20": {
+      "method": "gp",
+      "param": 20.0,
+      "n_scenarios": 10,
+      "rot_median_median": 35.42,
+      "rot_median_mean": 36.48,
+      "rot_median_best": 27.47,
+      "rot_median_p90": 45.85,
+      "decision": "RED"
+    },
+    "gp@40": {
+      "method": "gp",
+      "param": 40.0,
+      "n_scenarios": 10,
+      "rot_median_median": 34.71,
+      "rot_median_mean": 35.8,
+      "rot_median_best": 27.02,
+      "rot_median_p90": 46.1,
+      "decision": "RED"
+    },
+    "gp_trend@2": {
+      "method": "gp_trend",
+      "param": 2.0,
+      "n_scenarios": 10,
+      "rot_median_median": 35.05,
+      "rot_median_mean": 35.91,
+      "rot_median_best": 25.75,
+      "rot_median_p90": 46.84,
+      "decision": "RED"
+    },
+    "gp_trend@5": {
+      "method": "gp_trend",
+      "param": 5.0,
+      "n_scenarios": 10,
+      "rot_median_median": 34.34,
+      "rot_median_mean": 35.8,
+      "rot_median_best": 25.48,
+      "rot_median_p90": 46.73,
+      "decision": "RED"
+    },
+    "gp_trend@10": {
+      "method": "gp_trend",
+      "param": 10.0,
+      "n_scenarios": 10,
+      "rot_median_median": 34.67,
+      "rot_median_mean": 35.57,
+      "rot_median_best": 25.17,
+      "rot_median_p90": 45.74,
+      "decision": "RED"
+    },
+    "gp_trend@20": {
+      "method": "gp_trend",
+      "param": 20.0,
+      "n_scenarios": 10,
+      "rot_median_median": 35.2,
+      "rot_median_mean": 36.13,
+      "rot_median_best": 27.15,
+      "rot_median_p90": 45.54,
+      "decision": "RED"
+    },
+    "gp_trend@40": {
+      "method": "gp_trend",
+      "param": 40.0,
+      "n_scenarios": 10,
+      "rot_median_median": 34.78,
+      "rot_median_mean": 35.68,
+      "rot_median_best": 26.77,
+      "rot_median_p90": 45.92,
+      "decision": "RED"
+    },
+    "multi_hop@8": {
+      "method": "multi_hop",
+      "param": 8.0,
+      "n_scenarios": 3,
+      "rot_median_median": 34.73,
+      "rot_median_mean": 33.9,
+      "rot_median_best": 29.96,
+      "rot_median_p90": 36.54,
+      "decision": "RED"
+    },
+    "edge_temporal@0.25": {
+      "method": "edge_temporal",
+      "param": 0.25,
+      "n_scenarios": 3,
+      "rot_median_median": 34.73,
+      "rot_median_mean": 33.9,
+      "rot_median_best": 29.96,
+      "rot_median_p90": 36.54,
+      "decision": "RED"
+    },
+    "edge_temporal@0.5": {
+      "method": "edge_temporal",
+      "param": 0.5,
+      "n_scenarios": 3,
+      "rot_median_median": 34.73,
+      "rot_median_mean": 33.9,
+      "rot_median_best": 29.96,
+      "rot_median_p90": 36.54,
+      "decision": "RED"
+    },
+    "edge_temporal@0.75": {
+      "method": "edge_temporal",
+      "param": 0.75,
+      "n_scenarios": 3,
+      "rot_median_median": 34.73,
+      "rot_median_mean": 33.9,
+      "rot_median_best": 29.96,
+      "rot_median_p90": 36.54,
+      "decision": "RED"
+    },
+    "edge_temporal@1.0": {
+      "method": "edge_temporal",
+      "param": 1.0,
+      "n_scenarios": 3,
+      "rot_median_median": 34.73,
+      "rot_median_mean": 33.9,
+      "rot_median_best": 29.96,
+      "rot_median_p90": 36.54,
+      "decision": "RED"
+    },
+    "edge_bias@5": {
+      "method": "edge_bias",
+      "param": 5.0,
+      "n_scenarios": 3,
+      "rot_median_median": 34.73,
+      "rot_median_mean": 33.9,
+      "rot_median_best": 29.96,
+      "rot_median_p90": 36.54,
+      "decision": "RED"
+    },
+    "edge_bias@20": {
+      "method": "edge_bias",
+      "param": 20.0,
+      "n_scenarios": 3,
+      "rot_median_median": 34.73,
+      "rot_median_mean": 33.9,
+      "rot_median_best": 29.96,
+      "rot_median_p90": 36.54,
+      "decision": "RED"
+    },
+    "edge_bias@100": {
+      "method": "edge_bias",
+      "param": 100.0,
+      "n_scenarios": 3,
+      "rot_median_median": 34.73,
+      "rot_median_mean": 33.9,
+      "rot_median_best": 29.96,
+      "rot_median_p90": 36.54,
+      "decision": "RED"
+    }
+  },
+  "decision_thresholds_deg": {
+    "GREEN_lt": 20.0,
+    "YELLOW_lt": 30.0
+  },
+  "metric": "rot_median after single global Procrustes (Phase 3C.3 convention)",
+  "constraint": "GT used ONLY for synthetic scoring, never inside methods"
+}
